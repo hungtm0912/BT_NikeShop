@@ -175,7 +175,7 @@ $product = mysqli_fetch_array($product_sql);
         ?>
         <div class="row col-12 logo-search-cart">
           <div style="justify-content: end !important;" class="col-3 logo">
-            <img width="20%" src="./image/Free_Sample_By_Wix__1_-removebg-preview.png" alt="">
+            <img width="20%" src="./image/logoshop.png" alt="">
           </div>
           <div class="col-6">
             <div class="input-group mb-3 mt-3">
@@ -217,10 +217,10 @@ $product = mysqli_fetch_array($product_sql);
                             <a class="nav-link active nav-link-active-custom" href="#">Hệ thống cửa hàng</a>
                         </li> -->
             <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">khách hàng</a>
+              <a class="nav-link active nav-link-active-custom" href="#">Khách hàng</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">liên hệ </a>
+              <a class="nav-link active nav-link-active-custom" href="#">Liên hệ </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale off</a>
@@ -294,16 +294,16 @@ $product = mysqli_fetch_array($product_sql);
                 <form action="chitiet.php" method="post" class="clearfix" id="comment_form">
                   <textarea name="comment_text" id="comment_text" class="form-control" cols="30" rows="3"></textarea>
                   <input type="hidden" name='product_id' id='product_id' value="<?php echo $id ?>" />
-                  <button class="btn btn-primary btn-sm pull-right" id="submit_comment">Submit comment</button>
+                  <button class="btn btn-primary btn-sm pull-right" id="submit_comment">Bình Luận</button>
                 </form>
                 <?php else : ?>
                 <div class="well" style="margin-top: 20px;">
-                  <h4 class="text-center cus_tag"><a href="/PhuongNamSport/signin">Sign in</a> to post a comment</h4>
+                  <h4 class="text-center cus_tag"><a href="/PhuongNamSport/signin">Đăng Nhập</a>Đăng bình luận</h4>
                 </div>
                 <?php endif ?>
 
                 <!-- Display total number of comments on this post  -->
-                <h2><span id="comments_count"><?php echo count($comments) ?></span> Comment(s)</h2>
+                <h2><span id="comments_count"><?php echo count($comments) ?></span> Bình Luận</h2>
                 <hr>
 
                 <!-- comments wrapper -->
