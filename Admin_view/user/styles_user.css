@@ -1,0 +1,30 @@
+img {
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none !important;
+  font-weight: bold;
+  color: #566787;
+  display: inline-block;
+}
+
+td {
+  vertical-align: middle;
+}
+
+.status {
+  font-size: 30px;
+  margin: 2px 2px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
+}
+
+.text-success {
+  color: red;
+  vertical-align: middle;
+  margin-bottom: 13px;
+}
