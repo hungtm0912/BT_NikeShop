@@ -1,36 +1,42 @@
 <?php
-$user_id = -1;
-if (isset($_SESSION['user_id']))
-  $user_id = $_SESSION['user_id'];
+  $user_id = -1;
+  if (isset($_SESSION['user_id']))
+    $user_id = $_SESSION['user_id'];
+    $product_id = $_SESSION['product_id'];
 
-$product_id = $_SESSION['product_id'];
+  // echo '<script type="text/javascript">alert("' . $product_id . '");</script>';
 
-// echo '<script type="text/javascript">alert("' . $product_id . '");</script>';
+  // get all posts from database
+    $product_query_result = $mysqli->query("SELECT * FROM `products` WHERE `product_id`=' . $product_id . '");
 
-// get all posts from database
-$product_query_result = $mysqli->query("SELECT * FROM products WHERE product_id=' . $product_id . '");
+    // Get all comments from database
+    $comments_query_result = $mysqli->query("SELECT `users.avatar`, `users.user_id`, `comments.created_at`, `comments.body`, `comments.comment_id` 
+    FROM `comments` join `users` on `comments.user_id` = `users.user_id` WHERE `product_id`=" . $product_id . " ORDER BY `orders.created_at` DESC");
+    $comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
 
+<<<<<<< HEAD
+    // If the user clicked submit on comment form...
+    if (isset($_POST['comment_posted'])) {
+=======
 // Get all comments from database
 $comments_query_result = $mysqli->query("SELECT users.avatar, users.user_id, comments.created_at, comments.body, comments.comment_id FROM comments join users on comments.user_id = users.user_id WHERE product_id='" . $product_id . "' ORDER BY created_at DESC");
 $comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
+>>>>>>> 8f161bb43d21ee6041289d8d983d1c2842672b2b
 
-// If the user clicked submit on comment form...
-if (isset($_POST['comment_posted'])) {
+    global $mysqli;
 
-  global $mysqli;
+    // grab the comment that was submitted through Ajax call
+    $comment_text = $_POST['comment_text'];
+    $product_id = $_POST['product_id'];
 
-  // grab the comment that was submitted through Ajax call
-  $comment_text = $_POST['comment_text'];
-  $product_id = $_POST['product_id'];
+    // insert comment into database
+    $sql = "INSERT INTO comments (product_id, user_id, body, created_at, updated_at) VALUES (" . $product_id . ", " . $user_id . ", '$comment_text', now(), null)";
+    $result = $mysqli->query($sql);
 
-  // insert comment into database
-  $sql = "INSERT INTO comments (product_id, user_id, body, created_at, updated_at) VALUES (" . $product_id . ", " . $user_id . ", '$comment_text', now(), null)";
-  $result = $mysqli->query($sql);
-
-  // Query same comment from database to send back to be displayed
-  $inserted_id = $mysqli->insert_id;
-  $res = $mysqli->query("SELECT * FROM comments join users on comments.user_id = users.user_id WHERE comment_id=$inserted_id");
-  $inserted_comment = mysqli_fetch_assoc($res);
+    // Query same comment from database to send back to be displayed
+    $inserted_id = $mysqli->insert_id;
+    $res = $mysqli->query("SELECT * FROM comments join users on comments.user_id = users.user_id WHERE comment_id = $inserted_id");
+    $inserted_comment = mysqli_fetch_assoc($res);
 
 
   // if insert was successful, get that same comment from the database and return it
@@ -49,13 +55,10 @@ if (isset($_POST['comment_posted'])) {
 							<button class='btn btn-primary btn-xs pull-right submit-reply'>Submit reply</button>
 						</form>
 					</div>";
-
-
     $comment_info = array(
       'comment' => $comment,
       'comments_count' => getCommentsCountByPostId($product_id)
     );
-
     echo json_encode($comment_info);
     exit();
   } else {

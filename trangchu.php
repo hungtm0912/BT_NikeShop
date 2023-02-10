@@ -210,9 +210,7 @@ session_start();
       </div>
     </div>
     <!--WHAT FIND?-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">
-     BẠN ĐANG TÌM?
-    </div>
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;"> BẠN ĐANG TÌM?</div>
     <div class="container">
       <div class="row">
         <div class="col-4">
@@ -220,7 +218,7 @@ session_start();
             <figure> <img class="card-img-top " id="zoomIn" src="./kinh of shoe/index_banner_1.jpg"
                 alt="Card image cap"></figure>
             <div class="card-body p-1 color-card-body">
-              <p style="font-weight: 550; color: orange;" class="card-text">THỂ THAO CHO NAM</p>
+              <p style="font-weight: 550; color: orange;" class="card-text">Sản Phẩm Thể Thao Cho Nam</p>
             </div>
           </div>
         </div>
@@ -229,7 +227,7 @@ session_start();
             <figure> <img class="card-img-top " id="zoomIn" src="./kinh of shoe/giaycotunhien.jpg" alt="Card image cap">
             </figure>
             <div class="card-body p-1 color-card-body">
-              <p style="font-weight: 550; color: orange;" class="card-text">THỂ THAO CHO NỮ</p>
+              <p style="font-weight: 550; color: orange;" class="card-text">Sản Phẩm Thể Thao Cho Nữ</p>
             </div>
           </div>
         </div>
@@ -238,8 +236,7 @@ session_start();
             <figure> <img class="card-img-top " id="zoomIn" src="./kinh of shoe/giayfutsal.jpg" alt="Card image cap">
             </figure>
             <div class="card-body p-1 color-card-body">
-              <p style="font-weight: 550; color: orange;" class="card-text">THỂ THAO CHO TRẺ EM
-              </p>
+              <p style="font-weight: 550; color: orange;" class="card-text">Sản Phẩm Thể Thao Cho Trẻ Em</p>
             </div>
           </div>
         </div>
@@ -249,15 +246,15 @@ session_start();
     <div class="container type-of-product">
       <div class=" box">
         <img height="150px !important" src="./type_of_product/kid-shoes.jpg">
-        <span>Giày cho trẻ em</span>
+        <span>Giày Cho Trẻ Em</span>
       </div>
       <div class=" box">
         <img height="150px !important" src="./type_of_product/uniform.jpg">
-        <span>Quần áo thể thao</span>
+        <span>Quần Áo Thể Thao</span>
       </div>
       <div class=" box">
         <img height="150px !important" src="./type_of_product/ball.jpg">
-        <span>Phụ kiện thể thao</span>
+        <span>Phụ Kiện Thể Thao</span>
       </div>
 
     </div>
@@ -271,9 +268,7 @@ session_start();
             </div>
             <div class="gene_info">
               <h2 class="gene_title">A NEW GENERATION</h2>
-              <p class="gene_desc">Náo nhiệt và táo bạo nhưng luôn cởi mở -- đôi giày sáng tạo cho chính
-                bạn
-              </p>
+              <p class="gene_desc">Náo nhiệt và táo bạo nhưng luôn cởi mở -- đôi giày sáng tạo cho chính bạn</p>
               <button class="gene_button btn btn-secondary">MUA NGAY</button>
             </div>
           </div>
@@ -285,8 +280,7 @@ session_start();
             </div>
             <div class="gene_info">
               <h2 class="gene_title">WE'RE GOT YOU COVERED</h2>
-              <p class="gene_desc">Discover the adidas Face Cover with an improved confort, designed for
-                exercise</p>
+              <p class="gene_desc">Discover the adidas Face Cover with an improved confort, designed for exercise</p>
               <button class="gene_button btn btn-secondary">MUA NGAY</button>
             </div>
           </div>
@@ -337,22 +331,15 @@ session_start();
         <section class="d-flex justify-content-center justify-content-lg-between p-4">
           <!-- Left -->
           <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
+          <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
           </div>
           <!-- Left -->
 
           <!-- Right -->
           <div>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-              <i class="fab fa-instagram"></i>
-            </a>
-
+            <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="me-4 text-reset"> <i class="fab fa-google"></i></a>
+            <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
           </div>
           <!-- Right -->
         </section>
@@ -381,21 +368,11 @@ session_start();
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Useful links
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset">Pricing</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Settings</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Orders</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Help</a>
-                </p>
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p><a href="#!" class="text-reset">Pricing</a></p>
+                <p><a href="#!" class="text-reset">Settings</a></p>
+                <p><a href="#!" class="text-reset">Orders</a></p>
+                <p><a href="#!" class="text-reset">Help</a> </p>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->

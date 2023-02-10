@@ -76,17 +76,6 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_id`, `user_id`, `name_receiver`, `phone_receiver`, `address_receiver`, `total`, `created_at`, `status`) VALUES
-(1, 10, 'duong', '093747134', 'bac giang', 3123000, '2022-05-30 18:01:58', 0),
-(2, 10, 'duong', '093747134', 'ha noi', 423000, '2022-05-30 18:03:17', 0),
-(3, 12, 'duong2', '09476235', 'son dong', 1269000, '2022-05-31 02:43:47', 0),
-(4, 12, 'duong2', '09476235', 'son dong', 3000000, '2022-05-31 02:45:25', 0),
-(5, 12, 'duong2', '09476235', 'ha noi', 300000, '2022-05-31 02:45:53', 0),
-(6, 14, 'hung', '09344877253', 'thanh hoa', 3600000, '2022-05-31 09:46:28', 0),
-(7, 18, 'nam', '0592845723', 'phhu yen', 1146000, '2022-06-11 16:10:16', 0),
-(8, 18, 'nam', '0592845723', 'Nam định', 1500000, '2022-06-11 16:52:11', 0),
-(9, 19, 'duong', '0295827475', 'ha noi', 423000, '2022-06-12 04:16:52', 0),
-(10, 19, 'duong', '0295827475', 'ha noi', 1500000, '2022-06-12 09:02:43', 0),
-(11, 19, 'duong', '0295827475', 'quang ninh', 123000, '2022-06-12 09:03:06', 0);
 
 -- --------------------------------------------------------
 
@@ -171,11 +160,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `phone`, `username`, `password`, `email`, `role`) VALUES
-(10, 'dương', '093747134', 'duong', '$2y$10$Fe3jd1WXr8ANpBWJ3ov', 'duong123@gmail.com', 0),
-(12, 'duong', '09476235', 'duong2', '$2y$10$tj6rWQN4ENOSLTAVKUK', 'duong1234@gmail.com', 0),
-(14, 'hung', '094726454', 'hung', '$2y$10$QKE6lq2bb1YeUCNTw7f', 'hung@gmail.com', 0),
-(18, 'nam', '0592845723', 'nam1', '$2y$10$swiiH4ZCrnFZYKjoOcS', 'nam1@gmail.com', 0),
-(19, 'duong', '0295827475', 'nam2', '$2y$10$27RCx0whqBKoc0ZLo2m', 'nam@gmail.com', 0);
 
 --
 -- Chỉ mục cho các bảng đã đổ
