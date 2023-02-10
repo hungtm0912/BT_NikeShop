@@ -17,6 +17,10 @@
     // Get all comments from database
     $comments_query_result = $mysqli->query("SELECT users.avatar, users.user_id, comments.comment_id FROM comments join users on comments.user_id = users.user_id WHERE product_id='" . $product_id . "' ORDER BY created_at DESC");
     $comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
+    // Get all comments from database
+    $comments_query_result = $mysqli->query("SELECT users.avatar, users.user_id, comments.created_at, comments.body, comments.comment_id FROM comments join users on comments.user_id = users.user_id WHERE product_id='" . $product_id . "' ORDER BY created_at DESC");
+    $comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
+
 
     global $mysqli;
 
