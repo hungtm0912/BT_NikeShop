@@ -39,11 +39,7 @@
         font-size: 3.5rem;
       }
     }
-
-
-
     .col-md-4 {
-
       width: 93.333333% !important;
     }
   </style>
@@ -106,7 +102,7 @@
           <fieldset>
             <hidden path="id" />
             <!-- Form Name -->
-            <legend>PRODUCTS</legend>
+            <legend>Sản Phẩm</legend>
             <div class="form-group">
               <input type="hidden" name="product_id" value="<?php echo $id ?>">
             </div>
@@ -131,13 +127,13 @@
             </div>
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="title">PRODUCT NAME</label>
+              <label class="col-md-4 control-label" for="title">Tên Sản Phẩm</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input value="<?php echo $product['product_name'] ?>" id="title" name="prd_name" placeholder="Product name" class="form-control input-md" type="text" />
               </div>
             </div>
             <div class="form-group">
-              <label class="col-md-4 control-label" for="detailDescription">PRODUCT DESCRIPTION</label>
+              <label class="col-md-4 control-label" for="detailDescription">Mô Tả Sản Phẩm</label>
               <div style="width: 93.333333% !important;" class="col-md-4 text-des">
                 <textarea value="<?php echo $product['product_description'] ?>" class="form-control" id="summernote" name="prd_description"></textarea>
               </div>
@@ -149,7 +145,7 @@
             </script>
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="Price">PRICE</label>
+              <label class="col-md-4 control-label" for="Price"Giá</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input value="<?php echo $product['product_price'] ?>" id="Price" name="prd_price" placeholder="Price" class="form-control input-md" type="text" />
               </div>
@@ -165,7 +161,7 @@
                         </div> -->
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="brand">QUANTITY</label>
+              <label class="col-md-4 control-label" for="brand">Chất Lượng</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input value="<?php echo $product['product_quantity'] ?>" name="prd_quantity" placeholder="Quantity" class="form-control input-md" type="number" />
               </div>
@@ -199,9 +195,7 @@
             <br>
             <div class="form-group">
               <div class="col-md-4">
-                <button id="singlebutton" name="add" class="btn btn-primary">
-                  Edit
-                </button>
+                <button id="singlebutton" name="add" class="btn btn-primary">Sửa</button>
               </div>
             </div>
           </fieldset>
@@ -210,9 +204,7 @@
     </div>
   </div>
 
-
   <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">

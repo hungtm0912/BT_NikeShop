@@ -35,11 +35,10 @@ include './include/head.php';
                   </c:forEach>
                 </select>
                 <button type="submit" id="btnSearch" name="btnSearch" value="Search"
-                  class="btn btn-primary">Seach</button>
+                  class="btn btn-primary">Tìm Kiếm</button>
               </div>
               <div>
-                <a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Add
-                  New</a>
+                <a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm Mới</a>
               </div>
             </div>
             <table class="table table-striped">

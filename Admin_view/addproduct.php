@@ -50,36 +50,35 @@ include './include/head.php';
           <fieldset>
             <hidden path="id" />
             <!-- Form Name -->
-            <legend>PRODUCTS</legend>
+            <legend>SảN Phẩm</legend>
             <div style="width: 100%" class="form-group ">
               <label class="col-md-4 control-label" for="category">CATEGORY (required)</label>
               <?php
-                            $sql_danhmuc = mysqli_query($mysqli, "SELECT * FROM `categories`");
-                            ?>
-
+                $sql_danhmuc = mysqli_query($mysqli, "SELECT * FROM `categories`");
+               ?>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <select name="prd_category" class="form-control" id="category">
-                  <?php
-                                    while ($row_danhmuc = mysqli_fetch_array($sql_danhmuc)) {
-                                    ?>
+                  <?php   
+                    while ($row_danhmuc = mysqli_fetch_array($sql_danhmuc)) {
+                   ?>
                   <option value="<?php echo $row_danhmuc['category_id'] ?>"><?php echo $row_danhmuc['category_name'] ?>
                   </option>
                   <?php
-                                    }
-                                    ?>
+                     }
+                   ?>
                 </select>
               </div>
             </div>
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="title">PRODUCT NAME</label>
+              <label class="col-md-4 control-label" for="title">Tên Sản Phẩm</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input id="title" name="prd_name" placeholder="Product name" class="form-control input-md"
                   type="text" />
               </div>
             </div>
             <div class="form-group">
-              <label class="col-md-4 control-label" for="detailDescription">PRODUCT DESCRIPTION</label>
+              <label class="col-md-4 control-label" for="detailDescription">Mô Tả Sản Phẩm</label>
               <div style="width: 93.333333% !important;" class="col-md-4 text-des">
                 <textarea class="form-control" id="summernote" name="prd_description"></textarea>
               </div>
@@ -91,7 +90,7 @@ include './include/head.php';
             </script>
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="Price">PRICE</label>
+              <label class="col-md-4 control-label" for="Price">Giá</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input id="Price" name="prd_price" placeholder="Price" class="form-control input-md" type="text" />
               </div>
@@ -107,7 +106,7 @@ include './include/head.php';
                         </div> -->
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="brand">QUANTITY</label>
+              <label class="col-md-4 control-label" for="brand">Chất Lượng</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input name="prd_quantity" placeholder="Quantity" class="form-control input-md" type="number" />
               </div>
