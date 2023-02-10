@@ -36,16 +36,16 @@ session_start();
       <div class="row">
         <div class="col-lg-7">
           <div class="order-list">
-            <h3>ORDER LIST</h3>
+            <h3>Danh Sách Đặt Hàng</h3>
             <ul class="list_donhang">
               <?php
-                            while ($order = mysqli_fetch_array($result)) {
-                                $order_id = $order['order_id'];
-                                $status  = $order['status'];
-                                $total = $order['total'];
-                                $sql_1 = "SELECT * FROM products JOIN order_detail ON products.product_id = order_detail.product_id WHERE order_id = '$order_id'";
-                                $result_1 = $mysqli->query($sql_1);
-                            ?>
+                   while ($order = mysqli_fetch_array($result)) {
+                    $order_id = $order['order_id'];
+                    $status  = $order['status'];
+                    $total = $order['total'];
+                    $sql_1 = "SELECT * FROM products JOIN order_detail ON products.product_id = order_detail.product_id WHERE order_id = '$order_id'";
+                    $result_1 = $mysqli->query($sql_1);
+               ?>
               <li class="donhang_item">
                 <a href="#" class="donhang_link">
                   <h5>Chi tiết đơn hàng</h5>
@@ -53,15 +53,15 @@ session_start();
                 <div class="product_list">
                   <table>
                     <?php
-                                            while ($row = mysqli_fetch_array($result_1)) {
-                                                $price = 0;
-                                                if ($row['product_sale'] > 0) {
-                                                    $price = $row['product_price'] - $row['product_price'] * $row['product_sale'] / 100;
-                                                } else {
-                                                    $price = $row['product_price'];
-                                                }
-                                                $price_order = $price * $row['quantity'];
-                                            ?>
+                      while ($row = mysqli_fetch_array($result_1)) {
+                      $price = 0;
+                      if ($row['product_sale'] > 0) {
+                      $price = $row['product_price'] - $row['product_price'] * $row['product_sale'] / 100;
+                      } else {
+                      $price = $row['product_price'];
+                      }
+                      $price_order = $price * $row['quantity'];
+                    ?>
                     <tr>
                       <td width="50%">
                         <p class="title"><?php echo $row['product_name'] ?></p>
@@ -97,15 +97,15 @@ session_start();
         </div>
         <div class="col-lg-5 contact">
           <div class="info-contact">
-            <h3>FEEDBACK</h3>
+            <h3>Phản Hồi</h3>
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Name: </label>
+                <label for="exampleInputEmail1">Tên Khách Hàng: </label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                   placeholder="Enter your name">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Feedback information</label>
+                <label for="exampleFormControlTextarea1">Thông tin phản hồi</label>
                 <textarea class="form-control" id="textarea" rows="6"></textarea>
               </div>
               <button type="submit" class="btnn">Phản hồi</button>
@@ -150,33 +150,17 @@ session_start();
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-
-              <i class="fas fa-gem me-3"></i>Phương Nam Sport
-            </h6>
-            <p>
-              Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất
-            </p>
+              <i class="fas fa-gem me-3"></i>Nike Shop</h6>
+            <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
           </div>
           <!-- Grid column -->
-
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Products
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Angular</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">React</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Vue</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Laravel</a>
-            </p>
+            <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
+            <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
+            <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+            <p><a href="#!" class="text-reset">Phụ Kiện</a></p>
           </div>
           <!-- Grid column -->
 
@@ -204,16 +188,11 @@ session_start();
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Contact
-            </h6>
-            <p><i class="fas fa-home me-3"></i> tòa HH2B Linh Đàm,quận Hoàng Mai, Hà Nội</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              nguyennam210601@gmail.com
-            <p><i class="fas fa-phone me-3"></i>0358307767</p>
-            </p>
-
+            <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+            <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
+            <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com</p>
+            <p><i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com</p>
+            <p><i class="fas fa-phone me-3"></i> 0978236082</p>
           </div>
           <!-- Grid column -->
         </div>

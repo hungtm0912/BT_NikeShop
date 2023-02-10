@@ -401,21 +401,11 @@ $product = mysqli_fetch_array($product_sql);
                   <!-- Grid column -->
                   <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Sản Phẩm
-                    </h6>
-                    <p>
-                      <a href="#!" class="text-reset">Giày bóng đá</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Quần áo bóng đá</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Phụ kiện bóng đá</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Bóng đá</a>
-                    </p>
+                    <h6 class="text-uppercase fw-bold mb-4">Chuyên về Sản Phẩm</h6>
+                    <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
+                    <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+                    <p><a href="#!" class="text-reset">Phụ kiện</a></p>
+              
                   </div>
                   <!-- Grid column -->
 
