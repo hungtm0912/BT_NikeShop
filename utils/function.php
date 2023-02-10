@@ -14,8 +14,14 @@
     FROM `comments` join `users` on `comments.user_id` = `users.user_id` WHERE `product_id`=" . $product_id . " ORDER BY `orders.created_at` DESC");
     $comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
 
+<<<<<<< HEAD
     // If the user clicked submit on comment form...
     if (isset($_POST['comment_posted'])) {
+=======
+// Get all comments from database
+$comments_query_result = $mysqli->query("SELECT users.avatar, users.user_id, comments.comment_id FROM comments join users on comments.user_id = users.user_id WHERE product_id='" . $product_id . "' ORDER BY created_at DESC");
+$comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
+>>>>>>> 8f161bb43d21ee6041289d8d983d1c2842672b2b
 
     global $mysqli;
 

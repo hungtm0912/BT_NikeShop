@@ -328,7 +328,7 @@ session_start();
       <!-- Footer -->
       <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4">
           <!-- Left -->
           <div class="me-5 d-none d-lg-block">
           <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
@@ -344,7 +344,7 @@ session_start();
           <!-- Right -->
         </section>
         <!-- Section: Social media -->
-
+          <hr style="background-color: white; width: 100%;">
         <!-- Section: Links  -->
         <section class="" style="color: white">
           <div class="container text-center text-md-start mt-5">
