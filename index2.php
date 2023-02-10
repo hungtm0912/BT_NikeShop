@@ -95,20 +95,16 @@ session_start();
                 </ul>
             </div>
         </div>
-
-
-
     </div>
-
     <div style=" max-width: 1350px; margin-top: 154px;" class="container">
         <div class="row col-12" style="padding-left: 0px;">
             <div class="col-3 justify-content-start" style="padding-left: 0px;">
                 <div style="background-color: #333333 !important;" class="list-group list-group list-group-flush">
                     <a style="background-color: #333333 !important; color: orange !important" href="#" class="list-group-item list-group-item-action list-category-item">Danh mục sản phẩm</a>
-                    <a href="#" class="list-group-item list-group-item-action name-category-item">QUẦN THỂ THAO</a>
-                    <a href="#" class="list-group-item list-group-item-action name-category-item">ÁO THỂ THAO</a>
-                    <a href="#" class="list-group-item list-group-item-action name-category-item">GIÀY THỂ THAO</a>
-                    <a href="#" class="list-group-item list-group-item-action name-category-item">PHỤ KIỆN</a>
+                    <a href="#" class="list-group-item list-group-item-action name-category-item">Quần Thể Thao</a>
+                    <a href="#" class="list-group-item list-group-item-action name-category-item">Áo Thể Thao</a>
+                    <a href="#" class="list-group-item list-group-item-action name-category-item">Giày Thể Thao</a>
+                    <a href="#" class="list-group-item list-group-item-action name-category-item">Phụ Kiện</a>
                 </div>
             </div>
             <div class="col-9 content">
@@ -116,7 +112,7 @@ session_start();
                     <img src="../Bootstrap/product img/banner-collection.jpg" alt="">
                 </div>
                 <div style="color: white;" class="text-all-product">
-                    TẤT CẢ SẢN PHẨM
+                    Tất Cả Sản Phẩm
                 </div>
                 <div class=" category-icon">
                     <i class="fa fa-th-large"></i>
@@ -398,11 +394,9 @@ session_start();
                            Liên Hệ
                         </h6>
                         <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                           huyngo9981@gmail.com
+                        <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com</p>
+                        <p><i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com</p>
                         <p><i class="fas fa-phone me-3"></i>0978236082</p>
-                        </p>
 
                     </div>
                     <!-- Grid column -->
@@ -417,9 +411,7 @@ session_start();
     </footer>
     <!-- Footer -->
 
-    </div>
-</div>
-
+ </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

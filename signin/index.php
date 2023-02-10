@@ -28,10 +28,9 @@ if (isset($_GET['err_checkcap'])) {
 
 session_start();
 if (isset($_SESSION['username'])) {
-  header('location: /PhuongNamSport/trangchu.php');
+  header('location: /BT_NikeShop/trangchu.php');
 }
 ?>
-
 <body class="text-center">
   <main class="form-signin">
     <form method="POST" action="./process_signin.php">
@@ -55,7 +54,7 @@ if (isset($_SESSION['username'])) {
           <input type="checkbox" value="remember-me"> Nhớ mật khẩu
         </label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary" type="submit" name="signin">Sign in</button>
+      <button class="w-100 btn btn-lg btn-primary" type="submit" name="signin">Đăng Nhập</button>
     </form>
     <p class="text-center" style="margin-top:8px">Bạn chưa có tài khoản ? <a href="../signup">Đăng ký</a> </p>
     <p class="text-center" style="margin-top:8px"><a href="../forgotpass.php">Quên mật khẩu</a> </p>
@@ -64,5 +63,4 @@ if (isset($_SESSION['username'])) {
   <!-- Materialize JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-
 </html>

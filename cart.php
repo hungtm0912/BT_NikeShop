@@ -97,41 +97,38 @@ if (!isset($_SESSION['username'])) {
               <?php } ?>
             </div>
 
-            <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Customer
-              Info</div>
+            <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thông Tin Khách Hàng</div>
             <div class="p-4">
               <div class="form-group">
-                <label for="customerPhone">Customer full name</label>
+                <label for="customerPhone">Tên Khách Hàng</label>
                 <input type="tel" class="form-control" id="customerFullName" name="name_receiver"
                   placeholder="Full name" value="<?php echo $fullname ?>">
               </div>
               <div class="form-group">
-                <label for="customerEmail">Email address</label>
+                <label for="customerEmail">Địa chỉ Enmail</label>
                 <input type="email" class="form-control" id="customerEmail" name="email_receiver"
                   placeholder="Enter email" value="<?php echo $_SESSION['email'] ?>">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
-                  anyone else.</small>
+                <small id="emailHelp" class="form-text text-muted"> Làm ơn không chia địa chỉ Email với bất cứ ai.</small>
               </div>
               <div class="form-group">
-                <label for="customerPhone">Phone</label>
+                <label for="customerPhone">Số Điện Thoại</label>
                 <input type="tel" class="form-control" id="customerPhone" name="phone_receiver" placeholder="Phone"
                   value="<?php echo $_SESSION['phone'] ?>">
               </div>
               <div class="form-group">
-                <label for="customerAddress">Address</label>
+                <label for="customerAddress">Địa chỉ</label>
                 <input type="text" class="form-control" id="customerAddress" name="address_receiver"
                   placeholder="Address">
               </div>
             </div>
             <div class="back-to-shop">
-              <a href="./index.php">&leftarrow;Back to
-                shop</a>
+              <a href="./index.php">&leftarrow;Quay lại Shop</a>
             </div>
           </div>
           <div class="col-md-4 summary">
             <div>
               <h5>
-                <b>Summary</b>
+                <b>Tóm tắt</b>
               </h5>
             </div>
             <hr>
@@ -144,7 +141,7 @@ if (!isset($_SESSION['username'])) {
               <input id="code" placeholder="Enter your code">
             </form>
             <div class="row" style="border-top: 1px solid rgba(0, 0, 0, .1); padding: 2vh 0;">
-              <div class="col">TOTAL PRICE</div>
+              <div class="col">Tổng</div>
               <div class="col text-right">
                 <span class="total-price"><?php echo number_format($total) ?>đ</span>
               </div>
@@ -187,7 +184,7 @@ if (!isset($_SESSION['username'])) {
               <!-- Content -->
               <h6 class="text-uppercase fw-bold mb-4">
 
-                <i class="fas fa-gem me-3"></i>Phương Nam Sport
+                <i class="fas fa-gem me-3"></i> Nike Shop
               </h6>
               <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt
                 nhất</p>
@@ -235,18 +232,12 @@ if (!isset($_SESSION['username'])) {
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p>
-                <i class="fas fa-home me-3"></i> tòa HH2B Linh Đàm,quận Hoàng
-                Mai, Hà Nội
-              </p>
-              <p>
-                <i class="fas fa-envelope me-3"></i> nguyennam210601@gmail.com
-              <p>
-                <i class="fas fa-phone me-3"></i>0358307767
-              </p>
-              </p>
-
+              <h6 class="text-uppercase fw-bold mb-4">Thông Tin Liên Lạc</h6>
+              <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ </p>
+              <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com </p>
+              <p><i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com </p>
+              <p><i class="fas fa-phone me-3"></i> 0978236082</p>
+        
             </div>
             <!-- Grid column -->
           </div>

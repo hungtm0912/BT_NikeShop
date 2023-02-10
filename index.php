@@ -269,6 +269,7 @@ require_once './database/config.php';
             </h6>
             <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
             <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com </p>
+            <p><i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com </p>
             <p><i class="fas fa-phone me-3"></i> 0978236082</p>
 
           </div>

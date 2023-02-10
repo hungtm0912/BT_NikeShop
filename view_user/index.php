@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.88.1">
-  <title>User Information</title>
+  <title>Nike Shop</title>
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.css">
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
@@ -49,8 +49,8 @@
   }
   </style>
 
-  <link href="/PhuongNamSport/Admin_view/dashboard.css" rel="stylesheet">
-  <link href="/PhuongNamSport/Admin_view/styles_user_update.css" rel="stylesheet">
+  <link href="/BT_NikeShop/Admin_view/dashboard.css" rel="stylesheet">
+  <link href="/BT_NikeShop/Admin_view/styles_user_update.css" rel="stylesheet">
 </head>
 
 <body>
@@ -124,7 +124,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="inputAddress">Full Name</label>
+                        <label for="inputAddress">Tên Đăng Nhập</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="Enter your fullname"
                           value="<?php echo $user['username'] ?>" name="fullname">
                       </div>
@@ -138,31 +138,31 @@
                           value="<?php echo $user['email'] ?>" name="email">
                       </div>
                       <div class="form-group">
-                        <label for="inputAddress">Phone</label>
+                        <label for="inputAddress">Số Điện Thoại</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="Enter your phone"
                           value="<?php echo $user['phone'] ?>" name="phone">
                       </div>
                       <div class="form-group">
-                        <label for="inputAddress2">Name</label>
+                        <label for="inputAddress2">Họ và Tên</label>
                         <input type="text" class="form-control" id="inputAddress2" placeholder="Enter your name"
                           value="<?php echo $user['name'] ?>" name="name">
                       </div>
                       <!-- phần thêm avatar   -->
                       <!-- File Button -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="avatar">Avatar</label>
+                        <label class="col-md-4 control-label" for="avatar">Ảnh đại diện</label>
                         <div style="width: 93.333333% !important;" class="col-md-4">
                           <input id="avatarfile" name="user_avatar" class="input-file" type="file" />
                         </div>
                       </div>
 
                       <a href="../trangchu.php" class="btn btn-secondary btn-md active" role="button"
-                        aria-pressed="true">Back</a>
-                      <button type="submit" name="submit" class="btn btn-primary">Edit</button>
+                        aria-pressed="true">Trở lại</a>
+                      <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
                       <a href="../Admin_view/user/process_user.php?id_userd=<?php echo $user['user_id'] ?>"
                         class="btn btn-danger btn-md active"
                         onclick="return confirm('Bạn chắc chắn muốn xóa tài khoản<?php echo $user['username'] ?> này?')"
-                        role="button" aria-pressed=" true">Remove</a>
+                        role="button" aria-pressed=" true">Xóa</a>
                     </div>
                   </div>
                 </div>

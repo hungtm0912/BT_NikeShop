@@ -18,14 +18,14 @@ class Mailer{
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = "hoangdangduong2001@gmail.com";
+            $mail->Username = "huyngo9981@gmail.com";
             $mail->Password = 'upnkhhyrsiaefvzt';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 587;
             $mail->SMTPSecure = "tls";
 
             //Send Email
-            $mail->setFrom('hoangdangduong2001@gmail.com');
+            $mail->setFrom('huyngo9981@gmail.com');
 
             //Recipients
             $mail->addAddress("$email");
