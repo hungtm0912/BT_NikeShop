@@ -208,7 +208,7 @@ require_once './database/config.php';
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="color: white">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
               <i class="fas fa-gem me-3"></i> Nike Shop
@@ -226,16 +226,16 @@ require_once './database/config.php';
               Chuyên Sản Phẩm
             </h6>
             <p>
-              <a href="#!" class="text-reset">Đồ thể thao</a>
+              <a href="#!" class="text-reset" style="color: white">Đồ thể thao</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Giày Dép</a>
+              <a href="#!" class="text-reset" style="color: white">Giày Dép</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Phụ Kiện</a>
+              <a href="#!" class="text-reset" style="color: white">Phụ Kiện</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Tất</a>
+              <a href="#!" class="text-reset" style="color: white">Tất</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -244,19 +244,19 @@ require_once './database/config.php';
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Thông tin hữu dụng  
+              Thông tin  
             </h6>
             <p>
-              <a href="#!" class="text-reset">Pricing</a>
+              <a href="#!" class="text-reset" style="color: white">Pricing</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Settings</a>
+              <a href="#!" class="text-reset" style="color: white">Settings</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Orders</a>
+              <a href="#!" class="text-reset" style="color: white">Orders</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Help</a>
+              <a href="#!" class="text-reset" style="color: white">Help</a>
             </p>
           </div>
           <!-- Grid column -->
