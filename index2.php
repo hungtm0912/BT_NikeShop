@@ -19,6 +19,7 @@ session_start();
 </head>
 
 <body>
+ <div class = "layout">
     <div class="container-fluid">
         <div class="row header">
             <div class="row head  ">
@@ -417,6 +418,7 @@ session_start();
     <!-- Footer -->
 
     </div>
+</div>
 
 
 </body>

@@ -3,13 +3,14 @@
     <div class="col-12 nav-item dropdown nav-custom">
       <a class=" col-2 nav-link dropdown-toggle nav-custom" href="#" id="navbarDropdown" role="button"
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="far fa-user"></i> <?php
-                                    if (isset($_SESSION['name'])) {
-                                      echo $_SESSION['name'];
-                                    } else {
-                                      echo 'Tài khoản';
-                                    }
-                                    ?>
+        <i class="far fa-user"></i> 
+        <?php
+             if (isset($_SESSION['name'])) {
+                   echo $_SESSION['name'];
+             } else {
+                     echo 'Tài khoản';
+              }
+          ?>
       </a>
       <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
         <?php
@@ -60,6 +61,7 @@
     <div style="justify-content: end !important;" class="col-3 logo">
       <img width="24%" src="./image/logoshop.png" alt="" style="margin-left: 100px">
     </div>
+
     <div class="col-6">
       <form action="" method="GET">
         <div class="input-group mb-3 mt-3">
@@ -117,10 +119,10 @@
                 <a class="nav-link active nav-link-active-custom" href="#">Hệ thống cửa hàng</a>
             </li> -->
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="#">khách hàng</a>
+        <a class="nav-link active nav-link-active-custom" href="#">Khách hàng</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="#">liên hệ </a>
+        <a class="nav-link active nav-link-active-custom" href="#">Liên hệ </a>
       </li>
       <li class="nav-item">
         <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale off</a>

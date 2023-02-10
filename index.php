@@ -18,6 +18,7 @@ require_once './database/config.php';
 </head>
 
 <body>
+  <div class="layout">
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
   var Tawk_API = Tawk_API || {},
@@ -210,11 +211,10 @@ require_once './database/config.php';
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-
-              <i class="fas fa-gem me-3"></i>Nike Shop
+              <i class="fas fa-gem me-3"></i> Nike Shop
             </h6>
             <p>
-              Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất
+              Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá cả phải chăng
             </p>
           </div>
           <!-- Grid column -->
@@ -223,19 +223,19 @@ require_once './database/config.php';
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Products
+              Chuyên Sản Phẩm
             </h6>
             <p>
-              <a href="#!" class="text-reset">Angular</a>
+              <a href="#!" class="text-reset">Đồ thể thao</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">React</a>
+              <a href="#!" class="text-reset">Giày Dép</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Vue</a>
+              <a href="#!" class="text-reset">Phụ Kiện</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Laravel</a>
+              <a href="#!" class="text-reset">Tất</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -244,7 +244,7 @@ require_once './database/config.php';
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
+              Thông tin hữu dụng  
             </h6>
             <p>
               <a href="#!" class="text-reset">Pricing</a>
@@ -265,14 +265,11 @@ require_once './database/config.php';
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Liên hệ
+              Thông Tin Liên hệ
             </h6>
             <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              huyngo9981@gmail.com
-            <p><i class="fas fa-phone me-3"></i>0978236082</p>
-            </p>
+            <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com </p>
+            <p><i class="fas fa-phone me-3"></i> 0978236082</p>
 
           </div>
           <!-- Grid column -->
@@ -298,6 +295,7 @@ require_once './database/config.php';
   </script>
   <script src="./script.js"></script>
   <script src="./OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
-</body>
+  </div>
+</body> 
 
 </html>
