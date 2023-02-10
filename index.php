@@ -183,16 +183,9 @@ require_once './database/config.php';
 
       <!-- Right -->
       <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-
+        <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+        <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+        <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i> </a>
       </div>
       <!-- Right -->
     </section>

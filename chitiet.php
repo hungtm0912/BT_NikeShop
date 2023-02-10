@@ -1,15 +1,14 @@
 <?php
-require_once "./database/config.php";
-session_start();
+  require_once "./database/config.php";
+  session_start();
 
-$product_idd;
-if (isset($_GET['id']))
-  $product_idd = $_GET['id'];
-else
-  $product_idd = $_POST['product_id'];
-
-$_SESSION['product_id'] =  $product_idd;
-include('./utils/function.php');
+  $product_idd;
+  if(isset($_GET['id']))
+    $product_idd = $_GET['id'];
+  else
+    $product_idd = $_POST["product_id"];
+    $_SESSION["product_id"] = $product_idd;
+  include('./utils/function.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +18,7 @@ include('./utils/function.php');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./image/logoshop.png" type="image/icon type">
@@ -144,12 +143,12 @@ $product = mysqli_fetch_array($product_sql);
             <a class=" col-2 nav-link dropdown-toggle nav-custom" href="#" id="navbarDropdown" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="far fa-user"></i> <?php
-                                          if (isset($_SESSION['name'])) {
-                                            echo $_SESSION['name'];
-                                          } else {
-                                            echo 'Tài khoản';
-                                          }
-                                          ?>
+                 if (isset($_SESSION['name'])) {
+                  echo $_SESSION['name'];
+                  } else {
+                   echo 'Tài khoản';
+                   }
+              ?>
             </a>
             <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
               <a class="dropdown-item dropdown-item-custom" href="#">Đăng ký</a>
@@ -270,19 +269,15 @@ $product = mysqli_fetch_array($product_sql);
               <div style="margin-top: 15px;">
                 <button type="button" class="btn btn-outline-warning">Mua hàng</button>
                 <?php if (!isset($_SESSION['username'])) { ?>
-                <button type="button" class="btn btn-outline-warning"><a class="add-product" href="./signin">Thêm vào
-                    giỏ
-                    hàng</a></button>
+                <button type="button" class="btn btn-outline-warning"><a class="add-product" href="./signin">
+                  Thêm vào giỏ hàng</a></button>
                 <?php } else { ?>
                 <button type="button" class="btn btn-outline-warning"><a class="add-product"
-                    href="./add_to_cart.php?product_id=<?php echo $product['product_id'] ?>">Thêm
-                    vào giỏ
-                    hàng</a></button>
+                    href="./add_to_cart.php?product_id=<?php echo $product['product_id'] ?>">
+                    Thêm vào giỏ hàng</a></button>
                 <?php } ?>
               </div>
-
             </div>
-
             <!--END-Position-->
           </div>
           <div class="container">
@@ -363,21 +358,15 @@ $product = mysqli_fetch_array($product_sql);
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
               <!-- Left -->
               <div class="me-5 d-none d-lg-block">
-                <span>Get connected with us on social networks:</span>
+              <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
               </div>
               <!-- Left -->
 
               <!-- Right -->
               <div>
-                <a href="" class="me-4 text-reset">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                  <i class="fab fa-instagram"></i>
-                </a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i> </a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i> </a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i> </a>
 
               </div>
               <!-- Right -->
@@ -412,21 +401,11 @@ $product = mysqli_fetch_array($product_sql);
                   <!-- Grid column -->
                   <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                      Useful links
-                    </h6>
-                    <p>
-                      <a href="#!" class="text-reset">Pricing</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Settings</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Orders</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Help</a>
-                    </p>
+                    <h6 class="text-uppercase fw-bold mb-4"> Useful links</h6>
+                    <p><a href="#!" class="text-reset">Pricing</a> </p>
+                    <p><a href="#!" class="text-reset">Settings</a> </p>
+                    <p><a href="#!" class="text-reset">Orders</a></p>
+                    <p><a href="#!" class="text-reset">Help</a></p>
                   </div>
                   <!-- Grid column -->
 
