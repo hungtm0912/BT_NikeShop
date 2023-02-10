@@ -86,16 +86,15 @@ require_once './database/config.php';
       if (!empty($_GET['categoryId'])) {
         $category_id = $_GET['categoryId'];
         $sql = "SELECT * FROM products
-                    WHERE
-                    (category_id = $category_id)
-                    group by product_name
-                    LIMIT $so_san_pham_tren_1_trang offset $boqua";
+        WHERE (category_id = $category_id)
+        group by product_name 
+        LIMIT $so_san_pham_tren_1_trang offset $boqua";
       } else {
         $sql = "SELECT * FROM products
-                    WHERE
-                    UPPER(product_name) LIKE '%$search%'
-                    group by product_name
-                    LIMIT $so_san_pham_tren_1_trang offset $boqua";
+        WHERE
+        UPPER(product_name) LIKE '%$search%'
+        group by product_name
+        LIMIT $so_san_pham_tren_1_trang offset $boqua";
       }
       $products = $mysqli->query($sql);
       ?>
@@ -103,14 +102,11 @@ require_once './database/config.php';
         <div class="row">
           <img src="../Bootstrap/product img/banner-collection.jpg" alt="">
         </div>
-        <div style="color: white;" class="text-all-product">
-          TẤT CẢ SẢN PHẨM
-        </div>
+        <div style="color:white;" class="text-all-product">TẤT CẢ SẢN PHẨM</div>
         <div class=" category-icon">
           <i class="fa fa-th-large"></i>
         </div>
-        <div style="right: 0; color: white;" class=" float-right justify-content-end">
-          Sắp xếp theo
+        <div style="right: 0; color: white;" class=" float-right justify-content-end">Sắp xếp theo
           <select style="border-radius: 3px;" name="filter" id="">
             <option value="">Giá tăng dần</option>
             <option value="">Giá giảm dần</option>
@@ -159,7 +155,7 @@ require_once './database/config.php';
           <?php }
           } ?>
         </div>
-        <hr>
+        <hr><hr>
         <nav style="margin: auto; color: orange !important;" class="col-4" aria-label="Page navigation example">
           <ul class="pagination">
             <?php for ($i = 1; $i <= $so_trang; $i++) { ?>
@@ -211,67 +207,34 @@ require_once './database/config.php';
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="color: white">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i> Nike Shop
-            </h6>
-            <p>
-              Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá cả phải chăng
-            </p>
-          </div>
-          <!-- Grid column -->
-
+            <i class="fas fa-gem me-3"></i> Nike Shop</h6>
+            <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+            </div>
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="color: white">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Chuyên Sản Phẩm
-            </h6>
-            <p>
-              <a href="#!" class="text-reset" style="color: white">Đồ thể thao</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset" style="color: white">Giày Dép</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset" style="color: white">Phụ Kiện</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset" style="color: white">Tất</a>
-            </p>
+            <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
+            <p><a href="#!" class="text-reset" style="color: white">Quần Áo Thể Thao</a></p>
+            <p><a href="#!" class="text-reset" style="color: white">Giày Thể Thao</a></p>
+            <p><a href="#!" class="text-reset" style="color: white">Phụ Kiện</a></p>
           </div>
-          <!-- Grid column -->
-
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="color: white">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Thông tin  
-            </h6>
-            <p>
-              <a href="#!" class="text-reset" style="color: white">Pricing</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset" style="color: white">Settings</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset" style="color: white">Orders</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset" style="color: white">Help</a>
-            </p>
+            <h6 class="text-uppercase fw-bold mb-4">Thông tin</h6>
+            <p><a href="#!" class="text-reset" style="color: white">Pricing</a></p>
+            <p><a href="#!" class="text-reset" style="color: white">Settings</a></p>
+            <p> <a href="#!" class="text-reset" style="color: white">Orders</a> </p>
+            <p><a href="#!" class="text-reset" style="color: white">Help</a></p>
           </div>
-          <!-- Grid column -->
-
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="color: white">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Thông Tin Liên hệ
-            </h6>
+            <h6 class="text-uppercase fw-bold mb-4">Thông Tin Liên hệ</h6>
             <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
             <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com </p>
             <p><i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com </p>
             <p><i class="fas fa-phone me-3"></i> 0978236082</p>
-
           </div>
           <!-- Grid column -->
         </div>

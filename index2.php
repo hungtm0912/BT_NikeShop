@@ -75,19 +75,19 @@ session_start();
                         <a class="nav-link active nav-link-active-custom" href="#">Hướng dẫn mua hàng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-link-active-custom" href="#">Cách chọn size</a>
+                        <a class="nav-link active nav-link-active-custom" href="#">Cách Cshọn size</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-link-active-custom" href="#">Tin tức giày</a>
+                        <a class="nav-link active nav-link-active-custom" href="#">Tin tức Sản Phẩm</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-link-active-custom" href="#">Hệ thống cửa hàng</a>
+                        <a class="nav-link active nav-link-active-custom" href="#">Hệ Thống Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-link-active-custom" href="#">khách hàng</a>
+                        <a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-link-active-custom" href="#">liên hệ </a>
+                        <a class="nav-link active nav-link-active-custom" href="#">Liên Hệ </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale off</a>
@@ -283,7 +283,6 @@ session_start();
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <hr>
                 <nav style="margin: auto; color: orange !important;" class="col-4" aria-label="Page navigation example">
@@ -312,21 +311,13 @@ session_start();
 
             <!-- Right -->
             <div>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
+                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i> </a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
             </div>
             <!-- Right -->
         </section>
         <!-- Section: Social media -->
-
         <!-- Section: Links  -->
         <section class="">
             <div class="container text-center text-md-start mt-5">
@@ -335,64 +326,34 @@ session_start();
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-
-                            <i class="fas fa-gem me-3"></i>Nike Shop
-                        </h6>
-                        <p>
-                            Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất
-                        </p>
+                        <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i>Nike Shop</h6>
+                        <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
                     </div>
-                    <!-- Grid column -->
-
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Ngôn ngữ
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">PHP</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">MySQL</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">JavaScript</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Laravel</a>
-                        </p>
+                        <h6 class="text-uppercase fw-bold mb-4">Ngôn ngữ</h6>
+                        <p> <a href="#!" class="text-reset">PHP</a></p>
+                        <p><a href="#!" class="text-reset">MySQL</a></p>
+                        <p> <a href="#!" class="text-reset">JavaScript</a></p>
+                        <p><a href="#!" class="text-reset">Laravel</a></p>
                     </div>
                     <!-- Grid column -->
-
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Useful links
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Pricing</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Settings</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Orders</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Help</a>
-                        </p>
+                        <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                        <p> <a href="#!" class="text-reset">Pricing</a></p>
+                        <p><a href="#!" class="text-reset">Settings</a></p>
+                        <p><a href="#!" class="text-reset">Orders</a></p>
+                        <p> <a href="#!" class="text-reset">Help</a></p>
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                           Liên Hệ
-                        </h6>
+                        <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
                         <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
                         <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com</p>
                         <p><i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com</p>
