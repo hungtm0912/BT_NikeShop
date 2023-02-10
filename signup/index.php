@@ -93,7 +93,7 @@ if (isset($_POST['submit'])) {
     <br>
     <div class="card bg-light">
       <article class="card-body mx-auto" style="max-width: 400px;">
-        <h4 class="card-title mt-3 text-center">Tạo tài khoản</h4>
+        <h4 class="card-title mt-3 text-center">Tạo Tài Khoản</h4>
         <p class="text-center">Cùng bắt đầu với việc tạo tài khoản miễn phí</p>
         <form modelAttribute="userModel" action="" method="post" enctype="multipart/form-data">
           <!-- Form Name -->
@@ -101,19 +101,19 @@ if (isset($_POST['submit'])) {
             <div class="input-group-prepend">
               <span class="input-group-text"> <i style="padding: 5px 0" class="fa fa-user"></i> </span>
             </div>
-            <input path="username" name="username" class="form-control" placeholder="Username" type="text" required />
+            <input path="username" name="username" class="form-control" placeholder="Tài Khoản" type="text" required />
           </div>
           <div class="form-group input-group">
             <div class="input-group-prepend">
               <span class="input-group-text"> <i style="padding: 5px 0" class="fa fa-user"></i> </span>
             </div>
-            <input path="name" name="name" class="form-control" placeholder="Your name" type="text" required />
+            <input path="name" name="name" class="form-control" placeholder="Họ và Tên" type="text" required />
           </div>
           <div class="form-group input-group">
             <div class="input-group-prepend">
               <span class="input-group-text"> <i style="padding: 5px 0" class="fa fa-envelope"></i> </span>
             </div>
-            <input path="email" name="email" class="form-control" placeholder="Email address" type="email" required />
+            <input path="email" name="email" class="form-control" placeholder="Email" type="email" required />
           </div>
 
           <div class="form-group input-group">
@@ -123,14 +123,14 @@ if (isset($_POST['submit'])) {
             <select class="custom-select" style="max-width: 120px;">
               <option selected="">+84</option>
             </select>
-            <input path="phone" name="phone" class="form-control" placeholder="Phone number" type="text" required />
+            <input path="phone" name="phone" class="form-control" placeholder="Số Điện Thoại" type="text" required />
           </div>
 
           <div class="form-group input-group">
             <div class="input-group-prepend">
               <span class="input-group-text"> <i style="padding: 5px 0" class="fa fa-lock"></i> </span>
             </div>
-            <input path="password" name="password" class="form-control" placeholder="Create password" type="password"
+            <input path="password" name="password" class="form-control" placeholder="Mật Khẩu" type="password"
               required />
           </div>
 
@@ -138,7 +138,7 @@ if (isset($_POST['submit'])) {
             <div class="input-group-prepend">
               <span class="input-group-text"> <i style="padding: 5px 0" class="fa fa-lock"></i> </span>
             </div>
-            <input class="form-control" name="re_password" placeholder="Repeat password" type="password" required />
+            <input class="form-control" name="re_password" placeholder="Nhâp Lại Mật Khẩu" type="password" required />
           </div>
 
           <!-- phần thêm avatar   -->
@@ -154,7 +154,7 @@ if (isset($_POST['submit'])) {
 
           <p class="text-center">Bạn đã có tài khoản <a href="../signin/">Đăng nhập</a> </p>
         </form>
-        <p class="text-center"><a href="../index.php">Trang chủ</a> </p>
+        <p class="text-center"><a href="../index.php">Trang chủ</a></p>
       </article>
     </div>
 

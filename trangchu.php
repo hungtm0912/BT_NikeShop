@@ -76,7 +76,7 @@ session_start();
       </div>
     </div>
   </div>
-  <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: #555555;">
+  <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">
     SẢN PHẨM HOT
   </div>
   <!--slide product-->
@@ -119,7 +119,7 @@ session_start();
       </div>
     </div>
     <!--NEW PRODUCT-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: #555555;">
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">
       SẢN PHẨM MỚI
     </div>
     <div style=" max-width: 1300px;" class="container find">
@@ -210,8 +210,8 @@ session_start();
       </div>
     </div>
     <!--WHAT FIND?-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: #555555;">
-      BẠN ĐANG TÌM?
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">
+     BẠN ĐANG TÌM?
     </div>
     <div class="container">
       <div class="row">
@@ -287,15 +287,15 @@ session_start();
               <h2 class="gene_title">WE'RE GOT YOU COVERED</h2>
               <p class="gene_desc">Discover the adidas Face Cover with an improved confort, designed for
                 exercise</p>
-              <button class="gene_button btn btn-secondary">SHOP NOW</button>
+              <button class="gene_button btn btn-secondary">MUA NGAY</button>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!--BEST OF ADIDAS-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: #555555;">
-      BEST OF ADIDAS
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">
+      Top Sản Phẩm Bán Chạy
     </div>
     <div style="margin-bottom: 2px !important;" class="container">
       <div class="row">
@@ -367,36 +367,21 @@ session_start();
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
-
-                  <i class="fas fa-gem me-3"></i>Phương Nam Sport
+                  <i class="fas fa-gem me-3"></i> Nike Shop
                 </h6>
-                <p>
-                  Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất
-                </p>
+                <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất</p>
               </div>
               <!-- Grid column -->
 
               <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Products
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset">Giày bóng đá</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Quần áo bóng đá</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Phụ kiện bóng đá</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Bóng đá</a>
-                </p>
+                <h6 class="text-uppercase fw-bold mb-4"> Sản Phẩm</h6>
+                <p><a href="#!" class="text-reset">Quần thể thao</a></p>
+                <p><a href="#!" class="text-reset">Áo Thể Thao</a></p>
+                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+                <p> <a href="#!" class="text-reset">Phụ kiện</a></p>
               </div>
-              <!-- Grid column -->
-
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
@@ -416,21 +401,13 @@ session_start();
                   <a href="#!" class="text-reset">Help</a>
                 </p>
               </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Contact
-                </h6>
-                <p><i class="fas fa-home me-3"></i> tòa HH2B Linh Đàm,quận Hoàng Mai, Hà Nội</p>
-                <p>
-                  <i class="fas fa-envelope me-3"></i>
-                  nguyennam210601@gmail.com
-                <p><i class="fas fa-phone me-3"></i>0358307767</p>
-                </p>
-
+                <h6 class="text-uppercase fw-bold mb-4">Liên lạc</h6>
+                <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
+                <p> <i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com</p>
+                <p> <i class="fas fa-envelope me-3"></i> manhungk18@gmail.com</p>
+                <p><i class="fas fa-phone me-3"></i> 0978236082</p>
               </div>
               <!-- Grid column -->
             </div>
@@ -438,9 +415,6 @@ session_start();
           </div>
         </section>
         <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <!-- Copyright -->
       </footer>
       <!-- Footer -->
     </div>
@@ -457,5 +431,4 @@ session_start();
   <script src="./script.js"></script>
   <script src="./OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
 </body>
-
 </html>

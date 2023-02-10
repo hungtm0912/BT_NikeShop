@@ -19,7 +19,6 @@
   left: 0;
   z-index: 1;
 }
-
 .btn-facebook {
   background-color: #405d9d;
   color: #fff;
@@ -27,4 +26,7 @@
 .btn-twitter {
   background-color: #42aeec;
   color: #fff;
+}
+.text-center{
+  text-decoration: none;
 }

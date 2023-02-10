@@ -393,12 +393,8 @@ $product = mysqli_fetch_array($product_sql);
                   <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-
-                      <i class="fas fa-gem me-3"></i>Phương Nam Sport
-                    </h6>
-                    <p>
-                      Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất
-                    </p>
+                      <i class="fas fa-gem me-3"></i> Nike Shop</h6>
+                    <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất</p>
                   </div>
                   <!-- Grid column -->
 
@@ -406,7 +402,7 @@ $product = mysqli_fetch_array($product_sql);
                   <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                      Products
+                        Sản Phẩm
                     </h6>
                     <p>
                       <a href="#!" class="text-reset">Giày bóng đá</a>
@@ -447,17 +443,11 @@ $product = mysqli_fetch_array($product_sql);
                   <!-- Grid column -->
                   <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                      Contact
-                    </h6>
-                    <p><i class="fas fa-home me-3"></i> tòa HH2B Linh Đàm,quận Hoàng Mai, Hà Nội
-                    </p>
-                    <p>
-                      <i class="fas fa-envelope me-3"></i>
-                      nguyennam210601@gmail.com
+                    <h6 class="text-uppercase fw-bold mb-4"> Liên hệ</h6>
+                    <p><i class="fas fa-home me-3"></i> Việt Trì- Phú Thọ</p>
+                    <p> <i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com</p>
+                    <p> <i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com</p>
                     <p><i class="fas fa-phone me-3"></i>0358307767</p>
-                    </p>
-
                   </div>
                   <!-- Grid column -->
                 </div>
@@ -468,13 +458,8 @@ $product = mysqli_fetch_array($product_sql);
         </div>
       </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <script src="./utils/scripts.js"></script>
-
 </body>
-
 </html>
