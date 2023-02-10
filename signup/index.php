@@ -28,12 +28,12 @@ if (isset($_POST['submit'])) {
   $number_rows = mysqli_fetch_array($result)['count(*)'];
 
   if ($number_rows == 1) {
-    header("location: /PhuongNamSport/signup/?err_exist=Tài khoản đã tồn tại rùi");
+    header("location: /BT_NikeShop/signup/?err_exist=Tài khoản đã tồn tại");
     exit;
   }
 
   if ($password != $re_password) {
-    header("location: /PhuongNamSport/signup/?err_match=Mật khẩu nhập lại không đúng");
+    header("location: /BT_NikeShop/signup/?err_match=Mật khẩu nhập lại không đúng");
     exit;
   }
 
@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
   $_SESSION['email'] = $email;
   $_SESSION['avatar'] = $avatar;
 
-  header('Location: /PhuongNamSport/signin');
+  header('Location: BT_NikeShop/signin');
 }
 
 ?>

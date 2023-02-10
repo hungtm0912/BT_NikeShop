@@ -246,16 +246,15 @@ $product = mysqli_fetch_array($product_sql);
               <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)  ?>
               đ</span>
             <?php } else { ?>
-            <span class="card-text new-price"> <?php echo $product['product_price'] ?>đ</span>
+            <span class="card-text new-price"> <?php echo $product['product_price'] ?> VND</span>
             <?php } ?>
-            <p style="font-size: 18px; color: #fff;margin-bottom:0;font-weight: 600;">Mô tả:</p>
+            <p style="font-size: 18px; color: #fff;margin-bottom:0;font-weight: 600;">Mô Tả:</p>
             <p class="product-desc"><?php echo $product['product_description'] ?></p>
-            <p class="name-provider">Chọn size</p>
+            <p class="name-provider">Chọn Size:</p>
             <!-- size button -->
             <?php
             $name =  $product['product_name'];
-            $sql = "SELECT size_name FROM products
-                        WHERE product_name = N'$name' ORDER BY size_name ASC";
+            $sql = "SELECT size_name FROM products  WHERE product_name = N'$name' ORDER BY size_name ASC";
             $ketqua = $mysqli->query($sql);
             ?>
             <div class=" shoe size">

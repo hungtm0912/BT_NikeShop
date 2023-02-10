@@ -23,11 +23,11 @@ if (isset($_POST['submit'])) {
 
   $sql = "UPDATE users
           SET username='$fullname',
-          email='$email',
+          `email`='$email',
           phone='$phone',
-          role='$role',
-          name='$name'
-          avatar='$avatar'
+          `role`='$role',
+          `name`='$name'
+          `avatar`='$avatar'
           WHERE user_id='$user_id'";
 
   $mysqli->query($sql);
