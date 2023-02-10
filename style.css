@@ -384,3 +384,7 @@ body {
     background-color: orange !important;
     margin-right: 5px;
 }
+
+.text-reset{
+    color: white;
+}
