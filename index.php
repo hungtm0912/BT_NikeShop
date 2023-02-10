@@ -135,10 +135,10 @@ require_once './database/config.php';
                 alt="Card image cap">
               <div style="padding: 6px !important;" class="card-body">
                 <a class="card-title product-title"
-                  href="./chitiet.php?id=<?php echo $product['product_id'] ?>"><?php echo $product['product_name'] ?></a>
+                  href="./chitiet.php?id=<?php echo $product['product_id'] ?>" style="text-align: center"><?php echo $product['product_name'] ?></a>
                 <div class="price">
                   <?php if ($product['product_sale'] > 0) { ?>
-                  <span class="card-text old-price"><?php echo number_format($product['product_price']) ?>đ</span>
+                  <span class="card-text old-price" style="text-align: center"><?php echo number_format($product['product_price']) ?> VNĐ</span>
                   <?php } else { ?>
                   <span class="card-text old-price"></span>
                   <?php } ?>
@@ -146,10 +146,10 @@ require_once './database/config.php';
                   <?php if ($product['product_sale'] > 0) { ?>
                   <span class="card-text new-price">
                     <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)  ?>
-                    đ</span>
+                     VNĐ</span>
                   <?php } else { ?>
-                  <span class="card-text new-price">
-                    <?php echo number_format($product['product_price']) ?>đ</span>
+                  <span class="card-text new-price" style="text-align: center">
+                    <?php echo number_format($product['product_price']) ?> VNĐ</span>
                   <?php } ?>
                 </div>
               </div>
