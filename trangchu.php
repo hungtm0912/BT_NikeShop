@@ -101,7 +101,7 @@ session_start();
                   <a style="color: orange;" class="card-title product-title"
                     href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><?php echo $row_product['product_name'] ?></a>
                   <br>
-                  <span class="card-text old-price"><?php echo number_format($row_product['product_price']) ?>đ</span>
+                  <span class="card-text old-price"><?php echo number_format($row_product['product_price']) ?>VND</span>
                   <span
                     class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?>đ</span>
                 </div>
@@ -119,9 +119,7 @@ session_start();
       </div>
     </div>
     <!--NEW PRODUCT-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">
-      SẢN PHẨM MỚI
-    </div>
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;"> SẢN PHẨM MỚI</div>
     <div style=" max-width: 1300px;" class="container find">
       <div class="row">
         <div class="col-4 col-sm-4 col-md-2 col-lg-2">

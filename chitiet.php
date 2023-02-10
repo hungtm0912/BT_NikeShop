@@ -216,10 +216,10 @@ $product = mysqli_fetch_array($product_sql);
                             <a class="nav-link active nav-link-active-custom" href="#">Hệ thống cửa hàng</a>
                         </li> -->
             <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">Khách hàng</a>
+              <a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">Liên hệ </a>
+              <a class="nav-link active nav-link-active-custom" href="#">Liên Hệ </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale off</a>
@@ -268,8 +268,7 @@ $product = mysqli_fetch_array($product_sql);
               <div style="margin-top: 15px;">
                 <button type="button" class="btn btn-outline-warning">Mua hàng</button>
                 <?php if (!isset($_SESSION['username'])) { ?>
-                <button type="button" class="btn btn-outline-warning"><a class="add-product" href="./signin">
-                  Thêm vào giỏ hàng</a></button>
+                <button type="button" class="btn btn-outline-warning"><a class="add-product" href="./signin">Thêm vào giỏ hàng</a></button>
                 <?php } else { ?>
                 <button type="button" class="btn btn-outline-warning"><a class="add-product"
                     href="./add_to_cart.php?product_id=<?php echo $product['product_id'] ?>">
@@ -292,7 +291,7 @@ $product = mysqli_fetch_array($product_sql);
                 </form>
                 <?php else : ?>
                 <div class="well" style="margin-top: 20px;">
-                  <h4 class="text-center cus_tag"><a href="/PhuongNamSport/signin">Đăng Nhập</a>Đăng bình luận</h4>
+                  <h4 class="text-center cus_tag"><a href="/PhuongNamSport/signin">Đăng Nhập</a>Đăng Bình Luận</h4>
                 </div>
                 <?php endif ?>
 

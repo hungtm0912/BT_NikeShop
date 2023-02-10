@@ -23,12 +23,12 @@ if (isset($_POST['submit'])) {
 
   $sql = "UPDATE users
           SET 
-          name='$name',
-          phone='$phone',
-          username='$fullname',
-          email='$email',
-          role='$role',
-          avatar='$avatar'
+          `name`='$name',
+          `phone`='$phone',
+          `username`='$fullname',
+          `email`='$email',
+          `role`='$role',
+          `avatar`='$avatar'
           WHERE user_id='$user_id'";
 
   $mysqli->query($sql);
@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.88.1">
-  <title>User Information</title>
+  <title>Thông Tin Khách Hàng</title>
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.css">
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
@@ -129,8 +129,8 @@ if (isset($_POST['submit'])) {
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="inputAddress">Full Name</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Enter your fullname" value="<?php echo $user['username'] ?>" name="fullname">
+                        <label for="inputAddress">Tên Người Dùng</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Nhập Tên Người Dùng" value="<?php echo $user['username'] ?>" name="fullname">
                       </div>
 
                       <!-- Hidden field -->
@@ -138,15 +138,15 @@ if (isset($_POST['submit'])) {
 
                       <div class="form-group">
                         <label for="inputAddress2">Email</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Enter your email" value="<?php echo $user['email'] ?>" name="email">
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Nhập Email" value="<?php echo $user['email'] ?>" name="email">
                       </div>
                       <div class="form-group">
-                        <label for="inputAddress">Phone</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Enter your phone" value="<?php echo $user['phone'] ?>" name="phone">
+                        <label for="inputAddress">Số Điện Thoại</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Nhập Số Điện Thoại" value="<?php echo $user['phone'] ?>" name="phone">
                       </div>
                       <div class="form-group">
-                        <label for="inputAddress2">Name</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Enter your name" value="<?php echo $user['name'] ?>" name="name">
+                        <label for="inputAddress2">Họ và Tên</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Nhập Họ và Tên" value="<?php echo $user['name'] ?>" name="name">
                       </div>
 
                       <!-- phần thêm avatar   -->
@@ -169,8 +169,8 @@ if (isset($_POST['submit'])) {
                           </select>
                         </div>
                       </div>
-                      <button type="submit" name="submit" class="btn btn-primary">Edit</button>
-                      <a href="process_user.php?id_delete=<?php echo $user['user_id'] ?>" class="btn btn-danger btn-md active" onclick="return confirm('Bạn chắc chắn muốn xóa tài khoản <?php echo $user['username'] ?> này?')" role="button" aria-pressed=" true">Remove</a>
+                      <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
+                      <a href="process_user.php?id_delete=<?php echo $user['user_id'] ?>" class="btn btn-danger btn-md active" onclick="return confirm('Bạn chắc chắn muốn xóa tài khoản <?php echo $user['username'] ?> này?')" role="button" aria-pressed=" true">Xóa</a>
                     </div>
                   </div>
                 </div>

@@ -3,12 +3,11 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đơn hàng</title>
+  <title>Nike Shop</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -17,14 +16,11 @@ session_start();
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./uidonhang.css">
 </head>
-
 <body>
   <?php
     include './includes/navbar.php';
     require_once "./database/config.php";
-
     $user_id = $_SESSION['user_id'];
-
     //đọc du liệu
     $order_id = 0;
     $result_1 = "";
@@ -48,7 +44,7 @@ session_start();
                ?>
               <li class="donhang_item">
                 <a href="#" class="donhang_link">
-                  <h5>Chi tiết đơn hàng</h5>
+                  <h5>Chi Tiết Đơn Hàng</h5>
                 </a>
                 <div class="product_list">
                   <table>
@@ -67,27 +63,27 @@ session_start();
                         <p class="title"><?php echo $row['product_name'] ?></p>
                       </td>
                       <td width="10%">
-                        <span class="soluong">SL: <?php echo $row['quantity'] ?></span>
+                        <span class="soluong">Số Lượng: <?php echo $row['quantity'] ?></span>
                       </td>
                       <td width="40%">
                         <span class="price">Giá:
-                          <?php echo number_format($price_order) ?>đ</span>
+                          <?php echo number_format($price_order) ?> VND</span>
                       </td>
                     </tr>
                     <?php } ?>
                   </table>
                 </div>
                 <div class="info-order">
-                  <p class="total" style="margin-bottom:0;">Total: <?php echo number_format($total) ?>đ
+                  <p class="total" style="margin-bottom:0;">Tổng: <?php echo number_format($total) ?>đ
                   </p>
                   <p class="status" style="margin-bottom:0;">
                     <?php
-                                            if ($status == 1) {
-                                                echo "Đã giao hàng";
-                                            } else {
-                                                echo "Đang giao hàng";
-                                            }
-                                            ?>
+                     if ($status == 1) {
+                        echo "Đã giao hàng";
+                     } else {
+                          echo "Đang giao hàng";
+                     }
+                    ?>
                   </p>
                 </div>
               </li>

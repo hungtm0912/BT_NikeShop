@@ -107,9 +107,7 @@ session_start();
                 <div class="row">
                     <img src="../Bootstrap/product img/banner-collection.jpg" alt="">
                 </div>
-                <div style="color: white;" class="text-all-product">
-                    Tất Cả Sản Phẩm
-                </div>
+                <div style="color: white;" class="text-all-product"> Tất Cả Sản Phẩm</div>
                 <div class=" category-icon">
                     <i class="fa fa-th-large"></i>
                 </div>

@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
   $sql = "UPDATE users
           SET username='$fullname',
           `email`='$email',
-          phone='$phone',
+          `phone`='$phone',
           `role`='$role',
           `name`='$name'
           `avatar`='$avatar'

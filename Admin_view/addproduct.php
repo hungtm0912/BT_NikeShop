@@ -114,7 +114,7 @@ include './include/head.php';
 
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="brand">SALE</label>
+              <label class="col-md-4 control-label" for="brand">Sale</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input name="prd_sale" placeholder="%" class="form-control input-md" type="number" />
               </div>
@@ -129,7 +129,7 @@ include './include/head.php';
             </div>
             <!-- Size sản phẩm -->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="Price">SIZE</label>
+              <label class="col-md-4 control-label" for="Price">Size</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input id="Price" name="prd_size" placeholder="Size" class="form-control input-md" type="text" />
               </div>

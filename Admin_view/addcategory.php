@@ -37,9 +37,7 @@ include './include/head.php';
                         <br>
                         <div class="form-group">
                             <div class="col-md-4">
-                                <button id="singlebutton" class="btn btn-primary" type="submit">
-                                    Thêm loại sản phẩm
-                                </button>
+                                <button id="singlebutton" class="btn btn-primary" type="submit">Thêm loại sản phẩm</button>
                             </div>
                         </div>
                     </fieldset>

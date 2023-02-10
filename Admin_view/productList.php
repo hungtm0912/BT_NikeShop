@@ -79,21 +79,20 @@ include './include/head.php';
 
                     <a class="btn btn-primary"
                       href="./product/update_product.php?id=<?php echo $row_product['product_id'] ?>"
-                      role="button">Edit</a>
+                      role="button">Sửa</a>
                     <a class="btn btn-danger"
                       href="./product/delete_product.php?id=<?php echo $row_product['product_id'] ?>"
                       onclick="return confirm('Bạn có muốn xóa <?php echo $row_product['product_name'] ?>?')"
-                      role="button">Delete</a>
+                      role="button">Xóa</a>
                   </td>
                 </tr>
-
                 <?php
                 }
                 ?>
               </tbody>
             </table>
             <div class="text-center">
-              <a href="data_export_product.php" class="btn btn-primary" target="_blank">Export data</a>
+              <a href="data_export_product.php" class="btn btn-primary" target="_blank">Xuất DỮ Liệu</a>
             </div>
             <!-- Paging -->
             <div class="row">
@@ -105,10 +104,7 @@ include './include/head.php';
         </div>
       </main>
     </div>
-
   </div>
-
-
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src=""></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
@@ -122,11 +118,8 @@ include './include/head.php';
     integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
   </script>
   <script src="${base}/jsdashboard.js"></script>
-
-
   <script type="text/javascript">
   </script>
   <script type="text/javascript" src="${base}/js/jquery.js"></script>
 </body>
-
 </html>

@@ -48,9 +48,7 @@ if (!isset($_SESSION['username'])) {
             <div class="title">
               <div class="row">
                 <div class="col">
-                  <h4>
-                    <b>Shopping Cart</b>
-                  </h4>
+                  <h4  style="position:relative;left:25px;top:15px;color:red"><b>Giỏ Hàng của Khách Hàng</b></h4>
                 </div>
               </div>
             </div>
@@ -98,56 +96,53 @@ if (!isset($_SESSION['username'])) {
               <div class="form-group">
                 <label for="customerPhone">Tên Khách Hàng</label>
                 <input type="tel" class="form-control" id="customerFullName" name="name_receiver"
-                  placeholder="Full name" value="<?php echo $fullname ?>">
+                  placeholder="Nhập Họ và Tên" value="<?php echo $fullname ?>">
               </div>
               <div class="form-group">
-                <label for="customerEmail">Địa chỉ Enmail</label>
+                <label for="customerEmail">Địa Chỉ Email</label>
                 <input type="email" class="form-control" id="customerEmail" name="email_receiver"
-                  placeholder="Enter email" value="<?php echo $_SESSION['email'] ?>">
-                <small id="emailHelp" class="form-text text-muted"> Làm ơn không chia địa chỉ Email với bất cứ ai.</small>
+                  placeholder="Nhập Email" value="<?php echo $_SESSION['email'] ?>">
+                <small id="emailHelp" class="form-text text-muted">Bắt Buộc nhập địa chỉ Email.</small>
               </div>
               <div class="form-group">
                 <label for="customerPhone">Số Điện Thoại</label>
-                <input type="tel" class="form-control" id="customerPhone" name="phone_receiver" placeholder="Phone"
+                <input type="tel" class="form-control" id="customerPhone" name="phone_receiver" placeholder="Nhập Số Điện Thoại"
                   value="<?php echo $_SESSION['phone'] ?>">
               </div>
               <div class="form-group">
-                <label for="customerAddress">Địa chỉ</label>
+                <label for="customerAddress">Địa Chỉ</label>
                 <input type="text" class="form-control" id="customerAddress" name="address_receiver"
-                  placeholder="Address">
+                  placeholder="Nhập Địa Chỉ">
               </div>
             </div>
             <div class="back-to-shop">
-              <a href="./index.php">&leftarrow;Quay lại Shop</a>
+              <a href="./index.php">&leftarrow;Quay Lại Shop</a>
             </div>
           </div>
           <div class="col-md-4 summary">
             <div>
-              <h5>
-                <b>Tóm tắt</b>
-              </h5>
+              <h5> <b>Tóm Tắt</b></h5>
             </div>
             <hr>
             <div class="row">
               <div class="col" style="padding-left: 0;"></div>
-
             </div>
             <form>
-              <p>GIVE CODE</p>
-              <input id="code" placeholder="Enter your code">
+              <p>Mã Giảm Giá:</p>
+              <input id="code" placeholder="Nhập Mã Giảm Giá">
             </form>
             <div class="row" style="border-top: 1px solid rgba(0, 0, 0, .1); padding: 2vh 0;">
               <div class="col">Tổng</div>
               <div class="col text-right">
-                <span class="total-price"><?php echo number_format($total) ?>đ</span>
+                <span class="total-price"><?php echo number_format($total) ?> VND</span>
               </div>
             </div>
-            <button type="submit" class="btnn" onclick="alert('Đặt hàng thành công');">ĐẶT HÀNG</button>
+            <button type="submit" class="btnn" style="font-size:18px" onclick="alert('Đặt hàng thành công');">ĐẶT HÀNG</button>
           </div>
         </div>
       </div>
-    </form>
-
+     </form>
+     
     <!-- Footer -->
     <footer style="background-color: #333333 !important;" class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Social media -->
@@ -178,7 +173,7 @@ if (!isset($_SESSION['username'])) {
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">i class="fas fa-gem me-3"></i> Nike Shop </h6>
+              <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i> Nike Shop </h6>
               <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
             </div>
             <!-- Grid column -->
@@ -186,19 +181,10 @@ if (!isset($_SESSION['username'])) {
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a href="#!" class="text-reset">Angular</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">React</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Vue</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Laravel</a>
-              </p>
+              <h6 class="text-uppercase fw-bold mb-4"> Chuyên Sản Phẩm</h6>
+              <p><a href="#!" class="text-reset"> Quần Áo Thể Thao</a></p>
+              <p><a href="#!" class="text-reset"> Giày Thể Thao</a> </p>
+              <p><a href="#!" class="text-reset"> Phụ Kiện</a></p>
             </div>
             <!-- Grid column -->
 
