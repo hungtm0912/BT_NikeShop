@@ -359,7 +359,7 @@ session_start();
         <!-- Section: Social media -->
 
         <!-- Section: Links  -->
-        <section class="">
+        <section class="" style="color: white">
           <div class="container text-center text-md-start mt-5">
             <!-- Grid row -->
             <div class="row mt-3">
