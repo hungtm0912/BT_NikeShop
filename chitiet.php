@@ -243,7 +243,7 @@ $product = mysqli_fetch_array($product_sql);
 
             <?php if ($product['product_sale'] > 0) { ?>
             <span style="margin-left: 20px; font-size: 30px" class="card-text new-price">
-              <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)  ?>
+              <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100) ?>
               đ</span>
             <?php } else { ?>
             <span class="card-text new-price"> <?php echo $product['product_price'] ?> VND</span>
@@ -345,7 +345,7 @@ $product = mysqli_fetch_array($product_sql);
                   <!-- // comment -->
                   <?php endforeach ?>
                   <?php else : ?>
-                  <h2>Be the first to comment on this post</h2>
+                  <h2>H</h2>
                   <?php endif ?>
                 </div><!-- comments wrapper -->
               </div><!-- // all comments -->
@@ -360,7 +360,6 @@ $product = mysqli_fetch_array($product_sql);
               <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
               </div>
               <!-- Left -->
-
               <!-- Right -->
               <div>
                 <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i> </a>

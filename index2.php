@@ -1,12 +1,9 @@
 <?php
 require_once './database/config.php';
-
 session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +14,6 @@ session_start();
     <title>Nike Shop</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-
 <body>
  <div class = "layout">
     <div class="container-fluid">
@@ -117,8 +113,7 @@ session_start();
                 <div class=" category-icon">
                     <i class="fa fa-th-large"></i>
                 </div>
-                <div style="right: 0; color: white;" class=" float-right justify-content-end">
-                    Sắp xếp theo
+                <div style="right: 0; color: white;" class=" float-right justify-content-end">Sắp xếp theo
                     <select style="border-radius: 3px;" name="" id="">
                         <option value="">Mới nhất</option>
                         <option value="">Giá tăng dần</option>

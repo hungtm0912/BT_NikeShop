@@ -38,7 +38,6 @@
         }
     }
 ?>
-
 <body class="text-center">
     <main class="form-forgot">
         <form method="POST" action="">

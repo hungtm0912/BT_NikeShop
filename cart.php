@@ -4,10 +4,8 @@ if (!isset($_SESSION['username'])) {
   header("Location: /PhuongNamSport/signin");
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,10 +23,8 @@ if (!isset($_SESSION['username'])) {
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-
 <body>
   <!-- Common -->
-
   <div style="width: 0%; margin-left: -15px;" class="container-fluid">
     <!-- Header -->
     <?php
@@ -158,7 +154,7 @@ if (!isset($_SESSION['username'])) {
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+        <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
         </div>
         <!-- Left -->
 
@@ -182,12 +178,8 @@ if (!isset($_SESSION['username'])) {
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-
-                <i class="fas fa-gem me-3"></i> Nike Shop
-              </h6>
-              <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt
-                nhất</p>
+              <h6 class="text-uppercase fw-bold mb-4">i class="fas fa-gem me-3"></i> Nike Shop </h6>
+              <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
             </div>
             <!-- Grid column -->
 
@@ -214,18 +206,10 @@ if (!isset($_SESSION['username'])) {
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a href="#!" class="text-reset">Pricing</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Settings</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Orders</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Help</a>
-              </p>
+              <p><a href="#!" class="text-reset">Pricing</a></p>
+              <p><a href="#!" class="text-reset">Settings</a></p>
+              <p><a href="#!" class="text-reset">Orders</a> </p>
+              <p><a href="#!" class="text-reset">Help</a> </p>
             </div>
             <!-- Grid column -->
 
@@ -237,7 +221,6 @@ if (!isset($_SESSION['username'])) {
               <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com </p>
               <p><i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com </p>
               <p><i class="fas fa-phone me-3"></i> 0978236082</p>
-        
             </div>
             <!-- Grid column -->
           </div>
@@ -245,20 +228,14 @@ if (!isset($_SESSION['username'])) {
         </div>
       </section>
       <!-- Section: Links  -->
-
       <!-- Copyright -->
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
-
   </div>
 </body>
-
 <jsp:include page="/WEB-INF/view/khachhang/layout/js.jsp"></jsp:include>
-
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="path_to/jquery.js"></script>
-
-
 </html>

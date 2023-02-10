@@ -49,9 +49,7 @@ if (isset($_SESSION['username'])) {
         <div class="g-recaptcha" data-sitekey="6LcA8a0gAAAAAP5YAPhSR9gywJ_Sa38p8e5mP5ut"></div>
       </div>
       <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Nhớ mật khẩu
-        </label>
+        <label><input type="checkbox" value="remember-me"> Nhớ mật khẩu</label>
       </div>
       <button class="w-100 btn btn-lg btn-primary" type="submit" name="signin">Đăng Nhập</button>
     </form>

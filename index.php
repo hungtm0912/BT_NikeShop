@@ -45,7 +45,7 @@ require_once './database/config.php';
       <div class="col-3 justify-content-start" style="padding-left: 0px;">
         <div style="background-color: #333333 !important;" class="list-group list-group list-group-flush">
           <a style="background-color: #333333 !important; color: orange !important" href="#"
-            class="list-group-item list-group-item-action list-category-item">Danh mục sản phẩm</a>
+            class="list-group-item list-group-item-action list-category-item">Danh Mục Sản Phẩm</a>
           <?php
           $sql = "SELECT * FROM `categories`";
           $categories = $mysqli->query($sql);

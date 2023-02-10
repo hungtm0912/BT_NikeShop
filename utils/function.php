@@ -61,7 +61,6 @@
     exit();
   }
 }
-
 // If the user clicked submit on reply form...
 if (isset($_POST['reply_posted'])) {
 
@@ -103,30 +102,23 @@ if (isset($_POST['reply_posted'])) {
     exit();
   }
 }
-
-
 // Receives a user id and returns the username
 function getUsernameById($id)
 {
   global $mysqli;
   $result = $mysqli->query("SELECT username FROM users WHERE user_id=" . $id . " LIMIT 1");
-
   // return the username
   return mysqli_fetch_assoc($result)['username'];
 }
-
 // Receives a comment id and returns the username
 function getRepliesByCommentId($id)
 {
   // echo '<script type="text/javascript">alert("' . $id . '");</script>';
-
   global $mysqli;
-
   $result = $mysqli->query("SELECT replies.created_at, replies.body, users.avatar, users.user_id, users.username FROM replies join users on users.user_id = replies.user_id WHERE replies.comment_id=$id");
   $replies = mysqli_fetch_all($result, MYSQLI_ASSOC);
   return $replies;
 }
-
 // Receives a post id and returns the total number of comments on that post
 function getCommentsCountByPostId($product_id)
 {
