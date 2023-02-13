@@ -1,6 +1,6 @@
 <?php
-require_once './database/config.php';
-session_start();
+  require_once './database/config.php';
+  session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -329,7 +329,7 @@ session_start();
         <section class="d-flex justify-content-center justify-content-lg-between p-4">
           <!-- Left -->
           <div class="me-5 d-none d-lg-block">
-          <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
+          <span>Liên hệ với chúng tôi qua những mạng xã hội sau</span>
           </div>
           <!-- Left -->
 

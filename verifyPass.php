@@ -8,7 +8,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <link rel="stylesheet" href="./forgotpass.css">
-    <title>Verify password</title>
+    <title>Nike Shop</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="signin.css" rel="stylesheet">
@@ -26,7 +26,6 @@
         }
     }
 ?>
-
 <body class="text-center">
     <main class="form-forgot">
         <form method="POST" action="">
@@ -35,7 +34,7 @@
 
             <div class="form-floating">
                 <input type="text" class="form-control" placeholder="Enter code" id="code" name="code">
-                <label for="floatingInput">Nhập code:</label>
+                <label for="floatingInput">Nhập Code</label>
             </div>
             <br>
             <button class="w-60 btn btn-primary" type="submit" name="signin">Xác nhận</button>

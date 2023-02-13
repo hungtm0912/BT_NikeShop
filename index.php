@@ -142,7 +142,7 @@ require_once './database/config.php';
 
                   <?php if ($product['product_sale'] > 0) { ?>
                   <span class="card-text new-price">
-                    <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)  ?>
+                    <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>
                      VNĐ</span>
                   <?php } else { ?>
                   <span class="card-text new-price" style="text-align: center">
@@ -177,7 +177,7 @@ require_once './database/config.php';
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
-        <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
+        <span>Liên hệ với chúng tôi qua những mạng xã hội sau</span>
       </div>
       <!-- Left -->
 

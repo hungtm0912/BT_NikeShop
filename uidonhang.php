@@ -96,15 +96,15 @@ session_start();
             <h3>Phản Hồi</h3>
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Tên Khách Hàng: </label>
+                <label for="exampleInputEmail1">Tên Khách Hàng</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Enter your name">
+                  placeholder="Nhập Tên">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Thông tin phản hồi</label>
                 <textarea class="form-control" id="textarea" rows="6"></textarea>
               </div>
-              <button type="submit" class="btnn">Phản hồi</button>
+              <button type="submit" class="btnn" style="font-size:16px">Phản Hồi</button>
             </form>
           </div>
         </div>
@@ -117,22 +117,14 @@ session_start();
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
+      <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
       </div>
       <!-- Left -->
-
       <!-- Right -->
       <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-
+        <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i> </a>
+        <a href="" class="me-4 text-reset"><i class="fab fa-google"></i> </a>
+        <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i> </a>
       </div>
       <!-- Right -->
     </section>

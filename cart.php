@@ -48,7 +48,7 @@ if (!isset($_SESSION['username'])) {
             <div class="title">
               <div class="row">
                 <div class="col">
-                  <h4  style="position:relative;left:25px;top:15px;color:red"><b>Giỏ Hàng của Khách Hàng</b></h4>
+                  <h4  style="position:relative;left:25px;top:15px;color:red"><b>Giỏ Hàng</b></h4>
                 </div>
               </div>
             </div>
@@ -73,13 +73,13 @@ if (!isset($_SESSION['username'])) {
                 </div>
                 <div class="col-2">
                   <div class="row text-muted"></div>
-                  <div class="row cus_padding"><?php echo number_format($each['price']) ?>đ</div>
+                  <div class="row cus_padding"><?php echo number_format($each['price']) ?>VND</div>
                 </div>
                 <div class="col">
                   <a style="cursor: pointer; font-size: 20px; "
                     href="./update_quantity_in_cart.php?id=<?php echo $id ?>&type=giam">-</a>
                   <span id="" class="border"><?php echo $each['quantity'] ?></span>
-                  <a style="cursor: pointer; font-size: 20px; "
+                  <a style="cursor: pointer; font-size: 20px;"
                     href="./update_quantity_in_cart.php?id=<?php echo $id ?>&type=tang">+</a>
                 </div>
                 <div class="col">
@@ -102,7 +102,7 @@ if (!isset($_SESSION['username'])) {
                 <label for="customerEmail">Địa Chỉ Email</label>
                 <input type="email" class="form-control" id="customerEmail" name="email_receiver"
                   placeholder="Nhập Email" value="<?php echo $_SESSION['email'] ?>">
-                <small id="emailHelp" class="form-text text-muted">Bắt Buộc nhập địa chỉ Email.</small>
+                <small id="emailHelp" class="form-text text-muted">Bắt Buộc nhập địa chỉ Email</small>
               </div>
               <div class="form-group">
                 <label for="customerPhone">Số Điện Thoại</label>
@@ -116,19 +116,19 @@ if (!isset($_SESSION['username'])) {
               </div>
             </div>
             <div class="back-to-shop">
-              <a href="./index.php">&leftarrow;Quay Lại Shop</a>
+              <a href="./index.php">&leftarrow; Quay Lại Shop</a>
             </div>
           </div>
           <div class="col-md-4 summary">
             <div>
-              <h5> <b>Tóm Tắt</b></h5>
+              <h5><b>Tóm Tắt</b></h5>
             </div>
             <hr>
             <div class="row">
               <div class="col" style="padding-left: 0;"></div>
             </div>
             <form>
-              <p>Mã Giảm Giá:</p>
+              <p>Mã Giảm Giá</p>
               <input id="code" placeholder="Nhập Mã Giảm Giá">
             </form>
             <div class="row" style="border-top: 1px solid rgba(0, 0, 0, .1); padding: 2vh 0;">
@@ -137,7 +137,7 @@ if (!isset($_SESSION['username'])) {
                 <span class="total-price"><?php echo number_format($total) ?> VND</span>
               </div>
             </div>
-            <button type="submit" class="btnn" style="font-size:18px" onclick="alert('Đặt hàng thành công');">ĐẶT HÀNG</button>
+            <button type="submit" class="btnn" style="font-size:18px" onclick="alert('Đặt hàng thành công');">Đặt Hàng</button>
           </div>
         </div>
       </div>
@@ -149,16 +149,15 @@ if (!isset($_SESSION['username'])) {
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
-        <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
+        <span>Liên hệ với chúng tôi qua những mạng xã hội sau</span>
         </div>
         <!-- Left -->
 
         <!-- Right -->
         <div>
-          <a href="" class="me-4 text-reset"> <i class="fab fa-facebook-f"></i>
-          </a> <a href="" class="me-4 text-reset"> <i class="fab fa-google"></i>
-          </a> <a href="" class="me-4 text-reset"> <i class="fab fa-instagram"></i>
-          </a>
+          <a href="" class="me-4 text-reset"> <i class="fab fa-facebook-f"></i></a> 
+          <a href="" class="me-4 text-reset"> <i class="fab fa-google"></i></a>
+          <a href="" class="me-4 text-reset"> <i class="fab fa-instagram"></i> </a>
 
         </div>
         <!-- Right -->

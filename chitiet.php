@@ -356,7 +356,7 @@ $product = mysqli_fetch_array($product_sql);
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
               <!-- Left -->
               <div class="me-5 d-none d-lg-block">
-              <span>Liên hệ với chúng tôi qua những mạng xã hội sau:</span>
+              <span>Liên hệ với chúng tôi qua những mạng xã hội sau</span>
               </div>
               <!-- Left -->
               <!-- Right -->
