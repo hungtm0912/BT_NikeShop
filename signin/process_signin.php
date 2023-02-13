@@ -16,7 +16,7 @@ if (isset($_POST['signin'])) {
     $row = json_decode($data, true);
 
     if ($row['success'] != "true") {
-      header('location: /PhuongNamSport/signin?err_checkcap=Bạn chưa check capcha!');
+      header('location: /BT_NikeShop/signin?err_checkcap=Bạn chưa check capcha!');
     } else {
       checkAuth($email, $password, $mysqli);
     }
@@ -42,11 +42,11 @@ function checkAuth($email, $pass, $mysqli)
         $_SESSION['email'] = $each['email'];
         $_SESSION['user_id'] = $each['user_id'];
         $_SESSION['avatar'] = $each['avatar'];
-        header('location: /PhuongNamSport/trangchu.php');
+        header('location: /BT_NikeShop/trangchu.php');
       } else
-        header('location: /PhuongNamSport/signin?err_match=Mật khẩu không chính xác!');
+        header('location: /BT_NikeShop/signin?err_match=Mật khẩu không chính xác!');
     } else {
-      header('location: /PhuongNamSport/signin?err_match=Tài khoản hoặc mật khẩu không chính xác!');
+      header('location: /BT_NikeShop/signin?err_match=Tài khoản hoặc mật khẩu không chính xác!');
     }
   }
 }

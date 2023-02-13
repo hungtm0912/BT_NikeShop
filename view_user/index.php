@@ -73,7 +73,7 @@
     $number_rows = mysqli_fetch_array($result)['count(*)'];
 
     if ($number_rows == 1) {
-      header("location: /PhuongNamSport/view_user/index.php?id=$user_id&err_exist=Tài khoản đã tồn tại rùi");
+      header("location: /BT_NikeShop/view_user/index.php?id=$user_id&err_exist=Tài khoản đã tồn tại rùi");
       exit;
     }
 
@@ -90,7 +90,7 @@
     move_uploaded_file($avatar_tmp, $path . $avatar);
 
     $_SESSION['email'] = $email;
-    header('location: /PhuongNamSport/trangchu.php?success=true');
+    header('location: /BT_NikeShop/trangchu.php?success=true');
   }
 
   ?>
@@ -161,7 +161,7 @@
                       <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
                       <a href="../Admin_view/user/process_user.php?id_userd=<?php echo $user['user_id'] ?>"
                         class="btn btn-danger btn-md active"
-                        onclick="return confirm('Bạn chắc chắn muốn xóa tài khoản<?php echo $user['username'] ?> này?')"
+                        onclick="return confirm('Bạn chắc chắn muốn xóa tài khoản <?php echo $user['username'] ?> này?')"
                         role="button" aria-pressed=" true">Xóa</a>
                     </div>
                   </div>
