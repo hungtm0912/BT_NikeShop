@@ -31,16 +31,13 @@
         }
     }
 ?>
-
 <body class="text-center">
     <main class="form-forgot">
         <form method="POST" action="">
             <img class="mb-4" src="./image/Free_Sample_By_Wix__1_-removebg-preview.png" alt="" width="200" height="160">
             <h1 class="h3 mb-3 fw-normal">Nhập mật khẩu mới</h1>
-
             <div class="form-group input-group">
-                <input path="password" name="password" class="form-control" placeholder="Create new password"
-                    type="password" required />
+                <input path="password" name="password" class="form-control" placeholder="Create new password" type="password" required />
             </div>
             <br>
             <div class="form-group input-group">

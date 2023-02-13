@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,6 +56,7 @@ if (isset($_SESSION['username'])) {
     <p class="text-center" style="margin-top:8px"><a href="../forgotpass.php">Quên mật khẩu</a> </p>
     <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
   </main>
+
   <!-- Materialize JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>

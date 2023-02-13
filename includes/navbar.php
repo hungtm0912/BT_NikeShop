@@ -15,43 +15,43 @@
       <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
         <?php
         if (!isset($_SESSION['name'])) {
-          echo '<a class="dropdown-item dropdown-item-custom" href="./signup">Đăng ký</a>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./signup">Đăng Ký</a>';
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
         }
         ?>
         <?php
         if (!isset($_SESSION['name'])) {
-          echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Đăng nhập</a>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Đăng Nhập</a>';
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
         }
         ?>
-        <a class="dropdown-item dropdown-item-custom" href="#">Giỏ hàng</a>
+        <a class="dropdown-item dropdown-item-custom" href="#">Giỏ Hàng</a>
         <div class="dropdown-divider margin: 3px 0;"></div>
-        <a class="dropdown-item dropdown-item-custom" href="#">Thanh toán </a>
+        <a class="dropdown-item dropdown-item-custom" href="#">Thanh Toán </a>
         <div class="dropdown-divider margin: 3px 0;"></div>
         <?php
         if (!isset($_SESSION['name'])) {
-          echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Tra cứu đơn hàng </a>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Tra Cứu Đơn Hàng </a>';
         } else {
-          echo '<a class="dropdown-item dropdown-item-custom" href="./uidonhang.php">Tra cứu đơn hàng </a>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./uidonhang.php">Tra Cứu Đơn Hàng </a>';
         }
         ?>
         <?php
         if (isset($_SESSION['name'])) {
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
-          echo '<a class="dropdown-item dropdown-item-custom" href="./signout">Đăng xuất </a>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./signout">Đăng Xuất </a>';
         }
         ?>
         <?php
         if (isset($_SESSION['name'])) {
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
-          echo '<a class="dropdown-item dropdown-item-custom" href="./view_user">Thông tin tài khoản</a>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./view_user">Thông Tin Tài Khoản</a>';
         }
         ?>
         <?php
         if (isset($_SESSION['role']) && $_SESSION['role'] == 1) {
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
-          echo '<a class="dropdown-item dropdown-item-custom" href="./Admin_view">Quản lý </a>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./Admin_view">Quản Lý </a>';
         }
         ?>
       </div>
@@ -98,31 +98,22 @@
   <div class="row col-12 mb-3">
     <ul style="margin: auto;" class="nav ">
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang chủ</a>
+        <a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang Chủ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="#">Về chúng tôi</a>
+        <a class="nav-link active nav-link-active-custom" href="#">Về Chúng Tôi</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="./index.php">Tất cả sản phẩm</a>
+        <a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="#">Hướng dẫn mua hàng</a>
-      </li>
-      <!-- <li class="nav-item">
-                <a class="nav-link active nav-link-active-custom" href="#">Cách chọn size</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active nav-link-active-custom" href="#">Tin tức giày</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active nav-link-active-custom" href="#">Hệ thống cửa hàng</a>
-            </li> -->
-      <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="#">Khách hàng</a>
+        <a class="nav-link active nav-link-active-custom" href="#">Hướng Dẫn Mua Hàng</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="#">Liên hệ </a>
+        <a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active nav-link-active-custom" href="#">Liên Hệ </a>
       </li>
       <li class="nav-item">
         <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale off</a>

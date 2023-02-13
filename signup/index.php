@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
   $sql = "INSERT INTO `users`(`username`, `phone`,`email`, `password`, `name`, `avatar`) values ('$username', '$phone', '$email', '$password', '$name', '$avatar')";
   $mysqli->query($sql);
   move_uploaded_file($avatar_tmp, $path . $avatar);
-  header('location: /BT_NikeShop/signin?err_match=Dang ky thanh cong!');
+  header('location: /BT_NikeShop/signin?err_match=Đăng Ký Thành Công!');
 
   session_start();
   $_SESSION['username'] = $username;

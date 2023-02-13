@@ -21,7 +21,7 @@ session_start();
             <div class="row head  ">
                 <div class="col-12 nav-item dropdown nav-custom">
                     <a class=" col-2 nav-link dropdown-toggle nav-custom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="far fa-user"></i> Tài khoản
+                        <i class="far fa-user"></i> Tài Khoản
                     </a>
                     <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item dropdown-item-custom" href="./signup">Đăng ký</a>
@@ -293,77 +293,48 @@ session_start();
     </div>
 
     <!-- Footer -->
-    <footer style="background-color: #333333 !important;" class="text-center text-lg-start bg-light text-muted">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-                <span>Liên hệ với chúng tôi với những mạng xã hội sau:</span>
-            </div>
-            <!-- Left -->
-
-            <!-- Right -->
-            <div>
-                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i> </a>
-                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
-                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
-            </div>
-            <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
+    <hr style="background-color: white; width: 100%;">
+      <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i>Nike Shop</h6>
-                        <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
-                    </div>
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Ngôn ngữ</h6>
-                        <p> <a href="#!" class="text-reset">PHP</a></p>
-                        <p><a href="#!" class="text-reset">MySQL</a></p>
-                        <p> <a href="#!" class="text-reset">JavaScript</a></p>
-                        <p><a href="#!" class="text-reset">Laravel</a></p>
-                    </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-                        <p> <a href="#!" class="text-reset">Pricing</a></p>
-                        <p><a href="#!" class="text-reset">Settings</a></p>
-                        <p><a href="#!" class="text-reset">Orders</a></p>
-                        <p> <a href="#!" class="text-reset">Help</a></p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
-                        <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
-                        <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com</p>
-                        <p><i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com</p>
-                        <p><i class="fas fa-phone me-3"></i>0978236082</p>
-
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
+        <section class="" style="color: white">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i> Nike Shop</h6>
+                <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
+                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
+                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                <a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>  
+                <a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
+                <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
+              </div>
+              <!-- Grid column -->
             </div>
+            <!-- Grid row -->
+          </div>
         </section>
         <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+      </footer>
 
  </div>
 

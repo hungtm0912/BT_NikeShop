@@ -3,7 +3,7 @@ require_once "../database/config.php";
 
 if (isset($_POST['signin'])) {
   if (empty(trim($_POST['email'])) || empty(trim($_POST['password']))) {
-    $err = "Please enter email or password";
+    $err = "Bạn chưa điền email hoặc mật khẩu";
   } else {
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
@@ -26,7 +26,7 @@ if (isset($_POST['signin'])) {
 function checkAuth($email, $pass, $mysqli)
 {
   if (empty($err)) {
-    $sql = "SELECT * FROM users WHERE email = '$email'";
+    $sql = "SELECT * FROM `users` WHERE `email` = '$email'";
     $result = $mysqli->query($sql) or die($mysqli->error);
 
     $number_rows = mysqli_num_rows($result);

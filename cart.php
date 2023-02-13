@@ -116,7 +116,7 @@ if (!isset($_SESSION['username'])) {
               </div>
             </div>
             <div class="back-to-shop">
-              <a href="./index.php">&leftarrow; Quay Lại Shop</a>
+              <a href="./index.php"><i class="fas fa-long-arrow-left"></i> Quay Lại Shop</a>
             </div>
           </div>
           <div class="col-md-4 summary">

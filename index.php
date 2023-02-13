@@ -25,7 +25,7 @@ require_once './database/config.php';
     Tawk_LoadStart = new Date();
   (function() {
     var s1 = document.createElement("script"),
-      s0 = document.getElementsByTagName("script")[0];
+    s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
     s1.src = 'https://embed.tawk.to/62b72f6bb0d10b6f3e794ac6/1g6dp2fhk';
     s1.charset = 'UTF-8';
@@ -172,68 +172,48 @@ require_once './database/config.php';
   </div>
 
   <!-- Footer -->
-  <footer style="background-color: #333333 !important;" class="text-center text-lg-start bg-light text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Liên hệ với chúng tôi qua những mạng xã hội sau</span>
-      </div>
-      <!-- Left -->
-
-      <!-- Right -->
-      <div>
-        <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
-        <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
-        <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i> </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="color: white">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i> Nike Shop</h6>
-            <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+  <hr style="background-color: white; width: 100%;">
+      <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links  -->
+        <section class="" style="color: white">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i> Nike Shop</h6>
+                <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
+                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
+                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                <a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>  
+                <a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
+                <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
+              </div>
+              <!-- Grid column -->
             </div>
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="color: white">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
-            <p><a href="#!" class="text-reset" style="color: white">Quần Áo Thể Thao</a></p>
-            <p><a href="#!" class="text-reset" style="color: white">Giày Thể Thao</a></p>
-            <p><a href="#!" class="text-reset" style="color: white">Phụ Kiện</a></p>
+            <!-- Grid row -->
           </div>
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="color: white">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Thông tin</h6>
-            <p><a href="#!" class="text-reset" style="color: white">Pricing</a></p>
-            <p><a href="#!" class="text-reset" style="color: white">Settings</a></p>
-            <p> <a href="#!" class="text-reset" style="color: white">Orders</a> </p>
-            <p><a href="#!" class="text-reset" style="color: white">Help</a></p>
-          </div>
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="color: white">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Thông Tin Liên hệ</h6>
-            <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
-            <p><i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com </p>
-            <p><i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com </p>
-            <p><i class="fas fa-phone me-3"></i> 0978236082</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
+        </section>
+        <!-- Section: Links  -->
+      </footer>
     <!-- Section: Links  -->
 
     <!-- Copyright -->

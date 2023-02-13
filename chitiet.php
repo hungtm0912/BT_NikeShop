@@ -1,6 +1,5 @@
 <?php
   require_once "./database/config.php";
-  session_start();
 
   $product_idd;
   if(isset($_GET['id']))
@@ -206,15 +205,6 @@ $product = mysqli_fetch_array($product_sql);
             <li class="nav-item">
               <a class="nav-link active nav-link-active-custom" href="#">Hướng dẫn mua hàng</a>
             </li>
-            <!-- <li class="nav-item">
-                            <a class="nav-link active nav-link-active-custom" href="#">Cách chọn size</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active nav-link-active-custom" href="#">Tin tức giày</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active nav-link-active-custom" href="#">Hệ thống cửa hàng</a>
-                        </li> -->
             <li class="nav-item">
               <a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a>
             </li>
@@ -278,149 +268,51 @@ $product = mysqli_fetch_array($product_sql);
             </div>
             <!--END-Position-->
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3 comments-section">
-
-                <!-- if user is not signed in, tell them to sign in. If signed in, present them with comment form -->
-                <?php if (isset($_SESSION['user_id'])) : ?>
-                <form action="chitiet.php" method="post" class="clearfix" id="comment_form">
-                  <textarea name="comment_text" id="comment_text" class="form-control" cols="30" rows="3"></textarea>
-                  <input type="hidden" name='product_id' id='product_id' value="<?php echo $id ?>" />
-                  <button class="btn btn-primary btn-sm pull-right" id="submit_comment">Bình Luận</button>
-                </form>
-                <?php else : ?>
-                <div class="well" style="margin-top: 20px;">
-                  <h4 class="text-center cus_tag"><a href="/PhuongNamSport/signin">Đăng Nhập</a>Đăng Bình Luận</h4>
-                </div>
-                <?php endif ?>
-
-                <!-- Display total number of comments on this post  -->
-                <h2><span id="comments_count"><?php echo count($comments) ?></span> Bình Luận</h2>
-                <hr>
-
-                <!-- comments wrapper -->
-                <div id="comments-wrapper">
-                  <?php if (isset($comments)) : ?>
-                  <!-- Display comments -->
-                  <?php foreach ($comments as $comment) : ?>
-                  <!-- comment -->
-                  <div class="comment clearfix">
-                    <img src='./Admin_view/upload/user/<?php echo $comment['avatar'] ?>' alt="" class=" profile_pic">
-                    <div class="comment-details">
-                      <span class="comment-name"><?php echo getUsernameById($comment['user_id']) ?></span>
-                      <span
-                        class="comment-date"><?php echo date("F j, Y ", strtotime($comment["created_at"])); ?></span>
-                      <p><?php echo $comment['body']; ?></p>
-                      <a class="reply-btn" href="#" data-id="<?php echo $comment['comment_id']; ?>">reply</a>
-                    </div>
-                    <!-- reply form -->
-                    <form class="reply_form clearfix" id="comment_reply_form_<?php echo $comment['comment_id'] ?>"
-                      data-id="<?php echo $comment['comment_id']; ?>">
-                      <textarea class="form-control" name="reply_text" id="reply_text" cols="30" rows="2"></textarea>
-                      <button class="btn btn-primary btn-xs pull-right submit-reply">Submit reply</button>
-                    </form>
-
-                    <!-- GET ALL REPLIES -->
-                    <?php $replies = getRepliesByCommentId($comment['comment_id']) ?>
-                    <div class="replies_wrapper_<?php echo $comment['comment_id']; ?>">
-                      <?php if (isset($replies)) : ?>
-                      <?php foreach ($replies as $reply) : ?>
-                      <!-- reply -->
-                      <div class="comment reply clearfix">
-                        <img src='./Admin_view/upload/user/<?php echo $reply['avatar'] ?>' alt="" class="profile_pic">
-                        <div class="comment-details">
-                          <span class="comment-name"><?php echo getUsernameById($reply['user_id']) ?></span>
-                          <span
-                            class="comment-date"><?php echo date("F j, Y ", strtotime($reply["created_at"])); ?></span>
-                          <p><?php echo $reply['body']; ?></p>
-                          <a class="reply-btn" href="#">reply</a>
-                        </div>
-                      </div>
-                      <?php endforeach ?>
-                      <?php endif ?>
-                    </div>
-                  </div>
-                  <!-- // comment -->
-                  <?php endforeach ?>
-                  <?php else : ?>
-                  <h2>H</h2>
-                  <?php endif ?>
-                </div><!-- comments wrapper -->
-              </div><!-- // all comments -->
-            </div>
-          </div>
+      
           <!-- Footer -->
           <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
-            <!-- Section: Social media -->
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-              <!-- Left -->
-              <div class="me-5 d-none d-lg-block">
-              <span>Liên hệ với chúng tôi qua những mạng xã hội sau</span>
+        <hr style="background-color: white; width: 100%;">
+      <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links  -->
+        <section class="" style="color: white">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i> Nike Shop</h6>
+                <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
               </div>
-              <!-- Left -->
-              <!-- Right -->
-              <div>
-                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i> </a>
-                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i> </a>
-                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i> </a>
-
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
+                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
+                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
               </div>
-              <!-- Right -->
-            </section>
-            <!-- Section: Social media -->
-
-            <!-- Section: Links  -->
-            <section class="">
-              <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                  <!-- Grid column -->
-                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                      <i class="fas fa-gem me-3"></i> Nike Shop</h6>
-                    <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất</p>
-                  </div>
-                  <!-- Grid column -->
-
-                  <!-- Grid column -->
-                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">Chuyên về Sản Phẩm</h6>
-                    <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
-                    <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
-                    <p><a href="#!" class="text-reset">Phụ kiện</a></p>
-              
-                  </div>
-                  <!-- Grid column -->
-
-                  <!-- Grid column -->
-                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4"> Useful links</h6>
-                    <p><a href="#!" class="text-reset">Pricing</a> </p>
-                    <p><a href="#!" class="text-reset">Settings</a> </p>
-                    <p><a href="#!" class="text-reset">Orders</a></p>
-                    <p><a href="#!" class="text-reset">Help</a></p>
-                  </div>
-                  <!-- Grid column -->
-
-                  <!-- Grid column -->
-                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4"> Liên hệ</h6>
-                    <p><i class="fas fa-home me-3"></i> Việt Trì- Phú Thọ</p>
-                    <p> <i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com</p>
-                    <p> <i class="fas fa-envelope me-3"></i> manhhungk18@gmail.com</p>
-                    <p><i class="fas fa-phone me-3"></i>0358307767</p>
-                  </div>
-                  <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                <a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>  
+                <a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a>
               </div>
-            </section>
-          </footer>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
+                <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      </footer>
         </div>
       </div>
     </div>

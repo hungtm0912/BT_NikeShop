@@ -76,9 +76,7 @@
       </div>
     </div>
   </div>
-  <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">
-    SẢN PHẨM HOT
-  </div>
+  <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">SẢN PHẨM HOT</div>
   <!--slide product-->
   <div class="container slide-product">
     <div class="row">
@@ -286,9 +284,7 @@
       </div>
     </div>
     <!--BEST OF ADIDAS-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">
-      Top Sản Phẩm Bán Chạy
-    </div>
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">Top Sản Phẩm Bán Chạy</div>
     <div style="margin-bottom: 2px !important;" class="container">
       <div class="row">
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 best">
@@ -324,25 +320,8 @@
     <div style=" max-width: 1300px;" class="container find">
       <!--END-Position-->
       <!-- Footer -->
+      <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4">
-          <!-- Left -->
-          <div class="me-5 d-none d-lg-block">
-          <span>Liên hệ với chúng tôi qua những mạng xã hội sau</span>
-          </div>
-          <!-- Left -->
-
-          <!-- Right -->
-          <div>
-            <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
-            <a href="" class="me-4 text-reset"> <i class="fab fa-google"></i></a>
-            <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
-          </div>
-          <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-          <hr style="background-color: white; width: 100%;">
         <!-- Section: Links  -->
         <section class="" style="color: white">
           <div class="container text-center text-md-start mt-5">
@@ -366,19 +345,15 @@
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p><a href="#!" class="text-reset">Pricing</a></p>
-                <p><a href="#!" class="text-reset">Settings</a></p>
-                <p><a href="#!" class="text-reset">Orders</a></p>
-                <p><a href="#!" class="text-reset">Help</a> </p>
+                <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                <a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>  
+                <a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
                 <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
-                <p> <i class="fas fa-envelope me-3"></i> huyngo9981@gmail.com</p>
-                <p> <i class="fas fa-envelope me-3"></i> manhungk18@gmail.com</p>
-                <p><i class="fas fa-phone me-3"></i> 0978236082</p>
               </div>
               <!-- Grid column -->
             </div>

@@ -359,6 +359,7 @@ body {
 
 .box:hover {
     flex: 1 1 25%;
+
 }
 .box:hover > img {
     width: 100%;
