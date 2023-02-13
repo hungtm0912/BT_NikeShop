@@ -37,9 +37,9 @@ if (isset($_POST['submit'])) {
     exit;
   }
 
-  $hash_pass = password_hash($password, PASSWORD_BCRYPT);
+  $hash_pass = password_hash($password, PASSWORD_BCRYPT); #ma hoa mat khau
 
-  $sql = "INSERT INTO `users`(`username`, `phone`,`email`, `password`, `name`, `avatar`) values ('$username', '$phone', '$email', '$hash_pass', '$name', '$avatar')";
+  $sql = "INSERT INTO `users`(`username`, `phone`,`email`, `password`, `name`, `avatar`) values ('$username', '$phone', '$email', '$password', '$name', '$avatar')";
   $mysqli->query($sql);
   move_uploaded_file($avatar_tmp, $path . $avatar);
 
