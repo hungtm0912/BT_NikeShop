@@ -22,17 +22,14 @@ if (isset($_POST['signin'])) {
     }
   }
 }
-
 function checkAuth($email, $pass, $mysqli)
 {
   if (empty($err)) {
     $sql = "SELECT * FROM `users` WHERE `email` = '$email'";
-    $result = $mysqli->query($sql) or die($mysqli->error);
-
+    $result = $mysqli->query($sql) or die($mysqli->error);           
     $number_rows = mysqli_num_rows($result);
     if ($number_rows == 1) {
       $each = mysqli_fetch_array($result);
-
       if (password_verify($pass, $each['password'])) {
         session_start();
         $_SESSION['username'] = $each['username'];

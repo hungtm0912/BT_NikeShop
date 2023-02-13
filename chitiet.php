@@ -269,9 +269,8 @@ $product = mysqli_fetch_array($product_sql);
             <!--END-Position-->
           </div>
       
-          <!-- Footer -->
-          <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
-        <hr style="background-color: white; width: 100%;">
+
+     <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->
         <section class="" style="color: white">

@@ -129,8 +129,7 @@ if (isset($_POST['submit'])) {
             <div class="input-group-prepend">
               <span class="input-group-text"> <i style="padding: 5px 0" class="fa fa-lock"></i> </span>
             </div>
-            <input path="password" name="password" class="form-control" placeholder="Mật Khẩu" type="password"
-              required />
+            <input path="password" name="password" class="form-control" placeholder="Mật Khẩu" type="password" required />
           </div>
 
           <div class="form-group input-group">

@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,16 +33,13 @@
                 header('location:./verifyPass.php');
             }else{
                 echo '<script type="text/javascript">alert("Email không tồn tại");</script>';
-            }
-        }
-    }
+            }}}
 ?>
 <body class="text-center">
     <main class="form-forgot">
         <form method="POST" action="">
             <img class="mb-4" src="./image/logoshop.png" alt="" width="200" height="160">
             <h1 class="h3 mb-3 fw-normal">Lấy lại mật khẩu</h1>
-
             <div class="form-floating">
                 <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
                 <label for="floatingInput">Nhập email:</label>
@@ -55,5 +51,4 @@
         <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
     </main>
 </body>
-
 </html>

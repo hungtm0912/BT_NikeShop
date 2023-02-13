@@ -317,7 +317,6 @@
         </div>
       </div>
     </div>
-    <div style=" max-width: 1300px;" class="container find">
       <!--END-Position-->
       <!-- Footer -->
       <hr style="background-color: white; width: 100%;">
