@@ -44,9 +44,7 @@ if (isset($_SESSION['username'])) {
           name="password" required>
         <label for="floatingPassword">Mật Khẩu</label>
       </div>
-      <div class="row">
-        <div class="g-recaptcha" data-sitekey="6LcA8a0gAAAAAP5YAPhSR9gywJ_Sa38p8e5mP5ut"></div>
-      </div>
+     
       <div class="checkbox mb-3">
         <label><input type="checkbox" value="remember-me"> Nhớ mật khẩu</label>
       </div>
