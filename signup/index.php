@@ -54,10 +54,8 @@ if (isset($_POST['submit'])) {
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -138,14 +136,12 @@ if (isset($_POST['submit'])) {
             </div>
             <input class="form-control" name="re_password" placeholder="Nhâp Lại Mật Khẩu" type="password" required />
           </div>
-
           <!-- phần thêm avatar   -->
           <div class="form-group">
             <div style="width: 93.333333% !important;" class="col-md-4">
               <input id="avatarfile" name="user_avatar" class="input-file" type="file" />
             </div>
           </div>
-
           <div style="margin-top: 10px;" class="form-group">
             <button type="submit" name="submit" class="btn btn-primary btn-block"> Tạo tài khoản </button>
           </div>
@@ -159,5 +155,4 @@ if (isset($_POST['submit'])) {
   </div>
   <br><br>
 </body>
-
 </html>

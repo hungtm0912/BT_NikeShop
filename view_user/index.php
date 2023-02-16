@@ -117,7 +117,7 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/PhuongNamSport/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin"
+                        <img src="/BT_NikeShop/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin"
                           class="rounded-circle" width="150" height="150">
                         <div class="mt-3">
                           <h4><?php echo $user['username'] ?></h4>

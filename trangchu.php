@@ -150,7 +150,7 @@
         </div>
         <div class="col-2 col-sm-4 col-md-2 col-lg-2">
           <div style="margin-bottom: 10px !important;" class="card card-custom">
-            <spa n class="ico-sale">-21%</span>
+            <span class="ico-sale">-21%</span>
             <img class="card-img-top link" src="./product img/aodas2.webp" alt="Card image cap">
             <!-- <hr class="gach-ngang"> -->
             <div style="padding: 4px 1px !important;" class="card-body">

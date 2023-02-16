@@ -110,13 +110,13 @@
   }
   </style>
 </head>
-<?php
-session_start();
-$id = $_GET['id'];
-$sql = "SELECT * FROM products WHERE product_id = $id";
-$product_sql = $mysqli->query($sql);
-$product = mysqli_fetch_array($product_sql);
-?>
+  <?php
+    session_start();
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM products WHERE product_id = $id";
+    $product_sql = $mysqli->query($sql);
+    $product = mysqli_fetch_array($product_sql);
+  ?>
 
 <body>
   <!--Start of Tawk.to Script-->
@@ -226,7 +226,7 @@ $product = mysqli_fetch_array($product_sql);
           <div class="col-8">
             <p class="name-product"><?php echo $product['product_name'] ?></p>
             <?php if ($product['product_sale'] > 0) { ?>
-            <span class="card-text old-price"><?php echo number_format($product['product_price']) ?>đ</span>
+            <span class="card-text old-price"><?php echo number_format($product['product_price']) ?> VND</span>
             <?php } else { ?>
             <span class="card-text old-price"></span>
             <?php } ?>
@@ -234,7 +234,7 @@ $product = mysqli_fetch_array($product_sql);
             <?php if ($product['product_sale'] > 0) { ?>
             <span style="margin-left: 20px; font-size: 30px" class="card-text new-price">
               <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100) ?>
-              đ</span>
+              VND</span>
             <?php } else { ?>
             <span class="card-text new-price"> <?php echo $product['product_price'] ?> VND</span>
             <?php } ?>
@@ -244,7 +244,7 @@ $product = mysqli_fetch_array($product_sql);
             <!-- size button -->
             <?php
             $name =  $product['product_name'];
-            $sql = "SELECT size_name FROM products  WHERE product_name = N'$name' ORDER BY size_name ASC";
+            $sql = "SELECT size_name FROM products WHERE product_name = N'$name' ORDER BY size_name ASC";
             $ketqua = $mysqli->query($sql);
             ?>
             <div class=" shoe size">
@@ -308,10 +308,10 @@ $product = mysqli_fetch_array($product_sql);
               <!-- Grid column -->
             </div>
             <!-- Grid row -->
-          </div>
+          </div>  
         </section>
         <!-- Section: Links  -->
-      </footer>
+      </footer>                                                                                                                                                                                                                                              
         </div>
       </div>
     </div>
