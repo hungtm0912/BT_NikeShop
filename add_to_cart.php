@@ -17,4 +17,4 @@ if(empty($_SESSION['cart'][$id])){
 }else {
     $_SESSION['cart'][$id]['quantity'] ++;
 }
-header('location:./cart.php');
+    header('location:./cart.php');

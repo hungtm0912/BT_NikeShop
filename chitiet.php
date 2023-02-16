@@ -1,6 +1,5 @@
 <?php
   require_once "./database/config.php";
-
   $product_idd;
   if(isset($_GET['id']))
     $product_idd = $_GET['id'];
@@ -11,18 +10,15 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
   integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <title>Nike Shop</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./chitiet.css">
@@ -30,23 +26,19 @@
   .cus_tag {
     text-align: left !important;
   }
-
   form button {
     margin: 5px 0px;
   }
-
   textarea {
     display: block;
     width: 100% !important;
     margin-bottom: 2px !important;
   }
-
   /*post*/
   .post {
     border: 1px solid #ccc;
     margin-top: 10px;
   }
-
   /*comments*/
   .comments-section {
     margin-top: 100px;
@@ -55,34 +47,27 @@
     color: white;
     border: none;
   }
-
   .comment {
     margin-bottom: 10px;
   }
-
   .comment .comment-name {
     font-weight: bold;
   }
-
   .comment .comment-date {
     font-style: italic;
     font-size: 0.8em;
   }
-
   .comment .reply-btn,
   .edit-btn {
     font-size: 0.8em;
   }
-
   .comment-details {
     width: 91.5%;
     float: left;
   }
-
   .comment-details p {
     margin-bottom: 0px;
   }
-
   .comment .profile_pic {
     width: 35px;
     height: 35px;
@@ -90,21 +75,17 @@
     float: left;
     border-radius: 50%;
   }
-
   /*replies*/
   .reply {
     margin-left: 30px;
   }
-
   .reply_form {
     margin-left: 40px;
     display: none;
   }
-
   #comment_form {
     margin-top: 10px;
   }
-
   #submit_comment {
     margin-bottom: 30px;
   }
@@ -117,7 +98,6 @@
     $product_sql = $mysqli->query($sql);
     $product = mysqli_fetch_array($product_sql);
   ?>
-
 <body>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -141,12 +121,13 @@
           <div class="col-12 nav-item dropdown nav-custom">
             <a class=" col-2 nav-link dropdown-toggle nav-custom" href="#" id="navbarDropdown" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="far fa-user"></i> <?php
+              <i class="far fa-user"></i> 
+              <?php
                  if (isset($_SESSION['name'])) {
                   echo $_SESSION['name'];
                   } else {
                    echo 'Tài khoản';
-                   }
+                  }
               ?>
             </a>
             <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
@@ -222,7 +203,6 @@
           <div class="col-4">
             <img width="350px" heigh="350px" src="./Admin_view/upload/<?php echo $product['product_image'] ?>" alt="">
           </div>
-
           <div class="col-8">
             <p class="name-product"><?php echo $product['product_name'] ?></p>
             <?php if ($product['product_sale'] > 0) { ?>
@@ -230,7 +210,6 @@
             <?php } else { ?>
             <span class="card-text old-price"></span>
             <?php } ?>
-
             <?php if ($product['product_sale'] > 0) { ?>
             <span style="margin-left: 20px; font-size: 30px" class="card-text new-price">
               <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100) ?>

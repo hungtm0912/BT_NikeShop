@@ -75,7 +75,6 @@
     </div>
     <?php
     $items = 0;
-
     if (isset($_SESSION['items']))
       $items = $_SESSION['items'];
     ?>
@@ -94,7 +93,6 @@
     </div>
     <?php } ?>
   </div>
-
   <div class="row col-12 mb-3">
     <ul style="margin: auto;" class="nav ">
       <li class="nav-item">

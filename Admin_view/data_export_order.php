@@ -34,9 +34,9 @@ header("Content-Disposition:attachment;filename=\"$filename\"");
       <td style="border: 1px solid black;">
         <?php
           if ($row_order['status'] == 1)
-            echo "delivered";
+            echo "Đã giao hàng";
           else
-            echo "delivering";
+            echo "Đang giao hàng";
           ?>
       </td>
     </tr>

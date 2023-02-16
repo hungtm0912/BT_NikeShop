@@ -31,13 +31,10 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 1) {
           <h1 class="h2">Bảng</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
-              <button type="button" class="btn btn-sm btn-outline-secondary">Chia sẻ</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Chia Sẻ</button>
               <button type="button" class="btn btn-sm btn-outline-secondary">Xuất</button>
             </div>
-            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-              <span data-feather="calendar"></span>
-              Tuần Này            
-            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle"><span data-feather="calendar"></span>Tuần Này</button>
           </div>
         </div>
         <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>

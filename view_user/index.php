@@ -150,7 +150,7 @@
                       <!-- phần thêm avatar   -->
                       <!-- File Button -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="avatar">Ảnh đại diện</label>
+                        <label class="col-md-4 control-label" for="avatar">Avatar</label>
                         <div style="width: 93.333333% !important;" class="col-md-4">
                           <input id="avatarfile" name="user_avatar" class="input-file" type="file" />
                         </div>
@@ -173,8 +173,6 @@
       </main>
     </div>
   </div>
-
-
   <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
     integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">

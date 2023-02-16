@@ -7,13 +7,12 @@ if (isset($_POST['signin'])) {
   } else {
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
-    $check = checkAuth($email, $password,$mysqli);
+    $check = checkAuth($email, $password, $mysqli);
     if($check == NULL){
       header('location: /BT_NikeShop/trangchu.php');
     } else{
       header('location: /BT_NikeShop/signin?err_match='.$check);
     }
-    
   }
 }
 function checkAuth($email, $pass, $mysqli)
@@ -22,7 +21,7 @@ function checkAuth($email, $pass, $mysqli)
     echo $sql;
     $result = $mysqli->query($sql) or die($mysqli->error);           
     $number_rows = mysqli_num_rows($result);
-    $error =[];
+    $error = [];
     if ($number_rows == 1) {
       $each = mysqli_fetch_array($result);
       if ($pass == $each['password']) {
