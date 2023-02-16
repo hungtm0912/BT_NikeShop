@@ -8,7 +8,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <link rel="stylesheet" href="./forgotpass.css">
-    <title>Reset password</title>
+    <title>Nike Shop</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="signin.css" rel="stylesheet">
@@ -38,7 +38,7 @@
             <h1 class="h3 mb-3 fw-normal">Nhập mật khẩu mới</h1>
             <div class="form-group input-group">
                 <input path="password" name="password" class="form-control" placeholder="Create new password" type="password" required />
-            </div>
+            </div>         
             <br>
             <div class="form-group input-group">
                 <input class="form-control" name="re_password" placeholder="Repeat password" type="password" required />
@@ -47,8 +47,7 @@
             <button class="w-60 btn btn-primary" type="submit" name="signin">Đổi mật khẩu</button>
         </form>
         <p class="text-center" style="margin-top:8px">Bạn chưa có tài khoản ? <a href="./signup">Đăng ký</a> </p>
-        <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
     </main>
-</body>
-
+</body>                                                      
 </html>

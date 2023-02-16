@@ -1,35 +1,30 @@
 <?php
 require_once "../database/config.php";
 $filename = "orders_data.xls";
-
 header('Content-Type: application/vnd.ms-excel; charset=vi');
 header("Content-Disposition:attachment;filename=\"$filename\"");
 ?>
-
 <table class="table table-striped">
   <thead>
     <tr>
       <th style="border: 1px solid black;" scope="col">#</th>
       <th style="border: 1px solid black;" scope="col">Order Code</th>
-      <th style="border: 1px solid black;" scope="col">Customer Name</th>
-      <th style="border: 1px solid black;" scope="col">Address</th>
-      <th style="border: 1px solid black;" scope="col">Phone</th>
-      <th style="border: 1px solid black;" scope="col">Total</th>
-      <th style="border: 1px solid black;" scope="col">Status</th>
+      <th style="border: 1px solid black;" scope="col">Tên Khách Hàng</th>
+      <th style="border: 1px solid black;" scope="col">Địa Chỉ</th>
+      <th style="border: 1px solid black;" scope="col">Số Điện Thoại</th>
+      <th style="border: 1px solid black;" scope="col">Tổng</th>
+      <th style="border: 1px solid black;" scope="col">Trạng Thái</th>
     </tr>
   </thead>
   <tbody>
     <?php
     $sql_orders = mysqli_query($mysqli, "SELECT * FROM `orders`");
     ?>
-
     <?php
     $i = 1;
     while ($row_order = mysqli_fetch_array($sql_orders)) {
     ?>
-
     <tr id="boi-xam">
-
       <td style="border: 1px solid black;"><?php echo $i++ ?></td>
       <td style="border: 1px solid black;"><?php echo $row_order['order_id'] ?></td>
       <td style="border: 1px solid black;"><?php echo $row_order['name_receiver'] ?></td>

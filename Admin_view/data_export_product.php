@@ -10,10 +10,10 @@ header("Content-Disposition:attachment;filename=\"$filename\"");
   <thead>
     <tr>
       <th style="border: 1px solid black;" scope="col">#</th>
-      <th style="border: 1px solid black;" scope="col">Title</th>
-      <th style="border: 1px solid black;" scope="col">Price</th>
-      <th style="border: 1px solid black;" scope="col">Category</th>
-      <th style="border: 1px solid black;" scope="col">Quantity</th>
+      <th style="border: 1px solid black;" scope="col">Tiêu Đề</th>
+      <th style="border: 1px solid black;" scope="col">Giá</th>
+      <th style="border: 1px solid black;" scope="col">Loại</th>
+      <th style="border: 1px solid black;" scope="col">Chất Lượng</th>
     </tr>
   </thead>
   <tbody>

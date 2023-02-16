@@ -170,23 +170,16 @@ require_once './database/config.php';
       </div>
     </div>
   </div>
-
-  <!-- Footer -->
   <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
-        <!-- Section: Links  -->
         <section class="" style="color: white">
           <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
             <div class="row mt-3">
-              <!-- Grid column -->
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i> Nike Shop</h6>
-                <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+                  <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
               </div>
-              <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
@@ -214,12 +207,6 @@ require_once './database/config.php';
         </section>
         <!-- Section: Links  -->
       </footer>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -234,5 +221,4 @@ require_once './database/config.php';
   <script src="./OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
   </div>
 </body> 
-
 </html>

@@ -4,7 +4,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>Nike Shop</title>
   <meta charset="UTF-8">
@@ -18,15 +17,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-
 <body>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-  var Tawk_API = Tawk_API || {},
+    var Tawk_API = Tawk_API || {},
     Tawk_LoadStart = new Date();
   (function() {
     var s1 = document.createElement("script"),
-      s0 = document.getElementsByTagName("script")[0];
+    s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
     s1.src = 'https://embed.tawk.to/62b72f6bb0d10b6f3e794ac6/1g6dp2fhk';
     s1.charset = 'UTF-8';
@@ -60,7 +58,7 @@
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="./image/slideshow_3.jpg" alt="Second slide">
-          </div>
+          </div> 
           <div class="carousel-item">
             <img class="d-block w-100" src="./image/slideshow_4.jpg" alt="Third slide">
           </div>
@@ -92,9 +90,8 @@
             <div style="padding: 0 0;" class="pad15 ">
               <div style="margin-bottom: 10px !important; background-color:#333333!important;" class="card ">
                 <span class="ico-sale">-<?php echo $row_product['product_sale'] ?>%</span>
-                <a href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><img class="card-img-top link" src="./Admin_view/upload/<?php echo $row_product['product_image'] ?>"
-                  alt="Card image cap"></a>
-
+                <a href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><img class="card-img-top link" 
+                  src="./Admin_view/upload/<?php echo $row_product['product_image'] ?>"  alt="Card image cap"></a>
                 <div style="padding: 0 1px !important;" class="card-body">
                   <a style="color: orange;" class="card-title product-title"
                     href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><?php echo $row_product['product_name'] ?></a>
@@ -106,14 +103,13 @@
               </div>
             </div>
           </div>
-
           <?php
           } ?>
         </div>
-        <button style="background-color: white; color: black" class="btn btn-primary leftLst"><i
-            class="fa-solid fa-chevron-left"></i></button>
-        <button style="background-color: white; color: black" class="btn btn-primary rightLst"><i
-            class="fa-solid fa-chevron-right"></i></button>
+        <button style="background-color: white; color: black" class="btn btn-primary leftLst">
+        <i class="fa-solid fa-chevron-left"></i></button>
+        <button style="background-color: white; color: black" class="btn btn-primary rightLst">
+        <i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
     <!--NEW PRODUCT-->
@@ -129,7 +125,7 @@
               <a class="card-title product-title" href="./chitiet.php">ÁO TANK TOP TẬP THỂ THAO</a>
               <div class="price">
                 <p class="card-text old-price">1,200,000₫</p>
-                <p class="card-text new-price"> 1,000,000₫</p>
+                <p class="card-text new-pr ice">1,000,000₫</p>
               </div>
             </div>
           </div>
@@ -252,7 +248,6 @@
         <img height="150px !important" src="./type_of_product/ball.jpg">
         <span>Phụ Kiện Thể Thao</span>
       </div>
-
     </div>
     <!--GENERATION-->
     <div class="container">
@@ -331,7 +326,7 @@
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i> Nike Shop</h6>
-                <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+                  <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
               </div>
               <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

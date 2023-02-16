@@ -4,27 +4,21 @@
 <?php
 include './include/head.php';
 ?>
-
 <body>
   <?php
     require_once "../database/config.php";
     ?>
-
-
   <!-- HEADER -->
   <?php
     include './include/header.php';
     ?>
-
-
   <div class="container-fluid">
     <div class="row">
       <!-- NAVIGATION -->
       <?php
             include './include/nav.php';
-            ?>
+        ?>
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-
         <?php
                 if (isset($_POST['add'])) {
                     $prd_categoryID = $_POST['prd_category'];
@@ -43,9 +37,7 @@ include './include/head.php';
                     echo '<script type="text/javascript">alert("Thêm sản phẩm thành công!!!");</script>';
                     // header('location: ./productList.php');
                 }
-
                 ?>
-
         <form modelAttribute="products" method="post" action="" class="form-horizontal" enctype="multipart/form-data">
           <fieldset>
             <hidden path="id" />
@@ -138,9 +130,7 @@ include './include/head.php';
             <br>
             <div class="form-group">
               <div class="col-md-4">
-                <button id="singlebutton" name="add" class="btn btn-primary">
-                  Thêm sản phẩm
-                </button>
+                <button id="singlebutton" name="add" class="btn btn-primary"> Thêm sản phẩm</button>
               </div>
             </div>
           </fieldset>
@@ -149,9 +139,7 @@ include './include/head.php';
     </div>
   </div>
 
-
   <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
     integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
   </script>
@@ -164,5 +152,4 @@ include './include/head.php';
   <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
 </body>
-
 </html>

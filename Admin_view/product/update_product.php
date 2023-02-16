@@ -145,7 +145,7 @@
             </script>
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="Price"Giá</label>
+              <label class="col-md-4 control-label" for="Price"Giá></label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input value="<?php echo $product['product_price'] ?>" id="Price" name="prd_price" placeholder="Price" class="form-control input-md" type="text" />
               </div>

@@ -7,16 +7,25 @@ if (isset($_POST['signin'])) {
   } else {
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
+    $check = checkAuth($email, $password,$mysqli);
+    if($check == NULL){
+      header('location: /BT_NikeShop/trangchu.php');
+    } else{
+      header('location: /BT_NikeShop/signin?err_match='.$check);
+    }
+    
+  }
 }
 function checkAuth($email, $pass, $mysqli)
 {
-  if (empty($err)) {
-    $sql = "SELECT * FROM users WHERE email = $email ";
+    $sql = "SELECT * FROM users WHERE email = '{$email}' ";
+    echo $sql;
     $result = $mysqli->query($sql) or die($mysqli->error);           
     $number_rows = mysqli_num_rows($result);
+    $error =[];
     if ($number_rows == 1) {
       $each = mysqli_fetch_array($result);
-      if (password_verify($pass, $each['password'])) {
+      if ($pass == $each['password']) {
         session_start();
         $_SESSION['username'] = $each['username'];
         $_SESSION['role'] = $each['role'];
@@ -25,17 +34,11 @@ function checkAuth($email, $pass, $mysqli)
         $_SESSION['email'] = $each['email'];
         $_SESSION['user_id'] = $each['user_id'];
         $_SESSION['avatar'] = $each['avatar'];
-
-        header('location: /BT_NikeShop/trangchu.php');
+        //header('location: /BT_NikeShop/trangchu.php');
+        return ;
       } else
-        header('location: /BT_NikeShop/signin?err_match=Mật khẩu không chính xác!');
+        return $error[] = "Mật khẩu không chính xác!";
     } else {
-        header('location: /BT_NikeShop/signin?err_match=Tài khoản hoặc mật khẩu không chính xác!');
+      return $error[] = "Tài khoản hoặc Mật khẩu không chính xác!";
     }
   }
-}
-}
-
-
-
-

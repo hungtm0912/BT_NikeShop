@@ -45,10 +45,10 @@ include './include/head.php';
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Title</th>
-                  <th scope="col">Price</th>
-                  <th scope="col">Category</th>
-                  <th scope="col">Quantity</th>
+                  <th scope="col">Tiêu Đề</th>
+                  <th scope="col">Giá</th>
+                  <th scope="col">Loại</th>
+                  <th scope="col">Chất Lượng</th>
                   <th scope="col">Avatar</th>
                   <th scope="col">Action</th>
                 </tr>

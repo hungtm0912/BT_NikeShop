@@ -79,11 +79,11 @@
 
     $sql = "UPDATE users
           SET 
-          name='$name',
-          phone='$phone',
-          username='$fullname',
-          email='$email',
-          avatar='$avatar'
+          `name`='$name',
+          `phone`='$phone',
+          `username`='$fullname',
+          `email`='$email',
+          `avatar`='$avatar'
           WHERE user_id='$user_id'";
 
     $mysqli->query($sql);
@@ -159,8 +159,8 @@
                       <a href="../trangchu.php" class="btn btn-secondary btn-md active" role="button"
                         aria-pressed="true">Trở lại</a>
                       <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
-                      <a href="../Admin_view/user/process_user.php?id_userd=<?php echo $user['user_id'] ?>"
-                        class="btn btn-danger btn-md active"
+                      <a href="../Admin_vieer/process_user.php?id_userd=<?php echo $user['user_id'] ?>"
+                        class="btn btn-danger btw/usn-md active"
                         onclick="return confirm('Bạn chắc chắn muốn xóa tài khoản <?php echo $user['username'] ?> này?')"
                         role="button" aria-pressed=" true">Xóa</a>
                     </div>

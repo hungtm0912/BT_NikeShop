@@ -1,5 +1,6 @@
  <?php
     require_once "./database/config.php";
+
     $name_receiver = $_POST['name_receiver'];
     $email_receiver = $_POST['email_receiver'];
     $phone_receiver = $_POST['phone_receiver'];
@@ -20,7 +21,7 @@
     foreach ($cart as $each) {
         $total_price += $each['quantity'] * $each['price'];
     }
-    $sql = "INSERT INTO orders(user_id,name_receiver,phone_receiver,address_receiver,total,status)
+    $sql = "INSERT INTO orders(`user_id`,`name_receiver`,`phone_receiver`,`address_receiver`,`total`,`status`)
     VALUES ('$user_id','$name_receiver','$phone_receiver','$address_receiver','$total_price','$status')";
     $mysqli->query($sql);
 

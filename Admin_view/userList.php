@@ -1,10 +1,8 @@
 <html lang="en">
-
 <link rel="stylesheet" href="./user/styles_user.css">
 <?php
 include './include/head.php';
 ?>
-
 <body>
   <?php
   require_once "../database/config.php";
@@ -26,7 +24,6 @@ include './include/head.php';
         echo '<script type="text/javascript">alert("Xóa người dùng thành công!!!");</script>';
       }
       ?>
-
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div class="container-fluid">
           <form class="form-inline" action="" method="get" modelAttribute="products">
@@ -42,20 +39,17 @@ include './include/head.php';
                   </c:forEach>
                 </select>
                 <button type="submit" id="btnSearch" name="btnSearch" value="Search"
-                  class="btn btn-primary">Seach</button>
+                  class="btn btn-primary">Tìm Kiếm</button>
               </div>
-              <div>
-                <a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Add
-                  New</a>
-              </div>
+              <div><a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm</a></div>
             </div>
             <table class="table table-striped">
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Name</th>
+                  <th scope="col">Tên</th>
                   <th scope="col">Email</th>
-                  <th scope="col">Role</th>
+                  <th scope="col">Phân Quyền</th>
                   <th scope="col">Status</th>
                   <th scope="col">Action</th>
                 </tr>
@@ -84,11 +78,11 @@ include './include/head.php';
                   <td><span class="status text-success">&bull;</span><?php echo "Active" ?> </td>
                   <td>
                     <a class="btn btn-primary" href="./user/update_user.php?id=<?php echo $row_user['user_id'] ?>"
-                      role="button">Edit</a>
+                      role="button">Sửa</a>
                     <a class="btn btn-danger"
                       href="./user/process_user.php?id_delete=<?php echo $row_user['user_id'] ?>"
                       onclick="return confirm('Bạn có muốn xóa <?php echo $row_user['username'] ?>?')"
-                      role="button">Delete</a>
+                      role="button">Xóa</a>
                   </td>
                 </tr>
                 <?php
@@ -100,10 +94,7 @@ include './include/head.php';
         </div>
       </main>
     </div>
-
   </div>
-
-
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src=""></script>
   <script src="./dashboard.js"></script>
@@ -120,5 +111,4 @@ include './include/head.php';
   </script>
   <script type="text/javascript" src="${base}/js/jquery.js"></script>
 </body>
-
 </html>
