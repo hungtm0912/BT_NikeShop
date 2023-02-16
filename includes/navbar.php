@@ -5,7 +5,7 @@
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="far fa-user"></i> 
         <?php
-             if (isset($_SESSION['name'])) {
+             if (isset($_SESSION['username'])) {
                    echo $_SESSION['name'];
              } else {
                      echo 'Tài khoản';
@@ -14,13 +14,13 @@
       </a>
       <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
         <?php
-        if (!isset($_SESSION['name'])) {
+        if (!isset($_SESSION['username'])) {
           echo '<a class="dropdown-item dropdown-item-custom" href="./signup">Đăng Ký</a>';
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
         }
         ?>
         <?php
-        if (!isset($_SESSION['name'])) {
+        if (!isset($_SESSION['username'])) {
           echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Đăng Nhập</a>';
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
         }
@@ -30,20 +30,20 @@
         <a class="dropdown-item dropdown-item-custom" href="#">Thanh Toán </a>
         <div class="dropdown-divider margin: 3px 0;"></div>
         <?php
-        if (!isset($_SESSION['name'])) {
+        if (!isset($_SESSION['username'])) {
           echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Tra Cứu Đơn Hàng </a>';
         } else {
           echo '<a class="dropdown-item dropdown-item-custom" href="./uidonhang.php">Tra Cứu Đơn Hàng </a>';
         }
         ?>
         <?php
-        if (isset($_SESSION['name'])) {
+        if (isset($_SESSION['username'])) {
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
           echo '<a class="dropdown-item dropdown-item-custom" href="./signout">Đăng Xuất </a>';
         }
         ?>
         <?php
-        if (isset($_SESSION['name'])) {
+        if (isset($_SESSION['username'])) {
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
           echo '<a class="dropdown-item dropdown-item-custom" href="./view_user">Thông Tin Tài Khoản</a>';
         }
