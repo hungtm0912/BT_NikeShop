@@ -140,14 +140,10 @@ require_once './database/config.php';
                   <span class="card-text old-price"></span>
                   <?php } ?>
                   <?php if ($product['product_sale'] > 0) { ?>
-<<<<<<< HEAD
-                  <span class="card-text new-price">
-                    <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?> VNĐ</span>
-=======
+
                   <span class="card-text new-price" style="text-align: center">
                     <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>
                      VNĐ</span>
->>>>>>> f1b5a358b8f126677e18dd887adef60954b999fc
                   <?php } else { ?>
                   <span class="card-text new-price" style="text-align: center">
                     <?php echo number_format($product['product_price']) ?> VNĐ</span>
@@ -159,7 +155,6 @@ require_once './database/config.php';
           <?php }
           } ?>
         </div>
-        <hr><hr>
         <nav style="margin: auto; color: orange !important;" class="col-4" aria-label="Page navigation example">
           <ul class="pagination">
             <?php for ($i = 1; $i <= $so_trang; $i++) { ?>

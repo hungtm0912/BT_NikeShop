@@ -92,14 +92,14 @@
               <div style="margin-bottom: 10px !important; background-color:#333333!important;" class="card ">
                 <span class="ico-sale">-<?php echo $row_product['product_sale'] ?>%</span>
                 <a href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><img class="card-img-top link" 
-                  src="./Admin_view/upload/<?php echo $row_product['product_image'] ?>"  alt="Card image cap"></a>
+                  src="./Admin_view/upload/<?php echo $row_product['product_image'] ?>" style="width: 100%; height: 250px;"  alt="Card image cap"></a>
                 <div style="padding: 0 1px !important;" class="card-body">
                   <a style="color: orange;" class="card-title product-title"
                     href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><?php echo $row_product['product_name'] ?></a>
                   <br>
-                  <span class="card-text old-price"><?php echo number_format($row_product['product_price']) ?>VND</span>
+                  <span class="card-text old-price"><?php echo number_format($row_product['product_price']) ?> VND</span>
                   <span
-                    class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?>đ</span>
+                    class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?> VNĐ</span>
                 </div>
               </div>
             </div>
