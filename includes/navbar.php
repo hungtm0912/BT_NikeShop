@@ -33,19 +33,19 @@
         if (!isset($_SESSION['username'])) {
           echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Tra Cứu Đơn Hàng </a>';
         } else {
-          echo '<a class="dropdown-item dropdown-item-custom" href="./uidonhang.php">Tra Cứu Đơn Hàng </a>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./uidonhang.php">Phản Hồi</a>';
+        }
+        ?>
+         <?php
+        if (isset($_SESSION['username'])) {
+          echo '<div class="dropdown-divider margin: 3px 0;"></div>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./view_user">Thông Tin Tài Khoản</a>';
         }
         ?>
         <?php
         if (isset($_SESSION['username'])) {
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
           echo '<a class="dropdown-item dropdown-item-custom" href="./signout">Đăng Xuất</a>';
-        }
-        ?>
-        <?php
-        if (isset($_SESSION['username'])) {
-          echo '<div class="dropdown-divider margin: 3px 0;"></div>';
-          echo '<a class="dropdown-item dropdown-item-custom" href="./view_user">Thông Tin Tài Khoản</a>';
         }
         ?>
         <?php
@@ -61,12 +61,11 @@
     <div style="justify-content: end !important;" class="col-3 logo">
       <img width="30%" src="./image/logoshop.png" alt="" style="margin-left: 100px">
     </div>
-
     <div class="col-6">
       <form action="" method="GET">
         <div class="input-group mb-3 mt-3">
-          <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" value=""
-            name="search" aria-describedby="basic-addon2">
+          <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" 
+            value="" name="search" aria-describedby="basic-addon2">
           <div class="input-group-append">
             <button type="submit" class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
           </div>
@@ -94,7 +93,7 @@
     <?php } ?>
   </div>
   <div class="row col-12 mb-3">
-    <ul style="margin: auto;" class="nav ">
+    <ul style="margin: auto;" class="nav">
       <li class="nav-item">
         <a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang Chủ</a>
       </li>
@@ -111,10 +110,10 @@
         <a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="#">Liên Hệ </a>
+        <a class="nav-link active nav-link-active-custom" href="#">Liên Hệ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale off</a>
+        <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale Off</a>
       </li>
     </ul>
   </div>

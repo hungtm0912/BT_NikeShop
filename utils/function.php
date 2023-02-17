@@ -57,7 +57,7 @@
 }
 // If the user clicked submit on reply form...
 if (isset($_POST['reply_posted'])) {
-  global $mysqli;
+  global $mysqli;           
   // grab the reply that was submitted through Ajax call
   $reply_text = $_POST['reply_text'];
   $comment_id = $_POST['comment_id'];

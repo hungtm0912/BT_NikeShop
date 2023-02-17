@@ -10,7 +10,6 @@ if (!isset($_SESSION['username'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Nike Shop</title>
   <link type="text/css" rel="stylesheet" rel="stylesheet" href="./cart.css">
   <link type="text/css" rel="stylesheet" rel="stylesheet" href="./style.css">
@@ -48,13 +47,12 @@ if (!isset($_SESSION['username'])) {
             <div class="title">
               <div class="row">
                 <div class="col">
-                  <h4  style="position:relative;left:25px;top:15px;color:red"><b>Giỏ Hàng</b></h4>
+                  <h4 style="position:relative;left:25px;top:15px;color:red"><b>Giỏ Hàng</b></h4>
                 </div>
               </div>
             </div>
             <?php
             $fullname = "";
-
             if (isset($_SESSION['name']))
               $fullname = $_SESSION['name'];
             ?>
@@ -90,7 +88,6 @@ if (!isset($_SESSION['username'])) {
               <?php endforeach ?>
               <?php } ?>
             </div>
-
             <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thông Tin Khách Hàng</div>
             <div class="p-4">
               <div class="form-group">
@@ -142,8 +139,6 @@ if (!isset($_SESSION['username'])) {
         </div>
       </div>
      </form>
-     
-   
      <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->
@@ -156,15 +151,15 @@ if (!isset($_SESSION['username'])) {
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i> Nike Shop</h6>
-                <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+                  <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
               </div>
               <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
-                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
-                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
-                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
+                  <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
+                  <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+                  <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
               </div>
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

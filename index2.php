@@ -71,7 +71,7 @@ session_start();
                         <a class="nav-link active nav-link-active-custom" href="#">Hướng dẫn mua hàng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-link-active-custom" href="#">Cách Cshọn size</a>
+                        <a class="nav-link active nav-link-active-custom" href="#">Cách Chọn size</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active nav-link-active-custom" href="#">Tin tức Sản Phẩm</a>

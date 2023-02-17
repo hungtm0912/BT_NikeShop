@@ -23,8 +23,7 @@
         if($email == ""){
             echo '<script type="text/javascript">alert("Không được để trống email");</script>';
         }else{
-            $sql = "SELECT * FROM users
-            WHERE email = '$email'";
+            $sql = "SELECT * FROM users WHERE email = '$email'";
             $user = $mysqli->query($sql);
             if(mysqli_fetch_array($user)){
                 $code = substr(rand(0,99999999),0,6);
