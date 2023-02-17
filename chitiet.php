@@ -15,12 +15,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <title>Nike Shop</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./chitiet.css">
   <style>
   .cus_tag {
@@ -105,7 +105,7 @@
     Tawk_LoadStart = new Date();
   (function() {
     var s1 = document.createElement("script"),
-      s0 = document.getElementsByTagName("script")[0];
+    s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
     s1.src = 'https://embed.tawk.to/62b72f6bb0d10b6f3e794ac6/1g6dp2fhk';
     s1.charset = 'UTF-8';
@@ -171,7 +171,6 @@
                 class="fas fa-shopping-cart"></i></a>
           </div>
         </div>
-
         <div class="row col-12 mb-3">
           <ul style="margin: auto;" class="nav">
             <li class="nav-item">
@@ -247,7 +246,6 @@
             </div>
             <!--END-Position-->
           </div>
-    
      <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->

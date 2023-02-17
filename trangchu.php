@@ -187,7 +187,7 @@
           </div>
         </div>
         <div class="col-2 col-sm-4 col-md-2 col-lg-2">
-          <div style="margin-bottom: 10px !important;" class="card card-custom">
+          <div s tyle="margin-bottom: 10px !important;" class="card card-custom">
             <span class="ico-sale">-21%</span>
             <img class="card-img-top link" src="./product img/quan2.webp" alt="Card image cap">
             <!-- <hr class="gach-ngang"> -->

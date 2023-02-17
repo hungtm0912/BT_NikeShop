@@ -70,17 +70,17 @@ require_once './database/config.php';
       if (!empty($_GET['categoryId'])) {
         $category_id = $_GET['categoryId'];
         $sql_so_san_pham = "SELECT COUNT(DISTINCT product_name) FROM products
-                    WHERE (category_id = $category_id)";
+                WHERE (category_id = $category_id)";
       } else {
         $sql_so_san_pham = "SELECT COUNT(DISTINCT product_name) FROM products
                 WHERE UPPER(product_name) LIKE '%$search%'";
       }
-      $mang_so_san_pham = $mysqli->query($sql_so_san_pham);
-      $kq_so_san_pham = mysqli_fetch_array($mang_so_san_pham);
-      $so_san_pham = $kq_so_san_pham['COUNT(DISTINCT product_name)'];
-      $so_san_pham_tren_1_trang = 8;
-      $so_trang = ceil($so_san_pham / $so_san_pham_tren_1_trang);
-      $boqua = $so_san_pham_tren_1_trang * ($trang - 1);
+        $mang_so_san_pham = $mysqli->query($sql_so_san_pham);
+        $kq_so_san_pham = mysqli_fetch_array($mang_so_san_pham);
+        $so_san_pham = $kq_so_san_pham['COUNT(DISTINCT product_name)'];
+        $so_san_pham_tren_1_trang = 8;
+        $so_trang = ceil($so_san_pham / $so_san_pham_tren_1_trang);
+        $boqua = $so_san_pham_tren_1_trang * ($trang - 1);
 
       $sql = "";
       if (!empty($_GET['categoryId'])) {
@@ -91,8 +91,7 @@ require_once './database/config.php';
         LIMIT $so_san_pham_tren_1_trang offset $boqua";
       } else {
         $sql = "SELECT * FROM products
-        WHERE
-        UPPER(product_name) LIKE '%$search%'
+        WHERE UPPER(product_name) LIKE '%$search%'
         group by product_name
         LIMIT $so_san_pham_tren_1_trang offset $boqua";
       }
@@ -140,14 +139,8 @@ require_once './database/config.php';
                   <span class="card-text old-price"></span>
                   <?php } ?>
                   <?php if ($product['product_sale'] > 0) { ?>
-<<<<<<< HEAD
-                  <span class="card-text new-price">
-                    <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?> VNĐ</span>
-=======
                   <span class="card-text new-price" style="text-align: center">
-                    <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>
-                     VNĐ</span>
->>>>>>> f1b5a358b8f126677e18dd887adef60954b999fc
+                    <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>VNĐ</span>
                   <?php } else { ?>
                   <span class="card-text new-price" style="text-align: center">
                     <?php echo number_format($product['product_price']) ?> VNĐ</span>
@@ -187,9 +180,9 @@ require_once './database/config.php';
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
-                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
-                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
-                <p><a href="#!" class="text-reset">Phụ Kiện</a></p>
+                  <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
+                  <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+                  <p><a href="#!" class="text-reset">Phụ Kiện</a></p>
               </div>
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

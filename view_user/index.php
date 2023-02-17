@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <style>
   .bd-placeholder-img {
     font-size: 1.125rem;
@@ -20,17 +19,14 @@
     -moz-user-select: none;
     user-select: none;
   }
-
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
   }
-
   .col-md-4 {
     width: 93.333333% !important;
   }
-
   .cus-info {
     width: 100%;
   }
@@ -38,17 +34,14 @@
   .form-group {
     margin-bottom: 12px;
   }
-
   body {
     margin-top: 40px;
     background-color: black;
   }
-
   .container {
     margin-left: -5%;
   }
   </style>
-
   <link href="/BT_NikeShop/Admin_view/dashboard.css" rel="stylesheet">
   <link href="/BT_NikeShop/Admin_view/styles_user_update.css" rel="stylesheet">
 </head>
@@ -73,26 +66,24 @@
     $number_rows = mysqli_fetch_array($result)['count(*)'];
 
     if ($number_rows == 1) {
-      header("location: /BT_NikeShop/view_user/index.php?id=$user_id&err_exist=Tài khoản đã tồn tại rùi");
+      header("location: /BT_NikeShop/view_user/index.php?id=$user_id&err_exist=Tài khoản đã tồn tại");
       exit;
     }
 
-    $sql = "UPDATE users
-          SET 
-          `name`='$name',
-          `phone`='$phone',
-          `username`='$fullname',
-          `email`='$email',
-          `avatar`='$avatar'
-          WHERE user_id='$user_id'";
+    $sql = "UPDATE users 
+            SET 
+            `name`='$name',
+            `phone`='$phone',
+            `username`='$fullname',
+            `email`='$email',
+            `avatar`='$avatar'
+            WHERE user_id='$user_id'";
 
     $mysqli->query($sql);
     move_uploaded_file($avatar_tmp, $path . $avatar);
-
     $_SESSION['email'] = $email;
     header('location: /BT_NikeShop/trangchu.php?success=true');
   }
-
   ?>
   <?php
   if (isset($_GET['err_exist'])) {
@@ -108,7 +99,6 @@
         $result = $mysqli->query($sql);
         $user = $result->fetch_assoc();
         ?>
-
         <div class="container">
           <form class="form-inline" method="POST" action="" enctype="multipart/form-data">
             <div class="main-body">
@@ -119,32 +109,28 @@
                       <div class="d-flex flex-column align-items-center text-center">
                         <img src="/BT_NikeShop/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin"
                           class="rounded-circle" width="150" height="150">
-                        <div class="mt-3">
-                          <h4><?php echo $user['username'] ?></h4>
-                        </div>
+                        <div class="mt-3"> <h4><?php echo $user['username'] ?></h4></div>
                       </div>
                       <div class="form-group">
                         <label for="inputAddress">Tên Đăng Nhập</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Enter your fullname"
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Nhập Tên Đăng Nhập"
                           value="<?php echo $user['username'] ?>" name="fullname">
                       </div>
-
                       <!-- Hidden field -->
                       <input type="hidden" name="user_idv" value="<?php echo $user['user_id'] ?>">
-
                       <div class="form-group">
                         <label for="inputAddress2">Email</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Enter your email"
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Nhập Email"
                           value="<?php echo $user['email'] ?>" name="email">
                       </div>
                       <div class="form-group">
                         <label for="inputAddress">Số Điện Thoại</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Enter your phone"
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Nhập SDT"
                           value="<?php echo $user['phone'] ?>" name="phone">
                       </div>
                       <div class="form-group">
                         <label for="inputAddress2">Họ và Tên</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Enter your name"
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Nhập Họ và Tên"
                           value="<?php echo $user['name'] ?>" name="name">
                       </div>
                       <!-- phần thêm avatar   -->
@@ -185,5 +171,4 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
 </body>
-
 </html>
