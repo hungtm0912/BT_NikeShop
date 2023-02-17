@@ -240,9 +240,9 @@ body {
 }
 .ico-sale {
     display: inline-block;
-    background-color: #5f0df8;
+    background-color: #ff0000;
     position: absolute;
-    width: 40px;
+    width: 45px;
     color: white;
     font-size: 13px;
     text-align: center;
