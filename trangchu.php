@@ -90,8 +90,9 @@
           <div class="item">
             <div style="padding: 0 0;" class="pad15 ">
               <div style="margin-bottom: 10px !important; background-color:#333333!important;" class="card ">
-                <span class="ico-sale">-<?php echo $row_product['product_sale'] ?>%</span>
-                <a href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><img class="card-img-top link" 
+                <span class="ico-sale" style="display: inline-block;background-color: #ff0000;position: absolute;
+                width: 45px;color: white;font-size: 13px;text-align: center;right: 3%;top: 5px;">-<?php echo $row_product['product_sale'] ?>%</span>
+                <a href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><img style="height: 200px;" class="card-img-top link" 
                   src="./Admin_view/upload/<?php echo $row_product['product_image'] ?>"  alt="Card image cap"></a>
                 <div style="padding: 0 1px !important;" class="card-body">
                   <a style="color: orange;" class="card-title product-title"
@@ -127,9 +128,10 @@
           <div class="item">
             <div style="padding: 0 0;" class="pad15 ">
               <div style="margin-bottom: 10px !important; background-color:#333333!important;" class="card ">
-                <span class="ico-sale">-<?php echo $row_product['product_sale'] ?>%</span>
-                <a href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><img class="card-img-top link" 
-                  src="./Admin_view/upload/<?php echo $row_product['product_image'] ?>"  alt="Card image cap"></a>
+              <span class="ico-sale" style="display: inline-block;background-color: #ff0000;position: absolute;
+                width: 45px;color: white;font-size: 13px;text-align: center;right: 3%;top: 5px;">-<?php echo $row_product['product_sale'] ?>%</span>
+                <a href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><img style="height: 200px;" class="card-img-top link"
+                  src="./Admin_view/upload/<?php echo $row_product['product_image'] ?>"  alt="Card image cap" ></a>
                 <div style="padding: 0 1px !important;" class="card-body">
                   <a style="color: orange;" class="card-title product-title"
                     href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><?php echo $row_product['product_name'] ?></a>
