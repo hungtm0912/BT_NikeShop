@@ -130,6 +130,7 @@ body {
 .card-img-top {
     display: block;
     width: 100%;
+    height: 150px;
     flex-shrink: 0;
     object-fit: cover;
 }
@@ -238,7 +239,7 @@ body {
 }
 .ico-sale {
     display: inline-block;
-    background-color: #f23f2f;
+    background-color: #5f0df8;
     position: absolute;
     width: 40px;
     color: white;
