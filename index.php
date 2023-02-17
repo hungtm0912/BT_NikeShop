@@ -122,13 +122,13 @@ require_once './database/config.php';
             foreach ($products as $product) {
           ?>
           <div class="col-lg-3 col-md-4 col-sm-6  ">
-            <div style="margin-bottom: 10px !important;" class="card card-custom">
+            <div style="margin-bottom: 60px !important;" class="card card-custom">
               <?php if ($product['product_sale'] > 0) { ?>
               <span class="ico-sale">-<?php echo $product['product_sale'] ?>%</span>
               <?php } else { ?>
               <span class="ico-sale"></span>
               <?php } ?>
-              <img class="card-img-top link" src="./Admin_view/upload/<?php echo $product['product_image'] ?>"
+              <img class="card-img-top link" style=" width: 100%; height: 250px;" src="./Admin_view/upload/<?php echo $product['product_image'] ?>"
                 alt="Card image cap">
               <div style="padding: 6px !important;" class="card-body">
                 <a class="card-title product-title"
@@ -140,8 +140,14 @@ require_once './database/config.php';
                   <span class="card-text old-price"></span>
                   <?php } ?>
                   <?php if ($product['product_sale'] > 0) { ?>
+<<<<<<< HEAD
                   <span class="card-text new-price">
                     <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?> VNĐ</span>
+=======
+                  <span class="card-text new-price" style="text-align: center">
+                    <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>
+                     VNĐ</span>
+>>>>>>> f1b5a358b8f126677e18dd887adef60954b999fc
                   <?php } else { ?>
                   <span class="card-text new-price" style="text-align: center">
                     <?php echo number_format($product['product_price']) ?> VNĐ</span>
