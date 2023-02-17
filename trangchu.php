@@ -82,7 +82,7 @@
       <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
         <div class="MultiCarousel-inner">
           <?php
-          $sql_product = mysqli_query($mysqli, "SELECT * FROM `products` group by product_name");
+          $sql_product = mysqli_query($mysqli, "SELECT * FROM `products` WHERE `product_sale` != 0");
           ?>
           <?php
           while ($row_product = mysqli_fetch_array($sql_product)) {
@@ -113,93 +113,43 @@
         <i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
+
+    
     <!--NEW PRODUCT-->
     <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;"> SẢN PHẨM MỚI</div>
-    <div style=" max-width: 1300px;" class="container find">
-      <div class="row">
-        <div class="col-4 col-sm-4 col-md-2 col-lg-2">
-          <div style="margin-bottom: 10px !important;" class="card card-custom">
-            <span class="ico-sale">-21%</span>
-            <img class="card-img-top link" src="./product img/aodas1.webp" alt="Card image cap">
-            <!-- <hr class="gach-ngang"> -->
-            <div style="padding: 4px 1px !important;" class="card-body">
-              <a class="card-title product-title" href="./chitiet.php">ÁO TANK TOP TẬP THỂ THAO</a>
-              <div class="price">
-                <p class="card-text old-price">1,200,000₫</p>
-                <p class="card-text new-pr ice">1,000,000₫</p>
+    <div class="row">
+      <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
+        <div class="MultiCarousel-inner">
+          <?php
+          $sql_product = mysqli_query($mysqli, "SELECT * FROM `products` group by `product_name`");
+          ?>
+          <?php
+          while ($row_product = mysqli_fetch_array($sql_product)) {
+          ?>
+          <div class="item">
+            <div style="padding: 0 0;" class="pad15 ">
+              <div style="margin-bottom: 10px !important; background-color:#333333!important;" class="card ">
+                <span class="ico-sale">-<?php echo $row_product['product_sale'] ?>%</span>
+                <a href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><img class="card-img-top link" 
+                  src="./Admin_view/upload/<?php echo $row_product['product_image'] ?>" style="width: 100%; height: 250px;"  alt="Card image cap"></a>
+                <div style="padding: 0 1px !important;" class="card-body">
+                  <a style="color: orange;" class="card-title product-title"
+                    href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><?php echo $row_product['product_name'] ?></a>
+                  <br>
+                  <span class="card-text old-price"><?php echo number_format($row_product['product_price']) ?> VND</span>
+                  <span
+                    class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?> VNĐ</span>
+                </div>
               </div>
             </div>
           </div>
+          <?php
+          } ?>
         </div>
-        <div class="col-2 col-sm-4 col-md-2 col-lg-2">
-          <div style="margin-bottom: 10px !important;" class="card card-custom">
-            <span class="ico-sale">-21%</span>
-            <img class="card-img-top link" src="./product img/giaydas1.webp" alt="Card image cap">
-            <!-- <hr class="gach-ngang"> -->
-            <div style="padding: 4px 1px !important;" class="card-body">
-              <a class="card-title product-title" href="./chitiet.php">GIÀY TRAINER DROPSET</a>
-              <div class="price">
-                <p class="card-text old-price">3,500,000₫</p>
-                <p class="card-text new-price"> 3,000,000₫</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 col-sm-4 col-md-2 col-lg-2">
-          <div style="margin-bottom: 10px !important;" class="card card-custom">
-            <span class="ico-sale">-21%</span>
-            <img class="card-img-top link" src="./product img/aodas2.webp" alt="Card image cap">
-            <!-- <hr class="gach-ngang"> -->
-            <div style="padding: 4px 1px !important;" class="card-body">
-              <a class="card-title product-title" href="./chitiet.php">ÁO KHOÁC GIÓ ADIDAS</a>
-              <div class="price">
-                <p class="card-text old-price">1,500,000₫</p>
-                <p class="card-text new-price"> 1,200,000₫</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 col-sm-4 col-md-2 col-lg-2">
-          <div style="margin-bottom: 10px !important;" class="card card-custom">
-            <img class="card-img-top link" src="./product img/quan1.webp" alt="Card image cap">
-            <!-- <hr class="gach-ngang"> -->
-            <div style="padding: 4px 1px !important;" class="card-body">
-              <a class="card-title product-title" href="./chitiet.php">QUẦN TẬP JOGA XANH RÊU</a>
-              <div class="price">
-                <p class="card-text old-price"></p>
-                <p class="card-text new-price"> 1,800,000₫</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 col-sm-4 col-md-2 col-lg-2">
-          <div style="margin-bottom: 10px !important;" class="card card-custom">
-            <span class="ico-sale">-21%</span>
-            <img class="card-img-top link" src="./product img/giaydas2.webp" alt="Card image cap">
-            <!-- <hr class="gach-ngang"> -->
-            <div style="padding: 4px 1px !important;" class="card-body">
-              <a class="card-title product-title" href="./chitiet.php">GIÀY ALPHATORSION 2.0</a>
-              <div class="price">
-                <p class="card-text old-price">2,850,000₫</p>
-                <p class="card-text new-price"> 1,425,000₫</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-2 col-sm-4 col-md-2 col-lg-2">
-          <div style="margin-bottom: 10px !important;" class="card card-custom">
-            <span class="ico-sale">-21%</span>
-            <img class="card-img-top link" src="./product img/quan2.webp" alt="Card image cap">
-            <!-- <hr class="gach-ngang"> -->
-            <div style="padding: 4px 1px !important;" class="card-body">
-              <a class="card-title product-title" href="./chitiet.php">QUẦN SHORT 4KRFT XANH RÊU</a>
-              <div class="price">
-                <p class="card-text old-price">1,000,000₫</p>
-                <p class="card-text new-price"> 800,000₫</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <button style="background-color: white; color: black" class="btn btn-primary leftLst">
+        <i class="fa-solid fa-chevron-left"></i></button>
+        <button style="background-color: white; color: black" class="btn btn-primary rightLst">
+        <i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
     <!--WHAT FIND?-->
@@ -328,9 +278,9 @@
               </div>
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
-                <a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>  
-                <a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a>
-                <a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a>
+                <p><a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a></p>
+                <p><a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
+                <p><a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a></p>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
