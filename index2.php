@@ -226,8 +226,7 @@ session_start();
                             <img class="card-img-top link" src="./product img/boc ong dong ADIDAS X LESTO SHIN GUARDS - BLACK.jpg" alt="Card image cap">
                             <hr class="gach-ngang">
                             <div style="padding: 0 1px !important;" class="card-body">
-                                <a class="card-title product-title" href="./chitiet.php">BỌC ỐNG ĐỒNG ADIDAS X LESTO
-                                    SHIN GUARDS - BLACK</a>
+                                <a class="card-title product-title" href="./chitiet.php">BỌC ỐNG ĐỒNG ADIDAS X LESTO SHIN GUARDS - BLACK</a>
                                 <br>
                                 <span class="card-text old-price"></span>
                                 <span class="card-text new-price"> 320,000₫</span>
@@ -305,7 +304,7 @@ session_start();
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i> Nike Shop</h6>
-                <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+                  <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
               </div>
               <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

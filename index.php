@@ -139,11 +139,9 @@ require_once './database/config.php';
                   <?php } else { ?>
                   <span class="card-text old-price"></span>
                   <?php } ?>
-
                   <?php if ($product['product_sale'] > 0) { ?>
                   <span class="card-text new-price">
-                    <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>
-                     VNĐ</span>
+                    <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?> VNĐ</span>
                   <?php } else { ?>
                   <span class="card-text new-price" style="text-align: center">
                     <?php echo number_format($product['product_price']) ?> VNĐ</span>
@@ -185,7 +183,7 @@ require_once './database/config.php';
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
                 <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
                 <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
-                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
+                <p><a href="#!" class="text-reset">Phụ Kiện</a></p>
               </div>
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -207,7 +205,6 @@ require_once './database/config.php';
         </section>
         <!-- Section: Links  -->
       </footer>
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>

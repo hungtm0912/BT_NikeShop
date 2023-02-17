@@ -30,7 +30,7 @@
                 $code = substr(rand(0,99999999),0,6);
                 $_SESSION['code'] = $code;
                 $mail->sendMail($email,$code);
-                header('location:./verifyPass.php');
+                header('location:./verifyPass.php');                                                                                                                     
             }else{
                 echo '<script type="text/javascript">alert("Email không tồn tại");</script>';
             }}}
@@ -42,7 +42,7 @@
             <h1 class="h3 mb-3 fw-normal">Lấy lại mật khẩu</h1>
             <div class="form-floating">
                 <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
-                <label for="floatingInput">Nhập email:</label>
+                <label for="floatingInput">Nhập email</label>
             </div>
             <br>
             <button class="w-60 btn btn-primary" type="submit" name="signin">Gửi yêu cầu</button>

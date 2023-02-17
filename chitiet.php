@@ -206,18 +206,17 @@
           <div class="col-8">
             <p class="name-product"><?php echo $product['product_name'] ?></p>
             <?php if ($product['product_sale'] > 0) { ?>
-            <span class="card-text old-price"><?php echo number_format($product['product_price']) ?> VND</span>
+            <span class="card-text old-price"><?php echo number_format($product['product_price'])?>VND</span>
             <?php } else { ?>
             <span class="card-text old-price"></span>
             <?php } ?>
             <?php if ($product['product_sale'] > 0) { ?>
             <span style="margin-left: 20px; font-size: 30px" class="card-text new-price">
-              <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100) ?>
-              VND</span>
+            <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>VND</span>
             <?php } else { ?>
             <span class="card-text new-price"> <?php echo $product['product_price'] ?> VND</span>
             <?php } ?>
-            <p style="font-size: 18px; color: #fff;margin-bottom:0;font-weight: 600;">Mô Tả:</p>
+            <p style="font-size: 18px; color: #fff;margin-bottom:0;font-weight: 600;">Mô Tả</p>
             <p class="product-desc"><?php echo $product['product_description'] ?></p>
             <p class="name-provider">Chọn Size:</p>
             <!-- size button -->
@@ -237,18 +236,18 @@
               <div style="margin-top: 15px;">
                 <button type="button" class="btn btn-outline-warning">Mua hàng</button>
                 <?php if (!isset($_SESSION['username'])) { ?>
-                <button type="button" class="btn btn-outline-warning"><a class="add-product" href="./signin">Thêm vào giỏ hàng</a></button>
-                <?php } else { ?>
                 <button type="button" class="btn btn-outline-warning"><a class="add-product"
-                    href="./add_to_cart.php?product_id=<?php echo $product['product_id'] ?>">
-                    Thêm vào giỏ hàng</a></button>
+                 href="./signin">Thêm vào giỏ hàng</a></button>
+                <?php }
+                 else { ?>
+                <button type="button" class="btn btn-outline-warning"><a class="add-product" 
+                href="./add_to_cart.php?product_id=<?php echo $product['product_id'] ?>">Thêm vào giỏ hàng</a></button>
                 <?php } ?>
               </div>
             </div>
             <!--END-Position-->
           </div>
-      
-
+    
      <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->
@@ -261,7 +260,7 @@
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i> Nike Shop</h6>
-                <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+                  <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
               </div>
               <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

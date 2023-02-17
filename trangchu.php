@@ -74,6 +74,7 @@
       </div>
     </div>
   </div>
+  <br>
   <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">SẢN PHẨM HOT</div>
   <!--slide product-->
   <div class="container slide-product">
@@ -207,7 +208,7 @@
       <div class="row">
         <div class="col-4">
           <div class="card" style="border: none; background-color: #333333;">
-            <figure> <img class="card-img-top " id="zoomIn" src="./kinh of shoe/index_banner_1.jpg"
+            <figure> <img class="card-img-top " id="zoomIn" src="./product_for_image/for_man.png"
                 alt="Card image cap"></figure>
             <div class="card-body p-1 color-card-body">
               <p style="font-weight: 550; color: orange;" class="card-text">Sản Phẩm Thể Thao Cho Nam</p>
@@ -216,7 +217,7 @@
         </div>
         <div class="col-4">
           <div class="card" style="border: none;background-color: #333333;">
-            <figure> <img class="card-img-top " id="zoomIn" src="./kinh of shoe/giaycotunhien.jpg" alt="Card image cap">
+            <figure> <img class="card-img-top " id="zoomIn" src="./product_for_image/for_woman.png" alt="Card image cap">
             </figure>
             <div class="card-body p-1 color-card-body">
               <p style="font-weight: 550; color: orange;" class="card-text">Sản Phẩm Thể Thao Cho Nữ</p>
@@ -225,7 +226,7 @@
         </div>
         <div class="col-4">
           <div class="card" style="border: none;background-color: #333333;">
-            <figure> <img class="card-img-top " id="zoomIn" src="./kinh of shoe/giayfutsal.jpg" alt="Card image cap">
+            <figure> <img class="card-img-top " id="zoomIn" src="./product_for_image/for_kid.png" alt="Card image cap">
             </figure>
             <div class="card-body p-1 color-card-body">
               <p style="font-weight: 550; color: orange;" class="card-text">Sản Phẩm Thể Thao Cho Trẻ Em</p>
@@ -254,109 +255,91 @@
       <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
           <div class="gene_item">
-            <div class="gene_img">
-              <img src="./product img/gene3.png" alt="">
-            </div>
+            <div class="gene_img"><img src="./product_for_image/new_gen.png" alt=""></div>
             <div class="gene_info">
-              <h2 class="gene_title">A NEW GENERATION</h2>
-              <p class="gene_desc">Náo nhiệt và táo bạo nhưng luôn cởi mở -- đôi giày sáng tạo cho chính bạn</p>
+              <h2 class="gene_title">A New Genaration</h2>
+              <p class="gene_desc">Náo nhiệt và táo bạo nhưng luôn cởi mở - sáng tạo</p>
               <button class="gene_button btn btn-secondary">MUA NGAY</button>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
           <div class="gene_item">
-            <div class="gene_img">
-              <img src="./product img/gene2.webp" alt="">
-            </div>
+            <div class="gene_img"><img src="./product_for_image/nrc.png" alt=""></div>
             <div class="gene_info">
-              <h2 class="gene_title">WE'RE GOT YOU COVERED</h2>
-              <p class="gene_desc">Discover the adidas Face Cover with an improved confort, designed for exercise</p>
+              <h2 class="gene_title">Let’s Run Together</h2>
+              <p class="gene_desc">Running is just better with a crew. Create Challenges like!</p>
               <button class="gene_button btn btn-secondary">MUA NGAY</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--BEST OF ADIDAS-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">Top Sản Phẩm Bán Chạy</div>
+    <br><br>
+    <!--BEST OF Nike-->
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">BEST SELLER</div>
     <div style="margin-bottom: 2px !important;" class="container">
       <div class="row">
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 best">
           <div class="best_item">
-            <img height="150px !important" src="./product img/best1.webp">
-            <a class="best_title product-title" href="./chitiet.php">Response Super 2.0 Shoes</a>
-            <p class="price_bestitem">2,300,000đ</p>
+            <img height="150px !important" src="./product img/nike1_07.png">
+            <a class="best_title product-title" href="./chitiet.php">Nike Air Force 1 '07</a>
+            <p class="price_bestitem">3,519,000 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product img/best2.webp">
-            <a class="best_title product-title" href="./chitiet.php">Ultraboost 22 Shoes</a>
-            <p class="price_bestitem">5,200,000đ</p>
+            <img height="150px !important" src="./product img/jordan_low.png">
+            <a class="best_title product-title" href="./chitiet.php">Air Jordan 1 Elevate Low</a>
+            <p class="price_bestitem">3,254,649 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product img/best3.webp">
-            <a class="best_title product-title" href="./chitiet.php">Galaxy 5 Shoes</a>
-            <p class="price_bestitem">1,500,000đ</p>
+            <img height="150px !important" src="./product img/jordan_zoom.png">
+            <a class="best_title product-title" href="./chitiet.php">Air Jordan 1 Zoom Comfort</a>
+            <p class="price_bestitem">4,109,000 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product img/best4.webp">
-            <a class="best_title product-title" href="./chitiet.php">Fluidflow 2.0 Shoes</a>
-            <p class="price_bestitem">2,100,000đ</p>
+            <img height="150px !important" src="./product img/jumpman.png">
+            <a class="best_title product-title" href="./chitiet.php">Jumpman Two Trey</a>
+            <p class="price_bestitem">4,409,000 VND</p>
           </div>
         </div>
       </div>
     </div>
-      <!--END-Position-->
-      <!-- Footer -->
       <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
-        <!-- Section: Links  -->
         <section class="" style="color: white">
           <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
             <div class="row mt-3">
-              <!-- Grid column -->
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i> Nike Shop</h6>
                   <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
               </div>
-              <!-- Grid column -->
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
                 <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
                 <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
                 <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
               </div>
-              <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
                 <a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>  
                 <a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a>
                 <a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
                 <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
               </div>
-              <!-- Grid column -->
             </div>
-            <!-- Grid row -->
           </div>
         </section>
-        <!-- Section: Links  -->
       </footer>
-      <!-- Footer -->
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
