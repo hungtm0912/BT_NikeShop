@@ -4,7 +4,6 @@
 <?php
 include './include/head.php';
 ?>
-
 <body>
     <?php require_once "../database/config.php" ?>
     <?php
@@ -20,10 +19,10 @@ include './include/head.php';
                     <fieldset>
                         <sf:hidden path="id" />
                         <!-- Form Name -->
-                        <legend>CATEGORY</legend>
+                        <legend>Danh Mục</legend>
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="name">CATEGORY NAME</label>
+                            <label class="col-md-4 control-label" for="name">Tên Loại</label>
                             <div style="width: 93.333333% !important" class="col-md-4">
                                 <input path="name" id="name" name="category_name" placeholder="CATEGORY NAME" class="form-control input-md" type="text" />
                             </div>
@@ -37,7 +36,7 @@ include './include/head.php';
                         <br>
                         <div class="form-group">
                             <div class="col-md-4">
-                                <button id="singlebutton" class="btn btn-primary" type="submit">Thêm loại sản phẩm</button>
+                                <button id="singlebutton" class="btn btn-primary" type="submit">Thêm Loại Sản Phẩm</button>
                             </div>
                         </div>
                     </fieldset>

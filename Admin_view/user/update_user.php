@@ -11,16 +11,13 @@ if (isset($_POST['submit'])) {
   $avatar = $_FILES['user_avatar']['name'];
   $avatar_tmp = $_FILES['user_avatar']['tmp_name'];
   $path = '../upload/user/';
-
-  $sql_check = "SELECT count(*) FROM users where email='$email' and user_id <> '$user_id'";
+  $sql_check = "SELECT count(*) FROM `users` where `email`='$email' AND `user_id` <> '$user_id'";
   $result = $mysqli->query($sql_check);
   $number_rows = mysqli_fetch_array($result)['count(*)'];
-
   if ($number_rows == 1) {
-    header("location: ./update_user.php?id=$user_id&err_exist=Tài khoản đã tồn tại");
+    header("location: ./update_user.php?id=$user_id&err_exist=Tài Khoản Đã Tồn Tại");
     exit;
   }
-
   $sql = "UPDATE users
           SET 
           `name`='$name',
@@ -33,33 +30,26 @@ if (isset($_POST['submit'])) {
 
   $mysqli->query($sql);
   move_uploaded_file($avatar_tmp, $path . $avatar);
-
   $_SESSION['email'] = $email;
-
   header('location: ../userlist.php?success=true');
 }
 ?>
-
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.88.1">
-  <title>Thông Tin Khách Hàng</title>
+  <title>Nike Shop</title>
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.css">
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
-
   <!-- include summernote css/js -->
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-
   <!-- Bootstrap core CSS -->
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -68,28 +58,23 @@ if (isset($_POST['submit'])) {
       -moz-user-select: none;
       user-select: none;
     }
-
     @media (min-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
     }
-
     .col-md-4 {
       width: 93.333333% !important;
     }
-
     .cus-info {
       width: 100%;
     }
-
     .form-group {
       margin-bottom: 12px;
     }
   </style>
-
   <!-- Custom styles for this template -->
-  <link href="/PhuongNamSport/Admin_view/dashboard.css " rel="stylesheet">
+  <link href="/BT_NikeShop/Admin_view/dashboard.css " rel="stylesheet">
   <link href="./styles_user_update.css" rel="stylesheet">
 </head>
 
@@ -114,7 +99,6 @@ if (isset($_POST['submit'])) {
         $result = $mysqli->query($sql);
         $user = $result->fetch_assoc();
         ?>
-
         <div class="container">
           <form class="form-inline" method="POST" action="" enctype="multipart/form-data">
             <div class="main-body">
@@ -123,7 +107,7 @@ if (isset($_POST['submit'])) {
                   <div class="card">
                     <div class="card-body">
                       <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/PhuongNamSport/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin" class="rounded-circle" width="150" height="150">
+                        <img src="/BT_NikeShop/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin" class="rounded-circle" width="150" height="150">
                         <div class="mt-3">
                           <h4><?php echo $user['username'] ?></h4>
                         </div>
@@ -158,7 +142,7 @@ if (isset($_POST['submit'])) {
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="category">Role</label>
+                        <label class="col-md-4 control-label" for="category">Vai Trò</label>
                         <?php
                         $option2 = $user['role'] == 1 ? 0 : 1;
                         ?>
@@ -170,7 +154,7 @@ if (isset($_POST['submit'])) {
                         </div>
                       </div>
                       <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
-                      <a href="process_user.php?id_delete=<?php echo $user['user_id'] ?>" class="btn btn-danger btn-md active" onclick="return confirm('Bạn chắc chắn muốn xóa tài khoản <?php echo $user['username'] ?> này?')" role="button" aria-pressed=" true">Xóa</a>
+                      <a href="process_user.php?id_delete=<?php echo $user['user_id'] ?>" class="btn btn-danger btn-md active" onclick="return confirm('Bạn Chắc Chắn Muốn Xóa Tài Khoản <?php echo $user['username'] ?> Này?')" role="button" aria-pressed=" true">Xóa</a>
                     </div>
                   </div>
                 </div>

@@ -27,7 +27,7 @@ include './include/head.php';
                             <div class="d-flex flex-row">
                                 <input type="hidden" id="page" name="page" class="form-control">
                                 <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Search" value="" style="margin-right: 5px;">
-                                <button type="submit" id="btnSearch" name="btnSearch" value="Search" class="btn btn-primary">Seach</button>
+                                <button type="submit" id="btnSearch" name="btnSearch" value="Search" class="btn btn-primary">Tìm Kiếm</button>
                             </div>
                         </div>
                         <table class="table table-striped">

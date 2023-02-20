@@ -53,7 +53,7 @@ include './include/head.php';
                   <td><?php echo $row_order['name_receiver'] ?></td>
                   <td><?php echo $row_order['address_receiver'] ?></td>
                   <td><?php echo $row_order['phone_receiver'] ?></td>
-                  <td><?php echo number_format($row_order['total']) ?>đ</td>
+                  <td><?php echo number_format($row_order['total']) ?>VND</td>
                   <td>
                     <?php
                         if ($row_order['status'] == 1) {
@@ -61,18 +61,18 @@ include './include/head.php';
                     <select style="color: #32CD32; font-weight: bold;" class="form-select"
                       aria-label="Default select example"
                       onchange="status_update(this.options[this.selectedIndex].value,'<?php echo $row_order['order_id'] ?>')">
-                      <option selected>Đơn hàng đã hoàn thành</option>
+                      <option selected>Đơn Hàng Đã Hoàn Thành</option>
                       <?php
                          } else {
                        ?>
                       <select class="form-select" aria-label="Default select example"
                         onchange="status_update(this.options[this.selectedIndex].value,'<?php echo $row_order['order_id'] ?>')">
-                        <option selected>Đơn hàng đang xử lý...</option>
+                        <option selected>Đơn Hàng Đang Xử Lý...</option>
                         <?php
                          }
                          ?>
-                        <option style="color: black;" value="0">Đơn hàng đang xử lý...</option>
-                        <option style="color: black;" value="1">Đơn hàng đã hoàn thành</option>
+                        <option style="color: black;" value="0">Đơn Hàng Đang Xử Lý...</option>
+                        <option style="color: black;" value="1">Đơn Hàng Đã Hoàn Thành</option>
                       </select>
                   </td>
                   <td>

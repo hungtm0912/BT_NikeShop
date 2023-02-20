@@ -3,7 +3,6 @@
 <?php
 include './include/head.php';
 ?>
-
 <body>
   <?php
   require_once "../database/config.php";
@@ -12,16 +11,13 @@ include './include/head.php';
   <?php
   include './include/header.php';
   ?>
-
   <div class="container-fluid">
     <div class="row">
       <?php
       include './include/nav.php';
       ?>
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-
         <div class="container-fluid">
-
           <form class="form-inline" action="" method="get" modelAttribute="products">
             <div class="d-flex flex-row justify-content-between mt-4">
               <div class="d-flex flex-row">
@@ -50,33 +46,27 @@ include './include/head.php';
                   <th scope="col">Loại</th>
                   <th scope="col">Chất Lượng</th>
                   <th scope="col">Avatar</th>
-                  <th scope="col">Action</th>
+                  <th scope="col">Trạng Thái</th>
                 </tr>
               </thead>
               <tbody>
                 <?php
                 $sql_product = mysqli_query($mysqli, "SELECT * FROM `products`");
                 ?>
-
                 <?php
                 $i = 1;
                 while ($row_product = mysqli_fetch_array($sql_product)) {
                 ?>
                 <tr>
-
                   <td><?php echo $i++; ?></td>
-
                   <td><?php echo $row_product['product_name'] ?> </td>
                   <td><?php echo $row_product['product_price'] ?> </td>
                   <td><?php echo $row_product['category_id'] ?> </td>
                   <td><?php echo $row_product['product_quantity'] ?> </td>
-
                   <td>
                     <img width="100" src="./upload/<?php echo $row_product['product_image'] ?>">
-
                   </td>
                   <td>
-
                     <a class="btn btn-primary"
                       href="./product/update_product.php?id=<?php echo $row_product['product_id'] ?>"
                       role="button">Sửa</a>
@@ -92,7 +82,7 @@ include './include/head.php';
               </tbody>
             </table>
             <div class="text-center">
-              <a href="data_export_product.php" class="btn btn-primary" target="_blank">Xuất DỮ Liệu</a>
+              <a href="data_export_product.php" class="btn btn-primary" target="_blank">Xuất Dữ Liệu</a>
             </div>
             <!-- Paging -->
             <div class="row">

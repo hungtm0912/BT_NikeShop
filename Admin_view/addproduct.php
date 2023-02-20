@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <?php
 include './include/head.php';
 ?>
@@ -33,18 +32,17 @@ include './include/head.php';
                     $prd_sizeID = $_POST['prd_size'];
                     $sql_insert_product = mysqli_query($mysqli, "INSERT INTO products(category_id,product_name,product_description,product_price,product_quantity,size_name,product_image,product_sale) VALUES ('$prd_categoryID','$prd_name','$prd_description','$prd_price','$prd_quantity','$prd_sizeID','$prd_avatar','$prd_sale')");
                     move_uploaded_file($prd_avatar_tmp, $path . $prd_avatar);
-
                     echo '<script type="text/javascript">alert("Thêm sản phẩm thành công!!!");</script>';
                     // header('location: ./productList.php');
                 }
                 ?>
-        <form modelAttribute="products" method="post" action="" class="form-horizontal" enctype="multipart/form-data">
+          <form modelAttribute="products" method="post" action="" class="form-horizontal" enctype="multipart/form-data">
           <fieldset>
             <hidden path="id" />
             <!-- Form Name -->
-            <legend>SảN Phẩm</legend>
+            <legend>Sản Phẩm</legend>
             <div style="width: 100%" class="form-group ">
-              <label class="col-md-4 control-label" for="category">CATEGORY (required)</label>
+              <label class="col-md-4 control-label" for="category">Danh Mục</label>
               <?php
                 $sql_danhmuc = mysqli_query($mysqli, "SELECT * FROM `categories`");
                ?>
@@ -114,7 +112,7 @@ include './include/head.php';
             <!-- phần thêm avatar   -->
             <!-- File Button -->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="avatar">Ảnh sản phẩm</label>
+              <label class="col-md-4 control-label" for="avatar">Ảnh Sản Phẩm</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input id="avatarfile" name="prd_avatar" class="input-file" type="file" />
               </div>
@@ -130,7 +128,7 @@ include './include/head.php';
             <br>
             <div class="form-group">
               <div class="col-md-4">
-                <button id="singlebutton" name="add" class="btn btn-primary"> Thêm sản phẩm</button>
+                <button id="singlebutton" name="add" class="btn btn-primary">Thêm sản phẩm</button>
               </div>
             </div>
           </fieldset>

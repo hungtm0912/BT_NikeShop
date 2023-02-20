@@ -17,11 +17,11 @@ include './include/head.php';
       ?>
       <?php
       if (isset($_GET['success']) && $_GET['success']) {
-        echo '<script type="text/javascript">alert("Sửa thông tin người dùng thành công!!!");</script>';
+        echo '<script type="text/javascript">alert("Thông Tin Người Dùng Đã Sửa Thành Công");</script>';
       }
 
       if (isset($_GET['success_del']) && $_GET['success_del']) {
-        echo '<script type="text/javascript">alert("Xóa người dùng thành công!!!");</script>';
+        echo '<script type="text/javascript">alert("Xóa Người Dùng Thành Công!");</script>';
       }
       ?>
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
@@ -50,8 +50,8 @@ include './include/head.php';
                   <th scope="col">Tên</th>
                   <th scope="col">Email</th>
                   <th scope="col">Phân Quyền</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Action</th>
+                  <th scope="col">Trạng Thái</th>
+                  <th scope="col">Hoạt Động</th>
                 </tr>
               </thead>
               <tbody>
@@ -68,7 +68,7 @@ include './include/head.php';
                   <td><?php echo $i++; ?></td>
                   <td><a href="user/update_user.php?id=<?php echo $row_user['user_id'] ?>">
                       <img width="60" height="60"
-                        src="/PhuongNamSport/Admin_view/upload/user/<?php echo $row_user['avatar'] ?>" class="avatar"
+                        src="/BT_NikeShop/Admin_view/upload/user/<?php echo $row_user['avatar'] ?>" class="avatar"
                         alt="Avatar" />
                       <?php echo $row_user['username'] ?></a>
                   </td>

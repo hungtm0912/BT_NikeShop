@@ -34,11 +34,10 @@
     <!-- Custom styles for this template -->
     <link href="../dashboard.css" rel="stylesheet" />
 </head>
-
 <body>
     <?php require_once "../../connect.php" ?>
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Tên Công Ty</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Bảng Thống Kê</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -63,28 +62,27 @@
                             <a class="nav-link" href="#"><span data-feather="file"></span>Đơn Đặt Hàng</a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./saleOrderList.php"> Danh sách đơn hàng </a>
+                                    <a class="nav-link" href="./saleOrderList.php">Danh Sách Đơn Hàng </a>
                                 </li>
                             </ul>
                         </li>
                         <li style="margin-bottom: -36px;" class="nav-item sub">
-                            <a class="nav-link" href="#"> <span data-feather="shopping-cart"></span> Sản phẩm
-                            </a>
+                            <a class="nav-link" href="#"> <span data-feather="shopping-cart"></span> Sản Phẩm</a>
                             <ul class="sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="./addproduct.php"> Thêm sản phẩm</a>
+                                <li class="nav-item"><a class="nav-link" href="./addproduct.php"> Thêm Sản Phẩm</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="./productList.php"> Danh sách sản phẩm</a>
+                                <li class="nav-item"><a class="nav-link" href="./productList.php"> Danh Sách Sản Phẩm</a>
                                 </li>
                             </ul>
                         </li>
                         <li style="margin-bottom: -36px;" class="nav-item sub">
-                            <a class="nav-link" href="#"><span data-feather="shopping-cart"></span> Category</a>
+                            <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Danh Mục</a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./addcategory.php"> Thêm danh mục </a>
+                                    <a class="nav-link" href="./addcategory.php"> Thêm Danh Mục </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./categoryList.php"> Danh sách danh mục</a>
+                                    <a class="nav-link" href="./categoryList.php"> Danh Sách Danh Mục</a>
                                 </li>
                             </ul>
                         </li>
@@ -93,10 +91,10 @@
                                 <span data-feather="users"></span>Khách Hàng</a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./contactList"> Danh sách liên hệ </a>
+                                    <a class="nav-link" href="./contactList"> Danh Sách Liên Hệ </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./userList"> Danh sách khách hàng</a>
+                                    <a class="nav-link" href="./userList"> Danh Sách Khách Hàng</a>
                                 </li>
                             </ul>
                         </li>
@@ -104,7 +102,7 @@
                             <a class="nav-link" href="#"><span data-feather="bar-chart-2"></span> Phản Hồi </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><span data-feather="layers"></span>Integrations </a>
+                            <a class="nav-link" href="#"><span data-feather="layers"></span>Tích Hợp</a>
                         </li>
                     </ul>
                     <h6
@@ -117,25 +115,25 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <span data-feather="file-text"></span>
-                                Current month
+                                Trung Bình/Tháng
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <span data-feather="file-text"></span>
-                                Last quarter
+                                Quý trước
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <span data-feather="file-text"></span>
-                                Social engagement
+                                Tương tác 
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <span data-feather="file-text"></span>
-                                Year-end sale
+                               Giảm Giá Cuối Năm
                             </a>
                         </li>
                     </ul>
@@ -153,13 +151,13 @@
                     <fieldset>
                         <sf:hidden path="id" />
                         <!-- Form Name -->
-                        <legend>CATEGORY</legend>
+                        <legend>Danh Mục</legend>
                         <!-- Text input-->
                         <div class="form-group">
                             <input type="hidden" name="category_id" value="<?php echo $id ?>">
                         </div>
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="name">CATEGORY NAME</label>
+                            <label class="col-md-4 control-label" for="name">Tên Danh Mục</label>
                             <div style="width: 93.333333% !important" class="col-md-4">
                                 <input path="name" id="name" name="category_name" placeholder="CATEGORY NAME"
                                     value="<?php echo $category['category_name']?>" class="form-control input-md"
@@ -175,7 +173,7 @@
                         <br>
                         <div class="form-group">
                             <div class="col-md-4">
-                                <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit"> Sửa </button>
+                                <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Sửa</button>
                             </div>
                         </div>
                     </fieldset>

@@ -29,5 +29,5 @@ $sql = "UPDATE products
 
 $mysqli->query($sql);
 move_uploaded_file($prd_avatar_tmp, $path . $prd_avatar);
-echo '<script type="text/javascript">alert("Sửa sản phẩm thành công!!!");</script>';
+echo '<script type="text/javascript">alert("Sửa Sản Phẩm Thành Công!!!");</script>';
 header('location:../productList.php');

@@ -17,12 +17,12 @@ if (isset($_POST['submit'])) {
   $number_rows = mysqli_fetch_array($result)['count(*)'];
 
   if ($number_rows == 1) {
-    header("location: ./update_user.php?id=$user_id&err_exist=Tài khoản đã tồn tại rùi");
+    header("location: ./update_user.php?id=$user_id&err_exist=Tài Khoản Đã Tồn Tại");
     exit;
   }
 
-  $sql = "UPDATE users
-          SET username='$fullname',
+  $sql = "UPDATE `users`
+          SET `username`='$fullname',
           `email`='$email',
           `phone`='$phone',
           `role`='$role',
@@ -32,7 +32,6 @@ if (isset($_POST['submit'])) {
 
   $mysqli->query($sql);
   move_uploaded_file($avatar_tmp, $path . $avatar);
-
   $_SESSION['email'] = $email;
   header('location: ../userlist.php?success=true');
 }

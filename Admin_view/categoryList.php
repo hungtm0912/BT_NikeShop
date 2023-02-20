@@ -102,7 +102,7 @@ include './include/head.php';
     //     });
     // });
   </script>
-  <%--  <script type="text/javascript" src="${base}/js/jquery.js"></script> --%>
+ <script type="text/javascript" src="${base}/js/jquery.js"></script> 
 </body>
 
 </html>

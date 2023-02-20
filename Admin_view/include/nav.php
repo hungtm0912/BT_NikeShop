@@ -4,82 +4,78 @@
       <li style="margin-bottom: -12px;" class="nav-item">
         <a class="nav-link active" aria-current="page" href="#">
           <span data-feather="home"></span>
-          Dashboard
+          Bảng Thống Kê
         </a>
       </li>
-
       <li style="margin-bottom: 20px;" class="nav-item sub">
         <a class="nav-link" href="#">
           <span data-feather="file"></span>
-          Orders
+          Đơn Hàng
         </a>
         <ul class="sub-menu">
           <li class="nav-item">
-            <a class="nav-link" href="/PhuongNamSport/Admin_view/saleOrderList.php"> Danh sách đơn hàng </a>
-          </li>
-
-        </ul>
-      </li>
-
-      <li style="margin-bottom: -12px;" class="nav-item sub">
-        <a class="nav-link" href="#">
-          <span data-feather="shopping-cart"></span>
-          Products
-        </a>
-        <ul class="sub-menu">
-          <li class="nav-item">
-            <a class="nav-link" href="/PhuongNamSport/Admin_view/addproduct.php"> Thêm sản phẩm</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/PhuongNamSport/Admin_view/productList.php"> Danh sách sản phẩm</a>
+            <a class="nav-link" href="/BT_NikeShop/Admin_view/saleOrderList.php">Danh Sách Đơn Hàng </a>
           </li>
         </ul>
       </li>
-
       <li style="margin-bottom: -12px;" class="nav-item sub">
         <a class="nav-link" href="#">
           <span data-feather="shopping-cart"></span>
-          Category
+          Sản Phẩm
         </a>
         <ul class="sub-menu">
           <li class="nav-item">
-            <a class="nav-link" href="/PhuongNamSport/Admin_view/addcategory.php"> Thêm danh mục </a>
+            <a class="nav-link" href="/BT_NikeShop/Admin_view/addproduct.php">Thêm Sản Phẩm</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/PhuongNamSport/Admin_view//categoryList.php"> Danh sách danh mục</a>
+            <a class="nav-link" href="/BT_NikeShop/Admin_view/productList.php">Danh Sách Sản Phẩm</a>
+          </li>
+        </ul>
+      </li>
+      <li style="margin-bottom: -12px;" class="nav-item sub">
+        <a class="nav-link" href="#">
+          <span data-feather="shopping-cart"></span>
+          Danh Mục
+        </a>
+        <ul class="sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/BT_NikeShop/Admin_view/addcategory.php">Thêm Danh Mục </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/BT_NikeShop/Admin_view//categoryList.php">Danh Sách Danh Mục</a>
           </li>
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item sub">
         <a class="nav-link" href="#">
           <span data-feather="users"></span>
-          Customers
+          Khách Hàng
         </a>
         <ul class="sub-menu">
           <li class="nav-item">
-            <a class="nav-link" href="./contactList"> Danh sách contact </a>
+            <a class="nav-link" href="./contactList"> Danh Sách Thông Tin Liên Hệ </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/PhuongNamSport/Admin_view/userlist.php"> Danh sách khách hàng</a>
+            <a class="nav-link" href="/BT_NikeShop/Admin_view/userlist.php">Danh sách Khách Hàng</a>
           </li>
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="bar-chart-2"></span>
-          Reports
+          Báo Cáo
         </a>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="layers"></span>
-          Integrations
+          Tích Hợp
         </a>
       </li>
     </ul>
 
     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-      <span>Saved reports</span>
+      <span>Lưu Báo Cáo</span>
       <a class="link-secondary" href="#" aria-label="Add a new report">
         <span data-feather="plus-circle"></span>
       </a>
@@ -88,25 +84,25 @@
       <li style="margin-bottom: -12px;" class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="file-text"></span>
-          Current month
+          Trung Bình/Tháng
         </a>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="file-text"></span>
-          Last quarter
+          Quý Trước
         </a>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="file-text"></span>
-          Social engagement
+          Tương Tác
         </a>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="file-text"></span>
-          Year-end sale
+          Giảm Giá Cuối Năm
         </a>
       </li>
     </ul>

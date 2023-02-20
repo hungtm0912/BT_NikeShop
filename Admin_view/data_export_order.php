@@ -8,7 +8,7 @@ header("Content-Disposition:attachment;filename=\"$filename\"");
   <thead>
     <tr>
       <th style="border: 1px solid black;" scope="col">#</th>
-      <th style="border: 1px solid black;" scope="col">Order Code</th>
+      <th style="border: 1px solid black;" scope="col">Mã Mặt Hàng</th>
       <th style="border: 1px solid black;" scope="col">Tên Khách Hàng</th>
       <th style="border: 1px solid black;" scope="col">Địa Chỉ</th>
       <th style="border: 1px solid black;" scope="col">Số Điện Thoại</th>
