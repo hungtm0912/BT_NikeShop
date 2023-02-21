@@ -75,7 +75,7 @@
     </div>
   </div>
   <br>
-  <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">SẢN PHẨM HOT</div>
+  <div style="margin:20px auto; text-align:center;font-size:30px;font-weight:700;color:white;position:relative;top:30px;">SẢN PHẨM HOT</div>
   <!--slide product-->
   <div class="container slide-product">
     <div class="row">
@@ -115,7 +115,7 @@
       </div>
     </div>
     <!--NEW PRODUCT-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;"> SẢN PHẨM MỚI</div>
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;position:relative; top: 35px;"> SẢN PHẨM MỚI</div>
     <div class="row">
       <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
         <div class="MultiCarousel-inner">
@@ -153,19 +153,20 @@
       </div>
     </div>
     <!--WHAT FIND?-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;"> BẠN ĐANG TÌM?</div>
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;position:relative; top: 50px"> 
+      BẠN ĐANG TÌM?</div>
     <div class="container type-of-product">
       <div class=" box">
         <img height="350px !important" src="./product_for_image/for_man.png">
-        <span>Sản Phẩm Thể Thao Cho Nam</span>
+        <span>Sản Phẩm Cho Nam</span>
       </div>
       <div class=" box">
         <img height="150px !important" src="./product_for_image/for_woman.png">
-        <span>Sản Phẩm Thể Thao Cho Nữ</span>
+        <span>Sản Phẩm Cho Nữ</span>
       </div>
       <div class=" box">
         <img height="150px !important" src="./product_for_image/for_kid.png">
-        <span>Sản Phẩm Thể Thao Cho Trẻ Em</span>
+        <span>Sản Phẩm Cho Trẻ Em</span>
       </div>
     </div>
    
