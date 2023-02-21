@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/BT_NikeShop/Admin_view/dashboard.css" rel="stylesheet">
+  <link href="/BT_NikeShop/Admin_view/styles_user_update.css" rel="stylesheet">
   <style>
   .bd-placeholder-img {
     font-size: 1.125rem;
@@ -41,9 +43,8 @@
   .container {
     margin-left: -5%;
   }
+
   </style>
-  <link href="/BT_NikeShop/Admin_view/dashboard.css" rel="stylesheet">
-  <link href="/BT_NikeShop/Admin_view/styles_user_update.css" rel="stylesheet">
 </head>
 
 <body>
@@ -108,7 +109,7 @@
                     <div class="card-body">
                       <div class="d-flex flex-column align-items-center text-center">
                         <img src="/BT_NikeShop/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin"
-                          class="rounded-circle" width="150" height="150">
+                          class="rounded-circle" width="180" height="200"  border-radius="10%">
                         <div class="mt-3"> <h4><?php echo $user['username'] ?></h4></div>
                       </div>
                       <div class="form-group">
@@ -137,7 +138,7 @@
                       <!-- File Button -->
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="avatar">Avatar</label>
-                        <div style="width: 93.333333% !important;" class="col-md-4">
+                        <div style="width: 95% !important;" class="col-md-4">
                           <input id="avatarfile" name="user_avatar" class="input-file" type="file" />
                         </div>
                       </div>

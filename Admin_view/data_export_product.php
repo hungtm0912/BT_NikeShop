@@ -1,11 +1,9 @@
 <?php
 require_once "../database/config.php";
 $filename = "products_data.xls";
-
 header('Content-Type: application/vnd.ms-excel; charset=vi');
 header("Content-Disposition:attachment;filename=\"$filename\"");
 ?>
-
 <table class="table table-striped">
   <thead>
     <tr>

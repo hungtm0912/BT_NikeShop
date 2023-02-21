@@ -22,17 +22,22 @@ include './include/head.php';
             <div class="d-flex flex-row justify-content-between mt-4">
               <div class="d-flex flex-row">
                 <input type="hidden" id="page" name="page" class="form-control">
-                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Search" value=""
-                  style="margin-right: 5px;">
+                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Nhập thông tin cần tìm" value=""
+                  style="margin-right: 5px;width:250px;">
                 <select class="form-control" name="categoryId" id="categoryId" style="margin-right: 5px;">
                   <option>Tất cả</option>
+                  <option>Theo mẫu mới</option>
+                  <option>Theo mẫu cũ</option>
                   <c:forEach items="" var="category">
                     <option value=""></option>
                   </c:forEach>
                 </select>
                 <button type="submit" id="btnSearch" name="btnSearch" value="Search"
-                  class="btn btn-primary">Tìm Kiếm</button>
+                  class="btn btn-primary">Tìm</button>
               </div>
+              <div class="text-center">
+              <a href="data_export_product.php" class="btn btn-primary" style="margin-left: 500px;" target="_blank">Xuất Dữ Liệu</a>
+            </div>
               <div>
                 <a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm Mới</a>
               </div>
@@ -81,9 +86,6 @@ include './include/head.php';
                 ?>
               </tbody>
             </table>
-            <div class="text-center">
-              <a href="data_export_product.php" class="btn btn-primary" target="_blank">Xuất Dữ Liệu</a>
-            </div>
             <!-- Paging -->
             <div class="row">
               <div class="col-12 d-flex justify-content-center">

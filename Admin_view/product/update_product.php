@@ -112,7 +112,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="title">Tên Sản Phẩm</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input value="<?php echo $product['product_name'] ?>" id="title" name="prd_name" placeholder="Product name" class="form-control input-md" type="text" />
+                <input value="<?php echo $product['product_name'] ?>" id="title" name="prd_name" placeholder="Nhập Tên Sản Phẩm" class="form-control input-md" type="text" />
               </div>
             </div>
             <div class="form-group">
@@ -130,7 +130,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="Price"Giá></label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input value="<?php echo $product['product_price'] ?>" id="Price" name="prd_price" placeholder="Price" class="form-control input-md" type="text" />
+                <input value="<?php echo $product['product_price'] ?>" id="Price" name="prd_price" placeholder="Nhập Giá" class="form-control input-md" type="text" />
               </div>
             </div>
             <!-- Text input phan nay` chua bàn đến-->
@@ -146,7 +146,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="brand">Chất Lượng</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input value="<?php echo $product['product_quantity'] ?>" name="prd_quantity" placeholder="Quantity" class="form-control input-md" type="number" />
+                <input value="<?php echo $product['product_quantity'] ?>" name="prd_quantity" placeholder="Nhập Chất Lượng" class="form-control input-md" type="number" />
               </div>
             </div>
             <!-- phần thêm avatar   -->
@@ -169,7 +169,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="Price">Size</label>
                 <div style="width: 93.333333% !important;" class="col-md-4">
-                    <input id="Price" name="prd_size" placeholder="Size" class="form-control input-md" type="text" />
+                    <input id="Price" name="prd_size" placeholder="Nhập Size" class="form-control input-md" type="text" />
                 </div>
             </div>
             <!-- Button -->

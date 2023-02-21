@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +8,9 @@
     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.css" />
     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css" />
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/" />
-
     <!-- include summernote css/js -->
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
@@ -37,16 +34,16 @@
 <body>
     <?php require_once "../../connect.php" ?>
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Bảng Thống Kê</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/update_category.php">Bảng Thống Kê</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search" />
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Nhập Thông Tin Cần Tìm" aria-label="Search" />
         <div class="navbar-nav">
             <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="">Đăng Xuất</a>
+                <a class="nav-link px-3" href="../trangchu.php">Đăng Xuất</a>
             </div>
         </div>
     </header>
@@ -59,7 +56,7 @@
                             <a class="nav-link active" aria-current="page" href="#"><span data-feather="home"></span>Bảng Điều Khiển</a>
                         </li>
                         <li class="nav-item sub">
-                            <a class="nav-link" href="#"><span data-feather="file"></span>Đơn Đặt Hàng</a>
+                            <a class="nav-link" href="/update_category.php"><span data-feather="file"></span>Đơn Đặt Hàng</a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
                                     <a class="nav-link" href="./saleOrderList.php">Danh Sách Đơn Hàng </a>
@@ -67,7 +64,7 @@
                             </ul>
                         </li>
                         <li style="margin-bottom: -36px;" class="nav-item sub">
-                            <a class="nav-link" href="#"> <span data-feather="shopping-cart"></span> Sản Phẩm</a>
+                            <a class="nav-link" href="./update_category.php"> <span data-feather="shopping-cart"></span> Sản Phẩm</a>
                             <ul class="sub-menu">
                                 <li class="nav-item"><a class="nav-link" href="./addproduct.php"> Thêm Sản Phẩm</a>
                                 </li>
@@ -76,7 +73,7 @@
                             </ul>
                         </li>
                         <li style="margin-bottom: -36px;" class="nav-item sub">
-                            <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Danh Mục</a>
+                            <a class="nav-link" href="/update_category.php"><span data-feather="shopping-cart"></span>Danh Mục</a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
                                     <a class="nav-link" href="./addcategory.php"> Thêm Danh Mục </a>
@@ -87,7 +84,7 @@
                             </ul>
                         </li>
                         <li style="margin-bottom: -36px;" class="nav-item sub">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/update_category.php">
                                 <span data-feather="users"></span>Khách Hàng</a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
@@ -159,7 +156,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="name">Tên Danh Mục</label>
                             <div style="width: 93.333333% !important" class="col-md-4">
-                                <input path="name" id="name" name="category_name" placeholder="CATEGORY NAME"
+                                <input path="name" id="name" name="category_name" placeholder="Nhập Tên Danh Mục"
                                     value="<?php echo $category['category_name']?>" class="form-control input-md"
                                     type="text" />
                             </div>
@@ -181,9 +178,7 @@
             </main>
         </div>
     </div>
-
     <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
         integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
     </script>

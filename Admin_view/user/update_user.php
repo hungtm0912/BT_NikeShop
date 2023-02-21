@@ -142,7 +142,7 @@ if (isset($_POST['submit'])) {
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="category">Vai Trò</label>
+                        <label class="col-md-4 control-label" for="category">Phân Quyền</label>
                         <?php
                         $option2 = $user['role'] == 1 ? 0 : 1;
                         ?>

@@ -21,7 +21,7 @@
         $email = $_POST['email'];
         $_SESSION['email_resetpass'] = $email;
         if($email == ""){
-            echo '<script type="text/javascript">alert("Không được để trống email");</script>';
+            echo '<script type="text/javascript">alert("Không Được Để Trống Email");</script>';
         }else{
             $sql = "SELECT * FROM users WHERE email = '$email'";
             $user = $mysqli->query($sql);

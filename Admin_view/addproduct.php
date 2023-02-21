@@ -63,7 +63,7 @@ include './include/head.php';
             <div class="form-group">
               <label class="col-md-4 control-label" for="title">Tên Sản Phẩm</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input id="title" name="prd_name" placeholder="Product name" class="form-control input-md"
+                <input id="title" name="prd_name" placeholder="Nhập Tên Sản Phẩm" class="form-control input-md"
                   type="text" />
               </div>
             </div>
@@ -82,7 +82,7 @@ include './include/head.php';
             <div class="form-group">
               <label class="col-md-4 control-label" for="Price">Giá</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input id="Price" name="prd_price" placeholder="Price" class="form-control input-md" type="text" />
+                <input id="Price" name="prd_price" placeholder="Nhập Giá" class="form-control input-md" type="text" />
               </div>
             </div>
             <!-- Text input phan nay` chua bàn đến-->
@@ -98,7 +98,7 @@ include './include/head.php';
             <div class="form-group">
               <label class="col-md-4 control-label" for="brand">Chất Lượng</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input name="prd_quantity" placeholder="Quantity" class="form-control input-md" type="number" />
+                <input name="prd_quantity" placeholder="Nhập Chất Lượng" class="form-control input-md" type="number" />
               </div>
             </div>
 
@@ -106,29 +106,29 @@ include './include/head.php';
             <div class="form-group">
               <label class="col-md-4 control-label" for="brand">Sale</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input name="prd_sale" placeholder="%" class="form-control input-md" type="number" />
+                <input name="prd_sale" placeholder="Nhập % Giảm Giá" class="form-control input-md" type="number" />
               </div>
             </div>
             <!-- phần thêm avatar   -->
             <!-- File Button -->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="avatar">Ảnh Sản Phẩm</label>
+             <label class="col-md-4 control-label" for="avatar">Ảnh Sản Phẩm</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input id="avatarfile" name="prd_avatar" class="input-file" type="file" />
               </div>
             </div>
             <!-- Size sản phẩm -->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="Price">Size</label>
+            <b><label class="col-md-4 control-label" for="Price">Size</label></b>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input id="Price" name="prd_size" placeholder="Size" class="form-control input-md" type="text" />
+                <input id="Price" name="prd_size" placeholder="Nhập Size" class="form-control input-md" type="text" />
               </div>
             </div>
             <!-- Button -->
             <br>
             <div class="form-group">
               <div class="col-md-4">
-                <button id="singlebutton" name="add" class="btn btn-primary">Thêm sản phẩm</button>
+                <button id="singlebutton" name="add" class="btn btn-primary">Thêm Sản Phẩm</button>
               </div>
             </div>
           </fieldset>

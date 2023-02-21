@@ -21,10 +21,10 @@ include './include/head.php';
             <div class="d-flex flex-row justify-content-between mt-4">
               <div class="d-flex flex-row">
                 <input type="hidden" id="page" name="page" class="form-control">
-                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Search" value=""
+                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Nhập thông tin cần tìm" value=""
                   style="margin-right: 5px;">
                 <button type="submit" id="btnSearch" name="btnSearch" value="Search"
-                  class="btn btn-primary">Tìm Kiếm</button>
+                  class="btn btn-primary">Tìm</button>
               </div>
             </div>
             <table class="table table-striped">

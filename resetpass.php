@@ -24,17 +24,17 @@
         }else {
             $email = $_SESSION['email_resetpass'];
             $hash_pass = password_hash($password, PASSWORD_BCRYPT);
-            $sql = "UPDATE users SET password = '$hash_pass' WHERE email = '$email'";
+            $sql = "UPDATE `users` SET `password` = '$hash_pass' WHERE `email` = '$email'";
             $mysqli->query($sql);
             echo '<script type="text/javascript">alert("Cập nhật thành công!");</script>';
-            header('location:./signin');
+            header('location:./signin.php');
         }
     }
 ?>
 <body class="text-center">
     <main class="form-forgot">
         <form method="POST" action="">
-            <img class="mb-4" src="./image/Free_Sample_By_Wix__1_-removebg-preview.png" alt="" width="200" height="160">
+            <img class="mb-4" src="./logoshop.png" alt="" width="200" height="160">
             <h1 class="h3 mb-3 fw-normal">Nhập mật khẩu mới</h1>
             <div class="form-group input-group">
                 <input path="password" name="password" class="form-control" placeholder="Create new password" type="password" required />

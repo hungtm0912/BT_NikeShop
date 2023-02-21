@@ -8,22 +8,18 @@ body {
     font-size: 0.8rem;
     font-weight: bold;
 }
-
 .cus {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
-
 .cus_padding {
     padding-left: 20px;
 }
-
 .title {
     margin-bottom: 5vh;
 }
-
 .card {
     margin: auto;
     max-width: 1050px;
@@ -32,13 +28,11 @@ body {
     border-radius: 1rem;
     border: transparent;
 }
-
 @media (max-width: 767px) {
     .card {
         margin: 3vh auto;
     }
 }
-
 .cart {
     background-color: #fff;
     padding: 4vh 5vh;
@@ -60,7 +54,6 @@ body {
     padding: 4vh;
     color: rgb(65, 65, 65);
 }
-
 @media (max-width: 767px) {
     .summary {
         border-top-right-radius: unset;
@@ -151,7 +144,6 @@ input:focus::-webkit-input-placeholder {
 .btn:hover {
     color: white;
 }
-
 a {
     color: black;
 }

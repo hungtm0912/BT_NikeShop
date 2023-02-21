@@ -22,9 +22,9 @@ include './include/head.php';
                         <legend>Danh Mục</legend>
                         <!-- Text input-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="name">Tên Loại</label>
+                            <label class="col-md-4 control-label" for="name">Tên Loại Sản Phẩm</label>
                             <div style="width: 93.333333% !important" class="col-md-4">
-                                <input path="name" id="name" name="category_name" placeholder="CATEGORY NAME" class="form-control input-md" type="text" />
+                                <input path="name" id="name" name="category_name" placeholder="Nhập Loại Sản Phẩm" class="form-control input-md" type="text" />
                             </div>
                         </div>
                         <script>

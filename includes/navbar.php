@@ -42,16 +42,16 @@
           echo '<a class="dropdown-item dropdown-item-custom" href="./view_user">Thông Tin Tài Khoản</a>';
         }
         ?>
+         <?php
+        if (isset($_SESSION['role']) && $_SESSION['role'] == 1) {
+          echo '<div class="dropdown-divider margin: 3px 0;"></div>';
+          echo '<a class="dropdown-item dropdown-item-custom" href="./Admin_view">Quản Lý</a>';
+        }
+        ?>
         <?php
         if (isset($_SESSION['username'])) {
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
           echo '<a class="dropdown-item dropdown-item-custom" href="./signout">Đăng Xuất</a>';
-        }
-        ?>
-        <?php
-        if (isset($_SESSION['role']) && $_SESSION['role'] == 1) {
-          echo '<div class="dropdown-divider margin: 3px 0;"></div>';
-          echo '<a class="dropdown-item dropdown-item-custom" href="./Admin_view">Quản Lý</a>';
         }
         ?>
       </div>

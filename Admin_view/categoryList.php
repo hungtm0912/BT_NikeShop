@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <?php
 include './include/head.php';
 ?>
@@ -31,8 +30,8 @@ include './include/head.php';
             <div class="d-flex flex-row justify-content-between mt-4">
               <div class="d-flex flex-row">
                 <input type="hidden" id="page" name="page" class="form-control">
-                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Search" value="" style="margin-right: 5px;">
-                <button type="submit" id="btnSearch" name="btnSearch" value="Search" class="btn btn-primary">Tìm Kiếm</button>
+                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Nhập thông tin cần tìm" value="" style="margin-right: 5px;">
+                <button type="submit" id="btnSearch" name="btnSearch" value="Search" class="btn btn-primary">Tìm</button>
               </div>
               <div>
                 <a class="btn btn-outline-primary mb-1" href="./addcategory.php" role="button">Thêm Mới</a>
@@ -78,7 +77,6 @@ include './include/head.php';
   <script type="text/javascript" src="${base}/js/jquery.simplePagination.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
   <script src="${base}/js/dashboard.js"></script>
-
   <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">

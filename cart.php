@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
-  header("Location: /PhuongNamSport/signin");
+  header("Location: /BT_NikeShop/signin");
 }
 ?>
 <!DOCTYPE html>
