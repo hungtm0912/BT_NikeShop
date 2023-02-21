@@ -154,56 +154,25 @@
     </div>
     <!--WHAT FIND?-->
     <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;"> BẠN ĐANG TÌM?</div>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="card" style="border: none; background-color: #333333;">
-            <figure> <img class="card-img-top " id="zoomIn" src="./product_for_image/for_man.png"
-                alt="Card image cap"></figure>
-            <div class="card-body p-1 color-card-body">
-              <p style="font-weight: 550; color: orange;" class="card-text">Sản Phẩm Thể Thao Cho Nam</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="border: none;background-color: #333333;">
-            <figure> <img class="card-img-top " id="zoomIn" src="./product_for_image/for_woman.png" alt="Card image cap">
-            </figure>
-            <div class="card-body p-1 color-card-body">
-              <p style="font-weight: 550; color: orange;" class="card-text">Sản Phẩm Thể Thao Cho Nữ</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="border: none;background-color: #333333;">
-            <figure> <img class="card-img-top " id="zoomIn" src="./product_for_image/for_kid.png" alt="Card image cap">
-            </figure>
-            <div class="card-body p-1 color-card-body">
-              <p style="font-weight: 550; color: orange;" class="card-text">Sản Phẩm Thể Thao Cho Trẻ Em</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--TYPE OF PRODUCTS-->
     <div class="container type-of-product">
       <div class=" box">
-        <img height="150px !important" src="./type_of_product/kid-shoes.jpg">
-        <span>Giày Cho Trẻ Em</span>
+        <img height="350px !important" src="./product_for_image/for_man.png">
+        <span>Sản Phẩm Thể Thao Cho Nam</span>
       </div>
       <div class=" box">
-        <img height="150px !important" src="./type_of_product/uniform.jpg">
-        <span>Quần Áo Thể Thao</span>
+        <img height="150px !important" src="./product_for_image/for_woman.png">
+        <span>Sản Phẩm Thể Thao Cho Nữ</span>
       </div>
       <div class=" box">
-        <img height="150px !important" src="./type_of_product/ball.jpg">
-        <span>Phụ Kiện Thể Thao</span>
+        <img height="150px !important" src="./product_for_image/for_kid.png">
+        <span>Sản Phẩm Thể Thao Cho Trẻ Em</span>
       </div>
     </div>
+   
     <!--GENERATION-->
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-top: 350px;">
           <div class="gene_item">
             <div class="gene_img"><img src="./product_for_image/new_gen.png" alt=""></div>
             <div class="gene_info">
@@ -213,7 +182,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-top: 350px;">
           <div class="gene_item">
             <div class="gene_img"><img src="./product_for_image/nrc.png" alt=""></div>
             <div class="gene_info">
@@ -303,5 +272,49 @@
   </script>
   <script src="./script.js"></script>
   <script src="./OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
+
+
+  <style>
+    
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(236, 139, 27, 1);
+    line-height: 0;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.box > img {
+    width: 100%;
+    height: calc(100% - 5vh);
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box > span {
+    font-size: 2.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 1.2;
+    color: orange;
+    background-color: #333333;
+}
+
+.box:hover {
+    flex: 1 1 25%;
+    height: 500px;
+    object-fit: cover;
+    transition: 0.5s;
+
+}
+.box:hover > img {
+    width: 100%;
+    height: 550px;
+}
+  </style>
 </body>
 </html>
