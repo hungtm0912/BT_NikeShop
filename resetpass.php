@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,13 +34,13 @@
     <main class="form-forgot">
         <form method="POST" action="">
             <img class="mb-4" src="./logoshop.png" alt="" width="200" height="160">
-            <h1 class="h3 mb-3 fw-normal">Nhập mật khẩu mới</h1>
+            <h1 class="h3 mb-3 fw-normal">Nhập Mật Khẩu Mới</h1>
             <div class="form-group input-group">
-                <input path="password" name="password" class="form-control" placeholder="Create new password" type="password" required />
+                <input path="password" name="password" class="form-control" placeholder="Tạo Mật Khẩu Mới" type="password" required />
             </div>         
             <br>
             <div class="form-group input-group">
-                <input class="form-control" name="re_password" placeholder="Repeat password" type="password" required />
+                <input class="form-control" name="re_password" placeholder="Nhập Lại Mật Khẩu Mới" type="password" required />
             </div>
             <br>
             <button class="w-60 btn btn-primary" type="submit" name="signin">Đổi mật khẩu</button>

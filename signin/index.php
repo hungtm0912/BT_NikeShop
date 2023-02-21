@@ -33,25 +33,25 @@ if (isset($_SESSION['username'])) {
   <main class="form-signin">
     <form method="POST" action="./process_signin.php">
       <img class="mb-4" src="../image/logoshop.png" alt="" width="200" height="160">
-      <h1 class="h3 mb-3 fw-normal">Đăng nhập</h1>
+      <h1 class="h3 mb-3 fw-normal">Đăng Nhập</h1>
 
       <div class="form-floating">
-        <input id="account" type="email" class="form-control" id="floatingInput" placeholder="Email" name="email">
+        <input id="account" type="email" class="form-control" id="floatingInput" placeholder="Nhập Email" name="email">
         <label for="floatingInput">Tài Khoản</label>
       </div>
       <div class="form-floating">
-        <input id="password" type="password" class="form-control" id="floatingPassword" placeholder="Password"
+        <input id="password" type="password" class="form-control" id="floatingPassword" placeholder="Nhập Mật Khẩu"
           name="password" required>
         <label for="floatingPassword">Mật Khẩu</label>
       </div>
       
       <div class="checkbox mb-3">
-        <label><input type="checkbox" value="remember-me"> Nhớ mật khẩu</label>
+        <label><input type="checkbox" value="remember-me">Nhớ Mật Khẩu</label>
       </div>
       <button class="w-100 btn btn-lg btn-primary" type="submit" name="signin">Đăng Nhập</button>
     </form>
-    <p class="text-center" style="margin-top:8px">Bạn chưa có tài khoản ? <a href="../signup">Đăng ký</a> </p>
-    <p class="text-center" style="margin-top:8px"><a href="../forgotpass.php">Quên mật khẩu</a> </p>
+    <p class="text-center -1" style="margin-top:8px">Bạn chưa có tài khoản ? <a href="../signup">Đăng Ký</a> </p>
+    <p class="text-cente - 1" style="margin-top:8px"><a href="../forgotpass.php">Quên Mật Khẩu</a> </p>
     <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
   </main>
 

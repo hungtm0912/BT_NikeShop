@@ -126,7 +126,7 @@
                       </div>
                       <div class="form-group">
                         <label for="inputAddress">Số Điện Thoại</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Nhập SDT"
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Nhập Số Điện Thoại"
                           value="<?php echo $user['phone'] ?>" name="phone">
                       </div>
                       <div class="form-group">
@@ -142,11 +142,10 @@
                           <input id="avatarfile" name="user_avatar" class="input-file" type="file" />
                         </div>
                       </div>
-
                       <a href="../trangchu.php" class="btn btn-secondary btn-md active" role="button"
                         aria-pressed="true">Trở lại</a>
                       <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
-                      <a href="../Admin_vieer/process_user.php?id_userd=<?php echo $user['user_id'] ?>"
+                      <a href="../Admin_view/process_user.php?id_userd=<?php echo $user['user_id'] ?>"
                         class="btn btn-danger btw/usn-md active"
                         onclick="return confirm('Bạn chắc chắn muốn xóa tài khoản <?php echo $user['username'] ?> này?')"
                         role="button" aria-pressed=" true">Xóa</a>

@@ -40,7 +40,7 @@
             <img class="mb-4" src="./image/logoshop.png" alt="" width="200" height="160">
             <h1 class="h3 mb-3 fw-normal">Lấy lại mật khẩu</h1>
             <div class="form-floating">
-                <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+                <input type="email" class="form-control" placeholder="Nhập Email" id="email" name="email">
                 <label for="floatingInput">Nhập email</label>
             </div>
             <br>

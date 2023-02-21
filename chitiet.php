@@ -217,11 +217,11 @@
             <?php } ?>
             <p style="font-size: 18px; color: #fff;margin-bottom:0;font-weight: 600;">Mô Tả</p>
             <p class="product-desc"><?php echo $product['product_description'] ?></p>
-            <p class="name-provider">Chọn Size:</p>
+            <p class="name-provider">Chọn Size</p>
             <!-- size button -->
             <?php
             $name =  $product['product_name'];
-            $sql = "SELECT size_name FROM products WHERE product_name = N'$name' ORDER BY size_name ASC";
+            $sql = "SELECT size_name FROM products WHERE product_name = '$name' ORDER BY size_name ASC";
             $ketqua = $mysqli->query($sql);
             ?>
             <div class=" shoe size">
@@ -247,7 +247,7 @@
             <!--END-Position-->
           </div>
      <hr style="background-color: white; width: 100%;">
-      <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
+      <footer style="background-color: #333333 !important ;" class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->
         <section class="" style="color: white">
           <div class="container text-center text-md-start mt-5">

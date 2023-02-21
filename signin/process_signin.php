@@ -3,7 +3,7 @@ require_once "../database/config.php";
 
 if (isset($_POST['signin'])) {
   if (empty(trim($_POST['email'])) || empty(trim($_POST['password']))) {
-    $err = "Bạn chưa điền email hoặc mật khẩu";
+    $err = "Bạn Chưa Điền Email Hoặc Mật Khẩu";
   } else {
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
