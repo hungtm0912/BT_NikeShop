@@ -131,19 +131,19 @@
               ?>
             </a>
             <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item dropdown-item-custom" href="#">Đăng ký</a>
-              <div class="dropdown-divider margin: 3px 0;"></div>
               <?php
               if (!isset($_SESSION['username'])) {
                 echo '<a class="dropdown-item dropdown-item-custom" href="#">Đăng nhập</a>';
                 echo '<div class="dropdown-divider margin: 3px 0;"></div>';
               }
               ?>
-              <a class="dropdown-item dropdown-item-custom" href="#">Giỏ hàng</a>
+              <a class="dropdown-item dropdown-item-custom" href="#">Đăng Ký</a>
               <div class="dropdown-divider margin: 3px 0;"></div>
-              <a class="dropdown-item dropdown-item-custom" href="#">Thanh toán </a>
+              <a class="dropdown-item dropdown-item-custom" href="#">Giỏ Hàng</a>
               <div class="dropdown-divider margin: 3px 0;"></div>
-              <a class="dropdown-item dropdown-item-custom" href="#">Tra cứu đơn hàng </a>
+              <a class="dropdown-item dropdown-item-custom" href="#">Thanh Toán </a>
+              <div class="dropdown-divider margin: 3px 0;"></div>
+              <a class="dropdown-item dropdown-item-custom" href="#">Tra Cứu Đơn Hàng </a>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@
           </div>
           <div class="col-6">
             <div class="input-group mb-3 mt-3">
-              <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username"
+              <input type="text" class="form-control" placeholder="Nhập thông tin cần tìm aria-label="Recipient's username"
                 aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
@@ -174,16 +174,16 @@
         <div class="row col-12 mb-3">
           <ul style="margin: auto;" class="nav">
             <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang chủ</a>
+              <a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang Chủ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">Về chúng tôi</a>
+              <a class="nav-link active nav-link-active-custom" href="#">Về Chúng Tôi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="./index.php">Tất cả sản phẩm</a>
+              <a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">Hướng dẫn mua hàng</a>
+              <a class="nav-link active nav-link-active-custom" href="#">Hướng Dẫn Mua Hàng</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a>
@@ -224,7 +224,7 @@
             $sql = "SELECT size_name FROM products WHERE product_name = '$name' ORDER BY size_name ASC";
             $ketqua = $mysqli->query($sql);
             ?>
-            <div class=" shoe size">
+            <div class="shoe size">
               <?php while ($row = mysqli_fetch_array($ketqua)) { ?>
               <div class="btn-group " role="group" aria-label="Third group">
                 <button type="button" class="btn btn-info shoe-size-btn"
@@ -232,22 +232,24 @@
               </div>
               <?php } ?>
               <!-- end size button -->
+               <!-- Xet cac truong hop khi mua hang -->
               <div style="margin-top: 15px;">
-                <button type="button" class="btn btn-outline-warning">Mua hàng</button>
-                <?php if (!isset($_SESSION['username'])) { ?>
+                <button type="button" class="btn btn-outline-warning">Mua Hàng</button>
+                <?php 
+                 if (!isset($_SESSION['username'])) { ?>
                 <button type="button" class="btn btn-outline-warning"><a class="add-product"
-                 href="./signin">Thêm vào giỏ hàng</a></button>
+                 href="./signin">Thêm Vào Giỏ Hàng</a></button>
                 <?php }
                  else { ?>
                 <button type="button" class="btn btn-outline-warning"><a class="add-product" 
-                href="./add_to_cart.php?product_id=<?php echo $product['product_id'] ?>">Thêm vào giỏ hàng</a></button>
+                 href="./add_to_cart.php?product_id=<?php echo $product['product_id'] ?>">Thêm vào Giỏ Hàng</a></button>
                 <?php } ?>
               </div>
             </div>
             <!--END-Position-->
           </div>
      <hr style="background-color: white; width: 100%;">
-      <footer style="background-color: #333333 !important ;" class="text-center text-lg-start bg-light text-muted">
+      <footer style="background-color: #333333 !important;" class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->
         <section class="" style="color: white">
           <div class="container text-center text-md-start mt-5">
@@ -288,8 +290,8 @@
         </section>
         <!-- Section: Links  -->
       </footer>                                                                                                                                                                                                                                              
-        </div>
       </div>
+    </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>

@@ -12,7 +12,6 @@ $prd_avatar = $_FILES['prd_avatar']['name'];
 $prd_avatar_tmp = $_FILES['prd_avatar']['tmp_name'];
 $path = '../upload/';
 // move_uploaded_file($prd_avatar_tmp, $path . $prd_avatar);
-
 $prd_sizeID = $_POST['prd_size'];
 $sql = "UPDATE products
     SET
@@ -26,7 +25,6 @@ $sql = "UPDATE products
     size_name = '$prd_size'
     WHERE
     product_id = $id ";
-
 $mysqli->query($sql);
 move_uploaded_file($prd_avatar_tmp, $path . $prd_avatar);
 echo '<script type="text/javascript">alert("Sửa Sản Phẩm Thành Công!!!");</script>';

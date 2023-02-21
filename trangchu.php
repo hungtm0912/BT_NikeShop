@@ -88,7 +88,7 @@
           while ($row_product = mysqli_fetch_array($sql_product)) {
           ?>
           <div class="item">
-            <div style="padding: 0 0;" class="pad15 ">
+            <div style="padding: 0 0;" class="pad15">
               <div style="margin-bottom: 10px !important; background-color:#333333!important;" class="card ">
                 <span class="ico-sale" style="display: inline-block;background-color: #ff0000;position: absolute;
                 width: 45px;color: white;font-size: 13px;text-align: center;right: 3%;top: 5px;">-<?php echo $row_product['product_sale'] ?>%</span>
@@ -169,7 +169,6 @@
         <span>Sản Phẩm Cho Trẻ Em</span>
       </div>
     </div>
-   
     <!--GENERATION-->
     <div class="container">
       <div class="row">
@@ -231,7 +230,7 @@
       </div>
     </div>
       <hr style="background-color: white; width: 100%;">
-      <footer style="background-color: #333333 !important ;" class=" text-center text-lg-start bg-light text-muted">
+      <footer style="background-color: #333333 !important;" class=" text-center text-lg-start bg-light text-muted">
         <section class="" style="color: white">
           <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
@@ -273,10 +272,7 @@
   </script>
   <script src="./script.js"></script>
   <script src="./OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
-
-
-  <style>
-    
+  <style>  
 .box {
     flex: 1;
     overflow: hidden;
@@ -287,14 +283,12 @@
     border-radius: 10px;
     height: 500px;
 }
-
 .box > img {
     width: 100%;
     height: calc(100% - 5vh);
     object-fit: cover;
     transition: 0.5s;
 }
-
 .box > span {
     font-size: 2.8vh;
     display: block;
@@ -304,18 +298,16 @@
     color: orange;
     background-color: #333333;
 }
-
 .box:hover {
     flex: 1 1 25%;
     height: 500px;
     object-fit: cover;
     transition: 0.5s;
-
 }
 .box:hover > img {
     width: 100%;
     height: 550px;
 }
-  </style>
+</style>
 </body>
 </html>

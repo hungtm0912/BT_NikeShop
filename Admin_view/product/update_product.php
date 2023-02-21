@@ -58,7 +58,6 @@
       include '../include/nav.php';
       ?>
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-
         <?php
         // if (isset($_POST['add']))
         // {
@@ -100,8 +99,7 @@
                   <?php
                   while ($row_danhmuc = mysqli_fetch_array($sql_danhmuc)) {
                   ?>
-                    <option value="<?php echo $row_danhmuc['category_id'] ?>"><?php echo $row_danhmuc['category_name'] ?>
-                    </option>
+                    <option value="<?php echo $row_danhmuc['category_id'] ?>"><?php echo $row_danhmuc['category_name'] ?></option>
                   <?php
                   }
                   ?>
@@ -162,22 +160,19 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="brand">Sale</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input value="<?php echo $product['product_sale'] ?>" name="prd_sale" placeholder="%" class="form-control input-md" type="number" />
+                <input value="<?php echo $product['product_sale'] ?>" name="prd_sale" placeholder="Nhập % Giảm Giá" class="form-control input-md" type="number" />
               </div>
             </div>
             <!-- Size sản phẩm -->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="Price">Size</label>
                 <div style="width: 93.333333% !important;" class="col-md-4">
-                    <input id="Price" name="prd_size" placeholder="Nhập Size" class="form-control input-md" type="text" />
-                </div>
+                <input id="Price" name="prd_size" placeholder="Nhập Size" class="form-control input-md" type="text"/></div>
             </div>
             <!-- Button -->
             <br>
             <div class="form-group">
-              <div class="col-md-4">
-                <button id="singlebutton" name="add" class="btn btn-primary">Sửa</button>
-              </div>
+              <div class="col-md-4"><button id="singlebutton" name="add" class="btn btn-primary">Sửa</button></div>
             </div>
           </fieldset>
         </form>

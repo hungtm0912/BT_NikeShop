@@ -5,7 +5,6 @@
         $status=$_GET['status']; 
         $sql_update_status = "UPDATE orders Set `status`= $status where`order_id`= $id" ;
         $mysqli->query($sql_update_status);
-        
         header("location:../saleOrderList.php");
     }
 ?>

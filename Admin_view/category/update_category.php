@@ -21,7 +21,6 @@
         -moz-user-select: none;
         user-select: none;
     }
-
     @media (min-width: 768px) {
         .bd-placeholder-img-lg {
             font-size: 3.5rem;
@@ -42,9 +41,7 @@
         </button>
         <input class="form-control form-control-dark w-100" type="text" placeholder="Nhập Thông Tin Cần Tìm" aria-label="Search" />
         <div class="navbar-nav">
-            <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="../trangchu.php">Đăng Xuất</a>
-            </div>
+            <div class="nav-item text-nowrap"><a class="nav-link px-3" href="../trangchu.php">Đăng Xuất</a></div>
         </div>
     </header>
     <div class="container-fluid">
@@ -58,81 +55,44 @@
                         <li class="nav-item sub">
                             <a class="nav-link" href="/update_category.php"><span data-feather="file"></span>Đơn Đặt Hàng</a>
                             <ul class="sub-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./saleOrderList.php">Danh Sách Đơn Hàng </a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./saleOrderList.php">Danh Sách Đơn Hàng </a></li>
                             </ul>
                         </li>
                         <li style="margin-bottom: -36px;" class="nav-item sub">
                             <a class="nav-link" href="./update_category.php"> <span data-feather="shopping-cart"></span> Sản Phẩm</a>
                             <ul class="sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="./addproduct.php"> Thêm Sản Phẩm</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="./productList.php"> Danh Sách Sản Phẩm</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./addproduct.php"> Thêm Sản Phẩm</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./productList.php"> Danh Sách Sản Phẩm</a></li>
                             </ul>
                         </li>
                         <li style="margin-bottom: -36px;" class="nav-item sub">
                             <a class="nav-link" href="/update_category.php"><span data-feather="shopping-cart"></span>Danh Mục</a>
                             <ul class="sub-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./addcategory.php"> Thêm Danh Mục </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./categoryList.php"> Danh Sách Danh Mục</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./addcategory.php"> Thêm Danh Mục</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./categoryList.php"> Danh Sách Danh Mục</a></li>
                             </ul>
                         </li>
                         <li style="margin-bottom: -36px;" class="nav-item sub">
                             <a class="nav-link" href="/update_category.php">
                                 <span data-feather="users"></span>Khách Hàng</a>
                             <ul class="sub-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contactList"> Danh Sách Liên Hệ </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./userList"> Danh Sách Khách Hàng</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./contactList"> Danh Sách Liên Hệ</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./userList"> Danh Sách Khách Hàng</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><span data-feather="bar-chart-2"></span> Phản Hồi </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><span data-feather="layers"></span>Tích Hợp</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span data-feather="bar-chart-2"></span> Phản Hồi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span data-feather="layers"></span>Tích Hợp</a></li>
                     </ul>
-                    <h6
-                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                         <span>Lưu Phản Hồi</span>
                         <a class="link-secondary" href="#" aria-label="Add a new report">
-                            <span data-feather="plus-circle"></span></a>
+                        <span data-feather="plus-circle"></span></a>
                     </h6>
                     <ul class="nav flex-column mb-2">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span>
-                                Trung Bình/Tháng
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span>
-                                Quý trước
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span>
-                                Tương tác 
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span>
-                               Giảm Giá Cuối Năm
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span data-feather="file-text"></span>Trung Bình/Tháng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span data-feather="file-text"></span>Quý trước</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span data-feather="file-text"></span>Tương tác </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span data-feather="file-text"></span> Giảm Giá Cuối Năm</a></li>
                     </ul>
                 </div>
             </nav>
@@ -150,9 +110,7 @@
                         <!-- Form Name -->
                         <legend>Danh Mục</legend>
                         <!-- Text input-->
-                        <div class="form-group">
-                            <input type="hidden" name="category_id" value="<?php echo $id ?>">
-                        </div>
+                        <div class="form-group"><input type="hidden" name="category_id" value="<?php echo $id ?>"></div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="name">Tên Danh Mục</label>
                             <div style="width: 93.333333% !important" class="col-md-4">
@@ -168,10 +126,8 @@
                         </script>
                         <!-- Button -->
                         <br>
-                        <div class="form-group">
-                            <div class="col-md-4">
-                                <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Sửa</button>
-                            </div>
+                        <div class="form-group"><div class="col-md-4">
+                        <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit">Sửa</button></div>
                         </div>
                     </fieldset>
                 </form>

@@ -95,8 +95,7 @@ session_start();
             <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Tên Khách Hàng</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Nhập Tên">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập Tên">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Thông tin phản hồi</label>

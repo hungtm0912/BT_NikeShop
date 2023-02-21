@@ -6,8 +6,6 @@
   </button>
   <input class="form-control form-control-dark w-100" type="text" placeholder="Nhập thông tin cần tim" aria-label="Search" />
   <div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-      <a class="nav-link px-3" href="../trangchu.php">Thoát</a>
-    </div>
+    <div class="nav-item text-nowrap"><a class="nav-link px-3" href="../trangchu.php">Thoát</a></div>
   </div>
 </header>

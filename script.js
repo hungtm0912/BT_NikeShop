@@ -2,7 +2,6 @@ $(document).ready(function () {
     var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
     var itemWidth = "";
-
     $('.leftLst, .rightLst').click(function () {
         var condition = $(this).hasClass("leftLst");
         if (condition)
@@ -10,13 +9,11 @@ $(document).ready(function () {
         else
             click(1, this)
     });
-
     ResCarouselSize();
 
     $(window).resize(function () {
         ResCarouselSize();
     });
-
     //this function define the size of the items
     function ResCarouselSize() {
         var incno = 0;
@@ -60,8 +57,6 @@ $(document).ready(function () {
 
         });
     }
-
-
     //this function used to move the items
     function ResCarousel(e, el, s) {
         var leftBtn = ('.leftLst');
@@ -91,12 +86,10 @@ $(document).ready(function () {
         }
         $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
     }
-
     //It is used to get some elements from btn
     function click(ell, ee) {
         var Parent = "#" + $(ee).parent().attr("id");
         var slide = $(Parent).attr("data-slide");
         ResCarousel(ell, Parent, slide);
     }
-
 });

@@ -25,7 +25,7 @@
             $hash_pass = password_hash($password, PASSWORD_BCRYPT);
             $sql = "UPDATE `users` SET `password` = '$hash_pass' WHERE `email` = '$email'";
             $mysqli->query($sql);
-            echo '<script type="text/javascript">alert("Cập nhật thành công!");</script>';
+            echo '<script type="text/javascript">alert("Cập Nhật Thành Công!");</script>';
             header('location:./signin.php');
         }
     }
