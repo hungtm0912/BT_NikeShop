@@ -308,6 +308,15 @@
     width: 100%;
     height: 550px;
 }
+.product-title{
+  color: orange;
+}
+.product-title:hover{
+    text-decoration: none !important;
+    opacity: 0.8;
+    color: #fff;
+
+}
 </style>
 </body>
 </html>

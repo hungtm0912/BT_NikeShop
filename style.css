@@ -157,6 +157,7 @@ body {
 .product-title:hover{
     text-decoration: none !important;
     opacity: 0.8;
+    color: #fff;
 
 }
 .price {
