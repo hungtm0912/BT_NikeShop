@@ -110,7 +110,7 @@
         <a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="#">Liên Hệ</a>
+        <a class="nav-link active nav-link-active-custom" href="./contact.php">Liên Hệ</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale Off</a>
