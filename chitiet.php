@@ -197,10 +197,10 @@
             <?php } ?>
             <?php if ($product['product_sale'] > 0) { ?>
             <span style="margin-left: 20px; font-size: 30px" class="card-text new-price">
-            <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>VND</span>
+            <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>VNĐ</span>
             <?php } else { ?>
               <span
-                    class="card-text new-price"><?php echo number_format($product['product_price'] - ($product['product_sale'] / 100 * $product['product_price'])) ?>đ</span>
+                    class="card-text new-price" style="font-size: 25px;"><?php echo number_format($product['product_price'] - ($product['product_sale'] / 100 * $product['product_price'])) ?> VNĐ</span>
             <?php } ?>
             <p style="font-size: 18px; color: #fff;margin-bottom:0;font-weight: 600;">Mô Tả</p>
             <p class="product-desc"><?php echo $product['product_description'] ?></p>
