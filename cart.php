@@ -96,10 +96,10 @@ if (!isset($_SESSION['username'])) {
                   placeholder="Nhập Họ và Tên" value="<?php echo $fullname ?>">
               </div>
               <div class="form-group">
-                <label for="customerEmail">Địa Chỉ Email</label>
+                <label for="customerEmail">Email</label>
                 <input type="email" class="form-control" id="customerEmail" name="email_receiver"
                   placeholder="Nhập Email" value="<?php echo $_SESSION['email'] ?>">
-                <small id="emailHelp" class="form-text text-muted">Bắt Buộc nhập địa chỉ Email</small>
+                <small id="emailHelp" class="form-text text-muted">Bắt Buộc Nhập Địa Chỉ Email</small>
               </div>
               <div class="form-group">
                 <label for="customerPhone">Số Điện Thoại</label>
@@ -131,7 +131,7 @@ if (!isset($_SESSION['username'])) {
                 <span class="total-price"><?php echo number_format($total) ?> VND</span>
               </div>
             </div>
-            <button type="submit" class="btnn" style="font-size:18px" onclick="alert('Đặt hàng thành công');">Đặt Hàng</button>
+            <button type="submit" class="btnn" style="font-size:18px" onclick="alert('Đặt Hàng Thành Công');">Đặt Hàng</button>
           </div>
         </div>
       </div>
@@ -171,12 +171,9 @@ if (!isset($_SESSION['username'])) {
                 <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
                 <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
               </div>
-              <!-- Grid column -->
             </div>
-            <!-- Grid row -->
           </div>  
         </section>
-        <!-- Section: Links  -->
       </footer> 
   </div>
 </body>
