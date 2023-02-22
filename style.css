@@ -144,10 +144,10 @@ body {
 
 .product-title {
     width: 100%;
+    height: 30px;
     font-size: 18px;
     font-weight: 600;
-    color: #555555;
-    color: orange;
+    color: white;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -156,9 +156,8 @@ body {
 .product-title:hover{
     text-decoration: none !important;
     opacity: 0.8;
-    color: #fff;
-
-}
+    color: #ed812b;
+} 
 .price {
     display: flex;
     flex-direction: column;
@@ -273,7 +272,6 @@ body {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    background: #f1f1f1;
     color: #666;
 }
 .MultiCarousel .leftLst,
