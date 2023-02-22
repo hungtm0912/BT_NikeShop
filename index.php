@@ -127,8 +127,9 @@ require_once './database/config.php';
               <?php } else { ?>
               <span class="ico-sale"></span>
               <?php } ?>
-              <img class="card-img-top link" style=" width: 100%; height: 250px;" src="./Admin_view/upload/<?php echo $product['product_image'] ?>"
-                alt="Card image cap">
+              <a class="card-title product-title"
+                  href="./chitiet.php?id=<?php echo $product['product_id'] ?>"><img class="card-img-top link" style=" width: 100%; height: 250px;" src="./Admin_view/upload/<?php echo $product['product_image'] ?>"
+                alt="Card image cap"></a>
               <div style="padding: 6px !important;" class="card-body">
                 <a class="card-title product-title"
                   href="./chitiet.php?id=<?php echo $product['product_id'] ?>" style="text-align: center"><?php echo $product['product_name'] ?></a>
