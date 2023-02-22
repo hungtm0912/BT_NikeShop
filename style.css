@@ -144,6 +144,7 @@ body {
 
 .product-title {
     width: 100%;
+    height: 30px;
     font-size: 18px;
     font-weight: 600;
     color: #555555;
@@ -273,7 +274,6 @@ body {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    background: #f1f1f1;
     color: #666;
 }
 .MultiCarousel .leftLst,
