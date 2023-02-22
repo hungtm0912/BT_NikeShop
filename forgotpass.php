@@ -31,22 +31,22 @@
                 $mail->sendMail($email,$code);
                 header('location:./verifyPass.php');                                                                                                                     
             }else{
-                echo '<script type="text/javascript">alert("Email không tồn tại");</script>';
+                echo '<script type="text/javascript">alert("Email Không Tồn Tại");</script>';
             }}}
 ?>
 <body class="text-center">
     <main class="form-forgot">
         <form method="POST" action="">
             <img class="mb-4" src="./image/logoshop.png" alt="" width="200" height="160">
-            <h1 class="h3 mb-3 fw-normal">Lấy lại mật khẩu</h1>
+            <h1 class="h3 mb-3 fw-normal">Lấy Lại Mật Khẩu</h1>
             <div class="form-floating">
                 <input type="email" class="form-control" placeholder="Nhập Email" id="email" name="email">
-                <label for="floatingInput">Nhập email</label>
+                <label for="floatingInput">Nhập Email</label>
             </div>
             <br>
-            <button class="w-60 btn btn-primary" type="submit" name="signin">Gửi yêu cầu</button>
+            <button class="w-60 btn btn-primary" type="submit" name="signin">Gửi Yêu Cầu</button>
         </form>
-        <p class="text-center" style="margin-top:8px">Bạn chưa có tài khoản ? <a href="./signup">Đăng ký</a> </p>
+        <p class="text-center" style="margin-top:8px">Bạn Chưa Có Tài Khoản ? <a href="./signup">Đăng Ký</a></p>
         <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
     </main>
 </body>

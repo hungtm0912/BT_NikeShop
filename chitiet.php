@@ -154,7 +154,7 @@
         ?>
         <div class="row col-12 logo-search-cart">
           <div style="justify-content: end !important;" class="col-3 logo">
-            <img width="20%" src="./image/logoshop.png" alt="">
+            <img width="30%" src="./image/logoshop.png" alt=""style="margin-left: 100px;margin-bottom: -40px">
           </div>
           <div class="col-6">
             <div class="input-group mb-3 mt-3">
