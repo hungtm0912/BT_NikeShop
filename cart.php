@@ -108,13 +108,10 @@ if (!isset($_SESSION['username'])) {
               </div>
               <div class="form-group">
                 <label for="customerAddress">Địa Chỉ</label>
-                <input type="text" class="form-control" id="customerAddress" name="address_receiver"
-                  placeholder="Nhập Địa Chỉ">
+                <input type="text" class="form-control" id="customerAddress" name="address_receiver" placeholder="Nhập Địa Chỉ">
               </div>
             </div>
-            <div class="back-to-shop">
-              <a href="./index.php"><i class="fas fa-long-arrow-left"></i> Quay Lại Shop</a>
-            </div>
+            <div class="back-to-shop"><a href="./index.php"><i class="fas fa-long-arrow-left"></i> Quay Lại Shop</a></div>
           </div>
           <div class="col-md-4 summary">
             <div>

@@ -101,9 +101,9 @@ require_once './database/config.php';
         <div class="row">
           <img src="../Bootstrap/product img/banner-collection.jpg" alt="">
         </div>
-        <div style="color:white;" class="text-all-product">Tất Cả Sản Phẩm</div>
-        <div class=" category-icon">
-          <i class="fa fa-th-large"></i>
+        <div style="color:white;position:relative;top:10px;" class="text-all-product">Tất Cả Sản Phẩm</div>
+        <div class=" category-icon"style="position:relative;top:17px;">
+          <i class="fa fa-th-large" ></i>
         </div>
         <div style="right: 0; color: white;" class=" float-right justify-content-end">Sắp xếp theo
           <select style="border-radius: 3px;" name="filter" id="">

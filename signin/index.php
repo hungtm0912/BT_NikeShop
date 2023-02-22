@@ -32,21 +32,19 @@ if (isset($_SESSION['username'])) {
 <body class="text-center">
   <main class="form-signin">
     <form method="POST" action="./process_signin.php">
-      <img class="mb-4" src="../image/logoshop.png" alt="" width="200" height="160">
+      <img class="mb-4" src="../image/logoshop.png" href="../index.php" alt="" width="200" height="160">
       <h1 class="h3 mb-3 fw-normal">Đăng Nhập</h1>
-
       <div class="form-floating">
         <input id="account" type="email" class="form-control" id="floatingInput" placeholder="Nhập Email" name="email">
         <label for="floatingInput">Tài Khoản</label>
       </div>
       <div class="form-floating">
-        <input id="password" type="password" class="form-control" id="floatingPassword" placeholder="Nhập Mật Khẩu"
-          name="password" required>
+        <input id="password" type="password" class="form-control" id="floatingPassword" placeholder="Nhập Mật Khẩu" name="password" required>
         <label for="floatingPassword">Mật Khẩu</label>
       </div>
       
       <div class="checkbox mb-3">
-        <label><input type="checkbox" value="remember-me">Nhớ Mật Khẩu</label>
+        <label><input type="checkbox" value="remember-me"> Nhớ Mật Khẩu</label>
       </div>
       <button class="w-100 btn btn-lg btn-primary" type="submit" name="signin">Đăng Nhập</button>
     </form>

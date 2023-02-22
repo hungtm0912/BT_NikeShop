@@ -158,7 +158,7 @@
           </div>
           <div class="col-6">
             <div class="input-group mb-3 mt-3">
-              <input type="text" class="form-control" placeholder="Nhập thông tin cần tìm aria-label="Recipient's username"
+              <input type="text" class="form-control" placeholder="Nhập thông tin cần tìm"aria-label="Recipient's username"
                 aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
@@ -168,32 +168,18 @@
           <div class="col-3 py-3 cart-icon">
             <p class="items-cart"><?php echo $items ?></p>
             <a href="./cart.php" style="color:#fff !important;"><i style="font-size: 24px !important;"
-                class="fas fa-shopping-cart"></i></a>
+            class="fas fa-shopping-cart"></i></a>
           </div>
         </div>
         <div class="row col-12 mb-3">
           <ul style="margin: auto;" class="nav">
-            <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang Chủ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">Về Chúng Tôi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">Hướng Dẫn Mua Hàng</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom" href="#">Liên Hệ </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale off</a>
-            </li>
+            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang Chủ</a></li>
+            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Về Chúng Tôi</a></li>
+            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm</a></li>
+            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Hướng Dẫn Mua Hàng</a></li>
+            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a></li>
+            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Liên Hệ </a></li>
+            <li class="nav-item"><a class="nav-link active nav-link-active-custom sale-off" href="#">Sale Off</a></li>
           </ul>
         </div>
       </div>
@@ -221,7 +207,7 @@
             <!-- size button -->
             <?php
             $name =  $product['product_name'];
-            $sql = "SELECT size_name FROM products WHERE product_name = '$name' ORDER BY size_name ASC";
+            $sql = "SELECT size_name FROM products WHERE product_name = N'$name' ORDER BY size_name ASC";
             $ketqua = $mysqli->query($sql);
             ?>
             <div class="shoe size">
@@ -248,7 +234,7 @@
             </div>
             <!--END-Position-->
           </div>
-     <hr style="background-color: white; width: 100%;">
+      <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important;" class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->
         <section class="" style="color: white">

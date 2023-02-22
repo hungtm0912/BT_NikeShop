@@ -63,8 +63,7 @@ include './include/head.php';
             <div class="form-group">
               <label class="col-md-4 control-label" for="title">Tên Sản Phẩm</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input id="title" name="prd_name" placeholder="Nhập Tên Sản Phẩm" class="form-control input-md"
-                  type="text" />
+                <input id="title" name="prd_name" placeholder="Nhập Tên Sản Phẩm" class="form-control input-md" type="text" />
               </div>
             </div>
             <div class="form-group">
@@ -144,7 +143,6 @@ include './include/head.php';
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
     integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
   </script>
-  <script src="dashboard.js"></script>
   <script src="dashboard.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
