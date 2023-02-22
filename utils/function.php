@@ -75,12 +75,12 @@ if (isset($_POST['reply_posted'])) {
 							<span class='comment-name'>" . getUsernameById($inserted_reply['user_id']) . "</span>
 							<span class='comment-date'>" . date('F j, Y ', strtotime($inserted_reply['created_at'])) . "</span>
 							<p>" . $inserted_reply['body'] . "</p>
-							<a class='reply-btn' href='#'>reply</a> &nbsp;&nbsp; <a class='edit-btn' href='#'>edit</a>
+							<a class='reply-btn' href='#'>reply</a> &nbsp;&nbsp; <a class='edit-btn' href='#'>Sửa</a>
 						</div>
 						<!-- reply form -->
 						<form action='index.php' class='reply_form' data-id='" . $inserted_reply['reply_id'] . "'>
 							<textarea class='form-control' name='reply_text' id='reply_text' cols='30' rows='2'></textarea>
-							<button class='btn btn-primary btn-xs pull-right submit-reply'>Submit reply</button>
+							<button class='btn btn-primary btn-xs pull-right submit-reply'>Submit</button>
 						</form>
 					</div>";
     echo $reply;
