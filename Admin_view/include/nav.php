@@ -10,22 +10,22 @@
           <span data-feather="file"></span>Đơn Hàng</a>
         <ul class="sub-menu">
           <li class="nav-item">
-            <a class="nav-link" href="/BT_NikeShop/Admin_view/saleOrderList.php">Danh Sách Đơn Hàng </a>
+            <a class="nav-link" href="./saleOrderList.php">Danh Sách Đơn Hàng </a>
           </li>
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item sub">
         <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Sản Phẩm</a>
         <ul class="sub-menu">
-          <li class="nav-item"><a class="nav-link" href="/'. BT_DIR .'BT_NikeShop/Admin_view/addproduct.php">Thêm Sản Phẩm</a></li>
-          <li class="nav-item"><a class="nav-link" href="/'. BT_DIR .'BT_NikeShop/Admin_view/productList.php">Danh Sách Sản Phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="./addproduct.php">Thêm Sản Phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="./productList.php">Danh Sách Sản Phẩm</a></li>
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item sub">
         <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Danh Mục</a>
         <ul class="sub-menu">
-          <li class="nav-item"><a class="nav-link" href="/'. BT_DIR .'BT_NikeShop/Admin_view/addcategory.php">Thêm Danh Mục </a></li>
-          <li class="nav-item"><a class="nav-link" href="/'. BT_DIR .'BT_NikeShop/Admin_view//categoryList.php">Danh Sách Danh Mục</a></li>
+          <li class="nav-item"><a class="nav-link" href="./addcategory.php">Thêm Danh Mục </a></li>
+          <li class="nav-item"><a class="nav-link" href="./categoryList.php">Danh Sách Danh Mục</a></li>
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item sub">
@@ -33,7 +33,7 @@
           <span data-feather="users"></span>Khách Hàng </a>
         <ul class="sub-menu">
           <li class="nav-item"><a class="nav-link" href="./contactList"> Danh Sách Thông Tin Liên Hệ </a></li>
-          <li class="nav-item"><a class="nav-link" href="/'. BT_DIR .'BT_NikeShop/Admin_view/userlist.php">Danh sách Khách Hàng</a></li>
+          <li class="nav-item"><a class="nav-link" href="./userlist.php">Danh sách Khách Hàng</a></li>
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item">

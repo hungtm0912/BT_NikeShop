@@ -30,7 +30,7 @@ include './include/head.php';
             <div class="d-flex flex-row justify-content-between mt-4">
               <div class="d-flex flex-row">
                 <input type="hidden" id="page" name="page" class="form-control">
-                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Nhập" value=""
+                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Nhập thông tin cần tìm" value=""
                   style="margin-right: 5px;">
                 <select class="form-control" name="categoryId" id="categoryId" style="margin-right: 5px;">
                   <option>Tất cả</option>
@@ -43,7 +43,7 @@ include './include/head.php';
                 <button type="submit" id="btnSearch" name="btnSearch" value="Search"
                   class="btn btn-primary">Tìm</button>
               </div>
-              <div><a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm</a></div>
+              <div><a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm Mới</a></div>
             </div>
             <table class="table table-striped">
               <thead>
@@ -70,7 +70,7 @@ include './include/head.php';
                   <td><?php echo $i++; ?></td>
                   <td><a href="user/update_user.php?id=<?php echo $row_user['user_id'] ?>">
                       <img width="60" height="60"
-                        src="/'. BT_DIR .'BT_NikeShop/Admin_view/upload/user/<?php echo $row_user['avatar'] ?>" class="avatar"
+                        src="/BT_NikeShop/Admin_view/upload/user/<?php echo $row_user['avatar'] ?>" class="avatar"
                         alt="Avatar" />
                       <?php echo $row_user['username'] ?></a>
                   </td>

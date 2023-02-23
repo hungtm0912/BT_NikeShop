@@ -8,13 +8,14 @@ session_start();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nike Shop</title>
+  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./uidonhang.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./uidonhang.css">
 </head>
 <body>
   <?php
@@ -98,10 +99,10 @@ session_start();
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập Tên">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Thông tin phản hồi</label>
+                <label for="exampleFormControlTextarea1"> Thông Tin Phản Hồi</label>
                 <textarea class="form-control" id="textarea" rows="6"></textarea>
               </div>
-              <button type="submit" class="btnn" style="font-size:18px">Phản Hồi</button>
+              <button type="submit" class="btnn" style="font-size:18px">Gửi</button>
             </form>
           </div>
         </div>

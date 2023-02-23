@@ -101,7 +101,7 @@
 <body>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-  var Tawk_API = Tawk_API || {},
+   var Tawk_API = Tawk_API || {},
     Tawk_LoadStart = new Date();
   (function() {
     var s1 = document.createElement("script"),
@@ -247,8 +247,8 @@
                 </form>
                 <?php else : ?>
                 <div class="well" style="margin-top: 20px;">
-                <!-- Duong dan binh luan dang loi -->
-                  <h4 class="text-center cus_tag"><a href="/". BT_DIR ."BT_NikeShop/signin">Đăng Nhập</a> Để Gửi Bình Luận</h4>
+                <!-- Duong dan binh luan bi loi-->
+                  <h4 class="text-center cus_tag"><a href="BT_NikeShop/signin">Đăng Nhập</a> Để Gửi Bình Luận</h4>
                 </div>
                 <?php endif ?>
                 <!-- Display total number of comments on this post  -->

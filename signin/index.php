@@ -26,7 +26,7 @@ if (isset($_GET['err_checkcap'])) {
 
 session_start();
 if (isset($_SESSION['username'])) {
-  header('location: /BT_NikeShop/trangchu.php');
+  header("location: /". BT_DIR ."BT_NikeShop/trangchu.php");
 }
 ?>
 <body class="text-center">

@@ -25,9 +25,9 @@
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
         }
         ?>
-        <a class="dropdown-item dropdown-item-custom" href="#">Giỏ Hàng</a>
+        <a class="dropdown-item dropdown-item-custom" href="./cart.php">Giỏ Hàng</a>
         <div class="dropdown-divider margin: 3px 0;"></div>
-        <a class="dropdown-item dropdown-item-custom" href="#">Thanh Toán </a>
+        <a class="dropdown-item dropdown-item-custom" href="./cart.php">Thanh Toán </a>
         <div class="dropdown-divider margin: 3px 0;"></div>
         <?php
         if (!isset($_SESSION['username'])) {
@@ -59,12 +59,12 @@
   </div>
   <div class="row col-12 logo-search-cart">
     <div style="justify-content: end !important;" class="col-3 logo">
-      <img width="30%" src="./image/logoshop.png" alt="" style="margin-left: 100px;margin-bottom: -40px">
+      <a href ="./trangchu.php"><img width="30%" src="./image/logoshop.png" href ="./trangchu.php" alt="" style="margin-left: 100px;margin-bottom: -40px"></a>
     </div>
     <div class="col-6">
       <form action="" method="GET">
         <div class="input-group mb-3 mt-3">
-          <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" 
+          <input type="text" class="form-control" placeholder="Nhập thông tin cần tìm" aria-label="Recipient's username" 
             value="" name="search" aria-describedby="basic-addon2">
           <div class="input-group-append">
             <button type="submit" class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>

@@ -56,7 +56,9 @@ include './include/head.php';
                     <td><?php echo $category['category_name'] ?></td>
                     <td>
                       <a class="btn btn-primary" href="./category/update_category.php?id=<?php echo $category['category_id'] ?>" role="button">Sửa</a>
-                      <a class="btn btn-danger" href="./category/process_deletecategory.php?id=<?php echo $category['category_id'] ?>" onclick="return confirm('Bạn có muốn xóa <?php echo $category['category_name'] ?>')" role="button">Xóa</a>
+                      <a class="btn btn-danger" href="./category/process_deletecategory.php?id=
+                      <?php echo $category['category_id'] ?>" 
+                      onclick="return confirm('Bạn có muốn xóa <?php echo $category['category_name'] ?>')" role="button">Xóa</a>
                     </td>
                   </tr>
                 <?php } ?>

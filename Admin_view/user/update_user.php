@@ -75,7 +75,7 @@ if (isset($_POST['submit'])) {
     }
   </style>
   <!-- Custom styles for this template -->
-  <link href="/'. BT_DIR .'BT_NikeShop/Admin_view/dashboard.css " rel="stylesheet">
+  <link href="/BT_NikeShop/Admin_view/dashboard.css " rel="stylesheet">
   <link href="./styles_user_update.css" rel="stylesheet">
 </head>
 
@@ -108,7 +108,7 @@ if (isset($_POST['submit'])) {
                   <div class="card">
                     <div class="card-body">
                       <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/'. BT_DIR .'BT_NikeShop/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin" class="rounded-circle" width="150" height="150">
+                        <img src="/BT_NikeShop/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin" class="rounded-circle" width="150" height="150">
                         <div class="mt-3">
                           <h4><?php echo $user['username'] ?></h4>
                         </div>
