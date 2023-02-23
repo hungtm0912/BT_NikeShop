@@ -6,7 +6,7 @@ include './include/head.php';
 <?php
 session_start();
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 1) {
-  header('location: /'. BT_DIR .'BT_NikeShop/trangchu.php');
+  header("location: /". BT_DIR ."BT_NikeShop/trangchu.php");
 }
 ?>
 <body>

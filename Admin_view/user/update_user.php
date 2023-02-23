@@ -41,6 +41,7 @@ if (isset($_POST['submit'])) {
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.88.1">
+  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <title>Nike Shop</title>
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.css">
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css">
