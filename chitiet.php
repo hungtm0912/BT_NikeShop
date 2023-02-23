@@ -247,7 +247,8 @@
                 </form>
                 <?php else : ?>
                 <div class="well" style="margin-top: 20px;">
-                  <h4 class="text-center cus_tag"><a href="/BT_NikeShop/signin">Đăng Nhập</a> Để Gửi Bình Luận</h4>
+                <!-- Duong dan binh luan dang loi -->
+                  <h4 class="text-center cus_tag"><a href="/". BT_DIR ."BT_NikeShop/signin">Đăng Nhập</a> Để Gửi Bình Luận</h4>
                 </div>
                 <?php endif ?>
                 <!-- Display total number of comments on this post  -->

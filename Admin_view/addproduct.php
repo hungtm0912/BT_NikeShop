@@ -30,7 +30,8 @@ include './include/head.php';
                     $prd_avatar_tmp = $_FILES['prd_avatar']['tmp_name'];
                     $path = './upload/';
                     $prd_sizeID = $_POST['prd_size'];
-                    $sql_insert_product = mysqli_query($mysqli, "INSERT INTO products(category_id,product_name,product_description,product_price,product_quantity,size_name,product_image,product_sale) VALUES ('$prd_categoryID','$prd_name','$prd_description','$prd_price','$prd_quantity','$prd_sizeID','$prd_avatar','$prd_sale')");
+                    $sql_insert_product = mysqli_query($mysqli, "INSERT INTO products(category_id,product_name,product_description,product_price,product_quantity,size_name,product_image,product_sale)
+                    VALUES ('$prd_categoryID','$prd_name','$prd_description','$prd_price','$prd_quantity','$prd_sizeID','$prd_avatar','$prd_sale')");
                     move_uploaded_file($prd_avatar_tmp, $path . $prd_avatar);
                     echo '<script type="text/javascript">alert("Thêm sản phẩm thành công!!!");</script>';
                     // header('location: ./productList.php');

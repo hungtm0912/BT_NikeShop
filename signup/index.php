@@ -23,19 +23,19 @@ if (isset($_POST['submit'])) {
   $result = $mysqli->query($sql);
   $number_rows = mysqli_fetch_array($result)['count(*)'];
   if ($number_rows == 1) {
-    header("location: /BT_NikeShop/signup/?err_exist=Tài khoản đã tồn tại");
+    header("location: /". BT_DIR ."BT_NikeShop/signup/?err_exist=Tài khoản đã tồn tại");
     exit;
   }
 
   if ($password != $re_password) {
-    header("location: /BT_NikeShop/signup/?err_match=Mật khẩu nhập lại không đúng");
+    header("location: /". BT_DIR ."BT_NikeShop/signup/?err_match=Mật khẩu nhập lại không đúng");
     exit;
   }
   $hash_pass = password_hash($password, PASSWORD_BCRYPT); #ma hoa mat khau
   $sql = "INSERT INTO `users`(`username`, `phone`,`email`, `password`, `name`, `avatar`) values ('$username', '$phone', '$email', '$password', '$name', '$avatar')";
   $mysqli->query($sql);
   move_uploaded_file($avatar_tmp, $path . $avatar);
-  header('location: /BT_NikeShop/signin?err_match=Đăng Ký Thành Công!');
+  header("location: /". BT_DIR ."BT_NikeShop/signin?err_match=Đăng Ký Thành Công!");
 
   session_start();
   $_SESSION['username'] = $username;

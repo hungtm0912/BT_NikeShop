@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/BT_NikeShop/Admin_view/dashboard.css" rel="stylesheet">
-  <link href="/BT_NikeShop/Admin_view/styles_user_update.css" rel="stylesheet">
+  <link href="/'. BT_DIR .'BT_NikeShop/Admin_view/dashboard.css" rel="stylesheet">
+  <link href="/'. BT_DIR .'BT_NikeShop/Admin_view/styles_user_update.css" rel="stylesheet">
   <style>
   .bd-placeholder-img {
     font-size: 1.125rem;
@@ -67,7 +67,7 @@
     $number_rows = mysqli_fetch_array($result)['count(*)'];
 
     if ($number_rows == 1) {
-      header("location: /BT_NikeShop/view_user/index.php?id=$user_id&err_exist=Tài khoản đã tồn tại");
+      header("location: /'. BT_DIR .'BT_NikeShop/view_user/index.php?id=$user_id&err_exist=Tài khoản đã tồn tại");
       exit;
     }
 
@@ -83,7 +83,7 @@
     $mysqli->query($sql);
     move_uploaded_file($avatar_tmp, $path . $avatar);
     $_SESSION['email'] = $email;
-    header('location: /BT_NikeShop/trangchu.php?success=true');
+    header('location: /'. BT_DIR .'BT_NikeShop/trangchu.php?success=true');
   }
   ?>
   <?php
@@ -108,7 +108,7 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/BT_NikeShop/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin"
+                        <img src="/'. BT_DIR .'BT_NikeShop/Admin_view/upload/user/<?php echo $user['avatar'] ?>" alt="Admin"
                           class="rounded-circle" width="180" height="200"  border-radius="10%">
                         <div class="mt-3"> <h4><?php echo $user['username'] ?></h4></div>
                       </div>

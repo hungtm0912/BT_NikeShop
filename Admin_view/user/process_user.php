@@ -50,7 +50,7 @@ if (isset($_GET['id_delete']) || isset($_GET['id_userd'])) {
   unset($_SESSION['user_id']);
   unset($_SESSION['avatar']);
   if (isset($_GET['id_userd'])) {
-    header('location: /BT_NikeShop/trangchu.php?success_del=true');
+    header('location: /'. BT_DIR .'BT_NikeShop/trangchu.php?success_del=true');
   } else {
     header('location: ../userlist.php?success_del=true');
   }

@@ -9,9 +9,9 @@ if (isset($_POST['signin'])) {
     $password = trim($_POST['password']);
     $check = checkAuth($email, $password, $mysqli);
     if($check == NULL){
-      header('location: /BT_NikeShop/trangchu.php');
+      header('location: /'. BT_DIR .'BT_NikeShop/trangchu.php');
     } else{
-      header('location: /BT_NikeShop/signin?err_match='.$check);
+      header('location: /'. BT_DIR .'BT_NikeShop/signin?err_match='.$check);
     }
   }
 }

@@ -70,7 +70,7 @@ include './include/head.php';
                   <td><?php echo $i++; ?></td>
                   <td><a href="user/update_user.php?id=<?php echo $row_user['user_id'] ?>">
                       <img width="60" height="60"
-                        src="/BT_NikeShop/Admin_view/upload/user/<?php echo $row_user['avatar'] ?>" class="avatar"
+                        src="/'. BT_DIR .'BT_NikeShop/Admin_view/upload/user/<?php echo $row_user['avatar'] ?>" class="avatar"
                         alt="Avatar" />
                       <?php echo $row_user['username'] ?></a>
                   </td>

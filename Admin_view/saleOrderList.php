@@ -21,8 +21,8 @@ include './include/head.php';
             <div class="d-flex flex-row justify-content-between mt-4">
               <div class="d-flex flex-row">
                 <input type="hidden" id="page" name="page" class="form-control">
-                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Nhập thông tin cần tìm" value=""
-                  style="margin-right: 5px;">
+                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Nhập thông tin cần tìm"
+                  value="" style="margin-right: 5px;">
                 <button type="submit" id="btnSearch" name="btnSearch" value="Search"
                   class="btn btn-primary">Tìm</button>
               </div>
@@ -103,7 +103,7 @@ include './include/head.php';
   <script type="text/javascript">
   function status_update(value, id) {
     //alert(id);  
-    let url = "http://localhost/PhuongNamSport/Admin_view/order/update_status_process.php";
+    let url = "http://localhost:8080/BT_NikeShop/Admin_view/order/update_status_process.php";
     window.location.href = url + "?id=" + id + "&status=" + value;
   }
   </script>
