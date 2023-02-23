@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike Shop</title>
+    <link rel="icon" href="./image/logoshop.png" type="image/icon type">
     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.css" />
     <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css" />
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/" />
@@ -31,7 +32,8 @@
     <link href="../dashboard.css" rel="stylesheet" />
 </head>
 <body>
-    <?php require_once "../../connect.php" ?>
+    <?php require_once "../../connect.php"
+     ?>
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/update_category.php">Bảng Thống Kê</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
@@ -39,7 +41,7 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Nhập Thông Tin Cần Tìm" aria-label="Search" />
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Nhập thông tin cần tìm" aria-label="Search" />
         <div class="navbar-nav">
             <div class="nav-item text-nowrap"><a class="nav-link px-3" href="../trangchu.php">Đăng Xuất</a></div>
         </div>
