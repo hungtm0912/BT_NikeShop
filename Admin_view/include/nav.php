@@ -30,10 +30,10 @@
       </li>
       <li style="margin-bottom: -12px;" class="nav-item sub">
         <a class="nav-link" href="#">
-          <span data-feather="users"></span>Khách Hàng </a>
-        <ul class="sub-menu">
+          <span data-feather="users"></span>Tài Khoản </a>
+        <ul class="sub-menu"> 
+          <li class="nav-item"><a class="nav-link" href="./userlist.php">Danh sách Tài Khoản</a></li>
           <li class="nav-item"><a class="nav-link" href="./contactList"> Danh Sách Thông Tin Liên Hệ </a></li>
-          <li class="nav-item"><a class="nav-link" href="./userlist.php">Danh sách Khách Hàng</a></li>
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item">
