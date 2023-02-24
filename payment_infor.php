@@ -14,75 +14,7 @@
   <title>Nike Shop</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./chitiet.css">
-  <style>
-  .cus_tag {
-    text-align: left !important;
-  }
-  form button {
-    margin: 5px 0px;
-  }
-  textarea {
-    display: block;
-    width: 100% !important;
-    margin-bottom: 2px !important;
-  }
-  /*post*/
-  .post {
-    border: 1px solid #ccc;
-    margin-top: 10px;
-  }
-  /*comments*/
-  .comments-section {
-    margin-top: 100px;
-    border: 1px solid #ccc;
-    /* background-color: white; */
-    color: white;
-    border: none;
-  }
-  .comment {
-    margin-bottom: 10px;
-  }
-  .comment .comment-name {
-    font-weight: bold;
-  }
-  .comment .comment-date {
-    font-style: italic;
-    font-size: 0.8em;
-  }
-  .comment .reply-btn,
-  .edit-btn {
-    font-size: 0.8em;
-  }
-  .comment-details {
-    width: 91.5%;
-    float: left;
-  }
-  .comment-details p {
-    margin-bottom: 0px;
-  }
-  .comment .profile_pic {
-    width: 35px;
-    height: 35px;
-    margin-right: 5px;
-    float: left;
-    border-radius: 50%;
-  }
-  /*replies*/
-  .reply {
-    margin-left: 30px;
-  }
-  .reply_form {
-    margin-left: 40px;
-    display: none;
-  }
-  #comment_form {
-    margin-top: 10px;
-  }
-  #submit_comment {
-    margin-bottom: 30px;
-  }
-  </style>
+
 </head>
   <?php
     session_start();
@@ -114,7 +46,7 @@
               <?php
                  if (isset($_SESSION['name'])) {
                   echo $_SESSION['name'];
-                  } else {
+                  } else { 
                    echo 'Tài khoản';
                   }
               ?>
@@ -166,13 +98,31 @@
             <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Về Chúng Tôi</a></li>
             <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm</a></li>
             <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Hướng Dẫn Mua Hàng</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./payment_infor.php">Phương Thức Thanh Toán</a></li>
+            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./payment_infor.php ">Phương Thức Thanh Toán</a></li>
             <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./contact.php">Liên Hệ </a></li>
             <li class="nav-item"><a class="nav-link active nav-link-active-custom sale-off" href="#">Sale Off</a></li>
           </ul>
         </div>
             <!--END-Position-->
           </div>
+            <div class ="container-body">
+                <h1>Phương thức thanh toán</h1>
+                <p>
+                Hình thức thanh toán áp dụng: Chuyển tiền/chuyển khoản
+                Chuyển tiền/chuyển khoản:
+                Khách hàng muốn mua sản phẩm cần chuyển khoản trước khi nhận hàng
+                Thông tin tài khoản như sau:
+                Tài Khoản Vietcombank
+                CÔNG TY TNHH THỂ THAO SPORT1
+                TK: 0011.0040.46877
+                Ngân hàng TMCP Ngoại Thương Việt Nam – Sở Giao Dịch
+                Tài khoản BIDV
+                CÔNG TY TNHH THỂ THAO SPORT1
+                TK: 2611.0000.085.726
+                Ngân hàng Đầu Tư và Phát Triển Việt Nam –  CN Tràng An
+                (Quý khách vui lòng gọi điện trước khi chuyển khoản để đảm bảo sản phẩm còn khi đặt mua. Liên hệ 0969.65.1313)
+                </p>
+            </div>
       <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important;" class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->

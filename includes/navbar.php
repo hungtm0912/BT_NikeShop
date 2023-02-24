@@ -107,7 +107,7 @@
         <a class="nav-link active nav-link-active-custom" href="#">Hướng Dẫn Mua Hàng</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a>
+        <a class="nav-link active nav-link-active-custom" href="./payment_infor.php">Phương Thức Thanh Toán</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active nav-link-active-custom" href="./contact.php">Liên Hệ</a>

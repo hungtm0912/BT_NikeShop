@@ -178,7 +178,7 @@
             <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm</a></li>
             <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Hướng Dẫn Mua Hàng</a></li>
             <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Liên Hệ </a></li>
+            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./contact.php">Liên Hệ </a></li>
             <li class="nav-item"><a class="nav-link active nav-link-active-custom sale-off" href="#">Sale Off</a></li>
           </ul>
         </div>
