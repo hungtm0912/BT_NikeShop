@@ -15,17 +15,17 @@
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item sub">
-        <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Sản Phẩm</a>
-        <ul class="sub-menu">
-          <li class="nav-item"><a class="nav-link" href="./addproduct.php">Thêm Sản Phẩm</a></li>
-          <li class="nav-item"><a class="nav-link" href="./productList.php">Danh Sách Sản Phẩm</a></li>
-        </ul>
-      </li>
-      <li style="margin-bottom: -12px;" class="nav-item sub">
         <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Danh Mục</a>
         <ul class="sub-menu">
           <li class="nav-item"><a class="nav-link" href="./addcategory.php">Thêm Danh Mục </a></li>
           <li class="nav-item"><a class="nav-link" href="./categoryList.php">Danh Sách Danh Mục</a></li>
+        </ul>
+      </li>
+      <li style="margin-bottom: -12px;" class="nav-item sub">
+        <a class="nav-link" href="#"><span data-feather="shopping-cart"></span>Sản Phẩm</a>
+        <ul class="sub-menu">
+          <li class="nav-item"><a class="nav-link" href="./addproduct.php">Thêm Sản Phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="./productList.php">Danh Sách Sản Phẩm</a></li>
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item sub">

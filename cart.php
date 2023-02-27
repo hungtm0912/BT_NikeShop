@@ -1,7 +1,6 @@
 <?php
 require_once "./database/config.php";
 session_start();
-
 if (!isset($_SESSION['username'])) {
   header("Location: /". BT_DIR ."BT_NikeShop/signin");
 }

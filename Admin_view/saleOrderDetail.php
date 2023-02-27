@@ -27,16 +27,16 @@ include './include/head.php';
                             <div class="d-flex flex-row">
                                 <input type="hidden" id="page" name="page" class="form-control">
                                 <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Nhập thông tin cần tìm" value="" style="margin-right: 5px;">
-                                <button type="submit" id="btnSearch" name="btnSearch" value="Search" class="btn btn-primary">Tìm </button>
+                                <button type="submit" id="btnSearch" name="btnSearch" value="Search" class="btn btn-primary">Tìm</button>
                             </div>
                         </div>
                         <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">ID</th>
+                                    <th scope="col">Mã</th>
                                     <th scope="col">Avatar</th>
-                                    <th scope="col">tên Sản Phẩm</th>
+                                    <th scope="col">Tên Sản Phẩm</th>
                                     <th scope="col">Chất Lượng</th>
                                     <th scope="col">Giá</th>
                                     <th scope="col">Tổng</th>

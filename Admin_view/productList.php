@@ -43,12 +43,12 @@ include './include/head.php';
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Tiêu Đề</th>
+                  <th scope="col">Tên Sản Phẩm</th>
                   <th scope="col">Giá</th>
                   <th scope="col">Loại</th>
                   <th scope="col">Chất Lượng</th>
-                  <th scope="col">Avatar</th>
-                  <th scope="col">Trạng Thái</th>
+                  <th scope="col">Hình Ảnh</th>
+                  <th scope="col">Chức Năng</th>
                 </tr>
               </thead>
               <tbody>

@@ -49,11 +49,11 @@ include './include/head.php';
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Tên</th>
+                  <th scope="col">Tên Người Dùng</th>
                   <th scope="col">Email</th>
                   <th scope="col">Phân Quyền</th>
                   <th scope="col">Trạng Thái</th>
-                  <th scope="col">Hoạt Động</th>
+                  <th scope="col">Chức Năng</th>
                 </tr>
               </thead>
               <tbody>
@@ -70,7 +70,7 @@ include './include/head.php';
                   <td><?php echo $i++; ?></td>
                   <td><a href="user/update_user.php?id=<?php echo $row_user['user_id'] ?>">
                       <img width="60" height="60"
-                        src="./BT_NikeShop/Admin_view/upload/user/<?php echo $row_user['avatar'] ?>" class="avatar"
+                        src="./upload/user/<?php echo $row_user['avatar'] ?>" class="avatar"
                         alt="Avatar" />
                       <?php echo $row_user['username'] ?></a>
                   </td>

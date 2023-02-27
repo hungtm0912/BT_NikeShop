@@ -152,7 +152,7 @@
             <!-- File Button -->
             <!-- sửa sau -->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="avatar">Ảnh Sản Phẩm</label>
+              <label class="col-md-4 control-label" for="avatar">Hình Ảnh</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
                 <input id="avatarfile" name="prd_avatar" class="input-file" type="file" />
               </div>

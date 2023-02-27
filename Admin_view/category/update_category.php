@@ -79,7 +79,7 @@
                                 <span data-feather="users"></span>Khách Hàng</a>
                             <ul class="sub-menu">
                                 <li class="nav-item"><a class="nav-link" href="./contactList"> Danh Sách Liên Hệ</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./userList"> Danh Sách Khách Hàng</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./userList.php"> Danh Sách Khách Hàng</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#"><span data-feather="bar-chart-2"></span> Phản Hồi</a></li>

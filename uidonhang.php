@@ -1,4 +1,6 @@
 <?php
+  include './includes/navbar.php';
+  require_once "./database/config.php";
 session_start();
 ?>
 <!DOCTYPE html>
@@ -13,14 +15,11 @@ session_start();
   <link rel="stylesheet" href="./uidonhang.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
   <?php
-    include './includes/navbar.php';
-    require_once "./database/config.php";
     $user_id = $_SESSION['user_id'];
     //đọc du liệu
     $order_id = 0;
@@ -44,30 +43,28 @@ session_start();
                     $result_1 = $mysqli->query($sql_1);
                ?>
               <li class="donhang_item">
-                <a href="#" class="donhang_link">
-                  <h5>Chi Tiết Đơn Hàng</h5>
-                </a>
-                <div class="product_list">
+                <a href="#" class="donhang_link"><h5>Chi Tiết Đơn Hàng</h5></a>
+                <div class="product_list" style="position: relative; top: -25px;">
                   <table>
                     <?php
                       while ($row = mysqli_fetch_array($result_1)) {
                       $price = 0;
                       if ($row['product_sale'] > 0) {
-                      $price = $row['product_price'] - $row['product_price'] * $row['product_sale'] / 100;
+                           $price = $row['product_price'] - $row['product_price'] * $row['product_sale'] / 100;
                       } else {
-                      $price = $row['product_price'];
+                           $price = $row['product_price'];
                       }
-                      $price_order = $price * $row['quantity'];
+                           $price_order = $price * $row['quantity'];
                     ?>
                     <tr>
                       <td width="50%">
                         <p class="title"><?php echo $row['product_name'] ?></p>
                       </td>
                       <td width="10%">
-                        <span class="soluong">Số Lượng: <?php echo $row['quantity'] ?></span>
+                        <span class="soluong">Số Lượng <?php echo $row['quantity'] ?></span>
                       </td>
                       <td width="40%">
-                        <span class="price">Giá:<?php echo number_format($price_order) ?> VND</span>
+                        <span class="price">Giá<?php echo number_format($price_order) ?> VND</span>
                       </td>
                     </tr>
                     <?php } ?>
