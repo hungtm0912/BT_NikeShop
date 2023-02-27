@@ -43,7 +43,7 @@ require_once './database/config.php';
   <div style=" max-width: 1350px; margin-top: 154px;" class="container">
     <div class="row col-12" style="padding-left: 0px;">
       <div class="col-3 justify-content-start" style="padding-left: 0px;">
-        <div style="background-color: #333333 !important;" class="list-group list-group list-group-flush">
+        <div style="background-color: #333333 !important;position: relative;top: 10px;" class="list-group list-group list-group-flush">
           <a style="background-color: #333333 !important; color: orange !important" href="#"
             class="list-group-item list-group-item-action list-category-item">Danh Mục Sản Phẩm</a>
           <?php
@@ -101,8 +101,8 @@ require_once './database/config.php';
         <div class="row">
           <img src="../Bootstrap/product img/banner-collection.jpg" alt="">
         </div>
-        <div style="color:white;position:relative;top:10px;" class="text-all-product">Tất Cả Sản Phẩm</div>
-        <div class=" category-icon"style="position:relative;top:17px;">
+        <div style="color:white;position:relative;top:15px;left: 10px;font-size: 33px;" class="text-all-product">Tất Cả Sản Phẩm</div>
+        <div class="category-icon"style="position:relative;top:20px;left: 15px;">
           <i class="fa fa-th-large" ></i>
         </div>
         <div style="right: 0; color: white;" class=" float-right justify-content-end">Sắp xếp theo

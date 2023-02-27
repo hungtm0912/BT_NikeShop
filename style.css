@@ -11,32 +11,29 @@ body {
     margin:auto;
 }
 .account {
-    color: white;
+    color: #FFFFFF;
 }
 .nav-custom {
-    color: white !important;
+    color: #FFFFFF !important;
     margin: -3px 0;
     float: right !important;
     font-size: 14px !important;
 }
-
 .dropdown-menu-custom {
-    background-color: black !important;
+    background-color: 	#000000 !important;
 }
 .dropdown-item-custom {
-    color: white !important;
+    color: #FFFFFF !important;
     padding: 1px 9px !important;
     font-weight: 300 !important;
 }
-
 .dropdown-item-custom:hover {
     background-color: black !important;
     color: orange !important;
 }
-
 .header {
     background-color: #3b3b3b;
-    color: white !important;
+    color: #FFFFFF !important;
     position: fixed;
     top: 0;
     z-index: 100000;
@@ -71,14 +68,14 @@ body {
     opacity: 0.8;
 }
 .nav-link-active-custom {
-    color: white !important;
+    color: #FFFFFF !important;
     font-size: 14px;
     font-weight: 600 !important;
     text-transform: uppercase;
 }
 
 .nav-link-active-custom:hover {
-    color: orange !important;
+    color: #FFA500 !important;
 }
 
 .sale-off {
@@ -102,11 +99,11 @@ body {
 }
 
 .name-category-item:hover {
-    color: orange !important;
+    color: #FFA500 !important;
 }
 
 .container .row .col-3 .list-group .list-category-item > a:hover {
-    color: orange;
+    color: #FFA500;
 }
 
 .text-all-product {
@@ -119,7 +116,7 @@ body {
     height: 320px;
 }
 .card-custom > .card-body > .product-title > a {
-    color: orange;
+    color: #FFA500;
 }
 .card-body {
     display: flex;
@@ -185,7 +182,7 @@ body {
     margin: 0 0 !important;
 }
 .list-product .card:hover {
-    box-shadow: 0 0 5px orange;
+    box-shadow: 0 0 5px #FFA500;
 }
 /* Gene  */
 .gene_item {
@@ -307,7 +304,7 @@ body {
     overflow: hidden;
 }
 .card:hover {
-    box-shadow: 0 0 10px orange;
+    box-shadow: 0 0 10px #FFA500;
 }
 .card-text.old-price {
     margin: 0;
@@ -329,7 +326,6 @@ body {
     box-sizing: border-box !important;
     height: 44vh !important;
 }
-
 .box {
     flex: 1;
     overflow: hidden;
@@ -339,7 +335,6 @@ body {
     line-height: 0;
     border-radius: 10px;
 }
-
 .box > img {
     width: 100%;
     height: 500px;
@@ -347,7 +342,6 @@ body {
     object-fit: cover;
     transition: 0.5s;
 }
-
 .box > span {
     font-size: 2.8vh;
     display: block;
@@ -357,16 +351,13 @@ body {
     color: orange;
     background-color: #333333;
 }
-
 .box:hover {
     flex: 1 1 25%;
-
 }
 .box:hover > img {
     width: 100%;
     height: 350px;
 }
-
 .name-product {
     color: white;
     font-size: 36px;

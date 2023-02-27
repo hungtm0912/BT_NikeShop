@@ -83,10 +83,10 @@
     margin-left: 40px;
     display: none;
   }
-  #comment_form {
+  .comment_form {
     margin-top: 10px;
   }
-  #submit_comment {
+  .submit_comment {
     margin-bottom: 30px;
   }
   </style>
@@ -133,7 +133,7 @@
             <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
               <?php
               if (!isset($_SESSION['username'])) {
-                echo '<a class="dropdown-item dropdown-item-custom" href="#">Đăng nhập</a>';
+                echo '<a class="dropdown-item dropdown-item-custom" href="./signin.php">Đăng nhập</a>';
                 echo '<div class="dropdown-divider margin: 3px 0;"></div>';
               }
               ?>
@@ -199,8 +199,7 @@
             <span style="margin-left: 20px; font-size: 30px" class="card-text new-price">
             <?php echo number_format($product['product_price'] - $product['product_price'] * $product['product_sale'] / 100)?>VNĐ</span>
             <?php } else { ?>
-              <span
-                    class="card-text new-price" style="font-size: 25px;"><?php echo number_format($product['product_price'] - ($product['product_sale'] / 100 * $product['product_price'])) ?> VNĐ</span>
+            <span class="card-text new-price" style="font-size: 25px;"><?php echo number_format($product['product_price'] - ($product['product_sale'] / 100 * $product['product_price'])) ?> VNĐ</span>
             <?php } ?>
             <p style="font-size: 18px; color: #fff;margin-bottom:0;font-weight: 600;">Mô Tả</p>
             <p class="product-desc"><?php echo $product['product_description'] ?></p>
@@ -208,7 +207,7 @@
             <!-- size button -->
             <?php
             $name =  $product['product_name'];
-            $sql = "SELECT size_name FROM products WHERE product_name = N'$name' ORDER BY size_name ASC";
+            $sql = "SELECT size_name FROM products WHERE product_name = '$name' ORDER BY size_name ASC";
             $ketqua = $mysqli->query($sql);
             ?>
             <div class="shoe size">
@@ -243,7 +242,7 @@
                 <form action="chitiet.php" method="post" class="clearfix" id="comment_form">
                   <textarea name="comment_text" id="comment_text" class="form-control" cols="30" rows="3"></textarea>
                   <input type="hidden" name='product_id' id='product_id' value="<?php echo $id ?>" />
-                  <button class="btn btn-primary btn-sm pull-right" id="submit_comment">Gửi Bình Luân</button>
+                  <button type= "button" class="btn btn-primary btn-sm pull-right" id="submit_comment">Gửi Bình Luân</button>
                 </form>
                 <?php else : ?>
                 <div class="well" style="margin-top: 20px;">
@@ -252,10 +251,10 @@
                 </div>
                 <?php endif ?>
                 <!-- Display total number of comments on this post  -->
-                <h2><span id="comments_count"><?php echo count($comments) ?></span> Bình Luận</h2>
+                <h2><span class="comments_count"><?php echo count($comments) ?></span> Bình Luận</h2>
                 <hr>
                 <!-- comments wrapper -->
-                <div id="comments-wrapper">
+                <div class="comments-wrapper">
                   <?php if (isset($comments)) : ?>
                   <!-- Display comments -->
                   <?php foreach ($comments as $comment) : ?>
@@ -305,12 +304,12 @@
             </div>
         </div> 
   
-      <hr style="background-color: white; width: 100%;">
+      <hr style="background-color: white; width: 120%;">
       <footer style="background-color: #333333 !important;" class=" text-center text-lg-start bg-light text-muted">
         <section class="" style="color: white">
           <div class="container text-center text-md-start">
             <div class="row mt-3">
-              <div class="col-md-3 col-lg-4 col-xl-3 mb-5">
+              <div class="col-md-3 col-lg-4 col-xl-3 mb-5"style="position: relative;top: -12px;">
                 <h6 class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i> Nike Shop</h6>
                   <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
@@ -327,7 +326,7 @@
                 <p><a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
                 <p><a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a></p>
               </div>
-              <div class="col-md-3 col-lg-4 col-xl-3 mb-5">
+              <div class="col-md-3 col-lg-4 col-xl-3 mb-5" style="position: relative;top: -60px;">
                 <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
                 <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
               </div>

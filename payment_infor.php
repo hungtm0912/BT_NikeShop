@@ -35,7 +35,6 @@
   })();
   </script>
   <!--End of Tawk.to Script-->
-  <div>
     <div class="container-fluid">
       <div class="row header">
         <div class="row head  ">
@@ -104,7 +103,8 @@
           </ul>
         </div>
             <!--END-Position-->
-          </div>
+        </div>
+    </div>
             <div class ="container-body">
                 <h1>Phương thức thanh toán</h1>
                 <p>
