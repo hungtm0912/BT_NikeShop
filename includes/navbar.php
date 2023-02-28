@@ -100,9 +100,11 @@
       <li class="nav-item">
         <a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm <i class="fa fa-caret-down"></i></a>
         <div class="subnav-content">
-        <a href="#bring">Quần Áo</a>
-        <a href="#deliver">Giày Dép</a>
-        <a href="#package">Phụ Kiện</a>
+          <ul style="  list-style-type: none;">
+       <li> <a href="#bring">Quần Áo</a></li>
+       <li> <a href="#deliver">Giày Dép</a></li>
+       <li><a href="#package">Phụ Kiện</a></li>
+        </ul>
         </div>
       </li>
       <li class="nav-item">
@@ -152,15 +154,15 @@ body {
   margin: 0;
 }
 .nav-item a:hover, .nav-link:hover .nav-link {
-  background-color: red;
+
 }
 .subnav-content {
   text-align: center;
   display: none;
-  position: absolute;
-  left: 0;
-  width: 50%;
   z-index: 1;
+}
+.subnav-content a:hover {
+  background-color: red;
 }
 .subnav-content a {
   float: left;
