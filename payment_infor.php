@@ -41,7 +41,7 @@
     include './includes/navbar.php';
     ?>
   </div>
-            <div class ="container-body" style="margin-top: 200px; color:white; margin-left: 115px;">
+            <div class ="container-body" style="margin-top: 160px; color:white; margin-left: 115px;">
                 <h1>Phương thức thanh toán</h1>
                 <p>Hình thức thanh toán áp dụng: Chuyển tiền/chuyển khoản</p>
                 <p>Khách hàng muốn mua sản phẩm cần chuyển khoản trước khi nhận hàng</p>

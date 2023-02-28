@@ -199,6 +199,7 @@
     <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">BEST SELLER</div>
     <div style="margin-bottom: 2px !important;" class="container">
       <div class="row">
+        
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 best">
           <div class="best_item">
             <img height="150px !important" src="./product img/nike1_07.png">
