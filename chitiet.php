@@ -22,74 +22,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./chitiet.css">
-  <style>
-  .cus_tag {
-    text-align: left !important;
-  }
-  form button {
-    margin: 5px 0px;
-  }
-  textarea {
-    display: block;
-    width: 100% !important;
-    margin-bottom: 2px !important;
-  }
-  /*post*/
-  .post {
-    border: 1px solid #ccc;
-    margin-top: 10px;
-  }
-  /*comments*/
-  .comments-section {
-    margin-top: 100px;
-    border: 1px solid #ccc;
-    /* background-color: white; */
-    color: white;
-    border: none;
-  }
-  .comment {
-    margin-bottom: 10px;
-  }
-  .comment .comment-name {
-    font-weight: bold;
-  }
-  .comment .comment-date {
-    font-style: italic;
-    font-size: 0.8em;
-  }
-  .comment .reply-btn,
-  .edit-btn {
-    font-size: 0.8em;
-  }
-  .comment-details {
-    width: 91.5%;
-    float: left;
-  }
-  .comment-details p {
-    margin-bottom: 0px;
-  }
-  .comment .profile_pic {
-    width: 35px;
-    height: 35px;
-    margin-right: 5px;
-    float: left;
-    border-radius: 50%;
-  }
-  /*replies*/
-  .reply {
-    margin-left: 30px;
-  }
-  .reply_form {
-    margin-left: 40px;
-    display: none;
-  }
-  .comment_form {
-    margin-top: 10px;
-  }
-  .submit_comment {
-    margin-bottom: 30px;
-  }
-  </style>
 </head>
   <?php
     session_start();
@@ -116,73 +48,9 @@
   <!--End of Tawk.to Script-->
   <div>
     <div class="container-fluid">
-      <div class="row header">
-        <div class="row head  ">
-          <div class="col-12 nav-item dropdown nav-custom">
-            <a class=" col-2 nav-link dropdown-toggle nav-custom" href="#" id="navbarDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="far fa-user"></i> 
-              <?php
-                 if (isset($_SESSION['name'])) {
-                  echo $_SESSION['name'];
-                  } else {
-                   echo 'Tài khoản';
-                  }
-              ?>
-            </a>
-            <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
-              <?php
-              if (!isset($_SESSION['username'])) {
-                echo '<a class="dropdown-item dropdown-item-custom" href="./signin.php">Đăng nhập</a>';
-                echo '<div class="dropdown-divider margin: 3px 0;"></div>';
-              }
-              ?>
-              <a class="dropdown-item dropdown-item-custom" href="#">Đăng Ký</a>
-              <div class="dropdown-divider margin: 3px 0;"></div>
-              <a class="dropdown-item dropdown-item-custom" href="#">Giỏ Hàng</a>
-              <div class="dropdown-divider margin: 3px 0;"></div>
-              <a class="dropdown-item dropdown-item-custom" href="#">Thanh Toán </a>
-              <div class="dropdown-divider margin: 3px 0;"></div>
-              <a class="dropdown-item dropdown-item-custom" href="#">Tra Cứu Đơn Hàng </a>
-            </div>
-          </div>
-        </div>
-        <?php
-        $items = 0;
-        if (isset($_SESSION['items']))
-          $items = $_SESSION['items'];
-        ?>
-        <div class="row col-12 logo-search-cart">
-          <div style="justify-content: end !important;" class="col-3 logo">
-            <img width="30%" src="./image/logoshop.png" alt=""style="margin-left: 100px;margin-bottom:-40px">
-          </div>
-          <div class="col-6">
-            <div class="input-group mb-3 mt-3">
-              <input type="text" class="form-control" placeholder="Nhập thông tin cần tìm"aria-label="Recipient's username"
-                aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 py-3 cart-icon">
-            <p class="items-cart"><?php echo $items ?></p>
-            <a href="./cart.php" style="color:#fff !important;"><i style="font-size: 24px !important;"
-            class="fas fa-shopping-cart"></i></a>
-          </div>
-        </div>
-        <div class="row col-12 mb-3">
-          <ul style="margin: auto;" class="nav">
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang Chủ</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Về Chúng Tôi</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Hướng Dẫn Mua Hàng</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Khách Hàng</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./contact.php">Liên Hệ </a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom sale-off" href="#">Sale Off</a></li>
-          </ul>
-        </div>
-      </div>
+    <?php
+    include './includes/navbar.php';
+    ?>
       <div style="margin-top: 200px;" class="container">
         <div class="row">
           <div class="col-4">
@@ -342,3 +210,71 @@
     <script src="./utils/scripts.js"></script>
 </body>
 </html>
+<style>
+  .cus_tag {
+    text-align: left !important;
+  }
+  form button {
+    margin: 5px 0px;
+  }
+  textarea {
+    display: block;
+    width: 100% !important;
+    margin-bottom: 2px !important;
+  }
+  /*post*/
+  .post {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  /*comments*/
+  .comments-section {
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    /* background-color: white; */
+    color: white;
+    border: none;
+  }
+  .comment {
+    margin-bottom: 10px;
+  }
+  .comment .comment-name {
+    font-weight: bold;
+  }
+  .comment .comment-date {
+    font-style: italic;
+    font-size: 0.8em;
+  }
+  .comment .reply-btn,
+  .edit-btn {
+    font-size: 0.8em;
+  }
+  .comment-details {
+    width: 91.5%;
+    float: left;
+  }
+  .comment-details p {
+    margin-bottom: 0px;
+  }
+  .comment .profile_pic {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    float: left;
+    border-radius: 50%;
+  }
+  /*replies*/
+  .reply {
+    margin-left: 30px;
+  }
+  .reply_form {
+    margin-left: 40px;
+    display: none;
+  }
+  .comment_form {
+    margin-top: 10px;
+  }
+  .submit_comment {
+    margin-bottom: 30px;
+  }
+  </style>

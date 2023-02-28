@@ -4,11 +4,8 @@ body {
 }
 .head {
     background-color: #333333;
-    height: 30px;
+    height: 50px;
     width: 200%;
-}
-.layout{
-    margin:auto;
 }
 .account {
     color: #FFFFFF;
@@ -77,40 +74,32 @@ body {
 .nav-link-active-custom:hover {
     color: #FFA500 !important;
 }
-
 .sale-off {
     background-color: #f23f2f;
 }
-
 .text-content {
     font-size: 28px;
     font-weight: 700;
     color: #555555;
 }
-
 .list-category-item {
     font-size: 24px !important;
     font-weight: 700;
 }
-
 .name-category-item {
     color: white !important;
     background-color: #333333 !important;
 }
-
 .name-category-item:hover {
     color: #FFA500 !important;
 }
-
 .container .row .col-3 .list-group .list-category-item > a:hover {
     color: #FFA500;
 }
-
 .text-all-product {
     font-size: 24px;
     font-weight: 600;
 }
-
 .card-custom {
     background-color: #333333 !important;
     height: 320px;

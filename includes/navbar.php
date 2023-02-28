@@ -8,7 +8,7 @@
              if (isset($_SESSION['username'])) {
                    echo $_SESSION['name'];
              } else {
-                     echo 'Tài khoản';
+                     echo 'Tài Khoản';
               }
           ?>
       </a>
@@ -27,7 +27,7 @@
         ?>
         <a class="dropdown-item dropdown-item-custom" href="./cart.php">Giỏ Hàng</a>
         <div class="dropdown-divider margin: 3px 0;"></div>
-        <a class="dropdown-item dropdown-item-custom" href="./cart.php">Thanh Toán </a>
+        <a class="dropdown-item dropdown-item-custom" href="./checkout_money.php">Thanh Toán </a>
         <div class="dropdown-divider margin: 3px 0;"></div>
         <?php
         if (!isset($_SESSION['username'])) {
@@ -59,7 +59,7 @@
   </div>
   <div class="row col-12 logo-search-cart">
     <div style="justify-content: end !important;" class="col-3 logo">
-      <a href ="./trangchu.php"><img width="30%" src="./image/logoshop.png" href ="./trangchu.php" alt="" style="margin-left: 100px;margin-bottom: -40px"></a>
+      <a href ="./trangchu.php"><img width="30%" src="./image/logoshop.png" href ="./trangchu.php" alt="" style="margin-left: 100px;margin-bottom:-40px"></a>
     </div>
     <div class="col-6">
       <form action="" method="GET">
@@ -97,13 +97,13 @@
       <li class="nav-item">
         <a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang Chủ</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm <i class="fa fa-caret-down"></i></a>
+      <li class="nav-item-1">
+        <a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm <i class="fa fa-caret-down"></i></a>  
         <div class="subnav-content">
-          <ul style="  list-style-type: none;">
-       <li> <a href="#bring">Quần Áo</a></li>
-       <li> <a href="#deliver">Giày Dép</a></li>
-       <li><a href="#package">Phụ Kiện</a></li>
+          <ul style="list-style-type: none;">
+            <li><a href="#bring">Quần Áo</a></li>
+            <li><a href="#deliver">Giày Dép</a></li>
+            <li><a href="#package">Phụ Kiện</a></li>
         </ul>
         </div>
       </li>
@@ -123,19 +123,14 @@
   </div>
 </div>
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-.nav-item{
+.nav-item-1{
+  position: relative;
   overflow: hidden;
-  background-color: #333; 
+  top: -6px; 
 }
-.nav-item a {
+.nav-item-1 a {
   float: left;
-  font-size: 16px;
   color: white;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -143,19 +138,13 @@ body {
   float: left;
   overflow: hidden;
 }
-.nav-item .nav-link {
-  font-size: 16px;  
+.nav-item-1 .nav-link {  
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
-  background-color: inherit;
   font-family: inherit;
-  margin: 0;
-}
-.nav-item a:hover, .nav-link:hover .nav-link {
-
-}
+}   
 .subnav-content {
   text-align: center;
   display: none;
@@ -169,7 +158,9 @@ body {
   color: white;
   text-decoration: none;
 }
-.nav-item:hover .subnav-content {
+.nav-item-1:hover .subnav-content {
   display: inline;
 }
 </style>
+
+.

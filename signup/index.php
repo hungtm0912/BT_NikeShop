@@ -50,6 +50,9 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Nike Shop</title>
+  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
+  <link rel="stylesheet" href="./signup.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,9 +60,6 @@ if (isset($_POST['submit'])) {
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Nike Shop</title>
-    <link rel="icon" href="./image/logoshop.png" type="image/icon type">
-    <link rel="stylesheet" href="./signup.css">
    
   <style>
   .input-file {

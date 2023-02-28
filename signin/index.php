@@ -14,7 +14,9 @@
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-
+<?php
+require_once "../database/config.php";
+?>
 <?php
 if (isset($_GET['err_match'])) {
   echo '<script type="text/javascript">alert("' . $_GET['err_match'] . '");</script>';
@@ -26,14 +28,14 @@ if (isset($_GET['err_checkcap'])) {
 
 session_start();
 if (isset($_SESSION['username'])) {
-  header("location: /". BT_DIR ."BT_NikeShop/trangchu.php");
+  header("location: ./BT_NikeShop/trangchu.php");
 }
 ?>
 <body class="text-center">
   <main class="form-signin">
     <form method="POST" action="./process_signin.php">
       <img class="mb-4" src="../image/logoshop.png" href="../index.php" alt="" width="200" height="160">
-      <h1 class="h3 mb-3 fw-normal">Đăng Nhập</h1>
+      <h1 class="h3 mb-3 fw-normal" style="color:white">Đăng Nhập</h1>
       <div class="form-floating">
         <input id="account" type="email" class="form-control" id="floatingInput" placeholder="Nhập Email" name="email">
         <label for="floatingInput">Tài Khoản</label>
@@ -47,13 +49,31 @@ if (isset($_SESSION['username'])) {
         <label><input type="checkbox" value="remember-me"> Nhớ Mật Khẩu</label>
       </div>
       <button class="w-100 btn btn-lg btn-primary" type="submit" name="signin">Đăng Nhập</button>
-    </form>
-    <p class="text-center -1" style="margin-top:8px">Bạn chưa có tài khoản ? <a href="../signup">Đăng Ký</a> </p>
-    <p class="text-cente - 1" style="margin-top:8px"><a href="../forgotpass.php">Quên Mật Khẩu</a> </p>
+ 
+    <p class="text-center-1" style="margin-top:8px">Bạn chưa có tài khoản ? <a href="../signup">Đăng Ký</a> </p>
+    <p class="text-center-1" style="margin-top:8px"><a href="../forgotpass.php">Quên Mật Khẩu</a> </p>
     <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
   </main>
-
+</form>
   <!-- Materialize JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
+<style>
+  .text-center{
+    width: 100%;
+    height:auto;
+    border-radius: 10px;
+
+  }
+  .form-control{
+    color:aliceblue;
+  }
+  .checkbox{
+    color:aliceblue;
+  }
+  .text-center-1{
+    color:aliceblue;
+  }
+
+ </style>

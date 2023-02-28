@@ -16,6 +16,7 @@
   <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <!--Start of Tawk.to Script-->
@@ -199,31 +200,30 @@
     <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">BEST SELLER</div>
     <div style="margin-bottom: 2px !important;" class="container">
       <div class="row">
-        
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 best">
           <div class="best_item">
-            <img height="150px !important" src="./product img/nike1_07.png">
+            <img height="150px !important" src="./product_img/air-1.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Nike Air Force 1 '07</a>
             <p class="price_bestitem">3,519,000 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product img/jordan_low.png">
+            <img height="150px !important" src="./product_img/air-jordan-1-elevate-low.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Air Jordan 1 Elevate Low</a>
             <p class="price_bestitem">3,254,649 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product img/jordan_zoom.png">
+            <img height="150px !important" src="./product_img/air-jordan-1-zoom.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Air Jordan 1 Zoom Comfort</a>
             <p class="price_bestitem">4,109,000 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product img/jumpman.png">
+            <img height="150px !important" src="./product_img/jumpman-two-trey.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Jumpman Two Trey</a>
             <p class="price_bestitem">4,409,000 VND</p>
           </div>

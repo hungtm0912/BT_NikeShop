@@ -40,7 +40,7 @@ if (!isset($_SESSION['username'])) {
     };
     ?>
   </div>
-  <div style="max-width: 1920px; margin-top: 65px;" class="container">
+  <div style="max-width: 1920px; margin-top: 25px;" class="container">
     <form action="process_checkout.php" method="post">
       <div style="margin:auto;" class="card">
         <div class="row">
@@ -124,7 +124,7 @@ if (!isset($_SESSION['username'])) {
             </div>
             <form>
               <p>Mã Giảm Giá</p>
-              <input id="code" placeholder="Nhập Mã Giảm Giá">
+              <input class="code" placeholder="Nhập Mã Giảm Giá">
             </form>
             <div class="row" style="border-top: 1px solid rgba(0, 0, 0, .1); padding: 2vh 0;">
               <div class="col">Tổng</div>
