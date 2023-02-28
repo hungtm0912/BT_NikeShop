@@ -128,7 +128,7 @@ include './include/head.php';
             <br>
             <div class="form-group">
               <div class="col-md-4">
-                <button id="singlebutton" name="add" class="btn btn-primary">Thêm Sản Phẩm</button>
+                <button id="singlebutton" name="add" class="btn btn-primary">Thêm</button>
               </div>
             </div>
           </fieldset>

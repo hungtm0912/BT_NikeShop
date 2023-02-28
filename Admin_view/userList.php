@@ -43,7 +43,7 @@ include './include/head.php';
                 <button type="submit" id="btnSearch" name="btnSearch" value="Search"
                   class="btn btn-primary">Tìm</button>
               </div>
-              <div><a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm Mới</a></div>
+              <div><a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm</a></div>
             </div>
             <table class="table table-striped">
               <thead>
@@ -83,7 +83,7 @@ include './include/head.php';
                       role="button">Sửa</a>
                     <a class="btn btn-danger"
                       href="./user/process_user.php?id_delete=<?php echo $row_user['user_id'] ?>"
-                      onclick="return confirm('Bạn có muốn xóa <?php echo $row_user['username'] ?>?')"
+                      onclick="return confirm('Bạn có muốn xóa <?php echo $row_user['username'] ?>này?')"
                       role="button">Xóa</a>
                   </td>
                 </tr>
