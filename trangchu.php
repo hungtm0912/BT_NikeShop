@@ -161,11 +161,11 @@
         <span>Sản Phẩm Cho Nam</span>
       </div>
       <div class=" box">
-        <img height="150px !important" src="./product_for_image/for_woman.png">
+     <img height="150px !important" src="./product_for_image/for_woman.png">
         <span>Sản Phẩm Cho Nữ</span>
       </div>
       <div class=" box">
-        <img height="150px !important" src="./product_for_image/for_kid.png">
+      <img height="150px !important" src="./product_for_image/for_kid.png">
         <span>Sản Phẩm Cho Trẻ Em</span>
       </div>
     </div>
