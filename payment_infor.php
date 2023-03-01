@@ -43,17 +43,17 @@
   </div>
      <div class ="container-body" style="margin-top: 135px;color: white; margin-left: 260px;">
       <h1>Phương Thức Thanh Toán</h1>
-      <p>Hình thức thanh toán được áp dụng: Chuyển Tiền/Chuyển khoản</p>
+      <p>Hình thức thanh toán được áp dụng: Chuyển Khoản /QR /IPAY /CREDIT CARD</p>
       <p>Khách hàng muốn mua sản phẩm cần chuyển khoản trước khi nhận hàng</p>
       <p>Thông tin tài khoản như sau:</p>
-      <h5>Tài Khoản Vietcombank</h5>
-      <p>CÔNG TY TNHH THỂ THAO SPORT1</p>
-      <strong>TK: 0011.0040.46877</strong>
-      <p>Ngân hàng TMCP Ngoại Thương Việt Nam – Sở Giao Dịch</p>
-      <h5>Tài khoản BIDV</h5>
-      <p>CÔNG TY TNHH THỂ THAO SPORT1</p>
+      <h5>Ngân Hàng Viettinbank</h5>
+      <p>NGO QUANG HUY</p>
+      <strong>Số TK: 0011.0040.46877</strong>
+      <p>Ngân hàng Thương mại Cổ phần Công thương Việt Nam</p>
+      <h5>Ngân Hàng Viettinbank</h5>
+      <p>TA MANH HUNG</p>
       <strong>TK: 2611.0000.085.726</strong>
-      <p>Ngân hàng Đầu Tư và Phát Triển Việt Nam –  CN Tràng An</p>
+      <p>Ngân hàng Thương mại Cổ phần Công thương Việt Nam</p>
       <p>(Quý khách vui lòng gọi điện trước khi chuyển khoản để đảm bảo sản phẩm còn khi đặt mua. Liên hệ 0978236082)
        </p>
     </div>

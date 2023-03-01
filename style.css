@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #333333 !important;
+    background-color: #333333 !important
 }
 .head {
     background-color: #333333;
@@ -351,16 +351,13 @@ body {
     color: white;
     font-size: 36px;
 }
-
 .name-provider {
     color: white;
 }
-
 .promotion {
     color: #d9b91c;
     font-size: 24px;
 }
-
 .shoe-size-btn {
     background-color: orange !important;
     margin-right: 5px;

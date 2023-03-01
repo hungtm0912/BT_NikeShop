@@ -101,9 +101,10 @@
         <a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm <i class="fa fa-caret-down"></i></a>  
         <div class="subnav-content">
           <ul style="list-style-type: none;">
-            <li><a href="#bring">Quần Áo</a></li>
-            <li><a href="#deliver">Giày Dép</a></li>
-            <li><a href="#package">Phụ Kiện</a></li>
+            <li><a href="./index.php">Quần Thể Thao</a></li>
+            <li><a href="./index.php">Áo Thể Thao</a></li>
+            <li><a href="./index.phpr">Giày Thể Thao</a></li>
+            <li><a href="./index.php">Phụ Kiện</a></li>
         </ul>
         </div>
       </li>
@@ -123,6 +124,10 @@
   </div>
 </div>
 <style>
+.body{
+  margin: 0;
+  font-size: 14px;
+}
 .nav-item-1{
   position: relative;
   overflow: hidden;
@@ -161,6 +166,12 @@
 .nav-item-1:hover .subnav-content {
   display: inline;
 }
+.subnav-content li{
+  position:relative;
+  left:-40px;
+
+}
+
 </style>
 
 .

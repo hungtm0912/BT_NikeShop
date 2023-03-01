@@ -18,8 +18,8 @@ class Mailer{
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = "huyngo9981@gmail.com";
-            $mail->Password = 'upnkhhyrsiaefvzt';
+            $mail->Username = "root";
+            $mail->Password = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 587;
             $mail->SMTPSecure = "tls";
@@ -38,12 +38,12 @@ class Mailer{
 
             $mail->send();
 
-            $_SESSION['result'] = 'Message has been sent';
-            $_SESSION['status'] = 'ok';
+            $_SESSION['result'] = 'Tin nhắn đã được gửi';
+            $_SESSION['status'] = 'Ok';
         } catch (Exception $e) {
-            $_SESSION['result'] = 'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo;
+            $_SESSION['result'] = 'Không thể gửi tin nhắn. Lỗi: ' . $mail->ErrorInfo;
             $_SESSION['status'] = 'error';
-            echo 'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo;
+            echo 'Không thể gửi tin nhắn. Lỗi: ' . $mail->ErrorInfo;
         }
         }
     }

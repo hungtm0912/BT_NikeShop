@@ -1,7 +1,7 @@
 <?php
   include './includes/navbar.php';
   require_once "./database/config.php";
-session_start();
+  session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,7 @@ session_start();
     $sql = "SELECT * FROM orders  WHERE user_id = '$user_id' ORDER BY created_at DESC";
     $result = $mysqli->query($sql);
     ?>
-  <div style=" max-width: 1350px; margin-top: 154px; padding: 20px 0;" class="container">
+  <div style=" max-width: 1350px; margin-top:45px; padding: 20px 0;" class="container">
     <div class="main-content">
       <div class="row">
         <div class="col-lg-7">

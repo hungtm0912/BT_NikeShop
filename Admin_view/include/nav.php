@@ -2,7 +2,7 @@
   <div class="position-sticky pt-3">
     <ul class="nav flex-column">
       <li style="margin-bottom: -12px;" class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">
+        <a class="nav-link active" aria-current="page" href="index.php">
           <span data-feather="home"></span>Bảng Thống Kê</a>
       </li>
       <li style="margin-bottom: 20px;" class="nav-item sub">
@@ -33,7 +33,15 @@
           <span data-feather="users"></span>Tài Khoản </a>
         <ul class="sub-menu"> 
           <li class="nav-item"><a class="nav-link" href="./userlist.php">Danh sách Tài Khoản</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contactList"> Danh Sách Thông Tin Liên Hệ </a></li>
+          <li class="nav-item"><a class="nav-link" href="./userlist.php">Danh Sách Thông Tin Liên Hệ </a></li>
+        </ul>
+      </li>
+      <li style="margin-bottom: -12px;" class="nav-item sub">
+        <a class="nav-link" href="#">
+          <span data-feather="users"></span>Đơn Hoàn Lại </a>
+        <ul class="sub-menu"> 
+          <li class="nav-item"><a class="nav-link" href="./userlist.php">Chi Tiết</a></li>
+          <li class="nav-item"><a class="nav-link" href="./userlist.php">Danh Sách</a></li>
         </ul>
       </li>
       <li style="margin-bottom: -12px;" class="nav-item">

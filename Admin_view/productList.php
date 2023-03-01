@@ -37,7 +37,7 @@ include './include/head.php';
               <div class="text-center">
               <a href="data_export_product.php" class="btn btn-primary" style="margin-left: 500px;" target="_blank">Xuất Dữ Liệu</a>
             </div>
-              <div><a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm Mới</a></div>
+              <div><a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm</a></div>
             </div>
             <table class="table table-striped">
               <thead>

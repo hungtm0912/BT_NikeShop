@@ -244,7 +244,7 @@
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
                 <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
                 <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
-                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
+                <p><a href="#!" class="text-reset">Phụ Kiện</a></p>
               </div>
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
@@ -309,7 +309,6 @@
     width: 100%;
     height: 550px;
 }
-
 </style>
 </body>
 </html>
