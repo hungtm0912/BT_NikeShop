@@ -4,59 +4,52 @@
 include './include/head.php';
 ?>
 <body>
-  <?php
-    require_once "../database/config.php";
-    ?>
+  <?php require_once "../database/config.php";?>
   <!-- HEADER -->
-  <?php
-    include './include/header.php';
-    ?>
+  <?php include './include/header.php';?>
   <div class="container-fluid">
     <div class="row">
-      <!-- NAVIGATION -->
-      <?php
-            include './include/nav.php';
-        ?>
+      <?php include './include/nav.php';?>
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <?php
-                if (isset($_POST['add'])) {
-                    $prd_categoryID = $_POST['prd_category'];
-                    $prd_name = $_POST['prd_name'];
-                    $prd_description = $_POST['prd_description'];
-                    $prd_price = $_POST['prd_price'];
-                    $prd_quantity = $_POST['prd_quantity'];
-                    $prd_sale = $_POST['prd_sale'];
-                    $prd_avatar = $_FILES['prd_avatar']['name'];
-                    $prd_avatar_tmp = $_FILES['prd_avatar']['tmp_name'];
-                    $path = './upload/';
-                    $prd_sizeID = $_POST['prd_size'];
-                    $sql_insert_product = mysqli_query($mysqli, "INSERT INTO products(category_id,product_name,product_description,product_price,product_quantity,size_name,product_image,product_sale)
-                    VALUES ('$prd_categoryID','$prd_name','$prd_description','$prd_price','$prd_quantity','$prd_sizeID','$prd_avatar','$prd_sale')");
-                    move_uploaded_file($prd_avatar_tmp, $path . $prd_avatar);
-                    echo '<script type="text/javascript">alert("Thêm sản phẩm thành công!!!");</script>';
+           if (isset($_POST['add'])) {
+             $prd_categoryID = $_POST['prd_category'];
+             $prd_name = $_POST['prd_name'];
+             $prd_description = $_POST['prd_description'];
+             $prd_price = $_POST['prd_price'];
+             $prd_quantity = $_POST['prd_quantity'];
+             $prd_sale = $_POST['prd_sale'];
+             $prd_avatar = $_FILES['prd_avatar']['name'];
+             $prd_avatar_tmp = $_FILES['prd_avatar']['tmp_name'];
+             $path = './upload/';
+             $prd_sizeID = $_POST['prd_size'];
+             $sql_insert_product = mysqli_query($mysqli, "INSERT INTO products(category_id,product_name,product_description,product_price,product_quantity,size_name,product_image,product_sale)
+             VALUES ('$prd_categoryID','$prd_name','$prd_description','$prd_price','$prd_quantity','$prd_sizeID','$prd_avatar','$prd_sale')");
+             move_uploaded_file($prd_avatar_tmp, $path . $prd_avatar);
+             echo '<script type="text/javascript">alert("Thêm sản phẩm thành công!!!");</script>';
                     // header('location: ./productList.php');
-                }
-                ?>
-          <form modelAttribute="products" method="post" action="" class="form-horizontal" enctype="multipart/form-data">
-          <fieldset>
-            <hidden path="id" />
-            <!-- Form Name -->
-            <legend>Sản Phẩm</legend>
-            <div style="width: 100%" class="form-group ">
-              <label class="col-md-4 control-label" for="category">Danh Mục</label>
-              <?php
-                $sql_danhmuc = mysqli_query($mysqli, "SELECT * FROM `categories`");
-               ?>
-              <div style="width: 93.333333% !important;" class="col-md-4">
-                <select name="prd_category" class="form-control" id="category">
-                  <?php   
-                    while ($row_danhmuc = mysqli_fetch_array($sql_danhmuc)) {
-                   ?>
-                  <option value="<?php echo $row_danhmuc['category_id'] ?>"><?php echo $row_danhmuc['category_name'] ?>
-                  </option>
-                  <?php
-                     }
-                   ?>
+            }
+           ?>
+            <form modelAttribute="products" method="post" action="" class="form-horizontal" enctype="multipart/form-data">
+             <fieldset>
+                  <hidden path="id" />
+                  <!-- Form Name -->
+                  <legend>Sản Phẩm</legend>
+                  <div style="width: 100%" class="form-group ">
+                    <label class="col-md-4 control-label" for="category">Danh Mục</label>
+                    <?php
+                      $sql_danhmuc = mysqli_query($mysqli, "SELECT * FROM `categories`");
+                    ?>
+                    <div style="width: 93.333333% !important;" class="col-md-4">
+                      <select name="prd_category" class="form-control" id="category">
+                        <?php   
+                          while ($row_danhmuc = mysqli_fetch_array($sql_danhmuc)) {
+                        ?>
+                        <option value="<?php echo $row_danhmuc['category_id'] ?>"><?php echo $row_danhmuc['category_name'] ?>
+                        </option>
+                        <?php
+                          }
+                        ?>
                 </select>
               </div>
             </div>
@@ -136,7 +129,6 @@ include './include/head.php';
       </main>
     </div>
   </div>
-
   <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
     integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
