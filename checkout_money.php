@@ -127,7 +127,7 @@ span.price {
                 <input type="text" id="state" name="state" placeholder="NY">
               </div>
               <div class="col-50">
-                <label for="zip">Mã Bưu Chinh</label>
+                <label for="zip">Mã Bưu Chính</label>
                 <input type="text" id="zip" name="zip" placeholder="Nhập Mã Bưu Chính">
               </div>
             </div>

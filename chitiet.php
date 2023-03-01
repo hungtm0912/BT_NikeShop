@@ -142,7 +142,6 @@
                       <textarea class="form-control" name="reply_text" id="reply_text" cols="30" rows="2"></textarea>
                       <button class="btn btn-primary btn-xs pull-right submit-reply">Submit reply</button>
                     </form>
-
                     <!-- GET ALL REPLIES -->
                     <?php $replies = getRepliesByCommentId($comment['comment_id']) ?>
                     <div class="replies_wrapper_<?php echo $comment['comment_id']; ?>">
@@ -170,7 +169,7 @@
                 </div><!-- comments wrapper -->
               </div><!-- // all comments -->
             </div>
-        </div> 
+         </div> 
   
       <hr style="background-color: white; width: 120%;">
       <footer style="background-color: #333333 !important;" class=" text-center text-lg-start bg-light text-muted">
