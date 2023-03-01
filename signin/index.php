@@ -3,16 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.88.1">
   <title>Nike Shop</title>
-  <!-- Materialize CSS -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-  <link rel="stylesheet" href="signin.css">
+  <link rel="stylesheet" href="./signin.css">
+  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <?php
 require_once "../database/config.php";
@@ -31,7 +35,7 @@ if (isset($_SESSION['username'])) {
   header("location: ./BT_NikeShop/trangchu.php");
 }
 ?>
-<body class="text-center">
+<body class="text-center" style="background-color:black;">
   <main class="form-signin">
     <form method="POST" action="./process_signin.php">
       <img class="mb-4" src="../image/logoshop.png" href="../index.php" alt="" width="200" height="160">

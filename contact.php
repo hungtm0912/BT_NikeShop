@@ -5,20 +5,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Nike Shop</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
-  <title>Nike Shop</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 </head>
   <?php
     session_start();
-    ?>
+  ?>
 <body>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -35,354 +34,177 @@
   })();
   </script>
   <!--End of Tawk.to Script-->
-    <div class="container-fluid">
-      <div class="row header">
-        <div class="row head  ">
-          <div class="col-12 nav-item dropdown nav-custom">
-            <a class=" col-2 nav-link dropdown-toggle nav-custom" href="#" id="navbarDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="far fa-user"></i> 
-              <?php
-                 if (isset($_SESSION['name'])) {
-                  echo $_SESSION['name'];
-                  } else { 
-                   echo 'Tài khoản';
-                  }
-              ?>
-            </a>
-            <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
-              <?php
-              if (!isset($_SESSION['username'])) {
-                echo '<a class="dropdown-item dropdown-item-custom" href="#">Đăng nhập</a>';
-                echo '<div class="dropdown-divider margin: 3px 0;"></div>';
-              }
-              ?>
-              <a class="dropdown-item dropdown-item-custom" href="#">Đăng Ký</a>
-              <div class="dropdown-divider margin: 3px 0;"></div>
-              <a class="dropdown-item dropdown-item-custom" href="#">Giỏ Hàng</a>
-              <div class="dropdown-divider margin: 3px 0;"></div>
-              <a class="dropdown-item dropdown-item-custom" href="#">Thanh Toán </a>
-              <div class="dropdown-divider margin: 3px 0;"></div>
-              <a class="dropdown-item dropdown-item-custom" href="#">Tra Cứu Đơn Hàng </a>
-            </div>
-          </div>
-        </div>
-        <?php
-        $items = 0;
-        if (isset($_SESSION['items']))
-          $items = $_SESSION['items'];
-        ?>
-        <div class="row col-12 logo-search-cart">
-          <div style="justify-content: end !important;" class="col-3 logo">
-            <a href="./trangchu.php"><img width="30%" src="./image/logoshop.png" alt=""style="margin-left: 100px;margin-bottom: -40px"></a>
-          </div>
-          <div class="col-6">
-            <div class="input-group mb-3 mt-3">
-              <input type="text" class="form-control" placeholder="Nhập thông tin cần tìm"aria-label="Recipient's username"
-                aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 py-3 cart-icon">
-            <p class="items-cart"><?php echo $items ?></p>
-            <a href="./cart.php" style="color:#fff !important;"><i style="font-size: 24px !important;"
-            class="fas fa-shopping-cart"></i></a>
-          </div>
-        </div>
-        <div class="row col-12 mb-3">
-          <ul style="margin: auto;" class="nav">
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang Chủ</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Về Chúng Tôi</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="#">Hướng Dẫn Mua Hàng</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./payment_infor.php ">Phương Thức Thanh Toán</a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom" href="./contact.php">Liên Hệ </a></li>
-            <li class="nav-item"><a class="nav-link active nav-link-active-custom sale-off" href="#">Sale Off</a></li>
-          </ul>
-        </div>
-            <!--END-Position-->
-        </div>
-    </div>
-    <section id="contact">
-  <h1 class="section-header">Liên Hệ</h1>
-  <div class="contact-wrapper">
-  <!-- Left contact page --> 
-    <form id="contact-form" class="form-horizontal" role="form">
-      
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-        </div>
-      </div>
-      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-        <div class="alt-send-button"><i class="fa fa-paper-plane"></i><span class="send-text">Gửi Phản Hồi</span></div>
-      </button>
-    </form>
-  <!-- Left contact page --> 
-      <div class="direct-contact-container">
-        <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Việt Trì - Phú Thọ</span></i></li>
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">0978236082/</a></span></i></li>
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">huyngo9981@gmail.com/</a></span></i></li>
-        </ul>
-        <hr>
-        <ul class="social-media-list">
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-github" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-codepen" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </li>       
-        </ul>
-        <hr>
-        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-      </div>
-  </div>
-</section> 
+  <div class="container-fluid">
+    <div class="container">
+	<div class="row">
+			<h1>Liên Hệ Với Chúng Tôi</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">We'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+	</div>
+</div>
+</div>
+</body>
 <style>
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  padding-bottom: 100px;
-}
-#contact {
+  body {
+  background-color: #444442;
   position:relative;
-  top: 250px;
-  width: 100%;
-  height: 150%;
+  top:20px;
 }
-.section-header {
-  position: relative;
-    top: -2px;
-    text-align: center;
-    margin: 0 auto;
-    padding: -2px 0;
-    font: 300 60px 'Oswald', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 6px;
+
+h1 {
+  font-family: 'Poppins', sans-serif, 'arial';
+  font-weight: 600;
+  font-size: 72px;
+  color: white;
+  text-align: center;
 }
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  max-width: 840px;
-}
-/* Left contact page */
-.form-horizontal {
-  /*float: left;*/
-  max-width: 400px;
-  font-family: 'Lato';
+
+h4 {
+  font-family: 'Roboto', sans-serif, 'arial';
   font-weight: 400;
+  font-size: 20px;
+  color: #9b9b9b;
+  line-height: 1.5;
 }
-.form-control, 
-textarea {
-  max-width: 400px;
-  width: 400px;
-  color: #fff;
-  letter-spacing: 1px;
-  padding: 10px;
-  margin-top: 25px;
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
 }
-.send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-}
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
-}
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
-}
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 400px;
-}
-/* Location, Phone, Email Section */
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-}
-.list-item {
-  line-height: 4;
-  color: #aaa;
-}
-.contact-text {
-  font: 300 18px 'Lato', sans-serif;
-  letter-spacing: 1.9px;
-  color: #bbb;
-}
-.place {
-  margin-left: 62px;
-}
-.phone {
-  margin-left: 56px;
-}
-.gmail {
-  margin-left: 53px;
-}
-.contact-text a {
-  color: #bbb;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-.contact-text a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-/* Social Media Icons */
-.social-media-list {
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
   position: relative;
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
+  border-radius: 4px;
 }
-.social-media-list li a {
-  color: #fff;
+
+@media only screen and (max-width: 768px){
+  .styled-input {
+      width:100%;
+  }
 }
-.social-media-list li {
-  position: relative; 
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 10px 3px;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgb(27,27,27);
-  cursor: pointer; 
-  transition: all .2s ease-in-out;
-}
-.social-media-list li:after {
-  content: '';
+
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
 }
 
-.social-media-list li:hover {
-  background-color: #fff; 
+.styled-input.wide { 
+  width: 650px;
+  max-width: 100%;
 }
 
-.social-media-list li:hover:after {
-  opacity: 1;  
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
 }
 
-.social-media-list li:hover a {
-  color: #000;
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
 }
 
-.copyright {
-  font: 200 14px 'Oswald', sans-serif;
-  color: #555;
-  letter-spacing: 1px;
-  text-align: center;
+textarea {
+  width: 100%;
+  min-height: 15em;
 }
 
-hr {
-  border-color: rgba(255,255,255,.6);
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
 }
 
-/* Begin Media Queries*/
-@media screen and (max-width: 850px) {
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .direct-contact-container, .form-horizontal {
-    margin: 0 auto;
-  }  
-  
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 300px;
-  }    
-  .social-media-list li {
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
-  }
-  .social-media-list li:after {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+.submit-btn {
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #4b8cfb;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+            0 2px 10px 0 rgba(0,0,0,0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+            0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+      width:100%;
+      float: none;
+      text-align:center;
   }
 }
-@media screen and (max-width: 569px) {
-  .direct-contact-container, .form-wrapper {
-    float: none;
-    margin: 0 auto;
-  }  
-  .form-control, textarea {
-    
-    margin: 0 auto;
-  } 
- .name, .email, textarea {
-    width: 280px;
-  } 
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 280px;
-  }  
-  .social-media-list {
-    left: 0;
-  }
-  .social-media-list li {
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    font-size: 2rem;
-  }
-  .social-media-list li:after {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-  }
+
+input[type=checkbox] + label {
+color: #ccc;
+font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+color: #f00;
+font-style: normal;
 }
-@media screen and (max-width: 410px) {
-  .send-button {
-    width: 99%;
-  }
-}
-</style> 
+</style>
+

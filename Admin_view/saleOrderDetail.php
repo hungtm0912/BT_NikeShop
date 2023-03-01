@@ -37,7 +37,7 @@ include './include/head.php';
                                     <th scope="col">Mã</th>
                                     <th scope="col">Avatar</th>
                                     <th scope="col">Tên Sản Phẩm</th>
-                                    <th scope="col">Chất Lượng</th>
+                                    <th scope="col">Số Lượng</th>
                                     <th scope="col">Giá</th>
                                     <th scope="col">Tổng</th>
                                 </tr>

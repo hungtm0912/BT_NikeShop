@@ -1,5 +1,6 @@
 html,body {
   height: 100%;
+  width: auto;
 }
 body {
   display: flex;
@@ -12,6 +13,7 @@ body {
   max-width: 330px;
   padding: 15px;
   margin: auto;
+  border-radius: radius;
 }
 
 .form-signin .checkbox {

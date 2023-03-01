@@ -40,7 +40,7 @@ if (!isset($_SESSION['username'])) {
     };
     ?>
   </div>
-  <div style="max-width: 1920px; margin-top: 25px;" class="container">
+  <div style="max-width: 1920px; margin-top: 0px;" class="container">
     <form action="process_checkout.php" method="post">
       <div style="margin:auto;" class="card">
         <div class="row">
