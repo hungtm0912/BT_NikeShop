@@ -96,9 +96,9 @@ include './include/head.php';
                         </div> -->
             <!-- Text input-->
             <div class="form-group">
-              <label class="col-md-4 control-label" for="brand">Chất Lượng</label>
+              <label class="col-md-4 control-label" for="brand">Số Lượng</label>
               <div style="width: 93.333333% !important;" class="col-md-4">
-                <input name="prd_quantity" placeholder="Nhập Chất Lượng" class="form-control input-md" type="number" />
+                <input name="prd_quantity" placeholder="Nhập Số Lượng" class="form-control input-md" type="number" />
               </div>
             </div>
 

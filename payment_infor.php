@@ -37,11 +37,10 @@
   <!--End of Tawk.to Script-->
   <div class="container-fluid">
     <?php
-    session_start();
     include './includes/navbar.php';
     ?>
   </div>
-     <div class ="container-body" style="margin-top: 135px;color: white; margin-left: 260px;">
+     <div class ="container-body" style="margin-top: 190px;color: white; margin-left: 260px;">
       <h1>Phương Thức Thanh Toán</h1>
       <p>Hình thức thanh toán được áp dụng: Chuyển Khoản /QR /IPAY /CREDIT CARD</p>
       <p>Khách hàng muốn mua sản phẩm cần chuyển khoản trước khi nhận hàng</p>

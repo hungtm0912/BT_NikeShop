@@ -75,11 +75,11 @@
                   <p class="status" style="margin-bottom:0;">
                     <?php
                      if ($status == 1) {
-                        echo "Đã giao hàng";
+                        echo "Đã giao hàng"; 
                      } else {
                         echo "Đang giao hàng";
                      }
-                    ?>
+                    ?> 
                   </p>
                 </div>
               </li>
