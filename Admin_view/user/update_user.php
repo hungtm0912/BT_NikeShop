@@ -138,7 +138,7 @@ if (isset($_POST['submit'])) {
                       <!-- File Button -->
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="avatar">Avatar</label>
-                        <div style="width: 93.333333% !important;" class="col-md-4">
+                        <div style="width: 93% !important;" class="col-md-4">
                           <input id="avatarfile" name="user_avatar" class="input-file" type="file" />
                         </div>
                       </div>
@@ -156,7 +156,6 @@ if (isset($_POST['submit'])) {
                       </div>
                       <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
                       <a href="process_user.php?id_delete=<?php echo $user['user_id'] ?>" class="btn btn-danger btn-md active" onclick="return confirm('Bạn Chắc Chắn Muốn Xóa Tài Khoản <?php echo $user['username'] ?> Này?')" role="button" aria-pressed=" true">Xóa</a>
-                    </div>
                   </div>
                 </div>
               </div>
