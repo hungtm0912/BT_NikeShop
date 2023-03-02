@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
   $_SESSION['phone'] = $phone;
   $_SESSION['email'] = $email;
   $_SESSION['avatar'] = $avatar;
-  header('Location: ../signin');
+  header('Location: ../trangchu.php');
 }
 
 ?>
