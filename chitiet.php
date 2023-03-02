@@ -115,7 +115,7 @@
                 <?php else : ?>
                 <div class="well" style="margin-top: 20px;">
                 <!-- Duong dan binh luan bi loi-->
-                  <h4 class="text-center cus_tag"><a href="BT_NikeShop/signin">Đăng Nhập</a> Để Gửi Bình Luận</h4>
+                  <h4 class="text-center cus_tag"><a href="./signin">Đăng Nhập</a> Để Gửi Bình Luận</h4>
                 </div>
                 <?php endif ?>
                 <!-- Display total number of comments on this post  -->
@@ -176,7 +176,7 @@
         <section class="" style="color: white">
           <div class="container text-center text-md-start">
             <div class="row mt-3">
-              <div class="col-md-3 col-lg-4 col-xl-3 mb-5"style="position: relative;top: -12px;">
+              <div class="col-md-3 col-lg-4 col-xl-3 mb-5">
                 <h6 class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i> Nike Shop</h6>
                   <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
@@ -193,7 +193,7 @@
                 <p><a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
                 <p><a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a></p>
               </div>
-              <div class="col-md-3 col-lg-4 col-xl-3 mb-5" style="position: relative;top: -60px;">
+              <div class="col-md-3 col-lg-4 col-xl-3 mb-5">
                 <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
                 <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
               </div>

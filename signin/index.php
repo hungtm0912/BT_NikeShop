@@ -7,13 +7,12 @@
   <meta name="generator" content="Hugo 0.88.1">
   <title>Nike Shop</title>
   <link rel="stylesheet" href="./signin.css">
-  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
+  <link rel="icon" href="../image/logoshop.png" type="image/icon type">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -35,7 +34,7 @@ if (isset($_SESSION['username'])) {
   header("location: ./BT_NikeShop/trangchu.php");
 }
 ?>
-<body class="text-center" style="background-color:black;">
+<body class="text-center">
   <main class="form-signin">
     <form method="POST" action="./process_signin.php">
       <img class="mb-4" src="../image/logoshop.png" href="../index.php" alt="" width="200" height="160">
@@ -68,16 +67,5 @@ if (isset($_SESSION['username'])) {
     width: 100%;
     height:auto;
     border-radius: 10px;
-
   }
-  .form-control{
-    color:aliceblue;
-  }
-  .checkbox{
-    color:aliceblue;
-  }
-  .text-center-1{
-    color:aliceblue;
-  }
-
  </style>

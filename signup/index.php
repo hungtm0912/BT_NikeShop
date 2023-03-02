@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
 <html lang="en">
 <head>
   <title>Nike Shop</title>
-  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
+  <link rel="icon" href="../image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="./signup.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

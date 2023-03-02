@@ -13,21 +13,21 @@
           ?>
       </a>
       <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
+      <?php
+        if (!isset($_SESSION['username'])) {
+          echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Đăng Nhập</a>';
+          echo '<div class="dropdown-divider margin: 3px 0;"></div>';
+        }
+        ?>
         <?php
         if (!isset($_SESSION['username'])) {
           echo '<a class="dropdown-item dropdown-item-custom" href="./signup">Đăng Ký</a>';
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
         }
         ?>
-        <?php
-        if (!isset($_SESSION['username'])) {
-          echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Đăng Nhập</a>';
-          echo '<div class="dropdown-divider margin: 3px 0;"></div>';
-        }
-        ?>
         <a class="dropdown-item dropdown-item-custom" href="./cart.php">Giỏ Hàng</a>
         <div class="dropdown-divider margin: 3px 0;"></div>
-        <a class="dropdown-item dropdown-item-custom" href="./checkout_money.php">Thanh Toán </a>
+        <a class="dropdown-item dropdown-item-custom" href="./checkout_money.php">Liên Kết Ngân Hàng</a>
         <div class="dropdown-divider margin: 3px 0;"></div>
         <?php
         if (!isset($_SESSION['username'])) {

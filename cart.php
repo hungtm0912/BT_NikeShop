@@ -133,6 +133,7 @@ if (!isset($_SESSION['username'])) {
               </div>
             </div>
             <button type="submit" class="btnn" style="font-size:18px" onclick="alert('Đặt Hàng Thành Công');">Đặt Hàng</button>
+            <a href="./checkout_money.php" class="lk" style="position: relative;left: 55px;top: 15px;" >Liên Kết Tài Khoản Ngân Hàng</a>
           </div>
         </div>
       </div>

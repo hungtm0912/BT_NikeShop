@@ -13,6 +13,8 @@ if (!isset($_SESSION['username'])) {
 <link rel="icon" href="./image/logoshop.png" type="image/icon type">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
 </head>
 <style>
 body {
@@ -75,13 +77,14 @@ label {
   padding: 12px;
   margin: 10px 0;
   border: none;
-  width: 100%;
+  width: 200px;
+  height: 50px;
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
 }
 .btn:hover {
-  background-color: #45a049;
+  background-color: red;
 }
 a {
   color: #2196F3;
@@ -159,20 +162,13 @@ span.price {
               </div>
             </div>
           </div>
-          
         </div>
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Địa chỉ giao hàng giống như địa chỉ thanh toán
         </label>
-        <input type="submit" value="Thanh Toán" class="btn">
       </form>
-    </div>
-  </div>
-  <div class="col-25">
-    <div class="container">
-      <h4>Giỏ Hàng <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
-      <hr>
-      <p>Tổng<span class="price" style="color:black"><b> VND</b></span></p>
+        <a href="./index.php"><button class="btn" type="submit">Về Trang Chủ</button></a> 
+        <a href=""><button class="btn" type="submit">Liên Kết</button></a> 
     </div>
   </div>
 </div>

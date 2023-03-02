@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.88.1">
-  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
+  <link rel="icon" href="../image/logoshop.png" type="image/icon type">
   <title>Nike Shop</title>
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.css">
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css">
@@ -51,7 +51,11 @@ if (isset($_POST['submit'])) {
   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
   <!-- Bootstrap core CSS -->
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
+  <!-- Custom styles for this template -->
+  <link href="/BT_NikeShop/Admin_view/dashboard.css " rel="stylesheet">
+  <link href="./styles_user_update.css" rel="stylesheet">
+</head>
+<style>
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -74,10 +78,6 @@ if (isset($_POST['submit'])) {
       margin-bottom: 12px;
     }
   </style>
-  <!-- Custom styles for this template -->
-  <link href="/BT_NikeShop/Admin_view/dashboard.css " rel="stylesheet">
-  <link href="./styles_user_update.css" rel="stylesheet">
-</head>
 
 <body>
   <?php
