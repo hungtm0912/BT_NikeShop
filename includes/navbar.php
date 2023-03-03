@@ -8,26 +8,26 @@
              if (isset($_SESSION['username'])) {
                    echo $_SESSION['name'];
              } else {
-                     echo 'Tài Khoản';
+                     echo 'Tài khoản';
               }
           ?>
       </a>
       <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown">
-      <?php
-        if (!isset($_SESSION['username'])) {
-          echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Đăng Nhập</a>';
-          echo '<div class="dropdown-divider margin: 3px 0;"></div>';
-        }
-        ?>
         <?php
         if (!isset($_SESSION['username'])) {
           echo '<a class="dropdown-item dropdown-item-custom" href="./signup">Đăng Ký</a>';
           echo '<div class="dropdown-divider margin: 3px 0;"></div>';
         }
         ?>
+        <?php
+        if (!isset($_SESSION['username'])) {
+          echo '<a class="dropdown-item dropdown-item-custom" href="./signin">Đăng Nhập</a>';
+          echo '<div class="dropdown-divider margin: 3px 0;"></div>';
+        }
+        ?>
         <a class="dropdown-item dropdown-item-custom" href="./cart.php">Giỏ Hàng</a>
         <div class="dropdown-divider margin: 3px 0;"></div>
-        <a class="dropdown-item dropdown-item-custom" href="./checkout_money.php">Liên Kết Ngân Hàng</a>
+        <a class="dropdown-item dropdown-item-custom" href="./cart.php">Thanh Toán </a>
         <div class="dropdown-divider margin: 3px 0;"></div>
         <?php
         if (!isset($_SESSION['username'])) {
@@ -59,7 +59,7 @@
   </div>
   <div class="row col-12 logo-search-cart">
     <div style="justify-content: end !important;" class="col-3 logo">
-      <a href ="./trangchu.php"><img width="30%" src="./image/logoshop.png" href ="./trangchu.php" alt="" style="margin-left: 100px;margin-bottom:-40px"></a>
+      <a href ="./trangchu.php"><img width="30%" src="./image/logoshop.png" href ="./trangchu.php" alt="" style="margin-left: 100px;margin-bottom: -40px"></a>
     </div>
     <div class="col-6">
       <form action="" method="GET">
@@ -97,14 +97,13 @@
       <li class="nav-item">
         <a class="nav-link active nav-link-active-custom" href="./trangchu.php">Trang Chủ</a>
       </li>
-      <li class="nav-item-1">
-        <a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm <i class="fa fa-caret-down"></i></a>  
+      <li class="nav-item">
+        <a class="nav-link active nav-link-active-custom" href="./index.php">Tất Cả Sản Phẩm <i class="fa fa-caret-down"></i></a>
         <div class="subnav-content">
-          <ul style="list-style-type: none;">
-            <li><a href="./index.php">Quần Thể Thao</a></li>
-            <li><a href="./index.php">Áo Thể Thao</a></li>
-            <li><a href="./index.phpr">Giày Thể Thao</a></li>
-            <li><a href="./index.php">Phụ Kiện</a></li>
+          <ul style="  list-style-type: none;">
+       <li> <a href="#bring">Quần Áo</a></li>
+       <li> <a href="#deliver">Giày Dép</a></li>
+       <li><a href="#package">Phụ Kiện</a></li>
         </ul>
         </div>
       </li>
@@ -118,24 +117,25 @@
         <a class="nav-link active nav-link-active-custom" href="./contact.php">Liên Hệ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active nav-link-active-custom sale-off" href="#">Sale Off</a>
+        <a class="nav-link active nav-link-active-custom sale-off" href="./sale.php">Sale Off</a>
       </li>
     </ul>
   </div>
 </div>
 <style>
-.body{
+body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  font-size: 14px;
 }
-.nav-item-1{
-  position: relative;
+.nav-item{
   overflow: hidden;
-  top: -6px; 
+  background-color: #333; 
 }
-.nav-item-1 a {
+.nav-item a {
   float: left;
+  font-size: 16px;
   color: white;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -143,13 +143,19 @@
   float: left;
   overflow: hidden;
 }
-.nav-item-1 .nav-link {  
+.nav-item .nav-link {
+  font-size: 16px;  
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
+  background-color: inherit;
   font-family: inherit;
+  margin: 0;
 }   
+.nav-item a:hover, .nav-link:hover .nav-link {
+
+}
 .subnav-content {
   text-align: center;
   display: none;
@@ -163,15 +169,7 @@
   color: white;
   text-decoration: none;
 }
-.nav-item-1:hover .subnav-content {
+.nav-item:hover .subnav-content {
   display: inline;
 }
-.subnav-content li{
-  position:relative;
-  left:-40px;
-
-}
-
 </style>
-
-.
