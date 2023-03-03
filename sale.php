@@ -116,9 +116,11 @@ require_once './database/config.php';
         <hr>
         <!-- danh sach sp -->
         <div class="row list-product">
+        <?php
+          $sql_product = mysqli_query($mysqli, "SELECT * FROM `products` WHERE `product_sale` != 0 ");
+          ?>
           <?php
-          if (is_array($products) || is_object($products)) {
-            foreach ($products as $product) {
+          while ($product = mysqli_fetch_array($sql_product)) {
           ?>
           <div class="col-lg-3 col-md-4 col-sm-6  ">
             <div style="margin-bottom: 60px !important;" class="card card-custom">
@@ -154,7 +156,7 @@ require_once './database/config.php';
             </div>
           </div>
           <?php }
-          } ?>
+          ?>
         </div>
         <hr><hr>
         <nav style="margin: auto; color: orange !important;" class="col-4" aria-label="Page navigation example">
