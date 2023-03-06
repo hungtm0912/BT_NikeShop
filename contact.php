@@ -31,6 +31,7 @@
 	<div class="row">
 			<h4 style="text-align:center">We'd love to hear from you!</h4>
 	</div>
+  <form action="">
 	<div class="row input-container">
 			<div class="col-sm-12">
 				<div class="styled-input wide">
@@ -61,9 +62,10 @@
         <a href="trangchu.php"><div class="btn-lrg submit-btn">Quay lại</div></a>
 			</div>
       <div class="col-md-6 col-sm-12">
-      <a href="#"><div class="btn-lrg submit-btn" style="float:right;">Gửi tin nhắn</div></a>
+      <a href="index.php"><div class="btn-lrg submit-btn" style="float:right;" onclick="alert('Gửi Thành Công');">Gửi tin nhắn</div></a>
 				</div>
 			</div>
+      </form>
 	</div>
 </div>
 </div>
