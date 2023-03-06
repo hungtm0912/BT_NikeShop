@@ -128,6 +128,8 @@
 }
 .nav-item-1{
   overflow: hidden;
+  position: relative;
+  top: -7px;
 }
 .nav-item-1 a {
   float: left;
