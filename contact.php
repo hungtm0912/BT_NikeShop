@@ -18,56 +18,56 @@
   <?php
     session_start();
   ?>
+  
 <body>
   <!--Start of Tawk.to Script-->
-  
-  <!--End of Tawk.to Script-->
   <div class="container-fluid">
-    
-    <div class="container">
-	<div class="row">
-			<h2>Liên Hệ Với Chúng Tôi</h2>
-	</div>
-	<div class="row">
-			<h4 style="text-align:center">We'd love to hear from you!</h4>
-	</div>
+  <?php
+    session_start();
+    include './includes/navbar.php';
+    ?>
+    </div>
+  <!--End of Tawk.to Script-->
+ 
+<div class="container" style="margin-top: 130px">
+	
   <form action="">
-	<div class="row input-container">
+	<div class="row input-container" >
+    <div class="col-sm-12">
+			<h2 style="font-size: 50px;text-align:center">Liên Hệ Với Chúng Tôi</h2>
+	  </div>
+	  <div  class="col-sm-12">
+			<h4 style="text-align:center">We'd love to hear from you!</h4>
+	  </div>
 			<div class="col-sm-12">
-				<div class="styled-input wide">
-					<input type="text" required />
-					<label>Name</label> 
-				</div>
+      <div class="form-group">
+        <input type="tel" class="form-control" id="customerFullName" name="name_receiver"
+        placeholder="Nhập Họ và Tên" style="padding: 20px;">
+      </div>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<div class="styled-input">
-					<input type="text" required />
-					<label>Email</label> 
-				</div>
+      <div class="form-group">
+        <input type="tel" class="form-control" id="customerFullName" name="name_receiver"
+        placeholder="Nhập Email" style="padding: 20px;">
+      </div>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<div class="styled-input" style="float:right;">
-					<input type="text" required />
-					<label>Phone Number</label> 
-				</div>
+      <div class="form-group">
+        <input type="tel" class="form-control" id="customerFullName" name="name_receiver"
+        placeholder="Nhập Điện thoại" style="padding: 20px;">
+      </div>
 			</div>
 			<div class="col-sm-12">
-				<div class="styled-input wide">
-					<textarea required></textarea>
-					<label>Message</label>
-				</div>
+        <div class="form-group">
+        <textarea required placeholder="Nhập Điện thoại"></textarea>
+      </div>
 			</div>
-			
-      <div class="col-md-6 col-sm-12">
-        <a href="trangchu.php"><div class="btn-lrg submit-btn">Quay lại</div></a>
-			</div>
-      <div class="col-md-6 col-sm-12">
-      <a href="index.php"><div class="btn-lrg submit-btn" style="float:right;" onclick="alert('Gửi Thành Công');">Gửi tin nhắn</div></a>
+      <div class="col-sm-12" style="text-align: center;">
+      <a href="index.php"><div class="btn-lrg submit-btn" onclick="alert('Gửi Thành Công');">Gửi tin nhắn</div></a>
 				</div>
 			</div>
       </form>
 	</div>
-</div>
 </div>
 </body>
 <style>
@@ -126,10 +126,10 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 input,
 textarea {
   padding: 30px;
-  border: 0;
+  border: 1px solid #ced4da;
   width: 100%;
   font-size: 1rem;
-  background-color: #262626;
+  background-color: #fff;
   color: white;
   border-radius: 4px;
 }
