@@ -43,7 +43,7 @@
 			<h4 style="text-align:center">We'd love to hear from you!</h4>
 	</div>
 	<div class="row input-container">
-			<div class="col-xs-12">
+			<div class="col-sm-12">
 				<div class="styled-input wide">
 					<input type="text" required />
 					<label>Name</label> 
@@ -61,14 +61,19 @@
 					<label>Phone Number</label> 
 				</div>
 			</div>
-			<div class="col-xs-12">
+			<div class="col-sm-12">
 				<div class="styled-input wide">
 					<textarea required></textarea>
 					<label>Message</label>
 				</div>
 			</div>
-			<div class="col-xs-12">
-				<div class="btn-lrg submit-btn">Send Message</div>
+			
+      <div class="col-md-6 col-sm-12">
+        <a href="trangchu.php"><div class="btn-lrg submit-btn">Quay lại</div></a>
+			</div>
+      <div class="col-md-6 col-sm-12">
+      <a href="#"><div class="btn-lrg submit-btn" style="float:right;">Gửi tin nhắn</div></a>
+				</div>
 			</div>
 	</div>
 </div>
@@ -143,7 +148,7 @@ textarea {
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #2d2d2d;
+  background-color: #262626;
   color: white;
   border-radius: 4px;
 }
