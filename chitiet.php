@@ -54,7 +54,7 @@
       <div style="margin-top: 200px;" class="container">
         <div class="row">
           <div class="col-4">
-            <img width="350px" heigh="350px" src="./Admin_view/upload/<?php echo $product['product_image'] ?>" alt="">
+            <img width="350px" heigh="550px" src="./Admin_view/upload/<?php echo $product['product_image'] ?>" alt="">
           </div>
           <div class="col-8">
             <p class="name-product"><?php echo $product['product_name'] ?></p>

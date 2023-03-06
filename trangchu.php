@@ -42,7 +42,7 @@
   }
   ?>
   <div class="container-fluid">
-    <?php
+  <?php
     include './includes/navbar.php';
     ?>
     <!--slide-->
