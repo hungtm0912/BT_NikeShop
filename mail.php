@@ -21,7 +21,7 @@ class Mailer{
             $mail->Username = "huyngo9981@gmail.com";
             $mail->Password = 'upnkhhyrsiaefvzt';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-            $mail->Port = 8080;
+            $mail->Port = 587;
             $mail->SMTPSecure = "tls";
 
             //Send Email

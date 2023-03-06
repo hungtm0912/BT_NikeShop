@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,13 +6,13 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.88.1">
   <title>Nike Shop</title>
-  <link rel="icon" href="./imag e/logoshop.png" type="image/icon type">
+  <link rel="icon" href="../image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.css">
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dashboard.rtl.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
   <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/'. BT_DIR .'BT_NikeShop/Admin_view/dashboard.css" rel="stylesheet">
-  <link href="/'. BT_DIR .'BT_NikeShop/Admin_view/styles_user_update.css" rel="stylesheet">
+  <link href="../Admin_view/dashboard.css" rel="stylesheet">
+  <link href="../Admin_view/styles_user_update.css" rel="stylesheet">
   <style>
   .bd-placeholder-img {
     font-size: 1.125rem;
@@ -44,10 +43,8 @@
   .container {
     margin-left: -5%;
   }
-
   </style>
 </head>
-
 <body>
   <?php
   require_once "../database/config.php";
@@ -63,7 +60,7 @@
     $avatar_tmp = $_FILES['user_avatar']['tmp_name'];
     $path = '../Admin_view/upload/user/';
 
-    $sql_check = "SELECT count(*) FROM users where email='$email' and user_id <> '$user_id'";
+    $sql_check = "SELECT count(*) FROM users WHERE email='$email' AND user_id <> '$user_id'";
     $result = $mysqli->query($sql_check);
     $number_rows = mysqli_fetch_array($result)['count(*)'];
 

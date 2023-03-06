@@ -103,7 +103,7 @@
           <ul style="list-style-type: none;">
             <li><a href="./index.php">Quần Thể Thao</a></li>
             <li><a href="./index.php">Áo Thể Thao</a></li>
-            <li><a href="./index.phpr">Giày Thể Thao</a></li>
+            <li><a href="./index.php">Giày Thể Thao</a></li>
             <li><a href="./index.php">Phụ Kiện</a></li>
         </ul>
         </div>
@@ -125,7 +125,7 @@
 </div>
 <style>
 .body{
-  margin: 0;
+  margin: auto;
   font-size: 14px;
 }
 .nav-item-1{

@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <link rel="stylesheet" href="./forgotpass.css">
-    <link rel="icon" href="../image/logoshop.png" type="image/icon type">
+    <link rel="icon" href="./image/logoshop.png" type="image/icon type">
     <title>Nike Shop</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -43,5 +43,4 @@
         <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
     </main>
 </body>
-
 </html>

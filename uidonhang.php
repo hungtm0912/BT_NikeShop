@@ -25,7 +25,6 @@
     $result_1 = "";
     $sql = "SELECT * FROM orders  WHERE user_id = '$user_id' ORDER BY created_at DESC";
     $result = $mysqli->query($sql);
-    
     ?>
   <div style=" max-width: 1350px; margin-top:45px; padding: 20px 0;" class="container">
     <div class="main-content" style="width:1200px; height: 550px;">
@@ -35,13 +34,13 @@
             <h3>Danh Sách Đặt Hàng</h3>
             <ul class="list_donhang">
               <?php
-                   while ($order = mysqli_fetch_array($result)) {
-                    $order_id = $order['order_id'];
-                    $status  = $order['status'];
-                    $total = $order['total'];
-                    $sql_1 = "SELECT * FROM products JOIN order_detail ON products.product_id = order_detail.product_id WHERE order_id = '$order_id'";
-                    $result_1 = $mysqli->query($sql_1);
-               ?>
+                while ($order = mysqli_fetch_array($result)) {
+                $order_id = $order['order_id'];
+                $status  = $order['status'];
+                $total = $order['total'];
+                $sql_1 = "SELECT * FROM products JOIN order_detail ON products.product_id = order_detail.product_id WHERE order_id = '$order_id'";
+                $result_1 = $mysqli->query($sql_1);
+              ?>
               <li class="donhang_item">
                 <a href="#" class="donhang_link"><h5>Chi Tiết Đơn Hàng</h5></a>
                 <div class="product_list" style="position: relative; top: -25px;">

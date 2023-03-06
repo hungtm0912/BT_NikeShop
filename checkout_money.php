@@ -8,13 +8,13 @@ if (!isset($_SESSION['username'])) {
 <!DOCTYPE html>
 <html>
 <head>
-<title>Nike Shop</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="./image/logoshop.png" type="image/icon type">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-
+    <title>Nike Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./image/logoshop.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <style>
 body {
@@ -84,7 +84,7 @@ label {
   font-size: 17px;
 }
 .btn:hover {
-  background-color: red;
+  background-color:#FFFFFF;
 }
 a {
   color: #2196F3;
@@ -138,27 +138,28 @@ span.price {
 
           <div class="col-50">
             <h3>Phương Thức Thanh Toán</h3>
-            <label for="fname">Loại Thẻ Được Chấp Nhận</label>
+            <label for="fname" class ="hthuc" style="position:relative;top:15px;">Hình Thức Được Chấp Nhận</label>
             <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:green;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
+              <i class="fas fa-qrcode"></i>
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fas fa-credit-card-front"></i>
             </div>
             <label for="cname">Tên Ngân Hàng</label>
             <input type="text" id="cname" name="cardname" placeholder="Nhập Tên Ngân Hàng">
             <label for="ccnum">Số Thẻ</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="Nhập Số Thẻ">
+            <input type="text" id="ccnum" name="cardnumber" placeholder="XXX-XXX-XXX-XXX">
             <label for="expmonth">Tháng Hết Hạn</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="Nhập Tháng Hết Hạn">
+            <input type="text" id="expmonth" name="expmonth" placeholder="XX-XX-XXXX">
             <div class="row">
               <div class="col-50">
-                <label for="expyear">Năm Hết Han</label>
-                <input type="text" id="expyear" name="expyear" placeholder="Nhập Năm Hết Hạn">
+                <label for="expyear">Năm Hết Hạn</label>
+                <input type="text" id="expyear" name="expyear" placeholder="XXXX">
               </div>
               <div class="col-50">
-                <label for="cvv">Mã Bảo Vệ</label>
-                <input type="text" id="cvv" name="cvv" placeholder="Nhập Mã Bảo Vệ">
+                <label for="cvv">Mã OTP</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Nhập Mã OTP">
               </div>
             </div>
           </div>

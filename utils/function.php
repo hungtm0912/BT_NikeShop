@@ -7,15 +7,15 @@
   // get all posts from database
     $product_query_result = $mysqli->query("SELECT * FROM `products` WHERE `product_id`=' . $product_id . '");
     // Get all comments from database
-    $comments_query_result = $mysqli->query("SELECT users.avatar, users.user_id, comments.created_at, comments.body, comments.comment_id FROM comments join users on comments.user_id = users.user_id WHERE product_id='" . $product_id . "' ORDER BY created_at DESC");
+    $comments_query_result = $mysqli->query("SELECT users.avatar, users.user_id, comments.created_at, comments.body, comments.comment_id FROM comments JOIN users ON comments.user_id = users.user_id WHERE `product_id`=' . $product_id . ' ORDER BY `created_at` DESC");
     $comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
     // If the user clicked submit on comment form...
     if (isset($_POST['comment_posted'])) {
     // Get all comments from database
-    $comments_query_result = $mysqli->query("SELECT users.avatar, users.user_id, comments.comment_id FROM comments join users on comments.user_id = users.user_id WHERE product_id='" . $product_id . "' ORDER BY created_at DESC");
+    $comments_query_result = $mysqli->query("SELECT `users.avatar`, `users.user_id`, `comments.comment_id` FROM `comments` JOIN `users` ON `comments.user_id` = `users.user_id` WHERE product_id=' . $product_id .' ORDER BY `created_at` DESC");
     $comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
     // Get all comments from database
-    $comments_query_result = $mysqli->query("SELECT users.avatar, users.user_id, comments.created_at, comments.body, comments.comment_id FROM comments join users on comments.user_id = users.user_id WHERE product_id='" . $product_id . "' ORDER BY created_at DESC");
+    $comments_query_result = $mysqli->query("SELECT users.avatar, users.user_id, comments.created_at, comments.body, comments.comment_id FROM comments JOIN users ON comments.user_id = users.user_id WHERE product_id=' . $product_id . ' ORDER BY `created_at` DESC");
     $comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
     global $mysqli;
     // grab the comment that was submitted through Ajax call
@@ -26,7 +26,7 @@
     $result = $mysqli->query($sql);
     // Query same comment from database to send back to be displayed
     $inserted_id = $mysqli->insert_id;
-    $res = $mysqli->query("SELECT * FROM comments join users on comments.user_id = users.user_id WHERE comment_id = $inserted_id");
+    $res = $mysqli->query("SELECT * FROM comments JOIN users ON comments.user_id = users.user_id WHERE comment_id = $inserted_id");
     $inserted_comment = mysqli_fetch_assoc($res);
   // if insert was successful, get that same comment from the database and return it
   if ($result) {
@@ -45,8 +45,8 @@
 						</form>
 					</div>";
     $comment_info = array(
-      'comment' => $comment,
-      'comments_count' => getCommentsCountByPostId($product_id)
+        'comment' => $comment,
+        'comments_count' => getCommentsCountByPostId($product_id)
     );
     echo json_encode($comment_info);
     exit();
@@ -62,14 +62,14 @@ if (isset($_POST['reply_posted'])) {
   $reply_text = $_POST['reply_text'];
   $comment_id = $_POST['comment_id'];
   // insert reply into database
-  $sql = "INSERT INTO replies (user_id, comment_id, body, created_at, updated_at) VALUES (" . $user_id . ", $comment_id, '$reply_text', now(), null)";
+  $sql = "INSERT INTO replies(user_id, comment_id, body, created_at, updated_at) VALUES (" . $user_id . ", $comment_id, '$reply_text', now(), null)";
   $result = $mysqli->query($sql);
   $inserted_id = $mysqli->insert_id;
   $res = $mysqli->query("SELECT * FROM replies WHERE reply_id=$inserted_id");
   $inserted_reply = mysqli_fetch_assoc($res);
   // if insert was successful, get that same reply from the database and return it
   if ($result) {
-    $reply = "<div class='comment reply clearfix'>
+     $reply = "<div class='comment reply clearfix'>
 						<img src='./Admin_view/upload/user/" . $_SESSION['avatar'] . "' alt='' class='profile_pic'>
 						<div class='comment-details'>
 							<span class='comment-name'>" . getUsernameById($inserted_reply['user_id']) . "</span>
@@ -101,14 +101,14 @@ function getUsernameById($id){
 function getRepliesByCommentId($id){
   // echo '<script type="text/javascript">alert("' . $id . '");</script>';
   global $mysqli;
-  $result = $mysqli->query("SELECT replies.created_at, replies.body, users.avatar, users.user_id, users.username FROM replies join users on users.user_id = replies.user_id WHERE replies.comment_id=$id");
+  $result = $mysqli->query("SELECT replies.created_at, replies.body, users.avatar, users.user_id, users.username FROM replies JOIN users ON users.user_id = replies.user_id WHERE replies.comment_id=$id");
   $replies = mysqli_fetch_all($result, MYSQLI_ASSOC);
   return $replies;
 }
 // Receives a post id and returns the total number of comments on that post
 function getCommentsCountByPostId($product_id){
   global $mysqli;
-  $result = $mysqli->query("SELECT COUNT(*) AS total FROM comments where product_id=$product_id");
+  $result = $mysqli->query("SELECT COUNT(*) AS total FROM comments WHERE product_id=$product_id");
   $data = mysqli_fetch_assoc($result);
   return $data['total'];
 }

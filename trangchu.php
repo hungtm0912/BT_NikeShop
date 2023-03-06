@@ -101,7 +101,8 @@
                   <br>
                   <span class="card-text old-price"><?php echo number_format($row_product['product_price']) ?>VND</span>
                   <span
-                    class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?>đ</span>
+                    class="card-text new-price">
+                    <?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?>VND</span>
                 </div>
               </div>
             </div>
@@ -116,7 +117,7 @@
       </div>
     </div>
     <!--NEW PRODUCT-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;position:relative; top: 35px;"> SẢN PHẨM MỚI</div>
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;position:relative; top: 35px;">SẢN PHẨM MỚI</div>
     <div class="row">
       <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
         <div class="MultiCarousel-inner">
@@ -139,7 +140,7 @@
                   <br>
                   <span class="card-text old-price"><?php echo number_format($row_product['product_price']) ?>VND</span>
                   <span
-                    class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?>đ</span>
+                    class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?> VND</span>
                 </div>
               </div>
             </div>
@@ -230,6 +231,7 @@
         </div>
       </div>
     </div>
+  </div>
       <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important;" class=" text-center text-lg-start bg-light text-muted">
         <section class="" style="color: white">

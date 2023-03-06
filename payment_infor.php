@@ -47,11 +47,11 @@
       <p>Thông tin tài khoản như sau:</p>
       <h5>Ngân Hàng Viettinbank</h5>
       <p>NGO QUANG HUY</p>
-      <strong>Số TK: 0011.0040.46877</strong>
+      <strong>Số TK: 100872547325</strong>
       <p>Ngân hàng Thương mại Cổ phần Công thương Việt Nam</p>
       <h5>Ngân Hàng Viettinbank</h5>
       <p>TA MANH HUNG</p>
-      <strong>TK: 2611.0000.085.726</strong>
+      <strong>Số TK: 102872547323</strong>
       <p>Ngân hàng Thương mại Cổ phần Công thương Việt Nam</p>
       <p>(Quý khách vui lòng gọi điện trước khi chuyển khoản để đảm bảo sản phẩm còn khi đặt mua. Liên hệ 0978236082)
        </p>

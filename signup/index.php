@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   
+  
   <style>
   .input-file {
     margin-left: -14px;
@@ -68,7 +68,6 @@ if (isset($_POST['submit'])) {
   }
   </style>
 </head>
-
 <body>
   <?php
   if (isset($_GET['err_exist'])) {
@@ -101,20 +100,16 @@ if (isset($_POST['submit'])) {
           </div>
           <div class="form-group input-group">
             <div class="input-group-prepend">
-              <span class="input-group-text"> <i style="padding: 5px 0" class="fa fa-envelope"></i> </span>
+              <span class="input-group-text"><i style="padding: 5px 0" class="fa fa-envelope"></i> </span>
             </div>
             <input path="email" name="email" class="form-control" placeholder="Email" type="email" required />
           </div>
-
           <div class="form-group input-group">
             <div class="input-group-prepend">
               <span class="input-group-text"> <i style="padding: 5px 0" class="fa fa-phone"></i> </span>
             </div>
             <select class="custom-select" style="max-width: 120px;">
               <option selected="">+84</option>
-              <option selected="">+1</option>
-              <option selected="">+7</option>
-              <option selected="">+8</option>
             </select>
             <input path="phone" name="phone" class="form-control" placeholder="Số Điện Thoại" type="text" required />
           </div>
@@ -143,11 +138,9 @@ if (isset($_POST['submit'])) {
           </div>
           <p class="text-center" style="text-decoration:none;">Bạn đã có tài khoản? <a href="../signin/">Đăng Nhập</a> </p>
         </form>
-        <p class="text-center"><a href="../index.php">Trang Chủ</a></p>
+        <p class="text-center"><a href="../trangchu.php">Trang Chủ</a></p>
       </article>
     </div>
-
   </div>
-  <br><br>
 </body>
 </html>

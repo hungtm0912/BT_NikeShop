@@ -1,8 +1,9 @@
 body {
-    margin: 0;
+    margin: auto;
     background-color: #333333 !important
 }
 .head {
+    margin: auto;
     background-color: #333333;
     height: 50px;
     width: 200%;

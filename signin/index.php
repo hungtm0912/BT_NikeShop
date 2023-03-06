@@ -37,8 +37,8 @@ if (isset($_SESSION['username'])) {
 <body class="text-center">
   <main class="form-signin">
     <form method="POST" action="./process_signin.php">
-      <img class="mb-4" src="../image/logoshop.png" href="../index.php" alt="" width="200" height="160">
-      <h1 class="h3 mb-3 fw-normal" style="color:white">Đăng Nhập</h1>
+    <a href="../trangchu.php"><img class="mb-4" src="../image/logoshop.png" href="../index.php" alt="" width="200" height="160"></a>
+      <h1 class="h3 mb-3 fw-normal">Đăng Nhập</h1>
       <div class="form-floating">
         <input id="account" type="email" class="form-control" id="floatingInput" placeholder="Nhập Email" name="email">
         <label for="floatingInput">Tài Khoản</label>

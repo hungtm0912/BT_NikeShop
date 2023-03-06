@@ -41,7 +41,8 @@ include './include/head.php';
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Loại</th>
+                  <th scope="col">Tên Danh Mục</th> 
+                  <th scope="col">Chức Năng</th>
                 </tr>
               </thead>
               <tbody>

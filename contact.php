@@ -1,6 +1,6 @@
 <?php
   require_once "./database/config.php";
-  ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,33 +11,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
   <?php
     session_start();
   ?>
 <body>
   <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API = Tawk_API || {},
-    Tawk_LoadStart = new Date();
-  (function() {
-    var s1 = document.createElement("script"),
-    s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/62b72f6bb0d10b6f3e794ac6/1g6dp2fhk';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  })();
-  </script>
+  
   <!--End of Tawk.to Script-->
   <div class="container-fluid">
+    
     <div class="container">
 	<div class="row">
-			<h1>Liên Hệ Với Chúng Tôi</h1>
+			<h2>Liên Hệ Với Chúng Tôi</h2>
 	</div>
 	<div class="row">
 			<h4 style="text-align:center">We'd love to hear from you!</h4>
@@ -75,20 +64,17 @@
 </div>
 </body>
 <style>
-  body {
+body {
   background-color: #444442;
   position:relative;
   top:20px;
 }
-
-h1 {
+h2 {
   font-family: 'Poppins', sans-serif, 'arial';
   font-weight: 600;
   font-size: 72px;
   color: white;
-  text-align: center;
 }
-
 h4 {
   font-family: 'Roboto', sans-serif, 'arial';
   font-weight: 400;
@@ -96,9 +82,7 @@ h4 {
   color: #9b9b9b;
   line-height: 1.5;
 }
-
 /* ///// inputs /////*/
-
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
   font-size: 0.75em;
   color: #999;
@@ -106,7 +90,6 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   -webkit-transition: all 0.225s ease;
   transition: all 0.225s ease;
 }
-
 .styled-input {
   float: left;
   width: 293px;
@@ -114,13 +97,11 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   position: relative;
   border-radius: 4px;
 }
-
 @media only screen and (max-width: 768px){
   .styled-input {
       width:100%;
   }
 }
-
 .styled-input label {
   color: #999;
   padding: 1.3rem 30px 1rem 30px;
@@ -131,12 +112,10 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   transition: all 0.25s ease;
   pointer-events: none;
 }
-
 .styled-input.wide { 
   width: 650px;
   max-width: 100%;
 }
-
 input,
 textarea {
   padding: 30px;
@@ -147,7 +126,6 @@ textarea {
   color: white;
   border-radius: 4px;
 }
-
 input:focus,
 textarea:focus { outline: 0; }
 
@@ -157,18 +135,15 @@ textarea:focus ~ span {
   -webkit-transition: all 0.075s ease;
   transition: all 0.075s ease;
 }
-
 textarea {
   width: 100%;
   min-height: 15em;
 }
-
 .input-container {
   width: 650px;
   max-width: 100%;
   margin: 20px auto 25px auto;
 }
-
 .submit-btn {
   padding: 7px 35px;
   border-radius: 60px;
@@ -178,17 +153,15 @@ textarea {
   font-size: 18px;
   cursor: pointer;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-            0 2px 10px 0 rgba(0,0,0,0.07);
+              0 2px 10px 0 rgba(0,0,0,0.07);
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-
 .submit-btn:hover {
   transform: translateY(1px);
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-            0 1px 1px 0 rgba(0,0,0,0.09);
+              0 1px 1px 0 rgba(0,0,0,0.09);
 }
-
 @media (max-width: 768px) {
   .submit-btn {
       width:100%;
@@ -196,15 +169,13 @@ textarea {
       text-align:center;
   }
 }
-
 input[type=checkbox] + label {
-color: #ccc;
-font-style: italic;
+  color: #ccc;
+  font-style: italic;
 } 
-
 input[type=checkbox]:checked + label {
-color: #f00;
-font-style: normal;
+  color: #f00;
+  font-style: normal;
 }
 </style>
 

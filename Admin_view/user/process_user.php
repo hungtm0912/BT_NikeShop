@@ -35,7 +35,6 @@ if (isset($_POST['submit'])) {
   $_SESSION['email'] = $email;
   header('location: ../userlist.php?success=true');
 }
-
 if (isset($_GET['id_delete']) || isset($_GET['id_userd'])) {
   $user_id = $_GET['id_delete'] ? $_GET['id_delete'] : $_GET['id_userd'];
   $sql = "DELETE FROM users WHERE user_id='$user_id'";

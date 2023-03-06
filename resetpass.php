@@ -6,10 +6,10 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <link rel="stylesheet" href="./forgotpass.css">
     <title>Nike Shop</title>
     <link href="signin.css" rel="stylesheet">
-    <link rel="icon" href="../image/logoshop.png" type="image/icon type">
+    <link rel="stylesheet" href="./forgotpass.css">
+    <link rel="icon" href="./image/logoshop.png" type="image/icon type">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -35,7 +35,7 @@
 <body class="text-center">
     <main class="form-forgot">
         <form method="POST" action="">
-            <img class="mb-4" src="./logoshop.png" alt="" width="200" height="160">
+            <img class="mb-4" src="./image/logoshop.png" alt="" width="200" height="160">
             <h1 class="h3 mb-3 fw-normal">Nhập Mật Khẩu Mới</h1>
             <div class="form-group input-group">
                 <input path="password" name="password" class="form-control" placeholder="Tạo Mật Khẩu Mới" type="password" required />

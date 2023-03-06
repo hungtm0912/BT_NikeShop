@@ -75,7 +75,7 @@
             <!-- size button -->
             <?php
             $name =  $product['product_name'];
-            $sql = "SELECT size_name FROM products WHERE product_name = '$name' ORDER BY size_name ASC";
+            $sql = "SELECT `size_name` FROM `products` WHERE `product_name` = '$name' ORDER BY size_name ASC";
             $ketqua = $mysqli->query($sql);
             ?>
             <div class="shoe size">
@@ -119,7 +119,7 @@
                 </div>
                 <?php endif ?>
                 <!-- Display total number of comments on this post  -->
-                <h2><span class="comments_count"><?php echo count($comments) ?></span> Bình Luận</h2>
+                <h><span class="comments_count"><?php echo count($comments) ?></span> Bình Luận</h2>
                 <hr>
                 <!-- comments wrapper -->
                 <div class="comments-wrapper">
@@ -170,9 +170,12 @@
               </div><!-- // all comments -->
             </div>
          </div> 
-  
-      <hr style="background-color: white; width: 120%;">
-      <footer style="background-color: #333333 !important;" class=" text-center text-lg-start bg-light text-muted">
+        </div>
+      </div>
+    </div>  
+
+      <hr style="background-color: white; width: 100%;">
+      <footer style="background-color: #333333 !important;position:relative;top:50px;" class=" text-center text-lg-start bg-light text-muted">
         <section class="" style="color: white">
           <div class="container text-center text-md-start">
             <div class="row mt-3">
@@ -201,9 +204,8 @@
           </div>
         </section>
       </footer>                                                                                                                                                                                                                                            
-      </div>
     </div>
-    </div>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./utils/scripts.js"></script>

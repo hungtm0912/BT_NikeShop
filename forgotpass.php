@@ -8,6 +8,7 @@
     <meta name="generator" content="Hugo 0.88.1">
     <link rel="stylesheet" href="./forgotpass.css">
     <title>Nike Shop</title>
+    <link rel="icon" href="./image/logoshop.png" type="image/icon type">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="signin.css" rel="stylesheet">
