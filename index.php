@@ -18,7 +18,7 @@ require_once './database/config.php';
 </head>
 
 <body>
-  <div class="layout">
+  <div class="layout" style="position: relative;top: 30px">
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
   var Tawk_API = Tawk_API || {},
