@@ -123,7 +123,6 @@ span.price {
             <input type="text" id="adr" name="address" placeholder="Nhập Số Điện Thoại">
             <label for="city"><i class="fa fa-institution"></i> Địa Chỉ</label>
             <input type="text" id="city" name="city" placeholder="Nhập Địa Chỉ">
-
             <div class="row">
               <div class="col-50">
                 <label for="state">State</label>
@@ -135,7 +134,6 @@ span.price {
               </div>
             </div>
           </div>
-
           <div class="col-50">
             <h3>Phương Thức Thanh Toán</h3>
             <label for="fname" class ="hthuc" style="position:relative;top:15px;">Hình Thức Được Chấp Nhận</label>

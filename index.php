@@ -40,7 +40,7 @@ require_once './database/config.php';
     include './includes/navbar.php';
     ?>
   </div>
-  <div style=" max-width: 1350px; margin-top: 154px;" class="container">
+  <div style=" max-width: 1350px; margin-top: 155px;" class="container">
     <div class="row col-12" style="padding-left: 0px;">
       <div class="col-3 justify-content-start" style="padding-left: 0px;">
         <div style="background-color: #333333 !important;position: relative;top: 10px;" class="list-group list-group list-group-flush">
@@ -98,9 +98,6 @@ require_once './database/config.php';
       $products = $mysqli->query($sql);
       ?>
       <div class="col-9 content">
-        <div class="row">
-          <img src="../Bootstrap/product img/banner-collection.jpg" alt="">
-        </div>
         <div style="color:white;position:relative;top:15px;left: 10px;font-size: 33px;" class="text-all-product">Tất Cả Sản Phẩm</div>
         <div class="category-icon"style="position:relative;top:20px;left: 15px;">
           <i class="fa fa-th-large" ></i>
@@ -132,7 +129,6 @@ require_once './database/config.php';
               <img class="card-img-top link" style=" width: 100%; height: 250px;" src="./Admin_view/upload/<?php echo $product['product_image'] ?>"
                 alt="Card image cap"></a>
                 
-
               <div style="padding: 6px !important;" class="card-body">
                 <a class="card-title product-title"
                   href="./chitiet.php?id=<?php echo $product['product_id'] ?>" style="text-align: center"><?php echo $product['product_name'] ?></a>
@@ -183,9 +179,9 @@ require_once './database/config.php';
               </div>
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
-                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
-                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
-                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
+                <p><a href="./index.php" class="text-reset">Quần Áo Thể Thao</a></p>
+                <p><a href="./index.php" class="text-reset">Giày Thể Thao</a></p>
+                <p> <a href="./index.php" class="text-reset">Phụ Kiện</a></p>
               </div>
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>

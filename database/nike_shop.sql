@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 02, 2023 at 11:18 AM
+-- Generation Time: Mar 07, 2023 at 02:27 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `categories` (
   `category_id` int(5) NOT NULL,
-  `category_name` varchar(30) COLLATE utf8mb4_bin NOT NULL
+  `category_name` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
@@ -65,7 +65,7 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`comment_id`, `product_id`, `user_id`, `content`, `body`, `created_at`) VALUES
-(1, 14, 2, 'Giày đẹp lắm mn', 'sản phẩm tốt', '0000-00-00');
+(1, 14, 2, 'Giày đẹp lắm mn', 'sản phẩm tốt', '2023-03-15');
 
 -- --------------------------------------------------------
 
@@ -76,9 +76,9 @@ INSERT INTO `comments` (`comment_id`, `product_id`, `user_id`, `content`, `body`
 CREATE TABLE `orders` (
   `order_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `name_receiver` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `phone_receiver` varchar(15) COLLATE utf8mb4_bin NOT NULL,
-  `address_receiver` text COLLATE utf8mb4_bin NOT NULL,
+  `name_receiver` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone_receiver` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address_receiver` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `total` int(11) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `status` int(11) NOT NULL
@@ -90,12 +90,8 @@ CREATE TABLE `orders` (
 
 INSERT INTO `orders` (`order_id`, `user_id`, `name_receiver`, `phone_receiver`, `address_receiver`, `total`, `created_at`, `status`) VALUES
 (13, 2, 'Ngô Quang Huy', '123', '', 799999, '2023-02-21 02:24:29', 1),
-(14, 2, 'Ngô Quang Huy', '12334556', '', 12300000, '2023-03-01 03:56:26', 0),
-(15, 2, 'Ngô Quang Huy', '12334556', '', 240000, '2023-03-02 02:27:05', 0),
-(16, 2, 'Ngô Quang Huy', '12334556', '', 0, '2023-03-02 02:27:30', 0),
 (17, 2, 'Ngô Quang Huy', '12334556', '', 0, '2023-03-02 02:28:26', 0),
-(18, 2, 'Ngô Quang Huy', '12334556', '', 0, '2023-03-02 02:29:45', 0),
-(19, 0, '', '', '', 12540000, '2023-03-02 03:09:31', 0);
+(20, 2, 'Ngô Quang Huy', '55555', '', 430500000, '2023-03-03 03:51:00', 0);
 
 -- --------------------------------------------------------
 
@@ -136,7 +132,8 @@ INSERT INTO `order_detail` (`order_id`, `product_id`, `quantity`) VALUES
 (14, 21, 1),
 (15, 27, 1),
 (19, 21, 1),
-(19, 27, 1);
+(19, 27, 1),
+(20, 21, 35);
 
 -- --------------------------------------------------------
 
@@ -147,13 +144,13 @@ INSERT INTO `order_detail` (`order_id`, `product_id`, `quantity`) VALUES
 CREATE TABLE `products` (
   `product_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
-  `product_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
-  `product_image` text COLLATE utf8mb4_bin NOT NULL,
+  `product_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `product_image` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `product_sale` int(11) NOT NULL,
   `product_price` double NOT NULL,
   `product_quantity` int(11) NOT NULL,
-  `product_description` text CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
-  `size_name` char(5) COLLATE utf8mb4_bin NOT NULL
+  `product_description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `size_name` char(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
@@ -161,7 +158,6 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `category_id`, `product_name`, `product_image`, `product_sale`, `product_price`, `product_quantity`, `product_description`, `size_name`) VALUES
-(1, 2, 'Áo Nike Classic - 3', '8.png', 0, 799999, 6, '', 'L'),
 (2, 2, 'Áo Nike Color Blocktee', 'nikeshirt1.jpg', 10, 800000, 9, '', 'XL'),
 (3, 2, 'Áo Nike Full White Tee', 'nikeshirt2.jpg', 15, 850000, 12, '', 'L'),
 (4, 2, 'Áo Nike Shirt Lineear', 'nikeshirt3.jpg', 0, 700000, 9, '', 'XL'),
@@ -214,7 +210,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `phone`, `username`, `password`, `email`, `avatar`, `role`) VALUES
-(2, 'Ngô Quang Huy', '12334556', 'Ngô Quang Huy', '123', 'huyngo9981@gmail.com', 'huy.jpg', 1);
+(2, 'Ngô Quang Huy', '55555', 'Ngô Quang Huy', '123', 'huyngo9981@gmail.com', 'ngohuy.jpg', 1),
+(9, 'Ta Manh Hung', '123', 'Ta Manh Hung', '123', 'hungk18.hvu@gmail.com', '', 0);
 
 --
 -- Indexes for dumped tables
@@ -288,7 +285,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -306,7 +303,7 @@ ALTER TABLE `replies`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables

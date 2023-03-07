@@ -8,7 +8,7 @@
              if (isset($_SESSION['username'])) {
                    echo $_SESSION['name'];
              } else {
-                     echo 'Tài khoản';
+                     echo 'Tài Khoản';
               }
           ?>
       </a>

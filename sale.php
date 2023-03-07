@@ -40,7 +40,7 @@ require_once './database/config.php';
     include './includes/navbar.php';
     ?>
   </div>
-  <div style=" max-width: 1350px; margin-top: 154px;" class="container">
+  <div class="container" style=" max-width: 1350px; margin-top:185px;">
     <div class="row col-12" style="padding-left: 0px;">
       <div class="col-3 justify-content-start" style="padding-left: 0px;">
         <div style="background-color: #333333 !important;position: relative;top: 10px;" class="list-group list-group list-group-flush">
@@ -98,9 +98,6 @@ require_once './database/config.php';
       $products = $mysqli->query($sql);
       ?>
       <div class="col-9 content">
-        <div class="row">
-          <img src="../Bootstrap/product img/banner-collection.jpg" alt="">
-        </div>
         <div style="color:white;position:relative;top:15px;left: 10px;font-size: 33px;" class="text-all-product">Tất Cả Sản Phẩm</div>
         <div class="category-icon"style="position:relative;top:20px;left: 15px;">
           <i class="fa fa-th-large" ></i>
@@ -192,7 +189,7 @@ require_once './database/config.php';
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
                 <p><a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a></p>
-                <p><a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
+                <p><a href="mailto:huyngo9981@gmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
                 <p><a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a></p>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

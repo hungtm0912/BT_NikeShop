@@ -48,7 +48,7 @@ if (!isset($_SESSION['username'])) {
             <div class="title">
               <div class="row">
                 <div class="col">
-                  <h4 style="position:relative;left:25px;top:15px;color:red"><b>Giỏ Hàng</b></h4>
+                  <h4 style="position:relative;left:25px;top:15px;color:red"><b><i class="fas fa-cart-plus"></i> Giỏ Hàng</b></h4>
                 </div>
               </div>
             </div>
@@ -89,6 +89,7 @@ if (!isset($_SESSION['username'])) {
               <?php endforeach ?>
               <?php } ?>
             </div>
+            <br>
             <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thông Tin Khách Hàng</div>
             <div class="p-4">
               <div class="form-group">

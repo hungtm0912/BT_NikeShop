@@ -47,7 +47,7 @@
   </script>
   <!--End of Tawk.to Script-->
   <div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="position: relative;top: 30px;">
     <?php
     include './includes/navbar.php';
     ?>
@@ -186,20 +186,21 @@
               </div>
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
-                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
-                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
-                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
+                <p><a href="./index.php" class="text-reset">Quần Áo Thể Thao</a></p>
+                <p><a href="./index.php" class="text-reset">Giày Thể Thao</a></p>
+                <p> <a href="./index.php" class="text-reset">Phụ Kiện</a></p>
               </div>
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
                 <p><a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a></p>
-                <p><a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
+                <p><a href="mailto:huyngo9981@gmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
                 <p><a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a></p>
               </div>
               <div class="col-md-3 col-lg-4 col-xl-3 mb-5">
                 <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
                 <p><i class="fas fa-home me-3"></i> Việt Trì - Phú Thọ</p>
               </div>
+          
             </div>
           </div>
         </section>

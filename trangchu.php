@@ -10,10 +10,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
+  <!-- import icon font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <!-- Import thư viện JQuery -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -244,9 +247,9 @@
               </div>
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
-                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
-                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
-                <p><a href="#!" class="text-reset">Phụ Kiện</a></p>
+                <p><a href="./index.php" class="text-reset">Quần Áo Thể Thao</a></p>
+                <p><a href="./index.php" class="text-reset">Giày Thể Thao</a></p>
+                <p><a href="./index.php" class="text-reset">Phụ Kiện</a></p>
               </div>
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
@@ -261,9 +264,29 @@
             </div>
           </div>
         </section>
+        <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fal fa-arrow-alt-to-top"></i></button>
+        <script>
+              // Get the button
+              let mybutton = document.getElementById("myBtn");
+              // When the user scrolls down from the top of the document, show the button
+              window.onscroll = function() {scrollFunction()};
+              function scrollFunction() {
+                if (document.body.scrollTop > 2850 || document.documentElement.scrollTop > 2850) {
+                  mybutton.style.display = "block";
+                } else {
+                  mybutton.style.display = "none";
+                }
+              }
+              // When the user clicks on the button, scroll to the top of the document
+              function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+              }
+         </script>
       </footer>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -274,8 +297,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
   <script src="./script.js"></script>
-  <script src="./OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
-  <style>  
+<style>  
 .box {
     flex: 1;
     overflow: hidden;
@@ -310,6 +332,21 @@
 .box:hover > img {
     width: 100%;
     height: 550px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 90px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+#myBtn:hover {
+    background-color:#FF9800;
 }
 </style>
 </body>

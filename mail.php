@@ -39,7 +39,7 @@ class Mailer{
             $mail->send();
 
             $_SESSION['result'] = 'Message has been sent';
-            $_SESSION['status'] = 'ok';
+            $_SESSION['status'] = 'Ok';
         } catch (Exception $e) {
             $_SESSION['result'] = 'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo;
             $_SESSION['status'] = 'error';

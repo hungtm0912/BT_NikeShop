@@ -56,105 +56,105 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 1) {
                 <td>text</td>
               </tr>
               <tr>
-                <td>1,002</td>
+                <td>2</td>
                 <td>placeholder</td>
                 <td>irrelevant</td>
                 <td>visual</td>
                 <td>layout</td>
               </tr>
               <tr>
-                <td>1,003</td>
+                <td>2</td>
                 <td>data</td>
                 <td>rich</td>
                 <td>dashboard</td>
                 <td>tabular</td>
               </tr>
               <tr>
-                <td>1,003</td>
+                <td>3</td>
                 <td>information</td>
                 <td>placeholder</td>
                 <td>illustrative</td>
                 <td>data</td>
               </tr>
               <tr>
-                <td>1,004</td>
+                <td>4</td>
                 <td>text</td>
                 <td>random</td>
                 <td>layout</td>
                 <td>dashboard</td>
               </tr>
               <tr>
-                <td>1,005</td>
+                <td>5</td>
                 <td>dashboard</td>
                 <td>irrelevant</td>
                 <td>text</td>
                 <td>placeholder</td>
               </tr>
               <tr>
-                <td>1,006</td>
+                <td>6</td>
                 <td>dashboard</td>
                 <td>illustrative</td>
                 <td>rich</td>
                 <td>data</td>
               </tr>
               <tr>
-                <td>1,007</td>
+                <td>7</td>
                 <td>placeholder</td>
                 <td>tabular</td>
                 <td>information</td>
                 <td>irrelevant</td>
               </tr>
               <tr>
-                <td>1,008</td>
+                <td>8</td>
                 <td>random</td>
                 <td>data</td>
                 <td>placeholder</td>
                 <td>text</td>
               </tr>
               <tr>
-                <td>1,009</td>
+                <td>9</td>
                 <td>placeholder</td>
                 <td>irrelevant</td>
                 <td>visual</td>
                 <td>layout</td>
               </tr>
               <tr>
-                <td>1,010</td>
+                <td>10</td>
                 <td>data</td>
                 <td>rich</td>
                 <td>dashboard</td>
                 <td>tabular</td>
               </tr>
               <tr>
-                <td>1,011</td>
+                <td>11</td>
                 <td>information</td>
                 <td>placeholder</td>
                 <td>illustrative</td>
                 <td>data</td>
               </tr>
               <tr>
-                <td>1,012</td>
+                <td>12</td>
                 <td>text</td>
                 <td>placeholder</td>
                 <td>layout</td>
                 <td>dashboard</td>
               </tr>
               <tr>
-                <td>1,013</td>
+                <td>13</td>
                 <td>dashboard</td>
                 <td>irrelevant</td>
                 <td>text</td>
                 <td>visual</td>
               </tr>
               <tr>
-                <td>1,014</td>
+                <td>14</td>
                 <td>dashboard</td>
                 <td>illustrative</td>
                 <td>rich</td>
                 <td>data</td>
               </tr>
               <tr>
-                <td>1,015</td>
+                <td>15</td>
                 <td>random</td>
                 <td>tabular</td>
                 <td>information</td>
