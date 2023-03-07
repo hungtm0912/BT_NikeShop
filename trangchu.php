@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./image/logoshop.png" type="image/icon type">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <!-- import icon font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
   <!-- Import thư viện JQuery -->
@@ -267,26 +268,23 @@
         <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fal fa-arrow-alt-to-top"></i></button>
         <script>
               // Get the button
-              let mybutton = document.getElementById("myBtn");
-              // When the user scrolls down from the top of the document, show the button
               window.onscroll = function() {scrollFunction()};
-              function scrollFunction() {
-                if (document.body.scrollTop > 2850 || document.documentElement.scrollTop > 2850) {
-                  mybutton.style.display = "block";
-                } else {
-                  mybutton.style.display = "none";
-                }
-              }
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("myBtn").style.display = "block";
+                    } else {
+                        document.getElementById("myBtn").style.display = "none";
+                    }
+                } 
               // When the user clicks on the button, scroll to the top of the document
               function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
+                $('html, body').animate({scrollTop:0}, 'slow');
               }
          </script>
       </footer>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -351,3 +349,5 @@
 </style>
 </body>
 </html>
+
+

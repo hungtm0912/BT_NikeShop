@@ -30,16 +30,16 @@
     <main class="form-forgot">
         <form method="POST" action="">
             <img class="mb-4" src="./image/logoshop.png" alt="" width="200" height="160">
-            <h1 class="h3 mb-3 fw-normal">Nhập mã xác nhận</h1>
+            <h1 class="h3 mb-3 fw-normal">Nhập Mã Xác Nhận</h1>
 
             <div class="form-floating">
                 <input type="text" class="form-control" placeholder="Enter code" id="code" name="code">
                 <label for="floatingInput">Nhập Code</label>
             </div>
             <br>
-            <button class="w-60 btn btn-primary" type="submit" name="signin">Xác nhận</button>
+            <button class="w-60 btn btn-primary" type="submit" name="signin">Xác Nhận</button>
         </form>
-        <p class="text-center" style="margin-top:8px">Bạn chưa có tài khoản ? <a href="./signup">Đăng ký</a> </p>
+        <p class="text-center" style="margin-top:8px">Bạn chưa có tài khoản ? <a href="./signup">Đăng Ký</a> </p>
         <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
     </main>
 </body>

@@ -130,9 +130,9 @@
   overflow: hidden;
   position: relative;
   top: -7px;
+  font-size: 12px;
 }
 .nav-item-1 a {
-  float: left;
   font-size: 16px;
   color: white;
   text-align: center;
@@ -149,7 +149,6 @@
   outline: none;
   color: white;
   padding: 14px 16px;
-  font-family: inherit;
   margin: 0;
 }   
 .subnav-content {

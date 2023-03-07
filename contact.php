@@ -1,4 +1,5 @@
 <?php
+   session_start();
   require_once "./database/config.php";
 ?>
 <!DOCTYPE html>
@@ -15,29 +16,19 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-  <?php
-    session_start();
-  ?>
-  
 <body>
   <!--Start of Tawk.to Script-->
   <div class="container-fluid">
   <?php
-    session_start();
     include './includes/navbar.php';
     ?>
-    </div>
   <!--End of Tawk.to Script-->
- 
 <div class="container" style="margin-top: 130px">
 	
   <form action="">
 	<div class="row input-container" >
     <div class="col-sm-12">
 			<h2 style="font-size: 50px;text-align:center">Liên Hệ Với Chúng Tôi</h2>
-	  </div>
-	  <div  class="col-sm-12">
-			<h4 style="text-align:center">We'd love to hear from you!</h4>
 	  </div>
 			<div class="col-sm-12">
       <div class="form-group">
@@ -54,16 +45,16 @@
 			<div class="col-md-6 col-sm-12">
       <div class="form-group">
         <input type="tel" class="form-control" id="customerFullName" name="name_receiver"
-        placeholder="Nhập Điện thoại" style="padding: 20px;">
+        placeholder="Nhập Điện Thoại" style="padding: 20px;">
       </div>
 			</div>
 			<div class="col-sm-12">
         <div class="form-group">
-        <textarea required placeholder="Nhập Điện thoại"></textarea>
+        <textarea required placeholder="Nhập Phản Hồi"></textarea>
       </div>
 			</div>
       <div class="col-sm-12" style="text-align: center;">
-      <a href="index.php"><div class="btn-lrg submit-btn" onclick="alert('Gửi Thành Công');">Gửi tin nhắn</div></a>
+      <a href="index.php"><div class="btn-lrg submit-btn" onclick="alert('Gửi Thành Công');">Gửi</div></a>
 				</div>
 			</div>
       </form>
@@ -72,9 +63,8 @@
 </body>
 <style>
 body {
-  background-color: #444442;
   position:relative;
-  top:20px;
+  top:75px;
 }
 h2 {
   font-family: 'Poppins', sans-serif, 'arial';

@@ -19,9 +19,9 @@ class Mailer{
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->Username = "huyngo9981@gmail.com";
-            $mail->Password = 'upnkhhyrsiaefvzt';
+            $mail->Password = '123';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-            $mail->Port = 587;
+            $mail->Port = 8080;
             $mail->SMTPSecure = "tls";
 
             //Send Email
