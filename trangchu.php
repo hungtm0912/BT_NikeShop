@@ -212,28 +212,28 @@
          
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 best">
           <div class="best_item">
-            <img height="150px !important" src="./product img/nike1_07.png">
+            <img height="150px !important" src="./product_img/air-1.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Nike Air Force 1 '07</a>
             <p class="price_bestitem">3,519,000 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product img/jordan_low.png">
+            <img height="150px !important" src="./product_img/jordan_low.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Air Jordan 1 Elevate Low</a>
             <p class="price_bestitem">3,254,649 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product img/jordan_zoom.png">
+            <img height="150px !important" src="./product_img/jordan_zoom.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Air Jordan 1 Zoom Comfort</a>
             <p class="price_bestitem">4,109,000 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product img/jumpman.png">
+            <img height="150px !important" src="./product_img/jumpman.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Jumpman Two Trey</a>
             <p class="price_bestitem">4,409,000 VND</p>
           </div>
