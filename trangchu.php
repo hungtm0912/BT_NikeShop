@@ -16,6 +16,16 @@
   <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 </head>
 <body>
   <!--Start of Tawk.to Script-->
@@ -230,6 +240,7 @@
         </div>
       </div>
     </div>
+  </div>
       <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important;" class=" text-center text-lg-start bg-light text-muted">
         <section class="" style="color: white">
@@ -259,18 +270,31 @@
             </div>
           </div>
         </section>
+        <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fal fa-arrow-alt-to-top"></i></button>
+        <script>
+              // Get the button
+              let mybutton = document.getElementById("myBtn");
+              // When the user scrolls down from the top of the document, show the button
+              window.onscroll = function() {scrollFunction()};
+              function scrollFunction() {
+                if (document.body.scrollTop > 2850 || document.documentElement.scrollTop > 2850) {
+                  mybutton.style.display = "block";
+                } else {
+                  mybutton.style.display = "none";
+                }
+              }
+              // When the user clicks on the button, scroll to the top of the document
+              function topFunction() {
+                //document.body.scrollTop = 0;
+                //document.documentElement.scrollTop = 0;
+                //$('html, body').animate({scrollTop:0}, 'slow');
+                $("html, body").animate({scrollTop: 0}, );
+              }
+         </script>
       </footer>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
+  
   <script src="./script.js"></script>
 
   <style>  
@@ -308,6 +332,21 @@
 .box:hover > img {
     width: 100%;
     height: 550px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 90px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+#myBtn:hover {
+    background-color:#FF9800;
 }
 
 </style>

@@ -32,7 +32,7 @@ if (isset($_POST['nutguiyeucau']) ==true) {
             $sql = "UPDATE users set password = ? WHERE email = ?";
             $stmt = $conn->prepare($sql);   //Tạo 1 prepare statement
             $stmt->execute( [$matkhaumoi, $email ] );
-            echo "Đã thay đổi mật khẩu, mật khâr mới của bạn là: $matkhaumoi";
+            echo "Đã thay đổi mật khẩu, mật khẩu mới của bạn là: $matkhaumoi";
             //echo "Đã cập nhật";
             $kq = GuiMatKhauMoi($email, $matkhaumoi);
 
@@ -54,7 +54,7 @@ function GuiMatKhauMoi($email, $matkhau) {
         $mail->Host = 'smtp.gmail.com';  //SMTP servers
         $mail->SMTPAuth = true; // Enable authentication
         $mail->Username = 'hungk18.hvu@gmail.com'; // SMTP username
-        $mail->Password = '0984427570hung';   // SMTP password
+        $mail->Password = 'ahntblznsjqeysty';   // SMTP password
         $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
         $mail->Port = 465;  // port to connect to                
         $mail->setFrom('hungk18.hvu@gmail.com', 'Hùng' ); 
