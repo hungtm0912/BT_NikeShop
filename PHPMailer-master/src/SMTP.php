@@ -513,7 +513,6 @@ class SMTP
                 $this->setError('Authentication is not allowed at this stage');
                 //'at this stage' means that auth may be allowed after the stage changes
                 //e.g. after STARTTLS
-
                 return false;
             }
 

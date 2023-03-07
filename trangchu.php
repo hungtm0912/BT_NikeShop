@@ -195,11 +195,11 @@
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-top: 350px;">
           <div class="gene_item">
             <div class="gene_img"><img src="./product_for_image/nrc.png" alt=""></div>
-            <div class="gene_info">
-              <h2 class="gene_title">Let’s Run Together</h2>
-              <p class="gene_desc">Running is just better with a crew. Create Challenges like!</p>
-              <button class="gene_button btn btn-secondary">MUA NGAY</button>
-            </div>
+              <div class="gene_info">
+                <h2 class="gene_title">Let’s Run Together</h2>
+                <p class="gene_desc">Running is just better with a crew. Create Challenges like!</p>
+                <button class="gene_button btn btn-secondary">MUA NGAY</button>
+              </div>
           </div>
         </div>
       </div>
@@ -294,10 +294,7 @@
       </footer>
     </div>
   </div>
-  
-  <script src="./script.js"></script>
-
-  <style>  
+<style>  
 .box {
     flex: 1;
     overflow: hidden;
@@ -348,7 +345,7 @@
 #myBtn:hover {
     background-color:#FF9800;
 }
-
 </style>
+        <script src="./script.js"></script>
 </body>
 </html>

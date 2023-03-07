@@ -25,7 +25,7 @@ class Mailer{
             $mail->SMTPSecure = "tls";
 
             //Send Email
-            $mail->setFrom('huyngo9981@gmail.com');
+            $mail->setFrom("$email");
 
             //Recipients
             $mail->addAddress("$email");

@@ -28,19 +28,15 @@ if (isset($_POST['nutguiyeucau']) ==true) {
             $loi = "Email bạn nhập chưa đăng ký";
         }
         else {
-            $matkhaumoi = substr( md5(rand(0,999999)) ,0 ,8);
-            $sql = "UPDATE users set password = ? WHERE email = ?";
+            $matkhaumoi = substr(md5(rand(0,999999)) ,0 ,6);
+            $sql = "UPDATE `users` set `password` = ? WHERE `email` = ?";
             $stmt = $conn->prepare($sql);   //Tạo 1 prepare statement
             $stmt->execute( [$matkhaumoi, $email ] );
-            echo "Đã thay đổi mật khẩu, mật khẩu mới của bạn là: $matkhaumoi";
             //echo "Đã cập nhật";
-            $kq = GuiMatKhauMoi($email, $matkhaumoi);
-
-            
+            $kq = GuiMatKhauMoi($email, $matkhaumoi);      
         }
     }
 ?>
-
 <?php
 function GuiMatKhauMoi($email, $matkhau) {
     require "PHPMailer-master/src/PHPMailer.php"; 
@@ -53,15 +49,15 @@ function GuiMatKhauMoi($email, $matkhau) {
         $mail->CharSet  = "utf-8";
         $mail->Host = 'smtp.gmail.com';  //SMTP servers
         $mail->SMTPAuth = true; // Enable authentication
-        $mail->Username = 'hungk18.hvu@gmail.com'; // SMTP username
+        $mail->Username = 'webnikeshop123@gmail.com'; // SMTP username
         $mail->Password = 'ahntblznsjqeysty';   // SMTP password
         $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
         $mail->Port = 465;  // port to connect to                
-        $mail->setFrom('hungk18.hvu@gmail.com', 'Hùng' ); 
+        $mail->setFrom($email, 'Admin' ); 
         $mail->addAddress( $email); 
         $mail->isHTML(true);  // Set email format to HTML
         $mail->Subject = 'Gửi lại mật khẩu';
-        $noidungthu = "<p>Yêu cầu mật khẩu mới từ Website BT_NikeShop</p>
+        $noidungthu = "<p>Yêu cầu mật khẩu mới từ Website NikeShop</p>
             Mật khẩu mới của bạn là {$matkhau}"; 
         $mail->Body = $noidungthu;
         $mail->smtpConnect( array(
@@ -72,7 +68,7 @@ function GuiMatKhauMoi($email, $matkhau) {
             )
         ));
         $mail->send();
-        echo "Đã gửi mail";
+            echo "Đã Gửi Mail";
     } catch (Exception $e) {
     }
 }
@@ -87,7 +83,7 @@ function GuiMatKhauMoi($email, $matkhau) {
                 <label for="floatingInput">Nhập Email</label>
             </div>
             <br>
-            <button type="submit" name="nutguiyeucau" value="nutgui" class="btn btn-primary mt-3">Gửi yếu cầu</button>  
+            <button type="submit" name="nutguiyeucau" value="nutgui" class="btn btn-primary mt-3">Gửi Yêu Cầu</button>  
         </form>
         <p class="text-center" style="margin-top:8px">Bạn Chưa Có Tài Khoản ? <a href="./signup">Đăng Ký</a></p>
         <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
