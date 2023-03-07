@@ -10,17 +10,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <!-- import icon font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-  <!-- Import thư viện JQuery -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="icon" href="./image/logoshop.png" type="image/icon type">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <!--Start of Tawk.to Script-->
@@ -46,7 +41,7 @@
   }
   ?>
   <div class="container-fluid">
-  <?php
+    <?php
     include './includes/navbar.php';
     ?>
     <!--slide-->
@@ -105,8 +100,7 @@
                   <br>
                   <span class="card-text old-price"><?php echo number_format($row_product['product_price']) ?>VND</span>
                   <span
-                    class="card-text new-price">
-                    <?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?>VND</span>
+                    class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?>đ</span>
                 </div>
               </div>
             </div>
@@ -121,7 +115,7 @@
       </div>
     </div>
     <!--NEW PRODUCT-->
-    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;position:relative; top: 35px;">SẢN PHẨM MỚI</div>
+    <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;position:relative; top: 35px;"> SẢN PHẨM MỚI</div>
     <div class="row">
       <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
         <div class="MultiCarousel-inner">
@@ -144,7 +138,7 @@
                   <br>
                   <span class="card-text old-price"><?php echo number_format($row_product['product_price']) ?>VND</span>
                   <span
-                    class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?> VND</span>
+                    class="card-text new-price"><?php echo number_format($row_product['product_price'] - ($row_product['product_sale'] / 100 * $row_product['product_price'])) ?>đ</span>
                 </div>
               </div>
             </div>
@@ -167,11 +161,11 @@
         <span>Sản Phẩm Cho Nam</span>
       </div>
       <div class=" box">
-     <img height="150px !important" src="./product_for_image/for_woman.png">
+        <img height="150px !important" src="./product_for_image/for_woman.png">
         <span>Sản Phẩm Cho Nữ</span>
       </div>
       <div class=" box">
-      <img height="150px !important" src="./product_for_image/for_kid.png">
+        <img height="150px !important" src="./product_for_image/for_kid.png">
         <span>Sản Phẩm Cho Trẻ Em</span>
       </div>
     </div>
@@ -205,37 +199,37 @@
     <div style="margin: 20px auto; text-align: center; font-size:30px; font-weight:700; color: white;">BEST SELLER</div>
     <div style="margin-bottom: 2px !important;" class="container">
       <div class="row">
+         
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 best">
           <div class="best_item">
-            <img height="150px !important" src="./product_img/air-1.png">
+            <img height="150px !important" src="./product img/nike1_07.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Nike Air Force 1 '07</a>
             <p class="price_bestitem">3,519,000 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product_img/air-jordan-1-elevate-low.png">
+            <img height="150px !important" src="./product img/jordan_low.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Air Jordan 1 Elevate Low</a>
             <p class="price_bestitem">3,254,649 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product_img/air-jordan-1-zoom.png">
+            <img height="150px !important" src="./product img/jordan_zoom.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Air Jordan 1 Zoom Comfort</a>
             <p class="price_bestitem">4,109,000 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product_img/jumpman-two-trey.png">
+            <img height="150px !important" src="./product img/jumpman.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Jumpman Two Trey</a>
             <p class="price_bestitem">4,409,000 VND</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
       <hr style="background-color: white; width: 100%;">
       <footer style="background-color: #333333 !important;" class=" text-center text-lg-start bg-light text-muted">
         <section class="" style="color: white">
@@ -248,14 +242,14 @@
               </div>
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
-                <p><a href="./index.php" class="text-reset">Quần Áo Thể Thao</a></p>
-                <p><a href="./index.php" class="text-reset">Giày Thể Thao</a></p>
-                <p><a href="./index.php" class="text-reset">Phụ Kiện</a></p>
+                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
+                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
               </div>
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
                 <p><a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a></p>
-                <p><a href="mailto:huyngo9981@gmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
+                <p><a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
                 <p><a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a></p>
               </div>
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -265,23 +259,6 @@
             </div>
           </div>
         </section>
-        <button onclick="topFunction()" id="myBtn" title="Back to top"><i class="fal fa-arrow-alt-to-top"></i></button>
-        <script>
-              // Get the button
-              window.onscroll = function() {scrollFunction()};
-
-                function scrollFunction() {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        document.getElementById("myBtn").style.display = "block";
-                    } else {
-                        document.getElementById("myBtn").style.display = "none";
-                    }
-                } 
-              // When the user clicks on the button, scroll to the top of the document
-              function topFunction() {
-                $('html, body').animate({scrollTop:0}, 'slow');
-              }
-         </script>
       </footer>
     </div>
   </div>
@@ -295,7 +272,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
   <script src="./script.js"></script>
-<style>  
+
+  <style>  
 .box {
     flex: 1;
     overflow: hidden;
@@ -331,23 +309,7 @@
     width: 100%;
     height: 550px;
 }
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 90px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-}
-#myBtn:hover {
-    background-color:#FF9800;
-}
+
 </style>
 </body>
 </html>
-
-
