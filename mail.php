@@ -34,7 +34,6 @@ class Mailer{
             $mail->isHTML(true);
             $mail->CharSet="UTF-8";
             $mail->Subject = "Thông báo tới khách hàng";
-            $mail->Body    = "Mã xác nhận mật khẩu là: ".$code;
 
             $mail->send();
 

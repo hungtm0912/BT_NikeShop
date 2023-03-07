@@ -219,21 +219,21 @@
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product_img/jordan_low.png">
+            <img height="150px !important" src="./product_img/air-jordan-1-elevate-low.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Air Jordan 1 Elevate Low</a>
             <p class="price_bestitem">3,254,649 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product_img/jordan_zoom.png">
+            <img height="150px !important" src="./product_img/air-jordan-1-zoom.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Air Jordan 1 Zoom Comfort</a>
             <p class="price_bestitem">4,109,000 VND</p>
           </div>
         </div>
         <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
           <div class="best_item">
-            <img height="150px !important" src="./product_img/jumpman.png">
+            <img height="150px !important" src="./product_img/jumpman-two-trey.png">
             <a class="best_title product-title" href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>">Jumpman Two Trey</a>
             <p class="price_bestitem">4,409,000 VND</p>
           </div>
