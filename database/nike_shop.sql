@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2023 at 02:27 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Generation Time: Mar 07, 2023 at 11:24 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -65,7 +65,7 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`comment_id`, `product_id`, `user_id`, `content`, `body`, `created_at`) VALUES
-(1, 14, 2, 'Giày đẹp lắm mn', 'sản phẩm tốt', '2023-03-15');
+(1, 14, 2, 'Giày đẹp lắm mn', 'sản phẩm tốt', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -90,8 +90,9 @@ CREATE TABLE `orders` (
 
 INSERT INTO `orders` (`order_id`, `user_id`, `name_receiver`, `phone_receiver`, `address_receiver`, `total`, `created_at`, `status`) VALUES
 (13, 2, 'Ngô Quang Huy', '123', '', 799999, '2023-02-21 02:24:29', 1),
-(17, 2, 'Ngô Quang Huy', '12334556', '', 0, '2023-03-02 02:28:26', 0),
-(20, 2, 'Ngô Quang Huy', '55555', '', 430500000, '2023-03-03 03:51:00', 0);
+(14, 2, 'Ngô Quang Huy', '12334556', '', 12300000, '2023-03-01 03:56:26', 0),
+(15, 9, 'Tạ Mạnh Hùng', '0984427570', '', 0, '2023-03-06 02:59:03', 0),
+(16, 9, 'Tạ Mạnh Hùng', '0984427570', '', 0, '2023-03-06 03:00:47', 0);
 
 -- --------------------------------------------------------
 
@@ -129,11 +130,7 @@ INSERT INTO `order_detail` (`order_id`, `product_id`, `quantity`) VALUES
 (11, 12, 1),
 (12, 13, 1),
 (13, 1, 1),
-(14, 21, 1),
-(15, 27, 1),
-(19, 21, 1),
-(19, 27, 1),
-(20, 21, 35);
+(14, 21, 1);
 
 -- --------------------------------------------------------
 
@@ -158,13 +155,14 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `category_id`, `product_name`, `product_image`, `product_sale`, `product_price`, `product_quantity`, `product_description`, `size_name`) VALUES
+(1, 2, 'Áo Nike Classic - 3', '8.png', 0, 799999, 6, '', 'L'),
 (2, 2, 'Áo Nike Color Blocktee', 'nikeshirt1.jpg', 10, 800000, 9, '', 'XL'),
 (3, 2, 'Áo Nike Full White Tee', 'nikeshirt2.jpg', 15, 850000, 12, '', 'L'),
 (4, 2, 'Áo Nike Shirt Lineear', 'nikeshirt3.jpg', 0, 700000, 9, '', 'XL'),
-(5, 2, 'Áo Nike Icon Camoinfill Tee', 'nikeshirt4.jpg', 5, 599000, 15, '', 'L'),
+(5, 2, 'Áo Nike Camoinfill', 'nikeshirt4.jpg', 5, 599000, 15, '', 'L'),
 (12, 1, 'Quần Nike Dri-fit', 'nikedrifit.jpg', 0, 599000, 5, '', 'S'),
 (13, 2, 'Áo Nike Swear ', 'nikeshirt5.jpg', 0, 300000, 5, 'Chất liệu 66% Cotton và 34%^ Polyester mềm mịn 2 mặt, dầy dặn nhưng trọng lượng rất nhẹ nên mặc vo cùng thoải mái.\r\nMũ rộng và phần khóa kéo ở cổ áo khá cao giúp bạn ấm áp và an toàn khi tập luyện trong điều kiện thời tiết không tốt.\r\nKhóa kéo 2 chiều, túi hodie, phần vạt áo sau kiểu đuôi tôm thời trang, phong cách.', 'M'),
-(14, 3, 'Giày Nike Air-Force Black Icon', 'nikeshoes.jpg', 0, 1500000, 3, 'Mẫu Giày Nike Air-Force Black Icon luôn là sự lựa chọn hàng đầu của các bạn trẻ. Bởi tone màu trắng quốc dân rất dễ phối đồ trong trang phục đi học, đi chơi, dạo phố, cà phê hay tiệc tùng đều đẹp, sang xịn mịn. \r\n\r\nRa đời để đáp ứng nhu cầu của giới trẻ, nhà sản xuất giày Nike đã tân tiến, tô thêm điểm nhấn ở vệt Nike trên đôi giày này. Sự kết hợp tuyệt đỉnh nhưng đầy tinh tế của màu trắng chủ đạo và đen ở vệt Nike. Đã tạo cảm giác tuy đơn giản nhưng vô cùng mạnh mẽ, lại được sự yêu mến của người chọn mua nó.', 'M'),
+(14, 3, 'Giày Nike AF Black', 'nikeshoes.jpg', 0, 1500000, 3, 'Mẫu Giày Nike Air-Force Black Icon luôn là sự lựa chọn hàng đầu của các bạn trẻ. Bởi tone màu trắng quốc dân rất dễ phối đồ trong trang phục đi học, đi chơi, dạo phố, cà phê hay tiệc tùng đều đẹp, sang xịn mịn. \r\n\r\nRa đời để đáp ứng nhu cầu của giới trẻ, nhà sản xuất giày Nike đã tân tiến, tô thêm điểm nhấn ở vệt Nike trên đôi giày này. Sự kết hợp tuyệt đỉnh nhưng đầy tinh tế của màu trắng chủ đạo và đen ở vệt Nike. Đã tạo cảm giác tuy đơn giản nhưng vô cùng mạnh mẽ, lại được sự yêu mến của người chọn mua nó.', 'M'),
 (15, 1, 'Quần Nike NSW Club', 'nikenswclub.jpg', 11, 1000000, 0, '', '42'),
 (21, 17, 'Áo Nike ', 'aodas1.webp', 0, 12300000, 10, 'Thoáng mát ', 'XL'),
 (22, 20, 'Vòng Cổ Nike', 'vongco2.jpg', 1, 12300000, 1, 'Làm bằng thép', 'L'),
@@ -174,7 +172,8 @@ INSERT INTO `products` (`product_id`, `category_id`, `product_name`, `product_im
 (26, 19, 'Nike Hồng', 'cho nữ.jpg', 14, 100000, 12, 'Dành cho các bé từ  8 - 15 tuổi', '28'),
 (27, 19, 'Áo Nike cho trẻ', 'chotreeee.jpg', 20, 300000, 5, 'Sản phẩm làm từ vải cotton, thoáng mát', 'M'),
 (28, 20, 'Mũ Nike đen', 'mu.jpg', 30, 800000, 12, 'Đẹp, chất lượng', 'XL'),
-(29, 19, 'Nike Air Porce 1', 'giaychotreme.jpg', 60, 600000, 50, 'Đẹp', '34');
+(29, 19, 'Nike Air Porce 1', 'giaychotreme.jpg', 60, 600000, 50, 'Đẹp', '34'),
+(30, 20, 'Nhẫn Nike Bạc', 'nhan-bac-nike-1.jpg', 10, 409000000, 1, 'Nhẫn nike làm bằng bạc 100%', '17');
 
 -- --------------------------------------------------------
 
@@ -184,8 +183,8 @@ INSERT INTO `products` (`product_id`, `category_id`, `product_name`, `product_im
 
 CREATE TABLE `replies` (
   `reply_id` int(11) NOT NULL,
-  `reply_text` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `reply_posted` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+  `reply_text` text NOT NULL,
+  `reply_posted` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -196,12 +195,12 @@ CREATE TABLE `replies` (
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
-  `name` varchar(35) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `phone` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `username` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `avatar` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(35) NOT NULL,
+  `phone` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `avatar` varchar(50) NOT NULL,
   `role` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -210,8 +209,14 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `phone`, `username`, `password`, `email`, `avatar`, `role`) VALUES
-(2, 'Ngô Quang Huy', '55555', 'Ngô Quang Huy', '123', 'huyngo9981@gmail.com', 'ngohuy.jpg', 1),
-(9, 'Ta Manh Hung', '123', 'Ta Manh Hung', '123', 'hungk18.hvu@gmail.com', '', 0);
+(2, 'Ngô Quang Huy', '12334556', 'Aloo', '123', 'huyngo9981@gmail.com', '', 1),
+(3, 'Huy', '123', 'finn', '123', 'finnofme7972@gmail.com', '', 0),
+(4, 'Quang Huy', '123', 'user1', '123', 'userne123@gmail.com', '', 0),
+(9, 'Tạ Mạnh Hùng', '0984427570', 'hung', '123', 'hung@gm.co', 'z4157451711932_157d6601180bdd84c91667a049c785d5.jp', 1),
+(10, 'Tạ Mạnh Hùng', '0984427570', 'hungz', '9b50cc0f', 'hung@gm.connn', '', 0),
+(11, 'Tạ Mạnh Hùng', '0984427570', 'hungzz', '123', 'hung@gm.connnn', '', 0),
+(12, 'Tạ Mạnh Hùng', '0984427570', 'hungzzz', '123', 'hung@gm.connnnm', '', 0),
+(13, 'Tạ Mạnh Hùng', '0984427570', 'hungtm', 'a5e05c38', 'hungtm@student.apsce.net', '', 0);
 
 --
 -- Indexes for dumped tables
@@ -285,13 +290,13 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `replies`
@@ -303,7 +308,7 @@ ALTER TABLE `replies`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables
