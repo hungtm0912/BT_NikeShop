@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 }
 if (isset($_GET['id_delete']) || isset($_GET['id_userd'])) {
   $user_id = $_GET['id_delete'] ? $_GET['id_delete'] : $_GET['id_userd'];
-  $sql = "DELETE FROM users WHERE user_id='$user_id'";
+  $sql = "DELETE FROM `users` WHERE `user_id`='$user_id'";
   $mysqli->query($sql);
 
   unset($_SESSION['username']);

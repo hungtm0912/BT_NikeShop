@@ -21,7 +21,7 @@
         $password = $_POST['password'];
         $re_password = $_POST['re_password'];
         if($password != $re_password){
-            echo '<script type="text/javascript">alert("Mật khẩu nhập lại chưa đúng");</script>';
+            echo '<script type="text/javascript">alert("Mật Khẩu Nhập Lại Chưa Đúng");</script>';
         }else {
             $email = $_SESSION['email_resetpass'];
             $hash_pass = password_hash($password, PASSWORD_BCRYPT);
