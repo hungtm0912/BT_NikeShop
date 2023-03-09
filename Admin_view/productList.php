@@ -35,7 +35,7 @@ include './include/head.php';
                 <button type="submit" id="btnSearch" name="btnSearch" value="Search" class="btn btn-primary">Tìm</button>
               </div>
               <div class="text-center">
-              <a href="data_export_product.php" class="btn btn-primary" style="margin-left: 500px;" target="_blank">Xuất Dữ Liệu</a>
+              <a href="data_export_product.php" class="btn btn-primary" style="width: 150px;margin-left: 500px;" target="_blank">Xuất Dữ Liệu</a>
             </div>
               <div><a class="btn btn-outline-primary mb-1" href="./addproduct.php" role="button">Thêm</a></div>
             </div>
