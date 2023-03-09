@@ -18,13 +18,12 @@
 </head>
 <body>
   <!--Start of Tawk.to Script-->
-  <div class="container-fluid">
+<div class="container-fluid">
   <?php
     include './includes/navbar.php';
     ?>
   <!--End of Tawk.to Script-->
-<div class="container" style="margin-top: 130px">
-	
+  <div class="container" style="margin-top: 130px">
   <form action="">
 	<div class="row input-container" >
     <div class="col-sm-12">
@@ -59,6 +58,35 @@
 			</div>
       </form>
 	</div>
+  <hr style="background-color: white; width: 100%;">
+      <footer style="background-color: #333333 !important;" class=" text-center text-lg-start bg-light text-muted">
+        <section class="" style="color: white">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i> Nike Shop</h6>
+                  <p>Rất hân hạnh được đem đến cho quý khách những sản phẩm tốt nhất với giá thành phải chăng</p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Chuyên Sản Phẩm</h6>
+                <p><a href="#!" class="text-reset">Quần Áo Thể Thao</a></p>
+                <p><a href="#!" class="text-reset">Giày Thể Thao</a></p>
+                <p> <a href="#!" class="text-reset">Phụ Kiện</a></p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                <p><a href="https://www.facebook.com/finnofmene" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a></p>
+                <p><a href="mailto:huyngo9981@ggmail.com" class="me-4 text-reset"><i class="fab fa-google"></i></a></p>
+                <p><a href="https://www.linkedin.com/in/ng%C3%B4-quang-huy-a5549624b/" class="me-4 text-reset"><i class="fab fa-linkedin-in"></i></a></p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Địa Chỉ</h6>
+                <p><i class="fas fa-home me-3"></i> Ngõ 142 - Thanh Miếu<br> &ensp;  Việt Trì - Phú Thọ</p>
+              </div>
+            </div>
+          </div>
+        </section>
 </div>
 </body>
 <style>

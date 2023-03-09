@@ -126,14 +126,16 @@
 .body{
   font-family: Arial, Helvetica, sans-serif;
 }
+.nav-item a{
+  font-size: 16px;
+}
 .nav-item-1{
   overflow: hidden;
   position: relative;
-  top: -7px;
-  font-size: 12px;
+  top: -6px;
 }
 .nav-item-1 a {
-  font-size: 16px;
+  font-size: 15px;
   color: white;
   text-align: center;
   padding: 14px 16px;
