@@ -64,13 +64,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="./image/slideshow_2.jpg" alt="First slide">
+            <img class="d-block w-100" src="./image/slideshow_2.png" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="./image/slideshow_3.jpg" alt="Second slide">
+            <img class="d-block w-100" src="./image/slideshow_3.png" alt="Second slide">
           </div> 
           <div class="carousel-item">
-            <img class="d-block w-100" src="./image/slideshow_4.jpg" alt="Third slide">
+            <img class="d-block w-100" src="./image/slideshow_4.png" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -103,7 +103,7 @@
                 <span class="ico-sale" style="display: inline-block;background-color: #ff0000;position: absolute;
                 width: 45px;color: white;font-size: 13px;text-align: center;right: 3%;top: 5px;">-<?php echo $row_product['product_sale'] ?>%</span>
                 <a href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><img style="height: 200px;" class="card-img-top link" 
-                  src="./Admin_view/upload/<?php echo $row_product['product_image'] ?>"  alt="Card image cap"></a>
+                  src="./Admin_view/upload/<?php echo $row_product ['product_image'] ?>"  alt="Card image cap"></a>
                 <div style="padding: 0 1px !important;" class="card-body">
                   <a style="color: orange;" class="card-title product-title"
                     href="./chitiet.php?id=<?php echo $row_product['product_id'] ?>"><?php echo $row_product['product_name'] ?></a>
@@ -130,7 +130,7 @@
       <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
         <div class="MultiCarousel-inner">
           <?php
-          $sql_product = mysqli_query($mysqli, "SELECT * FROM `products` group by product_name");
+          $sql_product = mysqli_query($mysqli, "SELECT * FROM `products` GROUP BY product_name");
           ?>
           <?php
           while ($row_product = mysqli_fetch_array($sql_product)) {
@@ -346,6 +346,6 @@
     background-color:#FF9800;
 }
 </style>
-        <script src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

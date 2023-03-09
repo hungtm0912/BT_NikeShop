@@ -84,10 +84,10 @@ if (isset($_POST['reply_posted'])) {
 						</form>
 					</div>";
     echo $reply;
-    exit();
+      exit();
   } else {
-    echo "error";
-    exit();
+      echo "error";
+     exit();
   }
 }
 // Receives a user id and returns the username
