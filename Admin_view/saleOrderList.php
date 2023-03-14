@@ -36,7 +36,8 @@ include './include/head.php';
                   <th scope="col">Địa Chỉ</th>
                   <th scope="col">Số Điện Thoại</th>
                   <th scope="col">Tổng</th>
-                  <th scope="col">Trạng thái</th>
+                  <th scope="col">Trạng thái</th>         
+                  <th scope="col">Chức Nằng</th>
                 </tr>
               </thead>
               <tbody>

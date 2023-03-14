@@ -76,7 +76,7 @@ function GuiMatKhauMoi($email, $matkhau) {
 <body class="text-center">
     <main class="form-forgot">
         <form method="POST" action="">
-            <img class="mb-4" src="./image/logoshop.png" alt="" width="200" height="160">
+            <img class="mb-4" src="./image/lg2.png" alt="" width="200" height="160">
             <h1 class="h3 mb-3 fw-normal">Lấy Lại Mật Khẩu</h1>
             <div class="form-floating">
                 <input type="email" class="form-control" placeholder="Nhập Email" id="email" name="email">

@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
   $avatar = $_FILES['user_avatar']['name'];
   $avatar_tmp = $_FILES['user_avatar']['tmp_name'];
   $path = '../upload/user/';
-  $sql_check = "SELECT count(*) FROM `users` where `email`='$email' AND `user_id` <> '$user_id'";
+  $sql_check = "SELECT count(*) FROM `users` WHERE `email`='$email' AND `user_id` <> '$user_id'";
   $result = $mysqli->query($sql_check);
   $number_rows = mysqli_fetch_array($result)['count(*)'];
   if ($number_rows == 1) {

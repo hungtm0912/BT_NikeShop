@@ -69,7 +69,7 @@ require_once './database/config.php';
       $sql_so_san_pham = "";
       if (!empty($_GET['categoryId'])) {
         $category_id = $_GET['categoryId'];
-        $sql_so_san_pham = "SELECT COUNT(DISTINCT product_name) FROM products
+        $sql_so_san_pham = "SELECT COUNT(DISTINCT roduct_name) FROM products
                 WHERE (category_id = $category_id)";
       } else {
         $sql_so_san_pham = "SELECT COUNT(DISTINCT product_name) FROM products

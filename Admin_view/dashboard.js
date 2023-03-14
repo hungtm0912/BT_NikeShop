@@ -12,18 +12,18 @@
       type: 'line',
       data: {
         labels: [
-          'Sunday',
-          'Monday',
-          'Tuesday',
-          'Wednesday',
-          'Thursday',
-          'Friday',
-          'Saturday'
+          'Chủ Nhật',
+          'Thứ Hai',
+          'Thứ Ba',
+          'Thứ Tư',
+          'Thứ Năm',
+          'Thứ Sáu',
+          'Thứ Báy'
         ],
         datasets: [{
           data: [
-            15339,
-            21345,
+            10339,
+            11345,
             18483,
             24003,
             23489,

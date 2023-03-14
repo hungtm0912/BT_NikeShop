@@ -1,5 +1,6 @@
 <html lang="en">
 <link rel="stylesheet" href="./user/styles_user.css">
+<link rel="icon" href="./image/logoshop.png" type="image/icon type">
 <?php
 include './include/head.php';
 ?>
