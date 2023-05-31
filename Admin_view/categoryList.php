@@ -47,9 +47,9 @@ include './include/head.php';
               </thead>
               <tbody>
                 <?php
-                $sql = "SELECT * FROM `categories`";
-                $categories = $mysqli->query($sql);
-                mysqli_close($mysqli);
+                  $sql = "SELECT * FROM `categories`";
+                  $categories = $mysqli->query($sql);
+                  mysqli_close($mysqli);
                 ?>
                 <?php foreach ($categories as $category) { ?>
                   <tr>
@@ -57,9 +57,8 @@ include './include/head.php';
                     <td><?php echo $category['category_name'] ?></td>
                     <td>
                       <a class="btn btn-primary" href="./category/update_category.php?id=<?php echo $category['category_id'] ?>" role="button">Sửa</a>
-                      <a class="btn btn-danger" href="./category/process_deletecategory.php?id=
-                      <?php echo $category['category_id'] ?>" 
-                      onclick="return confirm('Bạn có muốn xóa <?php echo $category['category_name'] ?>')" role="button">Xóa</a>
+                      <a class="btn btn-danger" href="./category/process_deletecategory.php?id=<?php echo $category['category_id'] ?>" 
+                      onclick="return confirm('Bạn Có Muốn Xóa <?php echo $category['category_name'] ?>')" role="button">Xóa</a>
                     </td>
                   </tr>
                 <?php } ?>
@@ -82,12 +81,13 @@ include './include/head.php';
   <script src="${base}/js/dashboard.js"></script>
   <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" 
+     integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+     integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
   </script>
   <script src="${base}/jsdashboard.js"></script>
-
   <script type="text/javascript">
     // $( document ).ready(function() {
     // 	$("#categoryId").val(${searchModel.categoryId});
@@ -105,5 +105,4 @@ include './include/head.php';
   </script>
  <script type="text/javascript" src="${base}/js/jquery.js"></script> 
 </body>
-
 </html>

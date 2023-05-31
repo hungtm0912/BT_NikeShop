@@ -18,7 +18,7 @@ include './include/head.php';
       ?>
       <?php
       if (isset($_GET['success']) && $_GET['success']) {
-        echo '<script type="text/javascript">alert("Thông Tin Người Dùng Đã Sửa Thành Công");</script>';
+        echo '<script type="text/javascript">alert("Sửa Thông Tin Người Dùng Thành Công");</script>';
       }
 
       if (isset($_GET['success_del']) && $_GET['success_del']) {
@@ -110,8 +110,7 @@ include './include/head.php';
     integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
   </script>
   <script src="${base}/jsdashboard.js"></script>
-  <script type="text/javascript">
-  </script>
+  <script type="text/javascript"></script>
   <script type="text/javascript" src="${base}/js/jquery.js"></script>
 </body>
 </html>
